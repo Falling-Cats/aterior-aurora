@@ -1,23 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <elements>
 
     <info>
-        <name>ATÉRIOR Races</name>
+        <name>ATÉRIOR</name>
         <update version="1.0.0">
-            <file name="seryn-human.xml" />
+            <file name="Races/seryn-human.xml" />
         </update>
     </info>
 
+
     <element name="Seryn Human"
-         type="Race"
-         source="SOURCE_ATERIOR"
-         id="RACE_SERYN_HUMAN">
-        
+             type="Race"
+             source="ATÉRIOR"
+             id="ID_ATERIOR_RACE_SERYN_HUMAN">
+
         <description>
-            Seryn Human test race.
+            <p>
+                Seryn humans are people who demonstrate an unusual acceleration of potential.
+            </p>
         </description>
 
     </element>
+
 
 </elements>
