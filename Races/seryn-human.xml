@@ -8,72 +8,8 @@
              id="ATERIOR_RACE_SERYN_HUMAN">
 
         <description>
-            <p><b>Seryn Humans</b></p>
-
-            <p>
-            <i>SEH-rin</i><br/>
-            ser — swift / sudden<br/>
-            ryn — rising<br/>
-            Meaning: The Swift-Rising
-            </p>
-
-            <p>
-            Seryn humans are individuals who demonstrate an unusual acceleration of potential.
-            They learn faster, adapt quickly, and often rise to challenges before others are ready.
-            </p>
-
-            <p>
-            Seryn are not a separate culture or people. The name is simply a term used to describe
-            those who seem to surge forward when the moment demands it.
-            </p>
-
+            <p>Seryn Human test race.</p>
         </description>
-
-
-        <set name="Size">Medium</set>
-
-        <set name="Speed">30</set>
-
-
-        <rules>
-
-            <stat name="Creature Type">Humanoid</stat>
-
-
-            <!-- Ability Scores -->
-            <select type="Ability Score Increase"
-                    number="1"
-                    name="Increase one ability score by 2"/>
-
-            <select type="Ability Score Increase"
-                    number="1"
-                    name="Increase one different ability score by 1"/>
-
-
-            <!-- Languages -->
-            <grant type="Language"
-                   id="ID_LANGUAGE_COMMON"/>
-
-            <select type="Language"
-                    number="1"
-                    name="Extra Language"/>
-
-
-            <!-- Skill -->
-            <select type="Proficiency"
-                    number="1"
-                    supports="Skill"
-                    name="Skill Proficiency"/>
-
-
-            <!-- Feat -->
-            <select type="Feat"
-                    number="1"
-                    name="Bonus Feat"/>
-
-
-        </rules>
-
 
     </element>
 
