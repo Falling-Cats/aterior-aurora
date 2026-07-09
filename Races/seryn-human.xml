@@ -3,10 +3,14 @@
 <elements>
 
     <info>
-        <name>ATÉRIOR</name>
+        <name>ATÉRIOR Races</name>
+        <description>ATÉRIOR custom races.</description>
+        <author>Falling-Cats</author>
+
         <update version="1.0.0">
-            <file name="Races/seryn-human.xml" />
+            <file name="Races/seryn-human.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml" />
         </update>
+
     </info>
 
 
@@ -16,12 +20,9 @@
              id="ID_ATERIOR_RACE_SERYN_HUMAN">
 
         <description>
-            <p>
-                Seryn humans are people who demonstrate an unusual acceleration of potential.
-            </p>
+            <p>Seryn Human test race.</p>
         </description>
 
     </element>
-
 
 </elements>
