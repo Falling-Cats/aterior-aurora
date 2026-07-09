@@ -2,6 +2,14 @@
 
 <elements>
 
+    <info>
+        <name>ATÉRIOR Races</name>
+        <update version="1.0.0">
+            <file name="Races/seryn-human.xml" />
+        </update>
+    </info>
+
+
     <element name="Seryn Human"
              type="Race"
              source="ATÉRIOR"
@@ -15,5 +23,6 @@
         <set name="Speed">30</set>
 
     </element>
+
 
 </elements>
