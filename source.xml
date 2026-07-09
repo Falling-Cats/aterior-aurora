@@ -4,10 +4,8 @@
 
     <info>
         <name>ATÉRIOR</name>
-        <id>ATERIOR</id>
-        <description>
-        A custom Dungeons & Dragons setting.
-        </description>
+        <description>ATÉRIOR campaign setting content.</description>
+        <author>Falling-Cats</author>
     </info>
 
 </elements>
