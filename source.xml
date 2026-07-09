@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<elements>
+
+    <info>
+        <name>ATÉRIOR</name>
+        <id>ATERIOR</id>
+        <description>
+        A custom Dungeons & Dragons setting.
+        </description>
+    </info>
+
+</elements>
