@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<elements>
+<index>
     <info>
         <name>ATÉRIOR</name>
-        <id>ATERIOR</id>
         <description>
-            ATÉRIOR homebrew campaign content.
+            ATÉRIOR homebrew content for Aurora Builder.
         </description>
         <author>
             Falling-Cats
@@ -17,4 +16,4 @@
         <file>Races/seryn-human.xml</file>
     </files>
 
-</elements>
+</index>
