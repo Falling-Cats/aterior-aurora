@@ -2,4 +2,22 @@
 
 <elements>
 
+    <info>
+        <name>ATÉRIOR</name>
+        <update version="1.0.0">
+            <file name="source.xml" />
+        </update>
+    </info>
+
+
+    <element name="ATÉRIOR"
+             type="Source"
+             id="SOURCE_ATERIOR">
+
+        <description>
+            ATÉRIOR campaign setting content.
+        </description>
+
+    </element>
+
 </elements>
