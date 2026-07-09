@@ -4,25 +4,20 @@
 
     <info>
         <name>ATÉRIOR Races</name>
-        <update version="1.0.0">
-            <file name="Races/seryn-human.xml" />
+        <update version="1">
+            <file name="seryn-human.xml" />
         </update>
     </info>
-
 
     <element name="Seryn Human"
              type="Race"
              source="ATÉRIOR"
-             id="ATERIOR_RACE_SERYN_HUMAN">
+             id="RACE_SERYN_HUMAN">
 
         <description>
-            <p>Seryn Human test race.</p>
+            Seryn Human test race.
         </description>
 
-        <set name="Size">Medium</set>
-        <set name="Speed">30</set>
-
     </element>
-
 
 </elements>
