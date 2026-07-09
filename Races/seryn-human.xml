@@ -10,10 +10,10 @@
     </info>
 
     <element name="Seryn Human"
-             type="Race"
-             source="ATÉRIOR"
-             id="RACE_SERYN_HUMAN">
-
+         type="Race"
+         source="SOURCE_ATERIOR"
+         id="RACE_SERYN_HUMAN">
+        
         <description>
             Seryn Human test race.
         </description>
