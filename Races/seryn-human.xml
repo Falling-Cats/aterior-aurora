@@ -11,6 +11,9 @@
             <p>Seryn Human test race.</p>
         </description>
 
+        <set name="Size">Medium</set>
+        <set name="Speed">30</set>
+
     </element>
 
 </elements>
