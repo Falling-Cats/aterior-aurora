@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<elements>
+<index>
 
     <info>
         <name>ATÉRIOR</name>
         <description>
-            ATÉRIOR homebrew campaign content.
+            ATÉRIOR homebrew campaign content for Aurora Builder.
         </description>
         <author>
             Falling-Cats
         </author>
+
+        <update version="1.0.0">
+            <file name="aterior.index" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/aterior.index" />
+        </update>
+
     </info>
 
-    <element name="ATÉRIOR"
-             type="Source"
-             id="ATERIOR_SOURCE">
+    <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/source.xml" />
+        <file name="Races/seryn-human.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml" />
+    </files>
 
-    </element>
-
-</elements>
+</index>
