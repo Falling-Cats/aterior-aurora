@@ -1,28 +1,92 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <elements>
 
-    <info>
-        <name>ATÉRIOR Races</name>
-        <description>ATÉRIOR custom races.</description>
-        <author>Falling-Cats</author>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
 
-        <update version="1.0.0">
-            <file name="Races/seryn-human.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml" />
-        </update>
+    <update version="1.0.0">
+      <file
+        name="Races/seryn-human.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml"/>
+    </update>
+  </info>
 
-    </info>
+  <element
+      name="Seryn Human"
+      type="Race"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACE_SERYN_HUMAN">
 
+    <description>
 
-    <element name="Seryn Human"
-             type="Race"
-             source="ATÉRIOR"
-             id="ID_ATERIOR_RACE_SERYN_HUMAN">
+      <h4>SERYN HUMAN</h4>
 
-        <description>
-            <p>Seryn Human test race.</p>
-        </description>
+      <p>
+        Seryn humans are people whose potential accelerates far faster than most.
+      </p>
 
-    </element>
+      <p>
+        <span class="feature">Ability Score Increase.</span>
+        Increase one ability score by 2 and a different ability score by 1,
+        or increase three different ability scores by 1.
+        <br/>
+
+        <span class="feature">Size.</span>
+        Medium.
+        <br/>
+
+        <span class="feature">Speed.</span>
+        Your walking speed is 30 feet.
+        <br/>
+
+        <span class="feature">Skills.</span>
+        You gain proficiency in one skill of your choice.
+        <br/>
+
+        <span class="feature">Feat.</span>
+        You gain one feat of your choice.
+        <br/>
+
+        <span class="feature">Languages.</span>
+        You can speak, read, and write Common and one additional language.
+      </p>
+
+    </description>
+
+    <sheet display="false"/>
+
+    <rules>
+
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+
+      <stat
+          name="innate speed"
+          value="30"
+          bonus="base"/>
+
+      <grant
+          type="Language"
+          id="ID_LANGUAGE_COMMON"/>
+
+      <select
+          type="Language"
+          name="Language (Seryn)"
+          supports="Standard||Exotic"/>
+
+      <select
+          type="Proficiency"
+          name="Skill Proficiency (Seryn)"
+          supports="Skill"/>
+
+      <select
+          type="Feat"
+          name="Feat (Seryn)"/>
+
+    </rules>
+
+  </element>
 
 </elements>
