@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+  <info>
+    <name>ATÉRIOR ASI Test</name>
+    <description>Testing flexible ability score selections.</description>
+    <author>Falling-Cats</author>
+
+    <update version="1.0.0">
+      <file
+        name="Traits/test-asi.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/test-asi.xml"/>
+    </update>
+  </info>
+
+  <!-- +2 Strength -->
+  <element
+      name="+2 Strength"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_ASI_PLUS2_STRENGTH">
+
+    <supports>ATERIOR_ASI_PLUS2</supports>
+
+    <description>
+      <p>Your Strength score increases by 2.</p>
+    </description>
+
+    <rules>
+      <stat name="strength" value="2"/>
+    </rules>
+
+  </element>
+
+  <!-- +2 Dexterity -->
+  <element
+      name="+2 Dexterity"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_ASI_PLUS2_DEXTERITY">
+
+    <supports>ATERIOR_ASI_PLUS2</supports>
+
+    <description>
+      <p>Your Dexterity score increases by 2.</p>
+    </description>
+
+    <rules>
+      <stat name="dexterity" value="2"/>
+    </rules>
+
+  </element>
+
+  <!-- +1 Strength -->
+  <element
+      name="+1 Strength"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_ASI_PLUS1_STRENGTH">
+
+    <supports>ATERIOR_ASI_PLUS1</supports>
+
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+
+  </element>
+
+  <!-- +1 Dexterity -->
+  <element
+      name="+1 Dexterity"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_ASI_PLUS1_DEXTERITY">
+
+    <supports>ATERIOR_ASI_PLUS1</supports>
+
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+
+  </element>
+
+</elements>
