@@ -170,7 +170,167 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
       <select type="Spell" name="Cultivator's Cantrip (Vaelorin)" supports="Druid&amp;&amp;0"/>
+    <element
+      name="Darkvision"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_DARKVISION">
+    <description>
+      <p>
+        You can see in dim light within 60 feet of you as if it were bright light, and in
+        darkness as if it were dim light. You can't discern color in darkness.
+      </p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
     </rules>
+  </element>
+
+  <element
+      name="Keen Senses"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_KEEN_SENSES">
+    <description>
+      <p>You have proficiency in the Perception skill.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency in the Perception skill.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+    </rules>
+  </element>
+
+  <element
+      name="Fey Ancestry"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_FEY_ANCESTRY">
+    <description>
+      <p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being charmed, and magic can't put you to sleep.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Trance"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_TRANCE">
+    <description>
+      <p>
+        You meditate deeply for 4 hours instead of sleeping, gaining the same benefit as
+        8 hours of rest, remaining semiconscious.
+      </p>
+    </description>
+    <sheet>
+      <description>You meditate for 4 hours instead of sleeping, gaining the same benefit as 8 hours of rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Elf Weapon Training"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WEAPON_TRAINING">
+    <description>
+      <p>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency with the longsword, shortsword, shortbow, and longbow.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
+    </rules>
+  </element>
+
+  <element
+      name="Cultivator's Cantrip"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_CANTRIP">
+    <description>
+      <p>
+        You know one cantrip of your choice from the druid spell list. Wisdom is your
+        spellcasting ability for it.
+      </p>
+    </description>
+    <sheet>
+      <description>You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability for it.</description>
+    </sheet>
+    <rules>
+      <select type="Spell" name="Cultivator's Cantrip (Vaelorin)" supports="Druid&amp;&amp;0"/>
+    </rules>
+  </element>
+
+  <element
+      name="Extra Language"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write one extra language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one extra language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Vaelorin)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <element
+      name="Wanderer"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WANDERER">
+    <description>
+      <p>
+        You have excellent memory for maps and geography, recalling terrain and
+        settlements. You can also find food and fresh water for yourself and up to five
+        others each day, provided resources are available.
+      </p>
+    </description>
+    <sheet>
+      <description>Excellent memory for maps and geography. Can find food and fresh water for yourself and up to five others each day, provided resources are available.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Predator's Eye"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_PREDATORS_EYE">
+    <description>
+      <p>
+        Your eyes are trained to catch the smallest details—once to navigate impossible
+        paths, now to survive a fractured world.
+      </p>
+      <p>
+        As a bonus action, you focus your senses on a creature you can see within 60 feet.
+        You instantly assess its condition and defenses. You learn whether the creature is
+        above or below half its maximum hit points, as well as its Armor Class. You then
+        gain advantage on your next attack roll against that creature before the end of
+        your next turn. Once you use this trait, you can't use it again until you finish a
+        long rest.
+      </p>
+    </description>
+    <sheet>
+      <description>Bonus action: learn a creature's HP threshold and AC within 60 feet, then gain advantage on your next attack roll against it. 1/long rest.</description>
+    </sheet>
+    <rules/>
   </element>
 
 </elements>
