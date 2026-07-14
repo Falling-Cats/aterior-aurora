@@ -84,7 +84,16 @@
       <select
           type="Feat"
           name="Feat (Seryn)"/>
+      
+      <select
+          type="Racial Trait"
+          name="+2 Ability Score"
+          supports="ATERIOR_ASI_PLUS2"/>
 
+      <select
+          type="Racial Trait"
+          name="+1 Ability Score"
+          supports="ATERIOR_ASI_PLUS1"/>
     </rules>
 
   </element>
