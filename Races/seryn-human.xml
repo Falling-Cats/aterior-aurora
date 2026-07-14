@@ -18,19 +18,98 @@
       id="ID_ATERIOR_RACE_SERYN_HUMAN">
     <description>
       <h4>SERYN HUMAN</h4>
+
+      <h5>Before the Weaver's Touch</h5>
       <p>
-        Seryn humans are people whose potential accelerates far faster than most.
+        Among humanity, some individuals have always demonstrated an unusual acceleration
+        of potential. They learned faster. Adapted mid-crisis. Pushed past limits others
+        hadn't yet found. Such individuals were never considered a separate people — the
+        term Seryn arose informally, used to describe those who seemed to surge ahead when
+        the moment demanded it. Most who carried the label never knew it had a name.
       </p>
       <p>
+        They were not inherently stronger or wiser than others. They simply ignited faster.
+      </p>
+      <p>
+        In times of peace, this set them apart quietly — the fast learner in the back of
+        the room, the apprentice who outpaced their master without meaning to. In times of
+        crisis, it made them invaluable. They were the ones others turned to before fully
+        understanding why.
+      </p>
+      <p>
+        Society did not formally distinguish them. A Seryn was simply described as gifted,
+        driven, or built different. No ceremony marked them. No institution tracked them.
+        They were recognized the way talent always is — by the people standing closest,
+        watching them move.
+      </p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>
+        In a fractured world, Seryn humans became catalysts.
+      </p>
+      <p>
+        When structures collapsed, they improvised. When plans failed, they adapted. When
+        others hesitated, they had already begun. They are often the first to rise in
+        uncertain conditions — not because they are chosen, but because they move before
+        others can.
+      </p>
+      <p>
+        Some became heroes. Some became tyrants. Most simply became the ones who moved
+        first.
+      </p>
+      <p>
+        But rapid growth comes with its own cost. Their instincts often outpace their
+        experience. Their early success can place them in roles they are not fully
+        prepared to hold. Among humans, talent draws attention — but effort still earns
+        trust. A Seryn who relies only on natural ability is rarely respected for long.
+      </p>
+      <p>
+        The most admired are not those who rise quickly. They are those who learn how to
+        carry that rise without collapsing under it.
+      </p>
+      <p>
+        Seryn are admired, relied upon, and sometimes quietly feared. Not for what they
+        are — but for how fast they can become something more.
+      </p>
+
+      <h5>Appearance</h5>
+      <p>
+        Seryn humans are visually indistinguishable from other humans. There is no
+        consistent physical marker that defines them.
+      </p>
+      <p>
+        What sets them apart is presence.
+      </p>
+      <p>
+        They often move with a subtle sharpness, reacting quickly even when at rest. Their
+        focus can feel immediate and intense, as though they are always slightly ahead of
+        the moment. In conversation, they may grasp meaning before it is fully spoken. In
+        action, they adjust without hesitation.
+      </p>
+      <p>
+        They do not look different. But they rarely feel ordinary.
+      </p>
+
+      <h5>Seryn Traits</h5>
+      <p>
+        Your Seryn Human character has the following racial traits.
+      </p>
+      <p>
+        <span class="feature">Creature Type.</span>
+        Humanoid.
+        <br/>
         <span class="feature">Ability Score Increase.</span>
         Increase one ability score by 2 and a different ability score by 1,
         or increase three different ability scores by 1.
+        <br/>
+        <span class="feature">Age.</span>
+        Seryn humans mature and age at the same rate as other humans.
         <br/>
         <span class="feature">Size.</span>
         Medium.
         <br/>
         <span class="feature">Speed.</span>
-        Your walking speed is 30 feet.
+        Your base walking speed is 30 feet.
         <br/>
         <span class="feature">Skills.</span>
         You gain proficiency in one skill of your choice.
@@ -39,7 +118,57 @@
         You gain one feat of your choice.
         <br/>
         <span class="feature">Languages.</span>
-        You can speak, read, and write Common and one additional language.
+        You can speak, read, and write Common and one extra language of your choice.
+      </p>
+
+      <h5>On Being Seryn</h5>
+      <p>
+        Most Seryn do not think of themselves as Seryn.
+      </p>
+      <p>
+        The label is external — applied by teachers, commanders, rivals, and the
+        occasional scholar who noticed a pattern. Most simply think of themselves as
+        people who work hard and move fast.
+      </p>
+      <p>
+        The ones who do eventually learn the word often describe the same quiet
+        realization: "I thought everyone felt this way."
+      </p>
+      <p>
+        They do not. That gap — between what a Seryn assumes is normal and what actually
+        is — is often where both their greatest strengths and their most costly mistakes
+        are made.
+      </p>
+
+      <h5>Seryn in the World</h5>
+      <p>
+        Seryn are not a community. They have no gathering places, no shared traditions,
+        no cultural identity built around what they are.
+      </p>
+      <p>
+        They are simply people who burn a little faster than everyone else — and live with
+        whatever that means.
+      </p>
+      <p>
+        In practice, this shapes them in ways they often do not fully recognize. They tend
+        to find themselves at the front of things — not because they sought leadership, but
+        because they were already moving when others were still deciding. They attract
+        attention without trying. They accumulate responsibility without always asking for
+        it.
+      </p>
+      <p>
+        Some carry this well. Others spend years learning that being first is not the same
+        as being ready.
+      </p>
+      <p>
+        Among adventuring parties, a Seryn often becomes the axis around which momentum
+        builds — not always the planner, not always the strongest, but the one whose
+        energy sets the pace. When a Seryn commits to something, the people around them
+        tend to follow before they have fully decided why.
+      </p>
+      <p>
+        That pull is not magic. It is simply what it looks like when someone moves without
+        hesitation in a world that hesitates constantly.
       </p>
     </description>
     <sheet display="false"/>
@@ -49,9 +178,8 @@
       <select type="Language" name="Language (Seryn)" supports="Standard||Exotic"/>
       <select type="Proficiency" name="Skill Proficiency (Seryn)" supports="Skill"/>
       <select type="Feat" name="Feat (Seryn)"/>
-      <select type="Race Variant" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
     </rules>
   </element>
 
 </elements>
-
