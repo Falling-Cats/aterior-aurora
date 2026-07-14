@@ -14,13 +14,11 @@
     </info>
 
     <files>
-    <file name="Races/seryn-human.xml"
-          url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml" />
+        <file name="Races/seryn-human.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seryn-human.xml" />
 
-    <file name="Traits/flexible-ability-scores.xml"
-          url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml" />
-</files>
-<file
-    name="Traits/test-asi.xml"
-    url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/test-asi.xml"/>
+        <file name="Traits/flexible-ability-scores.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml" />
+    </files>
+
 </index>
