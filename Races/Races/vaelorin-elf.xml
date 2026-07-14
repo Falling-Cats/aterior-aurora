@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/vaelorin-elf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vaelorin-elf.xml"/>
+    </update>
+  </info>
+
+  <element
+      name="Vaelorin Elf"
+      type="Race"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACE_VAELORIN_ELF">
+    <description>
+      <h4>VAELORIN ELF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>
+        Before the Severing, the Vaelorin were skybound urban elves who dwelled within the
+        great central kingdom at the height of its arcane-technological brilliance. While
+        other peoples filled the streets and towers, the Vaelorin claimed the rooftops.
+      </p>
+      <p>
+        They designed and maintained elevated gardens, vertical orchards, wind-harvesting
+        terraces, and living skybridges woven with vine and spellcraft. They moved fluidly
+        across the city's upper levels, treating rooftops and suspended walkways as others
+        treated forest canopies. To them, architecture was terrain.
+      </p>
+      <p>
+        Their magic focused on cultivated growth—controlled ecosystems sustained through
+        careful arcane and botanical mastery. They were planners, terrace farmers, skyline
+        pathfinders, and quiet guardians of breathable spaces.
+      </p>
+      <p>
+        Though fully integrated into urban society, they favored open air and elevation
+        over enclosed chambers. Even before the Severing, they were defined by movement. In
+        crowded streets, they seemed distant. Above it all, they were exactly where they
+        belonged.
+      </p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>
+        When the Weaver severed divine connection and destabilized arcane systems, urban
+        infrastructure faltered. Irrigation enchantments failed. Skybridges collapsed.
+        Vertical gardens withered without the magic that sustained them.
+      </p>
+      <p>
+        The Vaelorin adapted.
+      </p>
+      <p>
+        Survivors scattered beyond the ruined kingdom, carrying knowledge of cultivation,
+        navigation, and environmental harmony. In the centuries since, they have become
+        wilderness pathfinders, migratory orchard-keepers, monster hunters, survivalists,
+        animal tamers, and horizon-watchers.
+      </p>
+      <p>
+        Modern Vaelorin distrust confinement and fragile systems. They favor open skies,
+        plains, highlands, coasts, and forest edges—places where visibility and mobility
+        ensure survival. Their settlements are often temporary or seasonal, leaving minimal
+        scars upon the land.
+      </p>
+      <p>
+        Their philosophy centers on resilience through motion. They plant knowing they may
+        not remain. They travel knowing the path matters more than the destination. They do
+        not linger long enough for the world to depend on them. And they are careful never
+        to depend on it in return.
+      </p>
+
+      <h5>Appearance</h5>
+      <p>
+        Vaelorin are lean and long-limbed, built for endurance and balance rather than
+        ornament. Their movements are deliberate and economical, conserving energy even in
+        stillness.
+      </p>
+      <p>
+        Their ears are noticeably longer than those of most elven lineages, tapering into
+        pronounced, blade-like points that sweep subtly backward. Among the Vaelorin, ear
+        length is often regarded as a mark of lineage and perceptiveness.
+      </p>
+      <p>
+        Most striking are their eyes. Nearly all Vaelorin possess the gaze of a
+        predator—vertical slit pupils set within irises that often carry a faint inner
+        luminosity. Eye colors commonly include deep emerald, amber, gold, storm-gray, or
+        muted violet. In rare cases, individuals display unusual patterns such as fractured
+        color bands, radial striations, or dual-toned gradients.
+      </p>
+      <p>
+        To meet the eyes of a Vaelorin is to feel measured. They do not look at the world
+        casually. They assess it.
+      </p>
+
+      <h5>Vaelorin Traits</h5>
+      <p>
+        Your Vaelorin character has the following racial traits.
+      </p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>
+        Increase one ability score by 2 and a different ability score by 1,
+        or increase three different ability scores by 1.
+        <br/>
+        <span class="feature">Age.</span>
+        Vaelorin mature at a rate similar to humans, reaching physical adulthood in their
+        early twenties. However, they are not considered full members of their people
+        until completing a formative period of travel and self-sufficiency, typically
+        between the ages of 40 and 50. Vaelorin commonly live between 400 and 500 years,
+        though few in the modern age reach the heights of longevity recorded before the
+        Weaver's Touch.
+        <br/>
+        <span class="feature">Size.</span>
+        Vaelorin have the slender build typical of elves. Your size is Medium.
+        <br/>
+        <span class="feature">Speed.</span>
+        Your base walking speed is 30 feet.
+        <br/>
+        <span class="feature">Darkvision.</span>
+        You can see in dim light within 60 feet of you as if it were bright light, and in
+        darkness as if it were dim light. You can't discern color in darkness.
+        <br/>
+        <span class="feature">Keen Senses.</span>
+        You have proficiency in the Perception skill.
+        <br/>
+        <span class="feature">Fey Ancestry.</span>
+        You have advantage on saving throws against being charmed, and magic can't put
+        you to sleep.
+        <br/>
+        <span class="feature">Trance.</span>
+        You meditate deeply for 4 hours instead of sleeping, gaining the same benefit as
+        8 hours of rest, remaining semiconscious.
+        <br/>
+        <span class="feature">Elf Weapon Training.</span>
+        You have proficiency with the longsword, shortsword, shortbow, and longbow.
+        <br/>
+        <span class="feature">Cultivator's Cantrip.</span>
+        You know one cantrip of your choice from the druid spell list. Wisdom is your
+        spellcasting ability for it.
+        <br/>
+        <span class="feature">Extra Language.</span>
+        You can speak, read, and write one extra language of your choice.
+        <br/>
+        <span class="feature">Wanderer.</span>
+        You have excellent memory for maps and geography, recalling terrain and
+        settlements. You can also find food and fresh water for yourself and up to five
+        others each day, provided resources are available.
+        <br/>
+        <span class="feature">Predator's Eye.</span>
+        Your eyes are trained to catch the smallest details—once to navigate impossible
+        paths, now to survive a fractured world. As a bonus action, you focus your senses
+        on a creature you can see within 60 feet. You instantly assess its condition and
+        defenses. You learn whether the creature is above or below half its maximum hit
+        points, as well as its Armor Class. You then gain advantage on your next attack
+        roll against that creature before the end of your next turn. Once you use this
+        trait, you can't use it again until you finish a long rest.
+      </p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="darkvision" value="60"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Language" name="Language (Vaelorin)" supports="Standard||Exotic"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
+      <select type="Spell" name="Cultivator's Cantrip (Vaelorin)" supports="Druid&amp;&amp;0"/>
+    </rules>
+  </element>
+
+</elements>
