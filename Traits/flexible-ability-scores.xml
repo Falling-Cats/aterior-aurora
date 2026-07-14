@@ -13,7 +13,7 @@
 
   <!-- everything below this stays exactly the same -->
   <!-- The two allocation methods a player picks between -->
-  <element name="Focused Growth" type="Race Variant" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_FOCUSED">
+  <element name="Focused Growth" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_FOCUSED">
     <supports>ATERIOR_ASI_METHOD</supports>
     <description>
       <p>Increase one ability score by 2 and a different ability score by 1.</p>
@@ -25,7 +25,7 @@
     </rules>
   </element>
 
-  <element name="Balanced Growth" type="Race Variant" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_BALANCED">
+  <element name="Balanced Growth" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_BALANCED">
     <supports>ATERIOR_ASI_METHOD</supports>
     <description>
       <p>Increase three different ability scores by 1 each.</p>
