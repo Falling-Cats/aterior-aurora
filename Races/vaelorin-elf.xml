@@ -160,17 +160,21 @@
     <sheet display="false"/>
     <rules>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="darkvision" value="60"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-      <select type="Language" name="Language (Vaelorin)" supports="Standard||Exotic"/>
       <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
-      <select type="Spell" name="Cultivator's Cantrip (Vaelorin)" supports="Druid&amp;&amp;0"/>
-    <element
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_KEEN_SENSES"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_FEY_ANCESTRY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_TRANCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WEAPON_TRAINING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_CANTRIP"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_EXTRA_LANGUAGE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WANDERER"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_PREDATORS_EYE"/>
+    </rules>
+  </element>
+
+  <element
       name="Darkvision"
       type="Racial Trait"
       source="ATÉRIOR"
@@ -330,20 +334,7 @@
     <sheet>
       <description>Bonus action: learn a creature's HP threshold and AC within 60 feet, then gain advantage on your next attack roll against it. 1/long rest.</description>
     </sheet>
-    <rules>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_KEEN_SENSES"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_FEY_ANCESTRY"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_TRANCE"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WEAPON_TRAINING"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_CANTRIP"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_EXTRA_LANGUAGE"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_WANDERER"/>
-      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAELORIN_PREDATORS_EYE"/>
-    </rules>
+    <rules/>
   </element>
 
 </elements>
