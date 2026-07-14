@@ -1,15 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>ATÉRIOR Shared ASI System</name>
+    <description>Reusable +2/+1 or +1/+1/+1 ability score system for all ATÉRIOR races.</description>
+    <author>Falling-Cats</author>
+  </info>
 
-    <info>
-        <name>ATÉRIOR Flexible Ability Scores</name>
-        <description>Shared ability score selection traits for ATÉRIOR races.</description>
-        <author>Falling-Cats</author>
+  <!-- The two allocation methods a player picks between -->
+  <element name="Focused Growth" type="Race Variant" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_FOCUSED">
+    <supports>ATERIOR_ASI_METHOD</supports>
+    <description>
+      <p>Increase one ability score by 2 and a different ability score by 1.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Racial Trait" name="+2 Ability Score" supports="ATERIOR_ASI_PLUS2" number="1"/>
+      <select type="Racial Trait" name="+1 Ability Score" supports="ATERIOR_ASI_PLUS1" number="1"/>
+    </rules>
+  </element>
 
-        <update version="1.0.0">
-            <file name="Traits/flexible-ability-scores.xml"
-                  url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml"/>
-        </update>
-    </info>
+  <element name="Balanced Growth" type="Race Variant" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_BALANCED">
+    <supports>ATERIOR_ASI_METHOD</supports>
+    <description>
+      <p>Increase three different ability scores by 1 each.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Racial Trait" name="+1 Ability Score (x3)" supports="ATERIOR_ASI_PLUS1" number="3"/>
+    </rules>
+  </element>
+
+  <!-- +2 traits -->
+  <element name="+2 Strength" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_STRENGTH">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Strength score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="strength" value="2"/></rules>
+  </element>
+  <element name="+2 Dexterity" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_DEXTERITY">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Dexterity score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="dexterity" value="2"/></rules>
+  </element>
+  <element name="+2 Constitution" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_CONSTITUTION">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Constitution score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="constitution" value="2"/></rules>
+  </element>
+  <element name="+2 Intelligence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_INTELLIGENCE">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Intelligence score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="intelligence" value="2"/></rules>
+  </element>
+  <element name="+2 Wisdom" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_WISDOM">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Wisdom score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="wisdom" value="2"/></rules>
+  </element>
+  <element name="+2 Charisma" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS2_CHARISMA">
+    <supports>ATERIOR_ASI_PLUS2</supports>
+    <description><p>Your Charisma score increases by 2.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="charisma" value="2"/></rules>
+  </element>
+
+  <!-- +1 traits -->
+  <element name="+1 Strength" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_STRENGTH">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Strength score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="strength" value="1"/></rules>
+  </element>
+  <element name="+1 Dexterity" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_DEXTERITY">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Dexterity score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="dexterity" value="1"/></rules>
+  </element>
+  <element name="+1 Constitution" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CONSTITUTION">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Constitution score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="constitution" value="1"/></rules>
+  </element>
+  <element name="+1 Intelligence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_INTELLIGENCE">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Intelligence score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="intelligence" value="1"/></rules>
+  </element>
+  <element name="+1 Wisdom" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_WISDOM">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Wisdom score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="wisdom" value="1"/></rules>
+  </element>
+  <element name="+1 Charisma" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CHARISMA">
+    <supports>ATERIOR_ASI_PLUS1</supports>
+    <description><p>Your Charisma score increases by 1.</p></description>
+    <sheet display="false"/>
+    <rules><stat name="charisma" value="1"/></rules>
+  </element>
 
 </elements>
