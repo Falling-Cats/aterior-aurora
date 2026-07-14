@@ -4,8 +4,14 @@
     <name>ATÉRIOR Shared ASI System</name>
     <description>Reusable +2/+1 or +1/+1/+1 ability score system for all ATÉRIOR races.</description>
     <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Traits/flexible-ability-scores.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml"/>
+    </update>
   </info>
 
+  <!-- everything below this stays exactly the same -->
   <!-- The two allocation methods a player picks between -->
   <element name="Focused Growth" type="Race Variant" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_FOCUSED">
     <supports>ATERIOR_ASI_METHOD</supports>
