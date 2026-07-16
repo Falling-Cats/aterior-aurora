@@ -23,6 +23,13 @@
 <file name="Items/bracer-of-the-first-shadow.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/bracer-of-the-first-shadow.xml" />
 
+<file name="Items/eowyn-gear.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/eowyn-gear.xml" />
+
+<file name="Items/alex-gear.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/alex-gear.xml" />
+
+
 <file name="Races/vaelorin-elf.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vaelorin-elf.xml" />
     </files>
