@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Items - Eowyn</name>
+    <description>ATÉRIOR custom equipment for Eowyn.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Items/eowyn-gear.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/eowyn-gear.xml"/>
+    </update>
+  </info>
+
+  <element name="Gloomwood Longbow, +1" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_GLOOMWOOD_LONGBOW">
+    <description>
+      <p>A longbow carved from dark, dense wood, its grain shot through with faint silver striations. You have a +1 bonus to attack rolls made with this magic weapon.</p>
+    </description>
+    <setters>
+      <set name="category">Magic Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="type" addition="any">Weapon</set>
+      <set name="rarity">Uncommon</set>
+      <set name="enhancement">1</set>
+      <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+      <set name="name-format">{{parent}} +{{enhancement}}</set>
+    </setters>
+  </element>
+
+  <element name="Blunt Arrows" type="Item" source="ATÉRIOR" id="ID_ATERIOR_ITEM_BLUNT_ARROWS">
+    <description>
+      <p>Arrows fitted with padded or rounded tips. They deal bludgeoning damage instead of piercing and are typically used for nonlethal takedowns.</p>
+    </description>
+    <setters>
+      <set name="category">Ammunition</set>
+      <set name="type">Ammunition</set>
+      <set name="cost" currency="gp">1</set>
+      <set name="weight">1</set>
+    </setters>
+  </element>
+
+  <element name="Fire Arrows" type="Item" source="ATÉRIOR" id="ID_ATERIOR_ITEM_FIRE_ARROWS">
+    <description>
+      <p>Arrows wrapped in oil-soaked cloth near the head, meant to be lit before firing. They deal fire damage instead of piercing on a hit, and may ignite flammable surfaces at the DM's discretion.</p>
+    </description>
+    <setters>
+      <set name="category">Ammunition</set>
+      <set name="type">Ammunition</set>
+      <set name="cost" currency="gp">2</set>
+      <set name="weight">1</set>
+    </setters>
+  </element>
+
+  <element name="Galecradle Wrap" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_GALECRADLE_WRAP">
+    <description>
+      <p>A close-fitting wrap of layered cloth and light hide, humming faintly with contained wind.</p>
+      <p class="indent">While wearing this armor, you gain an Armor Class equivalent to leather armor. Once per long rest, you can grant yourself advantage on one ranged attack roll.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">chest</set>
+      <set name="equippable">true</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+  <element name="Stoneflake's Iron Care Kit" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_STONEFLAKES_KIT">
+    <description>
+      <p>A compact traveling kit of files, oils, and whetstones bearing a stamped maker's mark. Once per day, outside of combat, you can spend 10 minutes maintaining a weapon with this kit to grant it a +1 bonus to damage on its next hit.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Common</set>
+      <set name="equippable">false</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Maiden's Tide-Charm" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_MAIDENS_TIDE_CHARM">
+    <description>
+      <p>A small charm meant to be fastened to a single weapon. Once attached, it cannot be moved without breaking its bond.</p>
+      <p class="indent">Once per long rest, if you miss an attack roll with the weapon this charm is attached to by 5 or less, you can reroll the attack roll. You must use the same weapon the charm is bonded to.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="equippable">false</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+  <element name="The Widow's Fog Lantern" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_WIDOWS_FOG_LANTERN">
+    <description>
+      <p>A small lantern that burns with a magical pink-purple flame. It can ignite mundane objects, but the flame never harms the lantern itself.</p>
+      <p class="indent"><strong><em>Fog Veil.</em></strong> The lantern holds 1 hour of fog magic per long rest, usable in increments of 10 minutes. While active, it creates a 10-foot subtle fog aura around you. Against hostile creatures only, the fog increases their degree of obscurement toward you by one step: fully visible becomes lightly obscured, lightly obscured becomes heavily obscured, and heavily obscured causes their first attack against you each turn to be made with disadvantage. If a creature has already clearly spotted you, the effect does not apply to that creature until line of sight to you is broken for at least 1 round.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Rare</set>
+      <set name="equippable">false</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+  <element name="Traveler's Twinback Pack, Eowyn" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_TWINBACK_PACK_EOWYN">
+    <description>
+      <p>A deep brown leather pack with red stitching, a crimson arrowhead charm, and subtle vine tooling worked into the straps.</p>
+      <p class="indent"><strong><em>Shared Pocket.</em></strong> This pack is magically linked to a matching pack carried by another creature. A non-living item smaller than a loaf of bread and placed in the shared pocket transfers to the linked pack after 6 seconds, with no reduction in weight. Double-tapping the pack causes the linked pack's charm to warm briefly as a soft alert.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="equippable">true</set>
+      <set name="slot">back</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+</elements>
