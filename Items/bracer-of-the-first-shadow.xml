@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Magic Items</name>
+    <description>ATÉRIOR custom magic items.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Items/bracer-of-the-first-shadow.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/bracer-of-the-first-shadow.xml"/>
+    </update>
+  </info>
+
+  <element
+      name="Bracer of the First Shadow"
+      type="Magic Item"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_MAGIC_ITEM_BRACER_OF_THE_FIRST_SHADOW">
+    <description>
+      <p>
+        Made from supple green leather stitched in silver thread, this bracer runs
+        faintly warm to the touch in darkness.
+      </p>
+      <p>
+        While worn, you gain a +1 bonus to Stealth checks made in dim light or
+        darkness.
+      </p>
+      <p class="indent">
+        Once per long rest, you can use a bonus action to extinguish all nonmagical
+        light sources within 15 feet of you (torches, lanterns, campfires). Magical
+        light is unaffected.
+      </p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">wrist</set>
+      <set name="equippable">true</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+</elements>
