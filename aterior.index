@@ -20,6 +20,9 @@
         <file name="Traits/flexible-ability-scores.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml" />
 
+<file name="Items/bracer-of-the-first-shadow.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/bracer-of-the-first-shadow.xml" />
+
 <file name="Races/vaelorin-elf.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vaelorin-elf.xml" />
     </files>
