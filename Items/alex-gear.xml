@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Items - Alex</name>
+    <description>ATÉRIOR custom equipment for Alex.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Items/alex-gear.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/alex-gear.xml"/>
+    </update>
+  </info>
+
+  <element name="Fine Steel Rapier, +1" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_FINE_STEEL_RAPIER">
+    <description>
+      <p>A slender, expertly balanced rapier with a polished steel blade. You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+    </description>
+    <setters>
+      <set name="category">Magic Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="type" addition="any">Weapon</set>
+      <set name="rarity">Uncommon</set>
+      <set name="enhancement">1</set>
+      <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+      <set name="name-format">{{parent}} +{{enhancement}}</set>
+    </setters>
+  </element>
+
+  <element name="Flamefang Dagger" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_FLAMEFANG_DAGGER">
+    <description>
+      <p>A dagger with a blackened blade that runs hot to the touch. On a hit, it deals 1d4 + 4 piercing damage plus an additional 1d6 fire damage.</p>
+      <p class="indent">On a critical hit, the target must succeed on a DC 13 Constitution saving throw or catch fire, taking 1d6 fire damage at the start of each of its turns until it or another creature uses an action to extinguish the flames.</p>
+    </description>
+    <setters>
+      <set name="category">Magic Weapons</set>
+      <set name="type">Dagger</set>
+      <set name="rarity">Rare</set>
+      <set name="equippable">true</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Ironveil Carapace" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_IRONVEIL_CARAPACE">
+    <description>
+      <p>Layered plates of dark, insect-like chitin bound over a leather harness.</p>
+      <p class="indent">While wearing this armor, you gain an Armor Class equivalent to studded leather armor. Once per long rest, you can use your reaction when you are hit by an attack to reduce the damage you take from that attack by 1d6.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">chest</set>
+      <set name="equippable">true</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+  <element name="Ranger's Field Bracers" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_RANGERS_FIELD_BRACERS">
+    <description>
+      <p>Worn leather bracers marked with scuffs from long travel through rough country. While wearing these bracers, climbing does not cost you extra movement, and you are protected from damage caused by brambles, thorns, and similarly rough terrain.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">wrist</set>
+      <set name="equippable">true</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Courtdancer Breeches" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_COURTDANCER_BREECHES">
+    <description>
+      <p>Well-tailored breeches cut for freedom of movement. At the start of combat, your walking speed increases by 5 feet during the first round.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">legs</set>
+      <set name="equippable">true</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Splitstride Greaves" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_SPLITSTRIDE_GREAVES">
+    <description>
+      <p>Light greaves etched with a repeating fork-in-the-road motif. Once per day, you can gain advantage on the first Dexterity saving throw you make.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="slot">legs</set>
+      <set name="equippable">true</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="The Feathercall Pair" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_FEATHERCALL_PAIR">
+    <description>
+      <p>A matched bracelet and feather-shaped brooch. Touching the brooch to an object magically bonds it to the bracelet. You can bond up to 3 weapons and an unlimited number of garments at a time, though you cannot bond to a living creature or to any object weighing more than 5 pounds.</p>
+      <p class="indent">As a bonus action, you can call a bonded object to your hand from up to 60 feet away, provided nothing is blocking a direct path between you and the object. If the object is currently being held by another creature, that creature can retain it by winning a contested Strength (Athletics) check against your Strength (Athletics) or Charisma check (your choice), DC 14.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Rare</set>
+      <set name="slot">wrist</set>
+      <set name="equippable">true</set>
+      <set name="attunement">true</set>
+    </setters>
+  </element>
+
+  <element name="Traveler's Twinback Pack, Alex" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_TWINBACK_PACK_ALEX">
+    <description>
+      <p>A lighter leather pack with blue stitching and a sparrow charm, visibly repaired from long use.</p>
+      <p class="indent"><strong><em>Shared Pocket.</em></strong> This pack is magically linked to a matching pack carried by another creature. A non-living item smaller than a loaf of bread and placed in the shared pocket transfers to the linked pack after 6 seconds, with no reduction in weight. Double-tapping the pack causes the linked pack's charm to hum briefly as a soft alert.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="equippable">true</set>
+      <set name="slot">back</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Sleep Draught" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_SLEEP_DRAUGHT">
+    <description>
+      <p>A small, corked vial of thick, faintly lavender-scented liquid. A creature that drinks this draught must succeed on a DC 13 Constitution saving throw or fall unconscious for 1 hour, or until it takes damage or another creature uses an action to shake or slap it awake.</p>
+    </description>
+    <setters>
+      <set name="category">Potions</set>
+      <set name="type">Potion</set>
+      <set name="rarity">Uncommon</set>
+      <set name="equippable">false</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+  <element name="Paired Message Notebook" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_PAIRED_MESSAGE_NOTEBOOK">
+    <description>
+      <p>A small leather-bound notebook, magically linked to a matching notebook carried by another creature. Words written in one notebook appear, in the same handwriting, in the linked notebook a moment later.</p>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Uncommon</set>
+      <set name="equippable">false</set>
+      <set name="attunement">false</set>
+    </setters>
+  </element>
+
+</elements>
