@@ -26,7 +26,7 @@
     </setters>
   </element>
 
-  <element name="Flamefang Dagger" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_FLAMEFANG_DAGGER">
+  <element name="Flame Fang Dagger" type="Magic Item" source="ATÉRIOR" id="ID_ATERIOR_MAGIC_ITEM_FLAMEFANG_DAGGER">
     <description>
       <p>A dagger with a blackened blade that runs hot to the touch. On a hit, it deals 1d4 + 4 piercing damage plus an additional 1d6 fire damage.</p>
       <p class="indent">On a critical hit, the target must succeed on a DC 13 Constitution saving throw or catch fire, taking 1d6 fire damage at the start of each of its turns until it or another creature uses an action to extinguish the flames.</p>
