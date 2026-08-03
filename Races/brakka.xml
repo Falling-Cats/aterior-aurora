@@ -50,7 +50,18 @@
       <h5>Domains of the Brakka</h5>
       <p>Unlike most races, Brakka are not defined by a single biological or cultural path. Instead they are shaped by Domains — instinctual archetypes that reflect how they survive and interact with the world.</p>
       <p>These Domains have always existed, even before the Weaver's Touch. They are not new. They are fundamental.</p>
-      <p>Choose one of the following Domains when you create your character: Hunt, Veil, or Root.</p>
+      <p>Choose one of the following Domains when you create your character: Hunt, Veil, Root, or Skulk.</p>
+
+      <h5>The Brakka in the World</h5>
+      <p>Brakka are rarely the loudest presence in a room — but they are often the most aware of it.</p>
+      <p>They integrate into cities, trade routes, and traveling companies without difficulty. Their animal nature draws attention in some places and none at all in others. Most Brakka have learned to read a room quickly and adjust accordingly.</p>
+      <p>They do not form communities of their own in the traditional sense. When Brakka gather, it is usually temporary — a shared contract, a common threat, a stretch of road that happens to run the same direction. When that purpose ends, they part without ceremony.</p>
+      <p>Among adventuring parties they are often the ones who notice things first, react fastest, and ask the fewest questions about where they are going. They are reliable not because they are loyal by nature, but because they have chosen to be — and that choice means something.</p>
+
+      <h5>On Trust</h5>
+      <p>Among the Brakka, trust is not given. It is demonstrated — repeatedly, quietly, over time.</p>
+      <p>An outsider who earns a Brakka's trust has not simply made a friend. They have become one of the few things a Brakka will not walk away from when the situation changes.</p>
+      <p>That is not a small thing. Among their kind, it is everything.</p>
     </description>
     <sheet display="false"/>
     <rules>
@@ -282,6 +293,59 @@
     </description>
     <sheet>
       <description>1/long rest action: charge through creatures up to one size larger, forcing a Strength save or knock them prone and push them 10 feet. In your terrain, also grants temporary hit points.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <!-- SKULK DOMAIN -->
+  <element name="Skulk Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_DOMAIN_SKULK">
+    <supports>ATERIOR_BRAKKA_DOMAIN</supports>
+    <description>
+      <p><em>"You had me cornered — until you didn't."</em></p>
+      <p><em>Covers: Rats, Raccoons, Ferrets, Hyenas, and others who survive through adaptability.</em></p>
+      <p>Not all Brakka hunt. Some wait. Some watch. Some take what others leave behind — and survive where stronger, smarter, or more organized creatures fail.</p>
+      <p>These Brakka are shaped by chaos, scarcity, and opportunity. Found in alleyways, ruins, battlefields, and the edges of civilization, they thrive not through dominance or precision, but through adaptability. They bend rules, slip through cracks, and make use of whatever the world forgets to guard.</p>
+      <p>They are not masterminds like the Veil, nor bound by purpose like the Hunt. They are survivors — quick, flexible, and frustratingly difficult to contain.</p>
+    </description>
+    <sheet>
+      <description>Grants Scavenger's Instinct, Slip Away, and Scatter.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SCAVENGERS_INSTINCT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SLIP_AWAY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SCATTER"/>
+    </rules>
+  </element>
+
+  <element name="Scavenger's Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SCAVENGERS_INSTINCT">
+    <description>
+      <p>You gain proficiency in one of the following skills of your choice: Stealth, Sleight of Hand, or Deception. You can move through the space of any creature larger than you, treating yourself as one size smaller for this purpose. You have advantage on ability checks made to escape restraints, slip through tight spaces, or conceal small objects on your person.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Stealth, Sleight of Hand, or Deception. Move through larger creatures' spaces as if one size smaller. Advantage escaping restraints, slipping through tight spaces, or concealing small objects.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Scavenger's Instinct)"
+              supports="ID_PROFICIENCY_SKILL_STEALTH||ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND||ID_PROFICIENCY_SKILL_DECEPTION"/>
+    </rules>
+  </element>
+
+  <element name="Slip Away" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SLIP_AWAY">
+    <description>
+      <p>You have advantage on ability checks and saving throws made to escape a grapple or end the restrained condition. When two or more hostile creatures are within 5 feet of you, you can take the Disengage action as a bonus action.</p>
+    </description>
+    <sheet>
+      <description>Advantage escaping grapples/restraints. Bonus action Disengage when two or more hostile creatures are within 5 feet.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Scatter" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_SKULK_SCATTER">
+    <description>
+      <p>Once per long rest, as a bonus action, you enter a heightened state of survival for 1 minute. During this time you can move through the spaces of creatures regardless of size, and opportunity attacks against you are made with disadvantage. When you take the Disengage action during this effect, your movement speed increases by 10 feet until the end of your turn. While two or more hostile creatures are within 5 feet of you during this effect, you have advantage on Dexterity saving throws and can move through creatures' spaces without treating them as difficult terrain.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, bonus action, 1 minute: move through any creature's space, opportunity attacks against you have disadvantage, Disengage grants +10 ft speed, and advantage on Dex saves while surrounded.</description>
     </sheet>
     <rules/>
   </element>
