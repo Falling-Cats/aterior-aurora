@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/brakka.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/brakka.xml"/>
+    </update>
+  </info>
+
+  <element name="Brakka" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_BRAKKA">
+    <description>
+      <h4>BRAKKA</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Brakka have existed for most of recorded history.</p>
+      <p>Not as a unified people — but as a scattered, natural presence within the world. They did not form large nations of their own. Instead they lived among other races, took on roles suited to their abilities, and integrated into society more easily than one might expect.</p>
+      <p>A wolf might serve as a guard. A fox as a merchant or criminal. A bear as a soldier or laborer.</p>
+      <p>They did not see themselves as one people — but they recognized each other. Not through similarity, but through difference from everyone else.</p>
+      <p>Where other races built identity through shared culture, Brakka built identity through individual will. Connections existed — but they were chosen, temporary, and earned.</p>
+      <p>A Brakka might trust you with their life. But not their future.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the world broke, Brakka adapted faster than most.</p>
+      <p>Where others struggled to rebuild structure, they simply survived. They became mercenaries, scouts, hunters, and wanderers. Many operated alone or in small, temporary groups. Trust became rarer — but sharper.</p>
+      <p>Modern Brakka are uncommon, numbering roughly two million worldwide, and rarely gather in large communities. They move through the world like passing storms — felt, remembered, but rarely staying.</p>
+      <p>Even when they walk alone, Brakka rarely feel alone. The world itself is something they understand instinctively — patterns of movement, danger, and opportunity that others must learn.</p>
+      <p>They do not belong to any nation. They belong to whatever they are moving through.</p>
+
+      <h5>Appearance</h5>
+      <p>Brakka are humanoid in form, but clearly animal in nature. Common traits include upright bipedal posture, fur covering most or all of the body, animal-like heads and muzzles, tails where appropriate, and clawed or paw-like hands adapted for tool use.</p>
+      <p>Their builds vary widely. Wolves and foxes tend toward lean and agile. Bears and boars are heavier and more powerful. Rats and raccoons are smaller and more dexterous. Elephants and hippos are large, imposing, and dense.</p>
+      <p>No two Brakka look alike unless they share similar ancestry. Their clothing and equipment tend toward the practical — chosen for function over appearance, often worn and repaired rather than replaced.</p>
+
+      <h5>Brakka Traits</h5>
+      <p>Your Brakka character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Size.</span> Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Primal Awareness.</span> You gain proficiency in Perception. In addition, choose one of the following when you create your character: you have advantage on Wisdom (Insight) checks to determine a creature's emotional state or immediate intent, or you have advantage on Wisdom (Animal Handling) checks.<br/>
+        <span class="feature">Domain Rule.</span> You gain the features of your chosen Domain. If a Domain feature allows you to add your proficiency bonus to a roll, you cannot apply that bonus more than once to the same roll.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Domains of the Brakka</h5>
+      <p>Unlike most races, Brakka are not defined by a single biological or cultural path. Instead they are shaped by Domains — instinctual archetypes that reflect how they survive and interact with the world.</p>
+      <p>These Domains have always existed, even before the Weaver's Touch. They are not new. They are fundamental.</p>
+      <p>Choose one of the following Domains when you create your character: Hunt, Veil, or Root.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_PRIMAL_AWARENESS"/>
+      <select type="Racial Trait" name="Domain" supports="ATERIOR_BRAKKA_DOMAIN"/>
+      <select type="Language" name="Language (Brakka)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <!-- PRIMAL AWARENESS -->
+  <element name="Primal Awareness" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_PRIMAL_AWARENESS">
+    <description>
+      <p>You gain proficiency in Perception. In addition, choose one of the following: you have advantage on Wisdom (Insight) checks to determine a creature's emotional state or immediate intent, or you have advantage on Wisdom (Animal Handling) checks.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Perception, plus advantage on either Insight (reading intent) or Animal Handling checks.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+      <select type="Racial Trait" name="Primal Instinct" supports="ATERIOR_BRAKKA_PRIMAL_INSTINCT"/>
+    </rules>
+  </element>
+
+  <element name="Emotional Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_INSTINCT_INSIGHT">
+    <supports>ATERIOR_BRAKKA_PRIMAL_INSTINCT</supports>
+    <description>
+      <p>You have advantage on Wisdom (Insight) checks to determine a creature's emotional state or immediate intent.</p>
+    </description>
+    <sheet>
+      <description>Advantage on Insight checks to read a creature's emotional state or immediate intent.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Animal Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_INSTINCT_ANIMAL">
+    <supports>ATERIOR_BRAKKA_PRIMAL_INSTINCT</supports>
+    <description>
+      <p>You have advantage on Wisdom (Animal Handling) checks.</p>
+    </description>
+    <sheet>
+      <description>Advantage on Animal Handling checks.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <!-- HUNT DOMAIN -->
+  <element name="Hunt Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_DOMAIN_HUNT">
+    <supports>ATERIOR_BRAKKA_DOMAIN</supports>
+    <description>
+      <p><em>Covers: Wolves, Dogs, Hyenas, Coyotes.</em></p>
+      <p>Huntbound Brakka are defined not by loyalty, but by alignment of purpose. They do not form lasting hierarchies, but in moments of shared intent — a hunt, a contract, a battle — they instinctively fall into rhythm. Leadership among them is fluid and conditional, given only to those best suited for the moment.</p>
+      <p>Whether running alone or alongside others, they excel at pursuit, coordination, and controlled aggression, turning even fleeting alliances into deadly efficiency.</p>
+    </description>
+    <sheet>
+      <description>Grants Predatory Spacing, Hunter's Instincts, and Huntbound.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_PREDATORY_SPACING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_HUNTERS_INSTINCTS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_HUNTBOUND"/>
+    </rules>
+  </element>
+
+  <element name="Predatory Spacing" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_PREDATORY_SPACING">
+    <description>
+      <p>Opportunity attacks against you are made with disadvantage when you move out of a creature's reach.</p>
+    </description>
+    <sheet>
+      <description>Opportunity attacks against you are made with disadvantage.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Hunter's Instincts" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_HUNTERS_INSTINCTS">
+    <description>
+      <p>You gain proficiency in one of the following skills of your choice: Perception, Survival, Insight, Stealth, or Investigation. You have advantage on Wisdom (Survival) checks made to track creatures. You can also determine a creature's recent emotional state from its tracks or other physical signs.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in one of: Perception, Survival, Insight, Stealth, or Investigation. Advantage on Survival checks to track creatures.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Hunter's Instincts)"
+              supports="ID_PROFICIENCY_SKILL_PERCEPTION||ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_STEALTH||ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+    </rules>
+  </element>
+
+  <element name="Huntbound" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_HUNT_HUNTBOUND">
+    <description>
+      <p>At the end of a long rest, choose a creature you can see — including yourself — as your Lead. Until your next long rest, when you attack a creature your Lead has damaged since the end of your last turn, you gain a bonus to the attack roll equal to half your proficiency bonus (rounded up). If your Lead is within 30 feet of you, your speed increases by 10 feet when you move toward a creature they have damaged.</p>
+    </description>
+    <sheet>
+      <description>Choose a Lead each long rest. Gain a bonus to attacks against creatures your Lead has damaged, and a speed boost when moving toward them.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <!-- VEIL DOMAIN -->
+  <element name="Veil Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_DOMAIN_VEIL">
+    <supports>ATERIOR_BRAKKA_DOMAIN</supports>
+    <description>
+      <p><em>Covers: Foxes, and others who thrive through cunning rather than force.</em></p>
+      <p>Not all Brakka find strength in the pack. Some learn early that trust is a liability — and that survival comes not from unity, but from control. These Brakka move through the world with quiet confidence, reading people, bending conversations, and slipping through danger before it ever truly lands.</p>
+      <p>They are foxes in silk and shadows. Smiling, charming — and always one step ahead.</p>
+    </description>
+    <sheet>
+      <description>Grants Silver Instinct, Misdirect, and Silver Tongue.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_SILVER_INSTINCT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_MISDIRECT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_SILVER_TONGUE"/>
+    </rules>
+  </element>
+
+  <element name="Silver Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_SILVER_INSTINCT">
+    <description>
+      <p>You gain proficiency in Deception or Persuasion (your choice). When you make a check with that skill, you can treat any roll of 7 or lower as an 8. When you succeed on this check against a creature, you gain advantage on the next ability check you make against that creature before the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Deception or Persuasion. Treat rolls of 7 or lower as 8 on that skill. Advantage on your next check against a creature you succeeded against.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Silver Instinct)"
+              supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION"/>
+    </rules>
+  </element>
+
+  <element name="Misdirect" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_MISDIRECT">
+    <description>
+      <p>When a creature you can see targets you with an attack and you are not within 10 feet of an ally, you can use your reaction to gain a +2 bonus to your AC against that attack. If the attack misses, you can move up to 10 feet without provoking opportunity attacks.</p>
+    </description>
+    <sheet>
+      <description>Reaction: +2 AC against an attack when not within 10 feet of an ally. If it misses, move 10 feet without provoking.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Silver Tongue" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_VEIL_SILVER_TONGUE">
+    <description>
+      <p>Once per long rest, as a bonus action, choose one creature you can see within 30 feet that you have spoken to or interacted with since your last long rest. Choose one of the following effects: you have advantage on Deception and Persuasion checks against the creature for 1 minute; the next time the creature makes an attack roll before the end of your next turn, it takes a penalty equal to your proficiency bonus; or the next time you make an ability check against the creature, you gain a bonus equal to twice your proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, bonus action: apply one of three social/combat riders against a creature you've interacted with.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <!-- ROOT DOMAIN -->
+  <element name="Root Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_DOMAIN_ROOT">
+    <supports>ATERIOR_BRAKKA_DOMAIN</supports>
+    <description>
+      <p><em>Covers: Bears, Boars, Elephants, Hippos, and similar.</em></p>
+      <p>Not all Brakka are shaped by speed or cunning. Some are shaped by the land itself — endless plains, frozen peaks, deep, unmoving waters. They do not rush or chase. They endure.</p>
+      <p>Where others adapt, they persist. Where others flee, they stand. When they move, it is with unstoppable force.</p>
+    </description>
+    <sheet>
+      <description>Grants Ancestral Terrain, Imposing Presence, and Stampede.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_ANCESTRAL_TERRAIN"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_IMPOSING_PRESENCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_STAMPEDE"/>
+    </rules>
+  </element>
+
+  <element name="Ancestral Terrain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_ANCESTRAL_TERRAIN">
+    <description>
+      <p>Choose one terrain type: Forest, Grassland, Desert, Mountains, or Wetlands. While you are within your chosen terrain, you have advantage on saving throws against being knocked prone or forcibly moved, and when you take damage from a creature you can see, you can reduce that damage by an amount equal to your proficiency bonus (once per turn).</p>
+    </description>
+    <sheet>
+      <description>Choose a terrain. While in it: advantage vs. being knocked prone/forced movement, and reduce damage from a visible attacker by your proficiency bonus once per turn.</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Ancestral Terrain (Choice)" supports="ATERIOR_BRAKKA_ROOT_TERRAIN"/>
+    </rules>
+  </element>
+
+  <element name="Ancestral Terrain: Forest" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_TERRAIN_FOREST">
+    <supports>ATERIOR_BRAKKA_ROOT_TERRAIN</supports>
+    <description><p>Your chosen terrain is Forest.</p></description>
+    <sheet><description>Chosen terrain: Forest.</description></sheet>
+    <rules/>
+  </element>
+  <element name="Ancestral Terrain: Grassland" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_TERRAIN_GRASSLAND">
+    <supports>ATERIOR_BRAKKA_ROOT_TERRAIN</supports>
+    <description><p>Your chosen terrain is Grassland.</p></description>
+    <sheet><description>Chosen terrain: Grassland.</description></sheet>
+    <rules/>
+  </element>
+  <element name="Ancestral Terrain: Desert" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_TERRAIN_DESERT">
+    <supports>ATERIOR_BRAKKA_ROOT_TERRAIN</supports>
+    <description><p>Your chosen terrain is Desert.</p></description>
+    <sheet><description>Chosen terrain: Desert.</description></sheet>
+    <rules/>
+  </element>
+  <element name="Ancestral Terrain: Mountains" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_TERRAIN_MOUNTAINS">
+    <supports>ATERIOR_BRAKKA_ROOT_TERRAIN</supports>
+    <description><p>Your chosen terrain is Mountains.</p></description>
+    <sheet><description>Chosen terrain: Mountains.</description></sheet>
+    <rules/>
+  </element>
+  <element name="Ancestral Terrain: Wetlands" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_TERRAIN_WETLANDS">
+    <supports>ATERIOR_BRAKKA_ROOT_TERRAIN</supports>
+    <description><p>Your chosen terrain is Wetlands.</p></description>
+    <sheet><description>Chosen terrain: Wetlands.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Imposing Presence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_IMPOSING_PRESENCE">
+    <description>
+      <p>You gain proficiency in Intimidation or Survival (your choice). If you are already proficient in the chosen skill, you gain advantage on checks made with it instead.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Intimidation or Survival (or advantage on it, if already proficient).</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Imposing Presence)"
+              supports="ID_PROFICIENCY_SKILL_INTIMIDATION||ID_PROFICIENCY_SKILL_SURVIVAL"/>
+    </rules>
+  </element>
+
+  <element name="Stampede" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BRAKKA_ROOT_STAMPEDE">
+    <description>
+      <p>Once per long rest, as an action, move up to your speed in a straight line. You can pass through creatures up to one size larger than you. Each creature you pass through must make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be knocked prone and pushed 10 feet aside. This movement does not provoke opportunity attacks.</p>
+      <p class="indent"><strong><em>Terrain Surge.</em></strong> While in your chosen terrain, Stampede grants temporary hit points equal to your proficiency bonus per creature affected (max twice your proficiency bonus).</p>
+    </description>
+    <sheet>
+      <description>1/long rest action: charge through creatures up to one size larger, forcing a Strength save or knock them prone and push them 10 feet. In your terrain, also grants temporary hit points.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+</elements>
