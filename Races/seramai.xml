@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/seramai.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml"/>
+    </update>
+  </info>
+
+  <element
+      name="Seramai"
+      type="Race"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACE_SERAMAI">
+    <description>
+      <h4>SERAMAI</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>
+        Before the Severing, the Seramai lived among canopy bridges, cliff settlements, and
+        wind-carved stone — places most others considered too exposed, too high, or too
+        precarious to call home.
+      </p>
+      <p>
+        To the Seramai, height was never danger. It was clarity.
+      </p>
+      <p>
+        They built no empires and claimed no thrones. Their settlements were small and
+        deliberate, tucked into the edges of the world where they could see clearly and
+        move freely. They traded with neighboring peoples, raised families in narrow
+        perches above busy cities, and filled roles that rewarded agility and quiet —
+        scouts, guides, messengers, and the occasional thief.
+      </p>
+      <p>
+        Seramai rarely claim territory — but they remember places. A rooftop, a beam, a
+        narrow path along a wall. These become part of their mental map of the world,
+        returned to years later as if no time had passed.
+      </p>
+      <p>
+        They have never ruled the continent. They have never needed to.
+      </p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>
+        When the Severing shattered the old world, the Seramai adapted the way they always
+        had — by finding the high ground and waiting to see what settled.
+      </p>
+      <p>
+        Canopy bridges collapsed. Cliff settlements crumbled. But the instinct that built
+        them survived intact. In the fractured cities and broken towers of the new world,
+        the Seramai simply found new perches. Rooftops replaced canopies. Ruined spires
+        replaced carved stone.
+      </p>
+      <p>
+        They were present in Atérior before the Severing, and they are present still —
+        never dominant, never erased. In a world fractured by ruin and instability, the
+        Seramai endure not by conquering, but by creating spaces of calm wherever they
+        settle.
+      </p>
+      <p>
+        Among the Seramai, safety is not a structure. It is a presence. A place becomes
+        safe not when it is secured, but when it is shared with those they trust.
+      </p>
+      <p>
+        They build nests, not forts. And somehow, that has always been enough.
+      </p>
+
+      <h5>Culture</h5>
+      <p>
+        Seramai rarely gather in massive caravans or centralized nations. Instead they
+        organize in small clan-circles — a couple, their children, perhaps grandparents or
+        a closely trusted friend. They integrate into cities and settlements without
+        overwhelming them.
+      </p>
+      <p>
+        They gravitate toward professions that reward independence and mobility: scouts,
+        couriers, treasure hunters, performers, rangers, monks, fighters, and guides. They
+        do not avoid society — they simply move through it lightly.
+      </p>
+
+      <h5>Appearance</h5>
+      <p>
+        Seramai are fully furred humanoids with distinctly feline anatomy. Their builds
+        tend toward lean, long-limbed frames designed for agility and controlled bursts of
+        motion. They walk digitigrade, balanced on the balls of their feet rather than
+        flat-footed.
+      </p>
+      <p>
+        Fur coloration varies widely — from tabby and mottled housecat patterns to sleek
+        panther-black, snow-pale coats, spotted leopard patterns, or deep desert tones.
+        Facial structure ranges from pronounced muzzles to subtler feline contours, but
+        they are always unmistakably catlike.
+      </p>
+      <p>
+        Most Seramai possess tails, though length and thickness vary. It is common for
+        Seramai children to purr frequently — in adulthood it becomes a personal habit
+        rather than a reflex, surfacing most often in moments of genuine comfort or trust.
+      </p>
+
+      <h5>Seramai Traits</h5>
+      <p>
+        Your Seramai character has the following racial traits.
+      </p>
+      <p>
+        <span class="feature">Creature Type.</span>
+        Humanoid.
+        <br/>
+        <span class="feature">Size.</span>
+        Small or Medium (chosen at character creation).
+        <br/>
+        <span class="feature">Speed.</span>
+        Your base walking speed is 30 feet. You have a climbing speed equal to your
+        walking speed.
+        <br/>
+        <span class="feature">Ability Score Increase.</span>
+        Increase one ability score by 2 and a different ability score by 1,
+        or increase three different ability scores by 1.
+        <br/>
+        <span class="feature">Darkvision.</span>
+        Accustomed to twilight movement and low-light environments, you can see in dim
+        light within 60 feet of you as if it were bright light, and in darkness as if it
+        were dim light. You discern only shades of gray in darkness.
+        <br/>
+        <span class="feature">Feline Claws.</span>
+        Your claws are natural weapons, which you can use to make unarmed strikes. On a
+        hit, they deal 1d6 + your Strength modifier slashing damage instead of
+        bludgeoning damage.
+        <br/>
+        <span class="feature">Silent Perception.</span>
+        You have proficiency in Perception. Your natural stillness and instinct for
+        elevation work in your favor — when you are in dim light, on high ground, or
+        climbing, you have advantage on Stealth checks.
+        <br/>
+        <span class="feature">Sure-Footed Descent.</span>
+        Your body is built for balance and controlled impact. When you fall, reduce the
+        effective distance of the fall by a number of feet equal to 5 × your proficiency
+        bonus. You land on your feet unless you are incapacitated.
+        <br/>
+        <span class="feature">Languages.</span>
+        You can speak, read, and write Common and one other language of your choice.
+      </p>
+
+      <h5>Seramai in the World</h5>
+      <p>
+        Seramai are a familiar presence in almost every major settlement — not because
+        they gather in large numbers, but because they have a talent for being exactly
+        where they are needed.
+      </p>
+      <p>
+        They fill the spaces others overlook. The courier who knows every rooftop
+        shortcut. The scout who was already in position before the order was given. The
+        guide who moves through ruins like they were built for her specifically.
+      </p>
+      <p>
+        In adventuring parties, Seramai tend to operate at the edges — not out of
+        distrust, but out of habit. They read the room before they enter it. They find
+        the exits before they find the seats. This can read as caution or as coldness,
+        depending on who is watching.
+      </p>
+      <p>
+        Those who know them understand it differently. A Seramai who stays is not someone
+        who failed to leave. They are someone who decided you were worth remaining for.
+      </p>
+
+      <h5>On Purring</h5>
+      <p>
+        Among the Seramai, purring is not discussed openly.
+      </p>
+      <p>
+        It simply happens — or it doesn't. In childhood it is constant and uncontrolled, a
+        reflex of comfort and safety. In adulthood it becomes something quieter and rarer,
+        surfacing only when the body decides, without consultation, that it is safe.
+      </p>
+      <p>
+        Outsiders who hear it for the first time often do not know what to say.
+      </p>
+      <p>
+        Most Seramai prefer it that way.
+      </p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="innate climbing speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Size" supports="ATERIOR_SERAMAI_SIZE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_FELINE_CLAWS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SILENT_PERCEPTION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SUREFOOTED_DESCENT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Small Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SIZE_SMALL">
+    <supports>ATERIOR_SERAMAI_SIZE</supports>
+    <description>
+      <p>You are Small. Your build is lighter and more compact, suited to tight perches and narrow ledges.</p>
+    </description>
+    <sheet>
+      <description>Small size.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Medium Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SIZE_MEDIUM">
+    <supports>ATERIOR_SERAMAI_SIZE</supports>
+    <description>
+      <p>You are Medium. Your build is leaner and longer-limbed than a typical Small Seramai, favoring reach and speed.</p>
+    </description>
+    <sheet>
+      <description>Medium size.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Darkvision"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_DARKVISION">
+    <description>
+      <p>
+        Accustomed to twilight movement and low-light environments, you can see in dim
+        light within 60 feet of you as if it were bright light, and in darkness as if it
+        were dim light. You discern only shades of gray in darkness.
+      </p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element
+      name="Feline Claws"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_FELINE_CLAWS">
+    <description>
+      <p>
+        Your claws are natural weapons, which you can use to make unarmed strikes. On a
+        hit, they deal 1d6 + your Strength modifier slashing damage instead of
+        bludgeoning damage.
+      </p>
+    </description>
+    <sheet>
+      <description>Unarmed strikes deal 1d6 + Strength modifier slashing damage instead of bludgeoning.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Silent Perception"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SILENT_PERCEPTION">
+    <description>
+      <p>
+        You have proficiency in Perception. Your natural stillness and instinct for
+        elevation work in your favor — when you are in dim light, on high ground, or
+        climbing, you have advantage on Stealth checks.
+      </p>
+    </description>
+    <sheet>
+      <description>Proficiency in Perception. Advantage on Stealth checks in dim light, on high ground, or while climbing.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+    </rules>
+  </element>
+
+  <element
+      name="Sure-Footed Descent"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_SUREFOOTED_DESCENT">
+    <description>
+      <p>
+        Your body is built for balance and controlled impact. When you fall, reduce the
+        effective distance of the fall by a number of feet equal to 5 × your proficiency
+        bonus. You land on your feet unless you are incapacitated.
+      </p>
+    </description>
+    <sheet>
+      <description>Reduce fall distance by 5 × proficiency bonus. Land on your feet unless incapacitated.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element
+      name="Extra Language"
+      type="Racial Trait"
+      source="ATÉRIOR"
+      id="ID_ATERIOR_RACIAL_TRAIT_SERAMAI_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one other language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one other language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Seramai)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
