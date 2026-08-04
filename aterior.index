@@ -35,6 +35,9 @@
 <file name="Races/vaelorin-elf.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vaelorin-elf.xml" />
 
+<file name="Races/korvael.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
+
 <file name="Races/seramai.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml" />
 
