@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/korvael.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml"/>
+    </update>
+  </info>
+
+  <element name="Korvael" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_KORVAEL">
+    <description>
+      <h4>KORVAEL</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Korvael were among the most visible peoples in the great capital and across the kingdoms of the old world. Their diversity of form and temperament allowed them to exist in nearly every corner of society — scholars in towering archives, merchants on crowded trade roads, sentinels along high walls, and performers in lantern-lit streets.</p>
+      <p>They were not bound to a single homeland. Even then, they moved.</p>
+      <p>Korvael culture placed quiet value on perspective. To see from many places was to understand more fully. To remain too long in one place was to risk becoming narrow. In the age before the Severing, they were often trusted as messengers, intermediaries, and observers — not because of any formal authority, but because they carried fewer attachments than most. They arrived, they listened, and they left.</p>
+      <p>Some ancient records suggest that early Korvael possessed a deeper connection to wind and open sky — not true flight, but something close. Long glides. Impossible descents. Movements that seemed to ignore the weight of the body.</p>
+      <p>Whether this was truth or myth is no longer certain.</p>
+      <p>What is certain is this: Even then, they were already leaving.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the world fractured, the Korvael did not collapse with it.</p>
+      <p>They scattered.</p>
+      <p>Communities dissolved not in fire, but in motion. Roads once filled with trade became routes of quiet migration. Where other peoples gathered to rebuild, the Korvael drifted outward, spreading across the broken world in small numbers. Their population declined — not from a single catastrophe, but from a thousand quiet separations.</p>
+      <p>In the centuries since, Korvael have become a people defined not by where they live, but by how they move. They appear in cities, on roads, in monasteries, along coasts, and in places most would never think to travel.</p>
+      <p>They rarely stay.</p>
+      <p>Many describe an internal pull they cannot fully explain — a sense that remaining too long in one place is wrong, like holding a breath for too long. Some call it instinct. Others call it memory.</p>
+      <p>Among Korvael, there is a quiet belief: The world is still being walked back into shape. And they are part of that process.</p>
+
+      <h5>Appearance</h5>
+      <p>Korvael possess a distinctly avian appearance while maintaining a humanoid form. They stand upright with two legs and two arms, their posture and proportions similar to other peoples of Atérior.</p>
+      <p>Their bodies are covered in feathers rather than hair, though density varies by lineage — some sleek and close to the body, others layered and full. Facial features resemble the birds they descend from, most notably through the presence of a beak, which can range from short and curved to long and narrow.</p>
+      <p>Their eyes are large and expressive, often sharper than they first appear — quick to track motion, subtle shifts, and distant detail. Many Korvael display crests, facial plumage, or feathered markings that shift slightly with mood, giving them an almost unreadable emotional language to outsiders.</p>
+      <p>Their hands are taloned but dexterous, with three clawed fingers and an opposable thumb, allowing precise control over tools, weapons, and instruments. Though they do not possess functional wings, many Korvael carry faint echoes of them — elongated arm feathers, subtle wing-like structures, or mantled shoulders that spread slightly when they move or gesture.</p>
+      <p>Korvael movement is rarely wasted. Even at rest, they seem poised — balanced between stillness and motion, as if ready to leave at any moment.</p>
+
+      <h5>Korvael Traits</h5>
+      <p>Your Korvael character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Small or Medium (chosen at character creation).<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Mimicry.</span> You can mimic voices, animal calls, and simple environmental sounds you have previously heard. A creature that hears the imitation may make an Insight check contested by your Deception check to determine that the sound is artificial. Most Korvael speak normally, but their voices often carry subtle tonal qualities drawn from this natural mimicry.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Domains of the Korvael</h5>
+      <p>Korvael lineage is described through Domains, reflecting the instincts and environmental adaptations of their ancestors. Scholars record these with ancient names, though most travelers use simpler Common terms.</p>
+      <p>Choose one of the following Domains when you create your character: Vaelkor, Korath, Thalume, or Echora.</p>
+
+      <h5>Korvael in the World</h5>
+      <p>Korvael are rare but familiar throughout the lands of Atérior. Most people will encounter a few in their lifetime, though entire communities of them are uncommon.</p>
+      <p>They appear in many professions, but certain paths attract them more than others — scholars and historians, merchants and caravan travelers, adventurers and mercenaries, monks and wandering pilgrims.</p>
+      <p>Among Korvael themselves there is a quiet understanding that life is meant to be lived in motion. Few remain in one place forever. Even those who settle down eventually feel the pull of the road again.</p>
+      <p>Some call it wanderlust. Korvael simply call it listening.</p>
+
+      <h5>On Leaving</h5>
+      <p>Among the Korvael, departure is rarely dramatic.</p>
+      <p>There is no formal farewell tradition, no ceremony of leaving. A Korvael who has decided to move on simply does — usually at dawn, often without announcement.</p>
+      <p>Those left behind understand. They have done it themselves.</p>
+      <p>The closest thing to a goodbye in Korvael culture is a particular phrase, spoken quietly and without expectation of response: <em>"The road remembers you."</em></p>
+      <p>It means: I will not forget where you are going. It means: I hope the path is worth walking. It means: goodbye.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Size" supports="ATERIOR_KORVAEL_SIZE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_MIMICRY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_EXTRA_LANGUAGE"/>
+      <select type="Racial Trait" name="Domain" supports="ATERIOR_KORVAEL_DOMAIN"/>
+    </rules>
+  </element>
+
+  <element name="Small Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_SIZE_SMALL">
+    <supports>ATERIOR_KORVAEL_SIZE</supports>
+    <description><p>You are Small.</p></description>
+    <sheet><description>Small size.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Medium Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_SIZE_MEDIUM">
+    <supports>ATERIOR_KORVAEL_SIZE</supports>
+    <description><p>You are Medium.</p></description>
+    <sheet><description>Medium size.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Mimicry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_MIMICRY">
+    <description>
+      <p>You can mimic voices, animal calls, and simple environmental sounds you have previously heard. A creature that hears the imitation may make an Insight check contested by your Deception check to determine that the sound is artificial. Most Korvael speak normally, but their voices often carry subtle tonal qualities drawn from this natural mimicry.</p>
+    </description>
+    <sheet>
+      <description>You can mimic voices, animal calls, and sounds you've heard before. Listeners can make a contested Insight vs. your Deception check to detect the fake.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Korvael)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <!-- VAELKOR DOMAIN -->
+  <element name="Vaelkor Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_DOMAIN_VAELKOR">
+    <supports>ATERIOR_KORVAEL_DOMAIN</supports>
+    <description>
+      <p><em>Gale — The Wind-Blooded</em></p>
+      <p><em>"The road does not end. It only changes direction."</em></p>
+      <p>The Vaelkor are restless spirits. Migration calls to them stronger than most, and they are often found wandering distant lands as pilgrims, couriers, scouts, or travelers. They are quick-moving and difficult to slow, embodying the freedom of open skies.</p>
+    </description>
+    <sheet>
+      <description>Grants Windstride, Traveler's Instinct, and Gale Burst.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_WINDSTRIDE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_TRAVELERS_INSTINCT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_GALE_BURST"/>
+    </rules>
+  </element>
+
+  <element name="Windstride" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_WINDSTRIDE">
+    <description><p>Difficult terrain does not reduce your movement speed.</p></description>
+    <sheet><description>Difficult terrain does not reduce your movement speed.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Traveler's Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_TRAVELERS_INSTINCT">
+    <description><p>You gain proficiency in one of the following skills of your choice: Performance, Survival, or History.</p></description>
+    <sheet><description>Proficiency in Performance, Survival, or History.</description></sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Traveler's Instinct)"
+              supports="ID_PROFICIENCY_SKILL_PERFORMANCE||ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_HISTORY"/>
+    </rules>
+  </element>
+
+  <element name="Gale Burst" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_VAELKOR_GALE_BURST">
+    <description><p>Once per long rest, as a bonus action, you surge forward on a rush of speed. Your movement increases by 15 feet until the end of the turn, and moving this way does not provoke opportunity attacks.</p></description>
+    <sheet><description>1/long rest, bonus action: +15 ft. movement this turn, no opportunity attacks while moving.</description></sheet>
+    <rules/>
+  </element>
+
+  <!-- KORATH DOMAIN -->
+  <element name="Korath Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_DOMAIN_KORATH">
+    <supports>ATERIOR_KORVAEL_DOMAIN</supports>
+    <description>
+      <p><em>Talon — The Watchful</em></p>
+      <p><em>"I already know where you are going. I have been watching since you arrived."</em></p>
+      <p>The Korath embody vigilance and control. They are commonly found among guards, mercenaries, wardens, monastery sentinels, and hunters. Their instincts resemble the great raptors of the world — once they seize something, they rarely let it go.</p>
+    </description>
+    <sheet>
+      <description>Grants Keen Initiative, Predator's Training, and Raptor's Grip.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_KEEN_INITIATIVE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_PREDATORS_TRAINING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_RAPTORS_GRIP"/>
+    </rules>
+  </element>
+
+  <element name="Keen Initiative" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_KEEN_INITIATIVE">
+    <description><p>You gain a +2 bonus to Initiative rolls.</p></description>
+    <sheet><description>+2 bonus to Initiative rolls.</description></sheet>
+    <rules>
+      <stat name="initiative" value="2"/>
+    </rules>
+  </element>
+
+  <element name="Predator's Training" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_PREDATORS_TRAINING">
+    <description><p>You gain proficiency in one of the following skills of your choice: Intimidation, Investigation, or Sleight of Hand.</p></description>
+    <sheet><description>Proficiency in Intimidation, Investigation, or Sleight of Hand.</description></sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Predator's Training)"
+              supports="ID_PROFICIENCY_SKILL_INTIMIDATION||ID_PROFICIENCY_SKILL_INVESTIGATION||ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+    </rules>
+  </element>
+
+  <element name="Raptor's Grip" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_KORATH_RAPTORS_GRIP">
+    <description><p>Once per long rest, when a creature attempts to grapple you, disarm you, or steal an item you are holding, you may use your reaction to immediately reverse the attempt. The creature instead suffers the effect — becoming grappled or losing its grip on the item, if applicable.</p></description>
+    <sheet><description>1/long rest, reaction: reverse an attempt to grapple, disarm, or steal from you back onto the attacker.</description></sheet>
+    <rules/>
+  </element>
+
+  <!-- THALUME DOMAIN -->
+  <element name="Thalume Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_DOMAIN_THALUME">
+    <supports>ATERIOR_KORVAEL_DOMAIN</supports>
+    <description>
+      <p><em>Deepplume — The Enduring</em></p>
+      <p><em>"The storm does not frighten me. I have outlasted worse."</em></p>
+      <p>Thalume Korvael descend from hardy birds that thrived in harsh environments — penguins, cranes, ostriches, seabirds, and other resilient species. They are known as traders, sailors, frontier settlers, and explorers of dangerous regions.</p>
+    </description>
+    <sheet>
+      <description>Grants Climate Adaptation, Burden Bearer, and Enduring Breath.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_CLIMATE_ADAPTATION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_BURDEN_BEARER"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_ENDURING_BREATH"/>
+    </rules>
+  </element>
+
+  <element name="Climate Adaptation" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_CLIMATE_ADAPTATION">
+    <description>
+      <p>Choose one of the following when you select this Domain.</p>
+      <p class="indent"><strong><em>Cold Adaptation.</em></strong> You gain resistance to cold damage and a swim speed equal to your walking speed.</p>
+      <p class="indent"><strong><em>Heat Adaptation.</em></strong> You gain resistance to fire damage and your walking speed increases by 10 feet.</p>
+    </description>
+    <sheet>
+      <description>Choose Cold Adaptation (cold resistance + swim speed) or Heat Adaptation (fire resistance + faster walking speed).</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Climate Adaptation (Choice)" supports="ATERIOR_KORVAEL_CLIMATE"/>
+    </rules>
+  </element>
+
+  <element name="Cold Adaptation" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_CLIMATE_COLD">
+    <supports>ATERIOR_KORVAEL_CLIMATE</supports>
+    <description>
+      <p>You gain resistance to cold damage and a swim speed equal to your walking speed.</p>
+    </description>
+    <sheet>
+      <description>Resistance to cold damage. Swim speed equal to your walking speed.</description>
+    </sheet>
+    <rules>
+      <stat name="innate swim speed" value="30" bonus="base"/>
+    </rules>
+  </element>
+
+  <element name="Heat Adaptation" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_CLIMATE_HEAT">
+    <supports>ATERIOR_KORVAEL_CLIMATE</supports>
+    <description>
+      <p>You gain resistance to fire damage and your walking speed increases by 10 feet.</p>
+    </description>
+    <sheet>
+      <description>Resistance to fire damage. Walking speed increased by 10 feet.</description>
+    </sheet>
+    <rules>
+      <stat name="innate speed" value="10" bonus="base"/>
+    </rules>
+  </element>
+
+  <element name="Burden Bearer" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_BURDEN_BEARER">
+    <description><p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p></description>
+    <sheet><description>Count as one size larger for carrying capacity and push/drag/lift limits.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Enduring Breath" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_THALUME_ENDURING_BREATH">
+    <description><p>Once per long rest, as a bonus action, you steady yourself and push forward. You regain hit points equal to 1d10 + your level.</p></description>
+    <sheet><description>1/long rest, bonus action: regain 1d10 + your level in hit points.</description></sheet>
+    <rules/>
+  </element>
+
+  <!-- ECHORA DOMAIN -->
+  <element name="Echora Domain" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_DOMAIN_ECHORA">
+    <supports>ATERIOR_KORVAEL_DOMAIN</supports>
+    <description>
+      <p><em>Echo — The Remembering</em></p>
+      <p><em>"I have not forgotten. I never do."</em></p>
+      <p>The Echora cling tightly to memory, knowledge, and history. They are commonly scholars, monks, historians, archivists, and mages. Many believe they carry fragments of truths the world has forgotten since the Weaver's Touch.</p>
+    </description>
+    <sheet>
+      <description>Grants Resilient Mind, Keeper of Lore, and Mind of Still Feathers.</description>
+    </sheet>
+    <rules>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_RESILIENT_MIND"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_KEEPER_OF_LORE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_MIND_OF_STILL_FEATHERS"/>
+    </rules>
+  </element>
+
+  <element name="Resilient Mind" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_RESILIENT_MIND">
+    <description><p>You have advantage on saving throws against being charmed or frightened.</p></description>
+    <sheet><description>Advantage on saving throws against being charmed or frightened.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Keeper of Lore" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_KEEPER_OF_LORE">
+    <description><p>You gain proficiency in two of the following skills of your choice: Arcana, History, Nature, or Religion. You also learn one additional language of your choice.</p></description>
+    <sheet><description>Proficiency in two of: Arcana, History, Nature, or Religion. Learn one additional language.</description></sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Keeper of Lore)" number="2"
+              supports="ID_PROFICIENCY_SKILL_ARCANA||ID_PROFICIENCY_SKILL_HISTORY||ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_RELIGION"/>
+      <select type="Language" name="Language (Keeper of Lore)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <element name="Mind of Still Feathers" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KORVAEL_ECHORA_MIND_OF_STILL_FEATHERS">
+    <description><p>Once per long rest, when you would lose concentration on a spell due to taking damage, you may choose to maintain concentration automatically instead.</p></description>
+    <sheet><description>1/long rest: automatically maintain concentration when you would lose it from taking damage.</description></sheet>
+    <rules/>
+  </element>
+
+</elements>
