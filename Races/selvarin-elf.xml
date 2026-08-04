@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/selvarin-elf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/selvarin-elf.xml"/>
+    </update>
+  </info>
+
+  <element name="Selvarin Elf" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_SELVARIN_ELF">
+    <description>
+      <h4>SELVARIN ELF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Before the Severing, the Selvarin were scholars of the upper observatories—astronomers, dream-readers, and custodians of celestial record. Where the Vaelorin mastered the skyline through movement, the Selvarin mastered it through stillness.</p>
+      <p>They constructed towering observatories of glass and silver lattice, charting constellations and mapping planar alignments with meticulous care. Their magic leaned toward subtlety: illusion, divination, and the gentle shaping of light.</p>
+      <p>To the Selvarin, the sky was not decoration. It was data.</p>
+      <p>They studied lunar cycles, stellar drift, and fluctuations in the Veil long before others recognized such shifts as warnings. Many of the final recorded celestial observations before the Weaver's Touch were preserved in Selvarin archives.</p>
+      <p>Even then, they preferred twilight hours to the glare of midday. Night was clarity. Day was noise.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When divine connection was severed and planar bridges collapsed, the Selvarin were among the first to notice changes in the sky.</p>
+      <p>Constellations dimmed.</p>
+      <p>Astral pathways shifted.</p>
+      <p>Certain stars ceased responding to divinatory focus.</p>
+      <p>The Selvarin did not scatter in panic. They recorded.</p>
+      <p>In the centuries since, they have become archivists of cosmic fracture, Veil-watchers, navigators of subtle distortions, and interpreters of prophetic dreams. Some dwell in high observatories. Others wander from city to city, quietly monitoring fluctuations no one else perceives.</p>
+      <p>Their culture adapted toward nocturnal life—not out of superstition, but practicality. Under starlight, their senses sharpen. Under harsh sun, the world feels overwhelming.</p>
+      <p>Where other peoples fear the dark, the Selvarin fear only what the dark reveals.</p>
+
+      <h5>Appearance</h5>
+      <p>Selvarin are slender even by elven standards, with a softness to their features that contrasts the sharper lines of the Vaelorin. Their movements are unhurried but deliberate, as though operating at a rhythm slightly removed from the surrounding world.</p>
+      <p>Their ears extend long and narrow, tapering to elegant points that often angle outward before curving subtly downward. This shape gives them a contemplative, almost listening posture.</p>
+      <p>Skin tones range widely: pale ash, muted bronze, cool gray, soft lavender undertones, and in rare bloodlines, faint amethyst or dusk-blue hues.</p>
+      <p>Their eyes are luminous in low light, often silver, pale gold, indigo, deep violet, or star-speckled gray. In darkness, their gaze reflects faintly, as though catching unseen light.</p>
+      <p>Many outsiders describe Selvarin as appearing "sleepy." In truth, their focus simply sharpens when the sun lowers.</p>
+
+      <h5>Selvarin Traits</h5>
+      <p>Your Selvarin character has the following racial traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Selvarin mature at a similar rate to other elves but are not considered adults within their culture until they have completed a cycle of independent study or wandering, typically around 50 years of age. They commonly live 400 to 500 years, though many in the modern era note subtle generational shortening since the Severing.<br/>
+        <span class="feature">Size.</span> Selvarin are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to twilight and starlight, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Keen Senses.</span> You have proficiency in the Perception skill.<br/>
+        <span class="feature">Fey Ancestry.</span> You have advantage on saving throws against being charmed, and magic can't put you to sleep.<br/>
+        <span class="feature">Lunar Weapon Training.</span> You have proficiency with spears, rapiers, and shortbows.<br/>
+        <span class="feature">Dreambound Physiology.</span> Unlike other elves, Selvarin do not trance. You must sleep for 8 hours to gain the benefits of a long rest. If you complete a long rest primarily during daylight hours (sleeping through the day), once before your next long rest, you may add your Intelligence modifier to an ability check, attack roll, or saving throw after seeing the roll but before knowing the outcome. If you complete a long rest primarily at night, you gain no additional benefit.<br/>
+        <span class="feature">Veil-Sensitive Eyes.</span> In direct sunlight, you have disadvantage on Wisdom (Perception) checks that rely on sight beyond 30 feet. In dim light or darkness, you can perceive invisible creatures within 10 feet of you if they are not behind total cover.<br/>
+        <span class="feature">Lunar Magic.</span> You know the dancing lights cantrip. When you reach 3rd level, you can cast faerie fire once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast moonbeam once with this trait and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.<br/>
+        <span class="feature">Extra Language.</span> You can speak, read, and write one extra language of your choice.
+      </p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_KEEN_SENSES"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_FEY_ANCESTRY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_WEAPON_TRAINING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_DREAMBOUND_PHYSIOLOGY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_VEIL_SENSITIVE_EYES"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_LUNAR_MAGIC"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_DARKVISION">
+    <description>
+      <p>Accustomed to twilight and starlight, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Keen Senses" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_KEEN_SENSES">
+    <description>
+      <p>You have proficiency in the Perception skill.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency in the Perception skill.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+    </rules>
+  </element>
+
+  <element name="Fey Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_FEY_ANCESTRY">
+    <description>
+      <p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being charmed, and magic can't put you to sleep.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Lunar Weapon Training" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_WEAPON_TRAINING">
+    <description>
+      <p>You have proficiency with spears, rapiers, and shortbows.</p>
+    </description>
+    <sheet>
+      <description>You have proficiency with spears, rapiers, and shortbows.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
+    </rules>
+  </element>
+
+  <element name="Dreambound Physiology" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_DREAMBOUND_PHYSIOLOGY">
+    <description>
+      <p>Unlike other elves, Selvarin do not trance. You must sleep for 8 hours to gain the benefits of a long rest.</p>
+      <p class="indent">If you complete a long rest primarily during daylight hours (sleeping through the day), you gain the following benefit: once before your next long rest, you may add your Intelligence modifier to an ability check, attack roll, or saving throw after seeing the roll but before knowing the outcome.</p>
+      <p class="indent">If you complete a long rest primarily at night, you gain no additional benefit.</p>
+    </description>
+    <sheet>
+      <description>No Trance — you sleep 8 hours normally. Sleeping through the day grants a one-time add of your Intelligence modifier to a roll before its outcome is known.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Veil-Sensitive Eyes" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_VEIL_SENSITIVE_EYES">
+    <description>
+      <p>Your vision is attuned to subtle distortions in starlight and shadow.</p>
+      <p class="indent">In direct sunlight, you have disadvantage on Wisdom (Perception) checks that rely on sight beyond 30 feet.</p>
+      <p class="indent">In dim light or darkness, you can perceive invisible creatures within 10 feet of you if they are not behind total cover.</p>
+    </description>
+    <sheet>
+      <description>Disadvantage on sight-based Perception beyond 30 ft. in direct sunlight. Can sense invisible creatures within 10 ft. in dim light or darkness.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Lunar Magic" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_LUNAR_MAGIC">
+    <description>
+      <p>You know the dancing lights cantrip. When you reach 3rd level, you can cast faerie fire once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast moonbeam once with this trait and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.</p>
+    </description>
+    <sheet>
+      <description>Know dancing lights. Cast faerie fire 1/long rest starting at 3rd level, and moonbeam 1/long rest starting at 5th level. Intelligence is your spellcasting ability.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3"/>
+      <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5"/>
+    </rules>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SELVARIN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write one extra language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one extra language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Selvarin)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
