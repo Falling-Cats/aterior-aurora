@@ -127,7 +127,7 @@
       <p class="indent">If you complete a long rest primarily at night, you gain no additional benefit.</p>
     </description>
     <sheet>
-      <description>No Trance — you sleep 8 hours normally. Sleeping through the day grants a one-time add of your Intelligence modifier to a roll before its outcome is known.</description>
+      <description>No Trance — you sleep 8 hours normally. If you sleep through the day, you gain a one-time bonus: add your Intelligence modifier to an ability check, attack roll, or saving throw after seeing the roll but before learning the outcome.</description>
     </sheet>
     <rules/>
   </element>
