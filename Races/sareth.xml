@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/sareth.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/sareth.xml"/>
+    </update>
+  </info>
+
+  <element name="Sareth" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_SARETH">
+    <description>
+      <h4>SARETH</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Sareth existed long before the Severing.</p>
+      <p>Some traced their lineage to ancient infernal pacts forged when planar travel was common and tightly regulated. Others descended from beings who walked between realms as envoys or opportunists. Infernal blood was uncommon — but not unknown.</p>
+      <p>It was not always feared.</p>
+      <p>In certain courts, it was respected. In certain temples, it was debated. In certain cities, it was simply another lineage among many.</p>
+      <p>Though their origins were varied, Sareth were often defined more by perception than truth. In some places they were elevated, in others distrusted — but rarely ignored.</p>
+      <p>Their presence was never neutral. It always meant something to someone.</p>
+      <p>Many learned early how to navigate that weight. Some leaned into expectation. Others resisted it, carving identities beyond imposed stories.</p>
+      <p>They were not unified by culture or homeland.</p>
+      <p>Only by the fact that their blood carried history others could see.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When divine channels fractured and planar pathways collapsed, infernal bloodlines did not disappear.</p>
+      <p>Some fiends were stranded and forced into exile. Some ancient contracts triggered clauses buried in blood. Some lineages endured unchanged, already rooted in the world.</p>
+      <p>Where other powers vanished overnight, infernal influence proved stubborn—less a system to be severed, more a condition that remained.</p>
+      <p>In a world where divine certainty fractured, Sareth became something unexpected — not symbols of danger, but of continuity.</p>
+      <p>For some, this makes them reassuring. For others, deeply unsettling.</p>
+      <p>In the absence of clear gods, many began to look at the Sareth differently—not as warnings, but as evidence of what refuses to leave.</p>
+      <p>Sareth in Atérior are not omens of apocalypse. They are proof that continuity survives rupture.</p>
+      <p>And whether that truth is comforting or disturbing often says more about the observer than it does about them.</p>
+
+      <h5>Appearance</h5>
+      <p>All Sareth bear visible signs of infernal inheritance — horns, altered eyes, unusual skin tones, or subtle markings. These traits vary widely.</p>
+      <p>Skin may range from natural human tones to crimson, violet, ash-gray, cobalt, rose, bronze, or hues that seem to shift in certain light. Horns may curve like rams, branch like antlers, sweep backward in arcs, or rise sharply like jagged crowns.</p>
+      <p>Subtle signs of their Vice often manifest in behavior as much as form — lingering eye contact, restless movement, measured stillness, or an intensity that seems slightly out of place.</p>
+      <p>Their features are not moral indicators. They are historical ones.</p>
+
+      <h5>Sareth Traits</h5>
+      <p>Your Sareth character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2. This ability score is determined by your Vice Expression.<br/>
+        <span class="feature">Age.</span> Sareth mature at the same rate as humans and typically live slightly longer, often reaching 100–120 years.<br/>
+        <span class="feature">Size.</span> Sareth are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to dim conditions, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Vice Expression.</span> Your infernal blood manifests as a conceptual pressure known as a Vice. Choose one Vice Expression. It grants you an ability score increase, a skill proficiency, a cantrip, and a once-per-long-rest Surge ability.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Origins of Infernal Blood</h5>
+      <p>Choose your lineage origin. This choice influences your appearance and cultural identity but does not alter your mechanical traits.</p>
+      <p><strong><em>Kaelreth</em></strong> (KAYL-reth) — <em>kael</em> "exile / cast away," <em>reth</em> "blood / inheritance." Meaning: Blood of the Exiled. Descendants of outsiders stranded after the Severing. Kaelreth features often feel inherited and stable within families. Skin tones commonly trend toward deeper, saturated hues, and horns are frequently rough or ridged. They look inherited.</p>
+      <p><strong><em>Cyravel</em></strong> (SEER-uh-vel) — <em>cyra</em> "clause / sealed word," <em>vel</em> "marked / altered." Meaning: Marked by the Clause. Born of contracts enforced across generations. Cyravel Sareth often resemble their mortal heritage at birth, with infernal traits manifesting gradually in childhood or adolescence. Some bear faint sigil-like markings tied to ancestral pacts. They look altered.</p>
+      <p><strong><em>Ildreth</em></strong> (ILL-dreth) — <em>ild</em> "first / early flame," <em>reth</em> "blood." Meaning: Blood of the First Flame. Lineages that predate the Severing and have always existed within Atérior. Their traits are stable and often symmetrical. Horns frequently resemble animal forms such as rams or antlers. Ancient records suggest some pre-Severing divine figures bore Ildreth blood. They look established.</p>
+
+      <h5>On Vice</h5>
+      <p>A Vice is not a flaw. It is a current — something that runs beneath the surface, shaping instinct and impulse without fully controlling either.</p>
+      <p>Most Sareth are aware of their Vice. Some embrace it. Some spend their lives working against it. Very few are defined by it entirely.</p>
+      <p>What you carry does not have to be what you become.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_DARKVISION"/>
+      <select type="Racial Trait" name="Vice Expression" supports="ATERIOR_SARETH_VICE"/>
+      <select type="Racial Trait" name="Origin" supports="ATERIOR_SARETH_ORIGIN"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_DARKVISION">
+    <description>
+      <p>Accustomed to dim conditions, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Sareth)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <!-- ORIGINS (flavor only, no mechanical rules) -->
+  <element name="Kaelreth Origin" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_ORIGIN_KAELRETH">
+    <supports>ATERIOR_SARETH_ORIGIN</supports>
+    <description>
+      <p><em>"Blood of the Exiled."</em> Descendants of outsiders stranded after the Severing. Kaelreth features often feel inherited and stable within families. Skin tones commonly trend toward deeper, saturated hues, and horns are frequently rough or ridged. They look inherited.</p>
+    </description>
+    <sheet><description>Lineage: Kaelreth, "Blood of the Exiled." Purely cosmetic — no mechanical effect.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Cyravel Origin" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_ORIGIN_CYRAVEL">
+    <supports>ATERIOR_SARETH_ORIGIN</supports>
+    <description>
+      <p><em>"Marked by the Clause."</em> Born of contracts enforced across generations. Cyravel Sareth often resemble their mortal heritage at birth, with infernal traits manifesting gradually in childhood or adolescence. Some bear faint sigil-like markings tied to ancestral pacts. They look altered.</p>
+    </description>
+    <sheet><description>Lineage: Cyravel, "Marked by the Clause." Purely cosmetic — no mechanical effect.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Ildreth Origin" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_ORIGIN_ILDRETH">
+    <supports>ATERIOR_SARETH_ORIGIN</supports>
+    <description>
+      <p><em>"Blood of the First Flame."</em> Lineages that predate the Severing and have always existed within Atérior. Their traits are stable and often symmetrical. Horns frequently resemble animal forms such as rams or antlers. Ancient records suggest some pre-Severing divine figures bore Ildreth blood. They look established.</p>
+    </description>
+    <sheet><description>Lineage: Ildreth, "Blood of the First Flame." Purely cosmetic — no mechanical effect.</description></sheet>
+    <rules/>
+  </element>
+
+  <!-- VICE EXPRESSIONS -->
+  <element name="Pride" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_PRIDE">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Charisma. <strong>Skill:</strong> Athletics or Persuasion. <strong>Cantrip:</strong> Thaumaturgy.</p>
+      <p class="indent"><strong><em>Pride Surge.</em></strong> Once per long rest, when you fail a saving throw, you may add your proficiency bonus to the roll.</p>
+    </description>
+    <sheet>
+      <description>+2 Charisma. Proficiency in Athletics or Persuasion. Know Thaumaturgy. Surge: 1/long rest, add proficiency bonus to a failed saving throw.</description>
+    </sheet>
+    <rules>
+      <stat name="charisma" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Pride)"
+              supports="ID_PROFICIENCY_SKILL_ATHLETICS||ID_PROFICIENCY_SKILL_PERSUASION"/>
+      <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY"/>
+    </rules>
+  </element>
+
+  <element name="Wrath" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_WRATH">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Strength. <strong>Skill:</strong> Intimidation or Survival. <strong>Cantrip:</strong> Thunderclap.</p>
+      <p class="indent"><strong><em>Wrath Surge.</em></strong> Once per long rest, when a creature within 30 feet damages you, you can use your reaction to deal damage to that creature equal to your proficiency bonus + your Strength modifier (minimum 1).</p>
+    </description>
+    <sheet>
+      <description>+2 Strength. Proficiency in Intimidation or Survival. Know Thunderclap. Surge: 1/long rest reaction, deal proficiency bonus + Strength modifier damage back to an attacker within 30 ft.</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Wrath)"
+              supports="ID_PROFICIENCY_SKILL_INTIMIDATION||ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <grant type="Spell" id="ID_PHB_SPELL_THUNDERCLAP"/>
+    </rules>
+  </element>
+
+  <element name="Greed" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_GREED">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Intelligence. <strong>Skill:</strong> Sleight of Hand or Deception. <strong>Cantrip:</strong> Mending.</p>
+      <p class="indent"><strong><em>Greed Surge.</em></strong> Once per long rest, when you fail an ability check, you can reroll the check. You must use the new result.</p>
+    </description>
+    <sheet>
+      <description>+2 Intelligence. Proficiency in Sleight of Hand or Deception. Know Mending. Surge: 1/long rest, reroll a failed ability check (must use new result).</description>
+    </sheet>
+    <rules>
+      <stat name="intelligence" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Greed)"
+              supports="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND||ID_PROFICIENCY_SKILL_DECEPTION"/>
+      <grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
+    </rules>
+  </element>
+
+  <element name="Envy" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_ENVY">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Dexterity. <strong>Skill:</strong> Stealth or Investigation. <strong>Cantrip:</strong> Mage Hand.</p>
+      <p class="indent"><strong><em>Envy Surge.</em></strong> Once per long rest, when a creature within 30 feet succeeds on an attack roll, ability check, or saving throw, you gain advantage on your next roll of the same type before the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>+2 Dexterity. Proficiency in Stealth or Investigation. Know Mage Hand. Surge: 1/long rest, gain advantage on your next matching roll after a nearby creature succeeds on one.</description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Envy)"
+              supports="ID_PROFICIENCY_SKILL_STEALTH||ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+      <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
+    </rules>
+  </element>
+
+  <element name="Lust" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_LUST">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Charisma. <strong>Skill:</strong> Performance or Persuasion. <strong>Cantrip:</strong> Friends.</p>
+      <p class="indent"><strong><em>Lust Surge.</em></strong> Once per long rest, when a creature fails a saving throw against one of your effects, it has disadvantage on its next saving throw before the end of your next turn.</p>
+    </description>
+    <sheet>
+      <description>+2 Charisma. Proficiency in Performance or Persuasion. Know Friends. Surge: 1/long rest, a creature that fails a save against your effect has disadvantage on its next save.</description>
+    </sheet>
+    <rules>
+      <stat name="charisma" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Lust)"
+              supports="ID_PROFICIENCY_SKILL_PERFORMANCE||ID_PROFICIENCY_SKILL_PERSUASION"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FRIENDS"/>
+    </rules>
+  </element>
+
+  <element name="Sloth" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_SLOTH">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Constitution. <strong>Skill:</strong> Insight or History. <strong>Cantrip:</strong> Guidance.</p>
+      <p class="indent"><strong><em>Sloth Surge.</em></strong> Once per long rest, when you take damage, reduce that damage by an amount equal to your proficiency bonus + your Constitution modifier (minimum 1).</p>
+    </description>
+    <sheet>
+      <description>+2 Constitution. Proficiency in Insight or History. Know Guidance. Surge: 1/long rest, reduce incoming damage by proficiency bonus + Constitution modifier.</description>
+    </sheet>
+    <rules>
+      <stat name="constitution" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Sloth)"
+              supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_HISTORY"/>
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE"/>
+    </rules>
+  </element>
+
+  <element name="Gluttony" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SARETH_VICE_GLUTTONY">
+    <supports>ATERIOR_SARETH_VICE</supports>
+    <description>
+      <p><strong>Ability Increase:</strong> +2 Constitution. <strong>Skill:</strong> Nature or Medicine. <strong>Cantrip:</strong> Primal Savagery.</p>
+      <p class="indent"><strong><em>Gluttony Surge.</em></strong> Once per long rest, when you reduce a creature to 0 hit points, you regain hit points equal to your proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>+2 Constitution. Proficiency in Nature or Medicine. Know Primal Savagery. Surge: 1/long rest, regain hit points equal to proficiency bonus when you drop a creature to 0 HP.</description>
+    </sheet>
+    <rules>
+      <stat name="constitution" value="2"/>
+      <select type="Proficiency" name="Skill Proficiency (Gluttony)"
+              supports="ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_MEDICINE"/>
+      <grant type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY"/>
+    </rules>
+  </element>
+
+</elements>
