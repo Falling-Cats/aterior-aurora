@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <n>ATÉRIOR Races</n>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/human.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/human.xml"/>
+    </update>
+  </info>
+
+  <element name="Human" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_HUMAN">
+    <description>
+      <h4>HUMANS</h4>
+      <p><em>Meaning: Those Who Endure Through Effort</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Before the Severing, humans were numerous, adaptable, and politically fragmented. They spread quickly across the world, building cities, trade networks, and institutions at a pace unmatched by longer-lived peoples.</p>
+      <p>Where elves refined traditions across centuries, humans advanced through urgency. Their shorter lifespans fostered ambition, competition, and relentless industry. Kingdoms rose and fell within generations, each leaving behind lessons — often learned through failure.</p>
+      <p>They were not the most magically gifted, nor the most ancient.</p>
+      <p>But they were persistent.</p>
+      <p>Among other peoples, humans were often seen as volatile — capable of rapid progress, but just as prone to overreach. They pushed boundaries others approached with caution, sometimes achieving remarkable results, and sometimes paying for it.</p>
+      <p>They built quickly.</p>
+      <p>And they learned just as quickly when those foundations failed.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When divine connection fractured and arcane certainty collapsed, human societies suffered — then reorganized.</p>
+      <p>Within a generation, fallen cities were repopulated. Trade routes were reestablished under new banners. Broken systems were replaced, not with certainty, but with function.</p>
+      <p>Humans did not wait for the world to stabilize.</p>
+      <p>They rebuilt anyway.</p>
+      <p>Roads were carved through unstable lands. Settlements rose in places others deemed too dangerous. New methods replaced lost magic — not because they were perfect, but because they worked.</p>
+      <p>To many, this is humanity's greatest strength. To others, it is their greatest flaw.</p>
+      <p>Humans endure — but they rarely stop to ask whether what they endure is stable.</p>
+      <p>Some rebuild through stubborn labor and disciplined repetition. Blacksmiths forge the same blade a thousand times until it is right. Soldiers drill until instinct replaces hesitation. Farmers learn the land again, season by season, failure by failure.</p>
+      <p>They do not rely on talent. They rely on effort.</p>
+      <p>They are not always the fastest. They are not always the strongest. But they are the ones who keep going.</p>
+
+      <h5>Appearance</h5>
+      <p>Humans display immense diversity in height, build, and complexion, shaped by generations of migration, intermingling, and survival across wildly different environments.</p>
+      <p>No single physical trait defines them.</p>
+      <p>What often sets humans apart is not their form, but their presence. Many carry visible signs of labor — calloused hands, worn posture, old scars that were earned rather than avoided.</p>
+      <p>Even in stillness, there is often a sense of readiness to act. A tension held not from fear, but from habit.</p>
+      <p>They look like people who have had to work for what they have.</p>
+
+      <h5>Human Traits</h5>
+      <p>Your Human character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Humans reach adulthood in their late teens and commonly live less than a century.<br/>
+        <span class="feature">Size.</span> Humans are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Skilled Labor.</span> You gain proficiency in one skill of your choice.<br/>
+        <span class="feature">Disciplined Training.</span> Choose one of the following: you gain proficiency with medium armor; you gain proficiency with martial weapons; or you learn one cantrip from any spell list, using the ability score increased by this race as your spellcasting ability for it.<br/>
+        <span class="feature">Relentless Practice.</span> Once per long rest, when you fail an ability check using the skill granted by Skilled Labor, you may reroll the check. You must use the new result.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one extra language of your choice.
+      </p>
+
+      <h5>Culture</h5>
+      <p>Human culture is defined less by tradition and more by continuation.</p>
+      <p>Where other peoples preserve, humans rebuild. Where others inherit systems, humans recreate them — sometimes better, sometimes not.</p>
+      <p>Skill is respected, but not assumed. A master is someone who has proven their craft repeatedly, not someone expected to possess it. There is quiet respect for those who persist through difficulty, even without recognition.</p>
+      <p>Communities often form around shared effort rather than shared origin. A village is not defined by bloodline, but by those who stayed and helped build it.</p>
+      <p>There is pride in endurance.</p>
+      <p>Not in brilliance — but in finishing what was started.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Language" name="Language (Human)" supports="Standard||Exotic"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_SKILLED_LABOR"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_DISCIPLINED_TRAINING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_RELENTLESS_PRACTICE"/>
+    </rules>
+  </element>
+
+  <element name="Skilled Labor" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_SKILLED_LABOR">
+    <description>
+      <p>You gain proficiency in one skill of your choice.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in one skill of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Skilled Labor)" supports="Skill"/>
+    </rules>
+  </element>
+
+  <element name="Disciplined Training" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_DISCIPLINED_TRAINING">
+    <description>
+      <p>Choose one of the following: you gain proficiency with medium armor; you gain proficiency with martial weapons; or you learn one cantrip from any spell list, using the ability score increased by this race as your spellcasting ability for it.</p>
+    </description>
+    <sheet>
+      <description>Choose one: proficiency with medium armor, proficiency with martial weapons, or one cantrip from any spell list (spellcasting ability is the ability score this race increased).</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Disciplined Training (Choice)" supports="ATERIOR_HUMAN_DISCIPLINED_TRAINING"/>
+    </rules>
+  </element>
+
+  <element name="Medium Armor Proficiency" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_TRAINING_MEDIUM_ARMOR">
+    <supports>ATERIOR_HUMAN_DISCIPLINED_TRAINING</supports>
+    <description><p>You gain proficiency with medium armor.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+    </rules>
+  </element>
+
+  <element name="Martial Weapons Proficiency" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_TRAINING_MARTIAL_WEAPONS">
+    <supports>ATERIOR_HUMAN_DISCIPLINED_TRAINING</supports>
+    <description><p>You gain proficiency with martial weapons.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+    </rules>
+  </element>
+
+  <element name="Practiced Cantrip" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_TRAINING_CANTRIP">
+    <supports>ATERIOR_HUMAN_DISCIPLINED_TRAINING</supports>
+    <description><p>You learn one cantrip from any spell list. The ability score increased by this race is your spellcasting ability for it.</p></description>
+    <sheet>
+      <description>One cantrip from any spell list; the ability score increased by this race is your spellcasting ability for it.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Relentless Practice" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_RELENTLESS_PRACTICE">
+    <description>
+      <p>Once per long rest, when you fail an ability check using the skill granted by Skilled Labor, you may reroll the check. You must use the new result.</p>
+    </description>
+    <sheet>
+      <description>1/long rest: reroll a failed ability check using the skill granted by Skilled Labor. You must use the new result.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+</elements>
