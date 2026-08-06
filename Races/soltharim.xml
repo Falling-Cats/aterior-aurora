@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/soltharim.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/soltharim.xml"/>
+    </update>
+  </info>
+
+  <element name="Soltharim" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_SOLTHARIM">
+    <description>
+      <h4>SOLTHARIM</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Before the world fractured, the Soltharim did not build empires. They held ground.</p>
+      <p>Across plains, desert edges, and caravan routes, Soltharim prides formed around what mattered—water, trade, and passage. Where others claimed land with borders, the Soltharim claimed it through presence. A well. A pass. A road. If it mattered, a Soltharim stood there.</p>
+      <p>Their prides were structured but not rigid, built on strength, trust, and clear roles. Leaders did not rule from behind walls—they stood where they could be seen. Caravans paid for passage not through contracts, but reputation. A Soltharim word held. If they said a road would stand, it did.</p>
+      <p>They did not expand. They stabilized. To them, strength was not domination—it was remaining when others could not.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the world fractured and divine certainty vanished, many powers collapsed. The Soltharim did not.</p>
+      <p>They had never relied on distant authority or fragile systems. Their strength was always local, visible—so when the world broke, they stayed.</p>
+      <p>Caravan routes remained open under their watch. Broken cities found order where Soltharim stood guard—at gates, docks, and streets others abandoned. Where fear drove people inward, they stepped outward.</p>
+      <p>They did not rebuild the world. They kept it from falling further apart.</p>
+      <p>In the centuries since, they have become a constant across Atérior—not rulers, but anchors. Wardens, captains, builders, and shields. Their prides endure, now shaped as much by purpose as blood.</p>
+      <p>They do not promise victory. Only this— When the moment comes, they will still be there.</p>
+
+      <h5>Appearance</h5>
+      <p>Soltharim resemble great lions and other large cats in humanoid form. They possess broad shoulders, powerful forearms, thick neck musculature, and heavy paws. Their builds emphasize strength and endurance rather than agility.</p>
+      <p>Fur tones range through tawny golds, sun-bleached sands, russet browns, ash-gray, and deep umber. Some lineages exhibit darker melanistic coats. Many males grow full manes; some females display shorter or subtler mane growth depending on lineage.</p>
+      <p>Their height averages around six feet, though exceptional individuals grow far taller. Where Seramai are built like drawn bows, Soltharim are built like pillars.</p>
+
+      <h5>Soltharim Traits</h5>
+      <p>Your Soltharim character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Medium. Though some Soltharim tower near eight or nine feet in height, they are considered Medium for mechanical purposes.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to dusk hunting and open-horizon living, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.<br/>
+        <span class="feature">Powerful Build.</span> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+        <span class="feature">Feline Claws.</span> Your claws are natural weapons, which you can use to make unarmed strikes. On a hit, they deal 1d6 + your Strength modifier slashing damage instead of bludgeoning damage.<br/>
+        <span class="feature">Pride Training.</span> You gain proficiency in one of the following skills of your choice: Athletics, Intimidation, Persuasion, or Survival.<br/>
+        <span class="feature">Sol'thera — Radiant Cry of the Many.</span> The unity of the Soltharim is not quiet. It is declared. As a bonus action, you unleash a commanding roar, invoking Sol'thera. Choose one of the following effects. Once you use this feature, you cannot use it again until you finish a long rest.
+        <br/>
+        <em>Rallying Call:</em> You and allies within 10 feet of you gain temporary hit points equal to your proficiency bonus + your Constitution modifier (minimum 1).
+        <br/>
+        <em>Dominating Presence:</em> Creatures of your choice within 10 feet must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or have disadvantage on their next attack roll before the end of their next turn.
+        <br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one other language of your choice.
+      </p>
+
+      <h5>Soltharim in the World</h5>
+      <p>Soltharim are more socially open than their Seramai kin. They interact comfortably with strangers, negotiate openly, and frequently take visible public roles. Emotional intimacy, however, remains reserved for close bonds within their pride-circles.</p>
+      <p>They often operate in structured groups — guard companies, mercenary bands, construction crews, dock teams, caravan shields. They are comfortable in hierarchy and naturally gravitate toward positions of responsibility. Not because they seek power, but because someone has to stand there and they would rather it be someone reliable.</p>
+      <p>In adventuring parties, Soltharim tend to be the ones others unconsciously orient toward. Not always the leader on paper. But the one people look at when something goes wrong. They are not warm by default — but they are present, and among the Soltharim, presence is its own form of care.</p>
+
+      <h5>On Sol'thera</h5>
+      <p>The word Sol'thera does not translate cleanly into Common. The closest approximation is something like "the radiant cry of the many" — but among the Soltharim it carries weight that translation cannot fully capture.</p>
+      <p>It is used in battle. In oath-taking. In moments of communal grief or celebration.</p>
+      <p>When a Soltharim invokes Sol'thera, they are not simply making noise. They are declaring that they are still here. That the pride still stands. That whatever comes next — they will face it together.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_POWERFUL_BUILD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_FELINE_CLAWS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_PRIDE_TRAINING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_SOLTHERA"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_DARKVISION">
+    <description>
+      <p>Accustomed to dusk hunting and open-horizon living, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Powerful Build" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_POWERFUL_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>Count as one size larger for carrying capacity and push/drag/lift limits.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Feline Claws" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_FELINE_CLAWS">
+    <description>
+      <p>Your claws are natural weapons, which you can use to make unarmed strikes. On a hit, they deal 1d6 + your Strength modifier slashing damage instead of bludgeoning damage.</p>
+    </description>
+    <sheet>
+      <description>Unarmed strikes deal 1d6 + Strength modifier slashing damage instead of bludgeoning.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Pride Training" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_PRIDE_TRAINING">
+    <description>
+      <p>You gain proficiency in one of the following skills of your choice: Athletics, Intimidation, Persuasion, or Survival.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Athletics, Intimidation, Persuasion, or Survival.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Pride Training)"
+              supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
+    </rules>
+  </element>
+
+  <element name="Sol'thera — Radiant Cry of the Many" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_SOLTHERA">
+    <description>
+      <p>The unity of the Soltharim is not quiet. It is declared. As a bonus action, you unleash a commanding roar, invoking Sol'thera. Choose one of the following effects. Once you use this feature, you cannot use it again until you finish a long rest.</p>
+      <p class="indent"><em>Rallying Call.</em> You and allies within 10 feet of you gain temporary hit points equal to your proficiency bonus + your Constitution modifier (minimum 1).</p>
+      <p class="indent"><em>Dominating Presence.</em> Creatures of your choice within 10 feet must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or have disadvantage on their next attack roll before the end of their next turn.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, bonus action: Rallying Call (temp HP to nearby allies) or Dominating Presence (Wisdom save or disadvantage on next attack) for creatures within 10 ft.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one other language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one other language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Soltharim)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
