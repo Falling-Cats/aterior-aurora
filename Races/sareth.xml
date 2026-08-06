@@ -142,7 +142,7 @@
     <rules>
       <stat name="charisma" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Pride)"
-              supports="ID_PROFICIENCY_SKILL_ATHLETICS||ID_PROFICIENCY_SKILL_PERSUASION"/>
+              supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_PERSUASION"/>
       <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY"/>
     </rules>
   </element>
@@ -159,7 +159,7 @@
     <rules>
       <stat name="strength" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Wrath)"
-              supports="ID_PROFICIENCY_SKILL_INTIMIDATION||ID_PROFICIENCY_SKILL_SURVIVAL"/>
+              supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <grant type="Spell" id="ID_PHB_SPELL_THUNDERCLAP"/>
     </rules>
   </element>
@@ -176,7 +176,7 @@
     <rules>
       <stat name="intelligence" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Greed)"
-              supports="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND||ID_PROFICIENCY_SKILL_DECEPTION"/>
+              supports="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_DECEPTION"/>
       <grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
     </rules>
   </element>
@@ -193,7 +193,7 @@
     <rules>
       <stat name="dexterity" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Envy)"
-              supports="ID_PROFICIENCY_SKILL_STEALTH||ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+              supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INVESTIGATION"/>
       <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
     </rules>
   </element>
@@ -210,7 +210,7 @@
     <rules>
       <stat name="charisma" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Lust)"
-              supports="ID_PROFICIENCY_SKILL_PERFORMANCE||ID_PROFICIENCY_SKILL_PERSUASION"/>
+              supports="ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION"/>
       <grant type="Spell" id="ID_PHB_SPELL_FRIENDS"/>
     </rules>
   </element>
@@ -227,7 +227,7 @@
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Sloth)"
-              supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_HISTORY"/>
+              supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY"/>
       <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE"/>
     </rules>
   </element>
@@ -244,7 +244,7 @@
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Proficiency" name="Skill Proficiency (Gluttony)"
-              supports="ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_MEDICINE"/>
+              supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_MEDICINE"/>
       <grant type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY"/>
     </rules>
   </element>
