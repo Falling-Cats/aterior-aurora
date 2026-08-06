@@ -173,8 +173,7 @@
       <description>Proficiency in Religion, Insight, or Intimidation. 1/long rest reaction: when you or a nearby creature drops to 0 HP, they drop to 1 HP instead.</description>
     </sheet>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Bearer of the Flame)"
-              supports="ID_PROFICIENCY_SKILL_RELIGION||ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+      <select type="Proficiency" name="Skill Proficiency (Bearer of the Flame)" supports="Skill"/>
     </rules>
   </element>
 
