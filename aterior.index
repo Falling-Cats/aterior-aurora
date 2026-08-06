@@ -71,6 +71,9 @@
 <file name="Races/thalen.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/thalen.xml" />
 
+<file name="Races/human.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/human.xml" />
+
 <file name="Races/boru.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/boru.xml" />
 
