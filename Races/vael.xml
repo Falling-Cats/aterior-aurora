@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <n>ATÉRIOR Races</n>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/vael.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vael.xml"/>
+    </update>
+  </info>
+
+  <element name="Vael" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_VAEL">
+    <description>
+      <h4>VAEL</h4>
+      <p><em>Meaning: The Changed</em></p>
+      <p><em>"A Vael does not ask who they are. They ask how long they get to be it."</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Not every people of Atérior walked the world before the Weaver's Touch.</p>
+      <p>The Vael did not exist. Not yet.</p>
+      <p>They are not an ancient lineage, not a people shaped by centuries of tradition and accumulated culture. They are something newer and stranger — a consequence, not a continuation. Before the Severing there were no Vael. There were only the people who would, in the worst moment in history, become something else entirely.</p>
+
+      <h5>The Weaver's Touch</h5>
+      <p>When the catastrophe shattered the world five centuries ago, reality itself faltered.</p>
+      <p>Land vanished without warning. Cities collapsed. Magic rewrote its own laws. For a brief moment the world seemed to flicker — like a flame caught in a violent wind.</p>
+      <p>Most who lived through that moment either died immediately or in the brutal years that followed.</p>
+      <p>But some survivors carried a different fate.</p>
+      <p>Their bodies never fully settled again. Their forms became unstable, shifting in ways no other race could. The change was not chosen — it simply happened, written into flesh by forces no one fully understood. Their descendants inherited that strange legacy, and over generations they became something entirely new.</p>
+      <p>They became the Vael.</p>
+      <p>To scholars, they are a mystery born of the Weaver's Touch. To most common folk, they are something far less charitable.</p>
+      <p>Many simply call them the Cursed Ones.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>The Vael rarely gather in large communities. Most live quiet, wandering lives — blending into the societies of other races where their secret remains hidden, moving on before questions become too pointed or familiarity too dangerous.</p>
+      <p>Few trust them openly. Many believe their existence is proof that the Weaver's Touch left behind curses that still linger in the world. The instability of their form unsettles people in ways that are difficult to articulate — something about a person whose face is not entirely fixed feels wrong in a way most cannot name.</p>
+      <p>The Vael understand this. Most have learned to work around it.</p>
+      <p>They are not monsters. They are not cursed, whatever common folk believe. They are simply people whose bodies never stopped changing after the world itself did.</p>
+      <p>They live in the spaces between identities — wearing faces that are not quite theirs, answering to names that may have belonged to someone else, building lives that are always, in some small way, temporary.</p>
+      <p>Most do not find this tragic. Some find it the only way to live that makes sense.</p>
+
+      <h5>Appearance</h5>
+      <p>In their natural form, Vael possess an unsettling beauty.</p>
+      <p>Their skin is pale — often compared to paper, moonlight, or porcelain. Hair tends toward white, silver, or faint ash tones. Their eyes are usually entirely black or heavily darkened around the iris, and their facial features appear smooth and slightly indistinct, as though their body has not fully decided what it wishes to be.</p>
+      <p>Because their form resists remaining unchanged for long periods, most Vael spend their lives disguised as other people. A Vael might live for years appearing human, elven, or another race entirely — returning to their natural form only in privacy or among those they trust completely.</p>
+      <p>Very few outsiders have ever seen a Vael's true face. Most Vael prefer it that way.</p>
+
+      <h5>Vael Traits</h5>
+      <p>Your Vael character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Shifting Form.</span> You can magically reshape your body to resemble another humanoid. As an action, you can change your appearance to match any Medium humanoid you have seen. Your clothing and equipment do not change. This transformation lasts until you change again or end it willingly. You cannot perfectly duplicate a specific individual without careful observation, but you can convincingly pass as a member of another race.<br/>
+        <span class="feature">Unstable Flesh.</span> Your body resists remaining the same shape for too long. If you have not used Shifting Form since your last long rest, you have disadvantage on the first ability check you make each hour until you do.<br/>
+        <span class="feature">Borrowed Talents.</span> You gain proficiency in two skills of your choice. Vael survive by adapting to the lives and cultures around them.<br/>
+        <span class="feature">Many Lives.</span> You gain proficiency with one tool set, one language, or one weapon of your choice. A life spent walking among many identities leaves its mark.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Vael in the World</h5>
+      <p>Vael are everywhere and nowhere.</p>
+      <p>Because they spend most of their lives in forms that are not their own, they are nearly impossible to count, track, or identify as a people. A Vael merchant may have lived in the same city for twenty years under a human face and a human name. A Vael soldier may have served in three different armies across two decades, each time under a different identity.</p>
+      <p>They are not inherently deceptive — most Vael simply learned early that their true form invites consequences they would rather avoid. The disguise is not manipulation. It is survival.</p>
+      <p>In adventuring parties, Vael tend to fill whatever role the group needs most — not because they lack identity, but because adapting is what they do. They are often the most socially flexible member of the group, capable of navigating situations that would stop others entirely.</p>
+      <p>The longer you travel with a Vael, the more you realize that the face they show you has slowly, quietly become more consistent. More settled.</p>
+      <p>That is not nothing. Among the Vael, that is everything.</p>
+
+      <h5>On the Natural Form</h5>
+      <p>Most Vael do not spend much time in their natural form.</p>
+      <p>It is not shame, exactly. It is simply impractical — pale skin and black eyes draw attention in most of the world's cities, and attention is the one thing a Vael has learned to manage carefully.</p>
+      <p>But among those they fully trust, some Vael will let the form drop. Will sit in the quiet of their own face for a while.</p>
+      <p>Those who have witnessed it describe it as unexpectedly moving — the sense of watching someone finally put down something very heavy.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_SHIFTING_FORM"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_UNSTABLE_FLESH"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_BORROWED_TALENTS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_MANY_LIVES"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Shifting Form" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_SHIFTING_FORM">
+    <description>
+      <p>You can magically reshape your body to resemble another humanoid. As an action, you can change your appearance to match any Medium humanoid you have seen. Your clothing and equipment do not change. This transformation lasts until you change again or end it willingly. You cannot perfectly duplicate a specific individual without careful observation, but you can convincingly pass as a member of another race.</p>
+    </description>
+    <sheet action="Action">
+      <description>As an action, change your appearance to match any Medium humanoid you have seen. Clothing and equipment don't change. Lasts until you change again or end it willingly.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Unstable Flesh" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_UNSTABLE_FLESH">
+    <description>
+      <p>Your body resists remaining the same shape for too long. If you have not used Shifting Form since your last long rest, you have disadvantage on the first ability check you make each hour until you do.</p>
+    </description>
+    <sheet>
+      <description>If you haven't used Shifting Form since your last long rest, disadvantage on the first ability check you make each hour until you do.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Borrowed Talents" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_BORROWED_TALENTS">
+    <description>
+      <p>You gain proficiency in two skills of your choice. Vael survive by adapting to the lives and cultures around them.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in two skills of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Borrowed Talents)" number="2" supports="Skill"/>
+    </rules>
+  </element>
+
+  <element name="Many Lives" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_MANY_LIVES">
+    <description>
+      <p>You gain proficiency with one tool set, one language, or one weapon of your choice. A life spent walking among many identities leaves its mark.</p>
+    </description>
+    <sheet>
+      <description>Proficiency with one tool set, one language, or one weapon of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Many Lives (Choice)" supports="ATERIOR_VAEL_MANY_LIVES"/>
+    </rules>
+  </element>
+
+  <element name="Tool Set" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_MANY_LIVES_TOOL">
+    <supports>ATERIOR_VAEL_MANY_LIVES</supports>
+    <description><p>You gain proficiency with one tool set of your choice.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Many Lives)" supports="Tool"/>
+    </rules>
+  </element>
+
+  <element name="Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_MANY_LIVES_LANGUAGE">
+    <supports>ATERIOR_VAEL_MANY_LIVES</supports>
+    <description><p>You gain one language of your choice.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Language" name="Language (Many Lives)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <element name="Weapon" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_MANY_LIVES_WEAPON">
+    <supports>ATERIOR_VAEL_MANY_LIVES</supports>
+    <description><p>You gain proficiency with one weapon of your choice.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Proficiency" name="Weapon Proficiency (Many Lives)" supports="Weapon"/>
+    </rules>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VAEL_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Vael)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
