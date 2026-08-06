@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/mytherin-elf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/mytherin-elf.xml"/>
+    </update>
+  </info>
+
+  <element name="Mytherin Elf" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_MYTHERIN">
+    <description>
+      <h4>MYTHERIN ELF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Even before the Severing, the Mytherin were closest to the Fey.</p>
+      <p>Their blood carried a quiet resonance with liminal places—thin veils, forgotten glades, and crossroads where the world felt less certain. Each Mytherin was born attuned to a single seasonal resonance: Spring, Summer, Autumn, or Winter, which shaped their temperament, coloration, and the way they perceived the unseen edges of the world.</p>
+      <p>They often served as intermediaries between mortal settlements and wandering Fey entities, navigating customs few others could understand. Their speech, posture, and even silence were deliberate—small choices made to avoid offense in conversations where meaning was rarely direct.</p>
+      <p>To outsiders, they could seem distant or overly careful. To the Mytherin, they were simply listening to more than one world at once.</p>
+      <p>They were not whimsical. They were attuned.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the world began to fracture, the Mytherin felt it before most.</p>
+      <p>In the final moments before the Severing, some were drawn across unseen thresholds—not by force, but through instinct and half-understood invitation. A path glimpsed at the corner of the eye. A voice that may not have been a voice. They stepped through and vanished. Not all. But enough.</p>
+      <p>Those who crossed did not experience time as the world did. Some wandered for what felt like days. Others lived through years that never seemed to pass. When they returned, everything had already broken—and they were no longer the same. Their seasonal resonance had deepened into something almost tangible; warmth clinging to Summer Mytherin, stillness trailing Winter, the faint suggestion of falling leaves or new growth where none should be.</p>
+      <p>They were not corrupted. But they were changed.</p>
+      <p>Modern Mytherin are regarded with a mixture of respect and unease. Many remember them guiding refugees through hidden paths during the chaos—appearing and disappearing as needed. But there is something about them now that feels slightly out of place. They walk the mortal world still, but they do not belong to it entirely. And part of them no longer tries to.</p>
+
+      <h5>Appearance</h5>
+      <p>Mytherin share the physical build of other elves, but their seasonal resonance defines far more than simple coloration.</p>
+      <p>Spring Mytherin display soft greens, pale florals, and rose-gold accents, with eyes like new leaves or morning dew. Summer Mytherin bear warm bronze skin, sunlit gold or ember-red hair, and bright amber or radiant blue eyes. Autumn Mytherin carry burnished copper tones, russet hues, and amber eyes flecked with gold. Winter Mytherin appear in pale ivory and frost-touched blue, with silver-white hair and eyes of icy gray or deep indigo.</p>
+      <p>Subtle, unnatural qualities linger beneath these features. A Winter Mytherin never seems fully warmed, their breath faint in cool air. A Summer Mytherin carries constant warmth, as if sunlight rests beneath their skin. Autumn Mytherin may carry the scent of dry leaves or distant rain, while Spring Mytherin leave behind the impression of fresh growth.</p>
+      <p>These traits are not always seen—sometimes, they are only felt.</p>
+      <p>Ear shapes vary widely, from long and sharp to softly drooped, reflecting their fluid Fey ancestry. Their movements are smooth but slightly out of sync, as though they are not fully aligned with the world around them.</p>
+      <p>They meet your gaze—but their attention always seems divided, as if part of them is still watching something just out of sight.</p>
+
+      <h5>Mytherin Traits</h5>
+      <p>Your Mytherin character has the following racial traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Mytherin mature similarly to other elves but often experience time subjectively. Some claim gaps in memory during youth. They commonly live 350 to 500 years.<br/>
+        <span class="feature">Size.</span> Mytherin are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Trance.</span> You meditate deeply for 4 hours instead of sleeping, gaining the same benefit as 8 hours of rest, remaining semiconscious.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to twilight and starlight, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Fey Ancestry.</span> You have advantage on saving throws against being charmed, and magic can't put you to sleep.<br/>
+        <span class="feature">Seasonal Resonance.</span> Choose Spring, Summer, Autumn, or Winter. This choice cannot be changed. You gain resistance to one damage type based on your season: Spring — Poison; Summer — Fire; Autumn — Necrotic; Winter — Cold.<br/>
+        <span class="feature">Veil-Touched Step.</span> When you take the Dash action, you can teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.<br/>
+        <span class="feature">Unmoored Presence.</span> You have advantage on saving throws against being frightened.<br/>
+        <span class="feature">Fey Displacement.</span> Your presence does not fully anchor to the material world. When a creature you can see hits you with an attack, you can use your reaction to impose disadvantage on that attack roll, potentially causing it to miss. Once you use this trait, you can't use it again until you finish a long rest.<br/>
+        <span class="feature">Extra Language.</span> You can speak, read, and write one extra language of your choice.
+      </p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_TRANCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_FEY_ANCESTRY"/>
+      <select type="Racial Trait" name="Seasonal Resonance" supports="ATERIOR_MYTHERIN_SEASON"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_VEIL_TOUCHED_STEP"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_UNMOORED_PRESENCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_FEY_DISPLACEMENT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Trance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_TRANCE">
+    <description>
+      <p>You meditate deeply for 4 hours instead of sleeping, gaining the same benefit as 8 hours of rest, remaining semiconscious.</p>
+    </description>
+    <sheet>
+      <description>You meditate for 4 hours instead of sleeping, gaining the same benefit as 8 hours of rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_DARKVISION">
+    <description>
+      <p>Accustomed to twilight and starlight, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Fey Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_FEY_ANCESTRY">
+    <description>
+      <p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being charmed, and magic can't put you to sleep.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Spring Resonance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_SEASON_SPRING">
+    <supports>ATERIOR_MYTHERIN_SEASON</supports>
+    <description>
+      <p>Your resonance is Spring. You gain resistance to poison damage.</p>
+    </description>
+    <sheet><description>Spring resonance: resistance to poison damage.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Summer Resonance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_SEASON_SUMMER">
+    <supports>ATERIOR_MYTHERIN_SEASON</supports>
+    <description>
+      <p>Your resonance is Summer. You gain resistance to fire damage.</p>
+    </description>
+    <sheet><description>Summer resonance: resistance to fire damage.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Autumn Resonance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_SEASON_AUTUMN">
+    <supports>ATERIOR_MYTHERIN_SEASON</supports>
+    <description>
+      <p>Your resonance is Autumn. You gain resistance to necrotic damage.</p>
+    </description>
+    <sheet><description>Autumn resonance: resistance to necrotic damage.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Winter Resonance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_SEASON_WINTER">
+    <supports>ATERIOR_MYTHERIN_SEASON</supports>
+    <description>
+      <p>Your resonance is Winter. You gain resistance to cold damage.</p>
+    </description>
+    <sheet><description>Winter resonance: resistance to cold damage.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Veil-Touched Step" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_VEIL_TOUCHED_STEP">
+    <description>
+      <p>When you take the Dash action, you can teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus per long rest.</p>
+    </description>
+    <sheet>
+      <description>When you Dash, teleport up to 30 feet to an unoccupied space you can see. Uses = proficiency bonus per long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Unmoored Presence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_UNMOORED_PRESENCE">
+    <description>
+      <p>You have advantage on saving throws against being frightened.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being frightened.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Fey Displacement" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_FEY_DISPLACEMENT">
+    <description>
+      <p>Your presence does not fully anchor to the material world. When a creature you can see hits you with an attack, you can use your reaction to impose disadvantage on that attack roll, potentially causing it to miss. Once you use this trait, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, reaction: impose disadvantage on an attack roll that hit you, potentially causing it to miss instead.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_MYTHERIN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write one extra language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one extra language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Mytherin)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
