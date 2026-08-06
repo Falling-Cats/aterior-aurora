@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/thalen.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/thalen.xml"/>
+    </update>
+  </info>
+
+  <element name="Thalen" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_THALEN">
+    <description>
+      <h4>THALEN</h4>
+      <p><em>Not all people descend purely from bloodlines. Some descend from places.</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Thalen existed long before the great fracture that reshaped the world.</p>
+      <p>Even in ancient ages, certain places carried unusually strong concentrations of elemental and ambient magical forces. In those rare environments, mortal bloodlines sometimes changed over generations as magic slowly intertwined with nature itself.</p>
+      <p>These early Thalen were exceedingly rare.</p>
+      <p>The ancient world was densely settled and saturated with structured magic — temples, arcane institutions, and civilizations that shaped the flow of magical forces. In many places this prevented the natural buildup of raw elemental power needed to produce new Thalen. Only scattered individuals appeared across the world, regarded by most as unusual curiosities or signs of powerful magical ancestry rather than as a distinct people.</p>
+
+      <h5>The Weaver's Touch</h5>
+      <p>Five centuries ago the cosmic force known as the Weaver severed the world's divine connections and reshaped the nature of magic itself.</p>
+      <p>Civilizations collapsed. Cities burned. The ancient structures that once stabilized magical forces shattered.</p>
+      <p>During this time of upheaval, it is believed that most — if not all — existing Thalen perished alongside countless other peoples of the old world. Their disappearance was not due to any weakness of their kind, but simply the brutal mathematics of survival during the collapse.</p>
+      <p>For a time, the Thalen seemed to vanish from history entirely.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>As the world slowly recovered, survivors settled wherever life remained possible.</p>
+      <p>Without the old magical systems shaping the environment, natural concentrations of ambient and elemental magic began forming more freely across the landscape. In these places the same ancient phenomenon began to appear again.</p>
+      <p>Children were born changed.</p>
+      <p>Over the last five centuries, new Thalen have slowly appeared among the peoples of the world. Their numbers remain small but no longer vanishingly rare — today roughly one million Thalen exist across Atérior.</p>
+      <p>They are not a unified culture or nation. Because they arise from many different peoples and regions, their traditions and ways of life are incredibly diverse. Yet one pattern appears again and again — Thalen often feel a quiet pull toward environments that reflect their elemental nature.</p>
+      <p>Ember Thalen are drawn toward forges, volcanic lands, and desert heat. Tide Thalen settle near rivers, coasts, and open water. Stone Thalen thrive in mountains, mines, and stone-built cities. Sky Thalen gravitate toward highlands, open plains, and professions that keep them moving.</p>
+      <p>Whether this pull is instinct, comfort, or something deeper remains unknown.</p>
+      <p>The Thalen are not merely people shaped by the world. They are people the world itself keeps trying to grow.</p>
+
+      <h5>Appearance</h5>
+      <p>The Thalen do not possess a single physical form. Because their origins lie in mortal bloodlines altered by elemental influence, a Thalen may resemble any of the world's peoples — human, elven, dwarven, leonine, or any other ancestry found across Atérior. They do not gain the abilities or traits of those lineages, only their visual characteristics.</p>
+      <p>Their elemental nature always reveals itself in subtle ways.</p>
+      <p>Ember Thalen carry visible traces of inner heat. Skin tones range from pale flesh touched by a reddish glow to deep burnt amber, charcoal, or tones resembling cooled volcanic glass. Hair colors frequently resemble flame or ash — reds, oranges, smoky blacks, and warm browns. Their eyes may glow faintly like banked coals in darkness. Their bodies often feel slightly warm to the touch.</p>
+      <p>Tide Thalen often bear aquatic features. Skin tones appear in shades of sea-green, turquoise, deep ocean blue, or muted gray-blue, sometimes with faint patterns resembling flowing currents. Small adaptations may appear — slightly webbed fingers or toes, fin-shaped ears, faint scale-like textures, or in rare cases small gills along the neck. Their hair frequently carries a faint wet sheen even when dry.</p>
+      <p>Stone Thalen tend to appear the most physically varied. Skin may resemble marble white, sandy tan, clay red, granite gray, or deep slate black, often with natural marbling patterns similar to mineral veins running through rock. Small sections of skin may appear cracked like dried earth or layered like stone strata. Hair is often coarse and thick, resembling iron, clay, or dark soil in tone.</p>
+      <p>Sky Thalen often appear the most outwardly ordinary, though subtle signs remain. Skin tones are usually pale — soft whites, faint blues, light pinks, or silver-touched hues. Hair is commonly pale blond, silver, white, or soft gray. Their hair or clothing may move gently as if stirred by a breeze even when the air is still. Their presence often carries a feeling of lightness, as though gravity has slightly less hold on them.</p>
+
+      <h5>Thalen Traits</h5>
+      <p>Your Thalen character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Elemental Resilience.</span> Once per long rest, when you take acid, cold, fire, lightning, or thunder damage, you can reduce the damage by 1d10 + your proficiency bonus. If you do, the next time you hit with an attack or deal damage with a spell before the end of your next turn, the target takes an additional 1d6 damage of your elemental type.<br/>
+        <span class="feature">Elemental Magic.</span> You know a minor elemental spell at 1st level and gain a stronger one at 3rd level, determined by your lineage. You can cast each spell once per long rest without expending a spell slot. Intelligence, Wisdom, or Charisma (chosen at character creation) is your spellcasting ability for these spells.<br/>
+        <span class="feature">Elemental Lineage.</span> Choose one of the following lineages at character creation: Ember, Tide, Stone, or Sky. You gain the traits of that lineage.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Where They Come From</h5>
+      <p>Thalen do not choose their lineage. It chooses them.</p>
+      <p>Most are born into it — the first sign appearing in childhood as a warmth that never quite leaves, a pull toward water that feels more like memory than preference, a stillness that unsettles people who stand too close.</p>
+      <p>Some Thalen spend years trying to understand what they are. Others simply accept that the world made them for a reason.</p>
+      <p>Neither answer is wrong. Both are very Thalen.</p>
+
+      <h5>Thalen in the World</h5>
+      <p>Thalen are quiet presences in Atérior — rare enough to draw attention, common enough that most people have encountered one and simply did not realize it.</p>
+      <p>Because they can resemble any of the world's peoples, they move through society without the immediate visibility that marks a Vokar or a Soltharim. Their elemental nature reveals itself gradually — the warmth of a hand, the way water seems to calm around them, the faint sound of wind where there is none.</p>
+      <p>They are not a community in any traditional sense. Two Thalen of the same lineage who meet on the road are not kin by any formal measure. And yet there is often a recognition — a quiet nod, an unspoken understanding that the world made them similarly and that this counts for something.</p>
+      <p>Most Thalen find their way into professions shaped by their nature. Not because they are driven to, but because those environments feel right in a way that is difficult to explain to people who have never felt the pull of a place.</p>
+      <p>They do not typically seek to be understood. They simply go where the world draws them. And usually, that is exactly where they need to be.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_ELEMENTAL_RESILIENCE"/>
+      <select type="Racial Trait" name="Elemental Lineage" supports="ATERIOR_THALEN_LINEAGE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Elemental Resilience" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_ELEMENTAL_RESILIENCE">
+    <description>
+      <p>Once per long rest, when you take acid, cold, fire, lightning, or thunder damage, you can reduce the damage by 1d10 + your proficiency bonus. If you do, the next time you hit with an attack or deal damage with a spell before the end of your next turn, the target takes an additional 1d6 damage of your elemental type.</p>
+    </description>
+    <sheet>
+      <description>1/long rest: reduce acid/cold/fire/lightning/thunder damage by 1d10 + proficiency bonus, then add 1d6 of that damage type to your next hit.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Ember Thalen" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_LINEAGE_EMBER">
+    <supports>ATERIOR_THALEN_LINEAGE</supports>
+    <description>
+      <p><em>Fire — The Inner Flame</em></p>
+      <p><strong>Spells.</strong> 1st level: Control Flames. 3rd level: Heat Metal.</p>
+      <p class="indent"><strong><em>Emberborn Physiology.</em></strong> You have darkvision out to 60 feet. You have resistance to cold damage. You are naturally comfortable in extremely hot environments.</p>
+    </description>
+    <sheet>
+      <description>Darkvision 60 ft. Resistance to cold damage. Comfortable in extreme heat. Know Control Flames; cast Heat Metal 1/long rest at 3rd level.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+      <grant type="Spell" id="ID_POTA_SPELL_CONTROLFLAMES"/>
+      <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3"/>
+    </rules>
+  </element>
+
+  <element name="Tide Thalen" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_LINEAGE_TIDE">
+    <supports>ATERIOR_THALEN_LINEAGE</supports>
+    <description>
+      <p><em>Water — The Flowing Deep</em></p>
+      <p><strong>Spells.</strong> 1st level: Shape Water. 3rd level: Blur.</p>
+      <p class="indent"><strong><em>Tideborn Physiology.</em></strong> You have a swim speed equal to your walking speed. You can breathe both air and water. Water, rain, mud, or other wet terrain does not count as difficult terrain for you.</p>
+    </description>
+    <sheet>
+      <description>Swim speed = walking speed. Amphibious. Water/mud is never difficult terrain for you. Know Shape Water; cast Blur 1/long rest at 3rd level.</description>
+    </sheet>
+    <rules>
+      <stat name="innate swim speed" value="30" bonus="base"/>
+      <grant type="Spell" id="ID_POTA_SPELL_SHAPEWATER"/>
+      <grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3"/>
+    </rules>
+  </element>
+
+  <element name="Stone Thalen" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_LINEAGE_STONE">
+    <supports>ATERIOR_THALEN_LINEAGE</supports>
+    <description>
+      <p><em>Earth — The Unyielding</em></p>
+      <p><strong>Spells.</strong> 1st level: Magic Stone. 3rd level: Stoneskin.</p>
+      <p class="indent"><strong><em>Stonebound Physiology.</em></strong> When you take damage, you can reduce it by an amount equal to your proficiency bonus (once per turn).</p>
+    </description>
+    <sheet>
+      <description>Reduce damage taken by your proficiency bonus once per turn. Know Magic Stone; cast Stoneskin 1/long rest at 3rd level.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_POTA_SPELL_MAGICSTONE"/>
+      <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="3"/>
+    </rules>
+  </element>
+
+  <element name="Sky Thalen" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_LINEAGE_SKY">
+    <supports>ATERIOR_THALEN_LINEAGE</supports>
+    <description>
+      <p><em>Air — The Unbound</em></p>
+      <p><strong>Spells.</strong> 1st level: Gust. 3rd level: Feather Fall.</p>
+      <p class="indent"><strong><em>Windborn Physiology.</em></strong> You can breathe normally in thin air, at extreme altitudes, or in environments where oxygen is scarce. Your long jump and high jump distances increase by 10 feet. When you jump, you can allow the wind to assist an ally within 5 feet of you — that ally gains a +5 foot bonus to their next jump before the end of their next turn.</p>
+    </description>
+    <sheet>
+      <description>Breathe in thin air/high altitude. +10 ft. to jump distances. Can grant an adjacent ally +5 ft. on their next jump. Know Gust; cast Feather Fall 1/long rest at 3rd level.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_POTA_SPELL_GUST"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3"/>
+    </rules>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_THALEN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Thalen)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
