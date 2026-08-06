@@ -68,6 +68,10 @@
 <file name="Races/korvael.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
 
+<file name="Races/thalen.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/thalen.xml" />
+
+
 <file name="Races/seramai.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml" />
 
