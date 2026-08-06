@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/vokar.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vokar.xml"/>
+    </update>
+  </info>
+
+  <element name="Vokar" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_VOKAR">
+    <description>
+      <h4>VOKAR</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Vokar are tall draconic humanoids whose blood carries the ancient breath of dragons. To most of the peoples of Atérior, they are living reminders that the oldest fires of the world have not yet gone out.</p>
+      <p>In ages long before the Weaver's Touch severed the gods from the world, dragons ruled the high mountains and frozen north while sphinxes watched over temples and divine places. The Vokar arose somewhere between these forces — mortals born with the breath of dragons burning in their lungs.</p>
+      <p>They were never numerous. But they were present — in armies, in temples, in the courts of rulers who valued the kind of loyalty that does not require constant renewal. A Vokar's word, once given, was considered one of the more reliable things in the world.</p>
+      <p>When the gods fell silent and faith across the world fractured, the Vokar did not answer the catastrophe with a single belief. Some turned toward the silent gods. Some revered the ancient dragons of the north. Others rejected faith entirely.</p>
+      <p>Yet one idea persists across nearly all Vokar cultures: The flame must not be allowed to die.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Severing shattered divine infrastructure and silenced the gods, the Vokar did not collapse with it.</p>
+      <p>They endured. As they always had.</p>
+      <p>To them, the breath they carry is more than a weapon. It is a reminder that something powerful and ancient still lives within the world. Whether through faith, discipline, or sheer stubborn endurance, the Vokar believe it is their duty to keep that inner fire alive.</p>
+      <p>Because of this, many Vokar are drawn toward lives of purpose rather than comfort — soldiers, temple wardens, mercenaries, wandering monks, guardians, and seekers who measure their lives by duty rather than progress.</p>
+      <p>Among the broken nations of Atérior, they are often seen as intense people who think in terms of oaths, legacy, and responsibilities that stretch far beyond a single lifetime.</p>
+      <p>When the world grows dark, the Vokar are the ones who insist that the fire is still burning.</p>
+
+      <h5>Appearance</h5>
+      <p>Vokar resemble upright draconic humanoids, towering over most other peoples with broad shoulders and powerful frames. Thick scales cover their bodies, forming natural armor that ranges from smooth plates to rugged ridges depending on lineage.</p>
+      <p>Their heads bear unmistakable draconic features — reptilian eyes, powerful jaws, and horns or crests that sweep backward from the skull. Their eyes often glow faintly in dim light like coals in a forge.</p>
+      <p>A Vokar's scale color reflects their draconic ancestry but varies naturally between individuals. A red lineage might appear as deep crimson, burnt orange, or rust, while gold lineage can range from bright metallic gold to dull brass or rose-gold hues.</p>
+      <p>Most Vokar stand between 6½ and 7½ feet tall, built for strength and endurance rather than speed.</p>
+
+      <h5>Vokar Traits</h5>
+      <p>Your Vokar character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Draconic Ancestry.</span> Your lineage traces back to a particular kind of dragon. Choose one ancestry. Your ancestry determines the damage type of your breath weapon and the damage type you resist.<br/>
+        <span class="feature">Breath Weapon.</span> When you take the Attack action, you can replace one of your attacks with a magical exhalation of energy in the area determined by your ancestry. Each creature in the area must make the saving throw associated with your ancestry. On a failed save, a creature takes 1d10 damage of the associated type. On a successful save, it takes half as much. The damage increases as you gain levels: 2d10 at 5th level, 3d10 at 11th level, and 4d10 at 17th level. You can use this breath a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+        <span class="feature">Draconic Resistance.</span> You have resistance to the damage type associated with your draconic ancestry.<br/>
+        <span class="feature">Bearer of the Flame.</span> You gain proficiency in one of the following skills of your choice: Religion, Insight, or Intimidation. Once per long rest, when you or a creature you can see within 30 feet drops to 0 hit points, you can use your reaction to speak a word of conviction — that creature instead drops to 1 hit point.
+      </p>
+
+      <h5>Vokar in the World</h5>
+      <p>Vokar are not common — but they are rarely forgotten.</p>
+      <p>Their presence commands attention without demanding it. A Vokar who enters a room does not need to announce themselves. Something in the air shifts slightly. Conversations pause. People notice.</p>
+      <p>This is not a power they cultivate. It is simply the weight of what they carry.</p>
+      <p>Among adventuring parties they are often the ones who hold the line — not always the strongest, not always the most skilled, but the ones who do not break. In moments where others hesitate or retreat, a Vokar tends to plant their feet and stay.</p>
+      <p>They are not always easy companions. Their sense of obligation can feel like judgment to those who do not share it. Their intensity can be exhausting in quieter moments. But when the situation is dire and the question is simply who is going to stand here and not move — the answer is usually the Vokar.</p>
+
+      <h5>On the Flame</h5>
+      <p>Among the Vokar, the flame is not a metaphor.</p>
+      <p>It is discussed as a real and present thing — something carried within the body, fed by conviction, and capable of dying if neglected. A Vokar who has lost their sense of purpose is said to be running cold.</p>
+      <p>It is one of the more serious things you can say about someone.</p>
+      <p>To rekindle — to find purpose again after losing it — is considered one of the most difficult and most respected things a Vokar can do.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Draconic Ancestry" supports="ATERIOR_VOKAR_ANCESTRY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_BREATH_WEAPON"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_DRACONIC_RESISTANCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_BEARER_OF_THE_FLAME"/>
+    </rules>
+  </element>
+
+  <element name="Black Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_BLACK">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Necrotic. Breath Shape: 5 ft. × 30 ft. line. Save: Dexterity.</p></description>
+    <sheet><description>Black ancestry: Necrotic breath, 5×30 ft. line, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Blue Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_BLUE">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Lightning. Breath Shape: 5 ft. × 30 ft. line. Save: Dexterity.</p></description>
+    <sheet><description>Blue ancestry: Lightning breath, 5×30 ft. line, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Brass Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_BRASS">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Thunder. Breath Shape: 5 ft. × 30 ft. line. Save: Dexterity.</p></description>
+    <sheet><description>Brass ancestry: Thunder breath, 5×30 ft. line, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Copper Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_COPPER">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Acid. Breath Shape: 5 ft. × 30 ft. line. Save: Dexterity.</p></description>
+    <sheet><description>Copper ancestry: Acid breath, 5×30 ft. line, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Gold Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_GOLD">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Radiant. Breath Shape: 5 ft. × 30 ft. line. Save: Dexterity.</p></description>
+    <sheet><description>Gold ancestry: Radiant breath, 5×30 ft. line, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Red Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_RED">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Fire. Breath Shape: 15 ft. cone. Save: Dexterity.</p></description>
+    <sheet><description>Red ancestry: Fire breath, 15 ft. cone, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="White Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_WHITE">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Cold. Breath Shape: 15 ft. cone. Save: Dexterity.</p></description>
+    <sheet><description>White ancestry: Cold breath, 15 ft. cone, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Green Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_GREEN">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Poison. Breath Shape: 15 ft. cone. Save: Constitution.</p></description>
+    <sheet><description>Green ancestry: Poison breath, 15 ft. cone, Constitution save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Bronze Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_BRONZE">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Force. Breath Shape: 15 ft. cone. Save: Dexterity.</p></description>
+    <sheet><description>Bronze ancestry: Force breath, 15 ft. cone, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Silver Ancestry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_ANCESTRY_SILVER">
+    <supports>ATERIOR_VOKAR_ANCESTRY</supports>
+    <description><p>Damage Type: Psychic. Breath Shape: 15 ft. cone. Save: Dexterity.</p></description>
+    <sheet><description>Silver ancestry: Psychic breath, 15 ft. cone, Dexterity save.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Breath Weapon" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_BREATH_WEAPON">
+    <description>
+      <p>When you take the Attack action, you can replace one of your attacks with a magical exhalation of energy in the area determined by your ancestry. Each creature in the area must make the saving throw associated with your ancestry. On a failed save, a creature takes 1d10 damage of the associated type. On a successful save, it takes half as much. The damage increases as you gain levels: 2d10 at 5th level, 3d10 at 11th level, and 4d10 at 17th level. You can use this breath a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+      <p class="indent"><em>Save DC = 8 + proficiency bonus + Constitution modifier.</em></p>
+    </description>
+    <sheet>
+      <description>Replace an attack with a breath weapon in your ancestry's area. 1d10 damage (scaling to 4d10 by 17th level) on a failed save, half on success. Uses = proficiency bonus per long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Draconic Resistance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_DRACONIC_RESISTANCE">
+    <description>
+      <p>You have resistance to the damage type associated with your draconic ancestry.</p>
+    </description>
+    <sheet>
+      <description>Resistance to the damage type matching your draconic ancestry.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Bearer of the Flame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VOKAR_BEARER_OF_THE_FLAME">
+    <description>
+      <p>You gain proficiency in one of the following skills of your choice: Religion, Insight, or Intimidation. Once per long rest, when you or a creature you can see within 30 feet drops to 0 hit points, you can use your reaction to speak a word of conviction — that creature instead drops to 1 hit point.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Religion, Insight, or Intimidation. 1/long rest reaction: when you or a nearby creature drops to 0 HP, they drop to 1 HP instead.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Bearer of the Flame)"
+              supports="ID_PROFICIENCY_SKILL_RELIGION||ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+    </rules>
+  </element>
+
+</elements>
