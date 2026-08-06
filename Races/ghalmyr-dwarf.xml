@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/ghalmyr-dwarf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ghalmyr-dwarf.xml"/>
+    </update>
+  </info>
+
+  <element name="Ghalmyr Dwarf" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_GHALMYR">
+    <description>
+      <h4>GHALMYR DWARF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Ghalmyr dwell in mountain citadels and ancient carved holds, most prominently in Gondar. To them, creation is philosophy. A thing must be shaped in harmony with its purpose. A blade that is beautiful but dull is a failure. A fortress strong but joyless is unfinished.</p>
+      <p>They believe that what you build outlives you. Flesh fades. Craft remains.</p>
+      <p>Guild structure defines their society. Apprenticeship is sacred. Observation precedes instruction. Mastery is repetition refined over decades. Credit is often given to the hold or guild rather than the individual.</p>
+      <p>They do not chase glory. They build it. Even in an age of arcane abundance, the Ghalmyr never allowed magic to replace mastery. Enchanted tools were studied, not depended upon. A craft that required magic to function was considered incomplete.</p>
+      <p>They built as though the world might one day forget how to help them— and made sure their work would endure when it did.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Weaver's Touch shattered arcane infrastructure, the Ghalmyr did not scatter. They assessed. They planned. They rebuilt.</p>
+      <p>Where other peoples mourned what was lost, the Ghalmyr catalogued it. Guild records were copied and carried into the deep holds. Master craftspeople trained new apprentices under candlelight in collapsed halls. Tools were repurposed. Techniques were adapted.</p>
+      <p>The Ghalmyr did not experience the Severing as a catastrophe so much as a problem requiring solution. Their greatest holds survived because they had been built to last without magic. Their greatest craftspeople survived because skill does not require divine connection.</p>
+      <p>In the centuries since, they have become some of the most reliable builders and artisans in Atérior. Where others see ruin, a Ghalmyr sees raw material.</p>
+      <p>They are not sentimental about the old world. They are too busy improving on it. In the years following the Severing, many turned to the Ghalmyr not for answers—but for stability. Bridges that would not fall. Tools that would not fail. Structures that did not rely on a world that could no longer be trusted. The Ghalmyr did not claim to understand what had been lost. They simply ensured something would remain.</p>
+
+      <h5>Appearance</h5>
+      <p>Warm earth tones define the Ghalmyr — bronze, clay, deep tan, with ruddy undertones from a lifetime near forge-light. Hair ranges from black and brown to copper and sandy gold. Beards are groomed and braided, sometimes adorned with engraved beads marking guild or clan affiliation.</p>
+      <p>They look like builders before they look like warriors.</p>
+      <p>Their hands are almost always marked by their work — callused, stained, scarred in ways that tell a story to anyone who knows how to read them. A Ghalmyr's hands are considered a record of their life. Their movements are deliberate and efficient, shaped by years of repetition. Even simple actions—lifting, turning, setting—are performed with practiced precision, as though every motion has been refined over time.</p>
+      <p>Ghalmyr rarely rush. When they do, it is noticeable.</p>
+
+      <h5>Ghalmyr Traits</h5>
+      <p>Your Ghalmyr character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Ghalmyr mature at the same rate as other dwarves, reaching adulthood around age 50. They commonly live between 300 and 400 years, though master craftspeople often cite purpose as the greatest factor in longevity.<br/>
+        <span class="feature">Size.</span> Ghalmyr are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 25 feet.<br/>
+        <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Artisan's Discipline.</span> You gain proficiency with one set of artisan's tools of your choice.<br/>
+        <span class="feature">Masterwork Bond.</span> At character creation, choose one artisan's tool, weapon, or shield with which you are proficient. This item is your Masterwork. If it is a tool, you gain expertise with it. If it is a weapon, you gain a +1 bonus to damage rolls made with it. If it is a shield, you gain a +1 bonus to AC while wielding it. You may transfer your Masterwork Bond to a newly crafted item during downtime. You can only have one Masterwork at a time.<br/>
+        <span class="feature">Learn by Watching.</span> Once per long rest, when you see a creature within 30 feet successfully make an ability check using a skill or tool, you may attempt a similar check before the end of your next turn and add your proficiency bonus to the roll, even if you are not proficient in that skill or tool.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and Dwarvish.
+      </p>
+
+      <h5>Ghalmyr in the World</h5>
+      <p>Ghalmyr are among the most widely respected craftspeople in Atérior. In nearly every major city, a Ghalmyr guild hall or workshop can be found — sometimes small, sometimes sprawling, always organized.</p>
+      <p>They do not typically seek adventure for its own sake. When a Ghalmyr leaves the hold, there is usually a reason: a commission that requires dangerous materials, a relic that needs recovering, a structure that needs assessing in a place no one else will go.</p>
+      <p>They are not warm by default. But they are reliable. And in a fractured world, reliability is its own form of generosity.</p>
+
+      <h5>A Ghalmyr Saying</h5>
+      <p><em>"The first strike shapes nothing. The ten thousandth strike shapes everything."</em></p>
+      <p>This phrase is taught to every apprentice on their first day. It is not meant to discourage. It is meant to prepare.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_DWARVISH"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_ARTISANS_DISCIPLINE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_MASTERWORK_BOND"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_LEARN_BY_WATCHING"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_DARKVISION">
+    <description>
+      <p>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Artisan's Discipline" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_ARTISANS_DISCIPLINE">
+    <description>
+      <p>You gain proficiency with one set of artisan's tools of your choice.</p>
+    </description>
+    <sheet>
+      <description>Proficiency with one set of artisan's tools of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Ghalmyr)" supports="Tool"/>
+    </rules>
+  </element>
+
+  <element name="Masterwork Bond" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_MASTERWORK_BOND">
+    <description>
+      <p>At character creation, choose one artisan's tool, weapon, or shield with which you are proficient. This item is your Masterwork. If it is a tool, you gain expertise with it. If it is a weapon, you gain a +1 bonus to damage rolls made with it. If it is a shield, you gain a +1 bonus to AC while wielding it. You may transfer your Masterwork Bond to a newly crafted item during downtime. You can only have one Masterwork at a time.</p>
+    </description>
+    <sheet>
+      <description>Bond to one proficient tool, weapon, or shield as your Masterwork: expertise (tool), +1 damage (weapon), or +1 AC (shield). Transferable during downtime.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Learn by Watching" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GHALMYR_LEARN_BY_WATCHING">
+    <description>
+      <p>Once per long rest, when you see a creature within 30 feet successfully make an ability check using a skill or tool, you may attempt a similar check before the end of your next turn and add your proficiency bonus to the roll, even if you are not proficient in that skill or tool.</p>
+    </description>
+    <sheet>
+      <description>1/long rest: after seeing a nearby creature succeed on a skill/tool check, attempt a similar check with your proficiency bonus added, even without proficiency.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+</elements>
