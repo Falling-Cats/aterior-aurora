@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/vathgrim-dwarf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vathgrim-dwarf.xml"/>
+    </update>
+  </info>
+
+  <element name="Vathgrim Dwarf" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_VATHGRIM">
+    <description>
+      <h4>VATHGRIM DWARF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Vathgrim are forged in open valleys and ancient battlefields. Their holds rise from grasslands and broken ruins, their training grounds older than the trees that grow around them.</p>
+      <p>Military service is not merely tradition — it is expectation. Rank, status, and political power are measured in campaigns survived and victories earned. To a Vathgrim dwarf, legacy is written in scars and remembered in names spoken around the fire.</p>
+      <p>Strength is composure under pressure. Stories are not told to boast — they are recited as instruction. Victory matters. Survival matters more.</p>
+      <p>Many serve decades as soldiers or mercenaries before retiring to build isolated forts, keeps, or frontier homesteads. Even then, they do not truly stop. They simply change what they are defending. Even in times of peace, the Vathgrim trained as though it would not last. Fortifications were maintained, weapons kept close, and drills repeated long after they seemed necessary. To them, preparation was not pessimism— it was respect for how quickly the world could change.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the world broke, the Vathgrim were already prepared for a world that broke.</p>
+      <p>Their holds had been built for siege. Their culture had been built for loss. When other peoples were still processing the scale of the catastrophe, the Vathgrim were already forming defensive lines.</p>
+      <p>They did not mourn the collapse of divine connection — many had never fully trusted it. What they mourned were the dead, counted carefully, named aloud, and added to the recitation.</p>
+      <p>In the centuries since, Vathgrim mercenary companies and frontier wardens have become a familiar presence across Atérior. They are not beloved everywhere. Their bluntness offends. Their expectations exhaust.</p>
+      <p>But when something needs defending and everything else has failed, people send for the Vathgrim. They always come.</p>
+      <p>Defensive lines were drawn before threats fully emerged. Retreat paths were mapped before battles were lost. Where others reacted, the Vathgrim had already decided what would happen next. They do not claim to predict the future. They simply assume it will test them.</p>
+
+      <h5>Appearance</h5>
+      <p>Weathered skin tones — sun-darkened, freckled, marked by scars that were never hidden and rarely explained. Hair is practical and tightly kept; braids are narrow and efficient rather than decorative. Their posture is braced and grounded, as if expecting impact at any moment.</p>
+      <p>They do not look like people who have been through hardship. They look like people hardship failed to finish. Their gaze is steady and direct, rarely lingering on distractions. Even at rest, their awareness seems outward-facing, tracking movement, distance, and threat without conscious effort.</p>
+      <p>Equipment is worn with familiarity rather than display. Every strap, buckle, and piece of armor sits where it does for a reason.</p>
+
+      <h5>Vathgrim Traits</h5>
+      <p>Your Vathgrim character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Vathgrim mature and age similarly to other dwarves, reaching adulthood around 50 and commonly living between 300 and 400 years. Among the Vathgrim, age is measured less in years than in campaigns.<br/>
+        <span class="feature">Alignment.</span> Vathgrim culture values discipline, endurance, and earned loyalty. Many lean toward lawful outlooks, though the frontier life of many Vathgrim produces a strong streak of pragmatic independence.<br/>
+        <span class="feature">Size.</span> Vathgrim are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 25 feet.<br/>
+        <span class="feature">Darkvision.</span> You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Battle Record.</span> When you reduce a creature to 0 hit points, you gain temporary hit points equal to your proficiency bonus. You can gain temporary hit points from this feature a number of times equal to your proficiency bonus per long rest. Temporary hit points from this feature do not stack with themselves.<br/>
+        <span class="feature">Unshaken.</span> You have advantage on saving throws against being frightened.<br/>
+        <span class="feature">Martial Training.</span> You gain proficiency with one martial weapon of your choice.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and Dwarvish.
+      </p>
+
+      <h5>Vathgrim in the World</h5>
+      <p>Vathgrim are found wherever there is conflict, frontier, or something worth protecting. They serve as soldiers, wardens, mercenaries, caravan guards, and occasionally generals — though most prefer leading from the front rather than from a map table.</p>
+      <p>They integrate into mixed communities more easily than outsiders expect. Their bluntness can read as rudeness, but most Vathgrim are not cruel — they simply see little value in softening what is true.</p>
+      <p>Trust among the Vathgrim is not given. It is demonstrated, repeatedly, over time. An outsider who earns a Vathgrim's trust has earned something that will not easily be revoked. Promises among the Vathgrim are treated much like battle lines—once drawn, they are expected to hold.</p>
+
+      <h5>On Scars</h5>
+      <p>Among the Vathgrim, scars are not hidden. They are sometimes traced during storytelling — a finger drawn along an old wound as the tale of how it was earned is recited aloud.</p>
+      <p>To cover a scar unnecessarily is considered a mild social offense. To lie about how one was earned is considered significantly worse.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_DWARVISH"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_BATTLE_RECORD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_UNSHAKEN"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_MARTIAL_TRAINING"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_DARKVISION">
+    <description>
+      <p>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Battle Record" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_BATTLE_RECORD">
+    <description>
+      <p>When you reduce a creature to 0 hit points, you gain temporary hit points equal to your proficiency bonus. You can gain temporary hit points from this feature a number of times equal to your proficiency bonus per long rest. Temporary hit points from this feature do not stack with themselves.</p>
+    </description>
+    <sheet>
+      <description>Gain temporary hit points equal to your proficiency bonus when you drop a creature to 0 HP, up to proficiency bonus times per long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Unshaken" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_UNSHAKEN">
+    <description>
+      <p>You have advantage on saving throws against being frightened.</p>
+    </description>
+    <sheet>
+      <description>Advantage on saving throws against being frightened.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Martial Training" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_VATHGRIM_MARTIAL_TRAINING">
+    <description>
+      <p>You gain proficiency with one martial weapon of your choice.</p>
+    </description>
+    <sheet>
+      <description>Proficiency with one martial weapon of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Martial Weapon (Vathgrim)"
+              supports="ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED"/>
+    </rules>
+  </element>
+
+</elements>
