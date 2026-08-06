@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/ruun.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ruun.xml"/>
+    </update>
+  </info>
+
+  <element name="Ruun" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_RUUN">
+    <description>
+      <h4>RUUN</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Ruun are a people defined by an ancient cultural belief: every life must follow a chosen path.</p>
+      <p>From early childhood, each Ruun declares a pursuit they will dedicate themselves to mastering above all else. This pursuit — called their Ruun — becomes the central purpose of their life. A Ruun may choose any path: warrior, scholar, cook, painter, healer, architect, storyteller, hunter, or stranger ambitions still. What matters is not the path itself, but the absolute devotion given to it.</p>
+      <p>This philosophy shaped their society long before the world fractured. Those who mastered their path became legends. Those who abandoned it often left their homeland entirely, seeking lives beyond the expectations of their culture.</p>
+      <p>Outsiders sometimes mistake the Ruun for brutal warriors. This is only one expression of their philosophy. In truth, their people have produced some of the most skilled artisans, thinkers, and masters of craft in the world.</p>
+      <p>Their guiding belief is simple: Greatness at any cost.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Weaver's Touch shattered divine infrastructure and fractured the certainties the world had built itself around, the Ruun did not lose their footing.</p>
+      <p>They already had one.</p>
+      <p>Their culture had never depended on divine connection, arcane systems, or institutional stability. It had depended on individuals — on the specific, stubborn commitment of people who had chosen a path and refused to leave it. When everything else collapsed, the Ruun kept walking.</p>
+      <p>In the centuries since, they have spread widely across Atérior. Some serve as elite soldiers or master craftspeople within larger nations. Others travel alone, pursuing paths that take them far from any tribe. A Ruun scholar might spend decades in a foreign archive. A Ruun cook might cross a continent searching for a single ingredient.</p>
+      <p>The path does not end because the world changed. It simply continues through different terrain.</p>
+
+      <h5>Appearance</h5>
+      <p>The Ruun are physically imposing humanoids with strong frames and resilient bodies. Their skin tones range across earthy greens and dark natural hues — olive, moss green, forest green, charcoal, and near-black shades with faint green undertones. In dim light the darkest tones can appear almost gray.</p>
+      <p>Hair is typically thick and coarse, most commonly black or dark brown, though deep auburn and early streaks of gray are not unusual. Many Ruun wear their hair long or braided. Some possess small lower tusks that extend slightly beyond the lips — a natural variation rather than a defining trait.</p>
+      <p>A Ruun's physique reflects their chosen path. Warriors and hunters may become heavily muscled, while scholars and artists often maintain sturdy but less imposing forms. Their clothing reflects their pursuit — tools, armor, and garments combined from many cultures, refined to serve the work.</p>
+
+      <h5>Ruun Traits</h5>
+      <p>Your Ruun character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Ruun mature at a similar rate to humans, reaching adulthood in their late teens. They commonly live between 80 and 100 years, though masters of demanding physical paths sometimes age faster.<br/>
+        <span class="feature">Size.</span> Ruun are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">The Ruun (Chosen Path).</span> Every member of this people follows a personal pursuit known simply as their Ruun. When creating your character, choose a life pursuit that defines your training — such as duelist, painter, hunter, chef, scholar, or storyteller. Choose two skills that clearly represent your path. You gain proficiency in those skills. If you already have proficiency in them, you instead gain expertise.<br/>
+        <span class="feature">Tunnel Vision.</span> Your focus sharpens your mastery at the cost of flexibility. When you make an ability check using a skill related to your Ruun, you may treat a roll of 9 or lower on the d20 as a 10.<br/>
+        <span class="feature">Cultural Endurance.</span> Life among the Ruun demands resilience. You gain proficiency in Survival.<br/>
+        <span class="feature">Greatness at Any Cost.</span> Once per long rest, when you fail a roll, you may reroll it. If the reroll also fails, the result is treated as a natural 1.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>The Ruun in the World</h5>
+      <p>A Ruun abroad is not difficult to recognize — not by appearance alone, but by the quality of their attention. They do not dabble. They do not try things casually. When a Ruun engages with something, they engage completely.</p>
+      <p>This makes them exceptional companions in situations that demand focus, and occasionally exhausting ones in situations that do not.</p>
+      <p>Among other peoples, the Ruun are respected for their mastery and sometimes quietly pitied for what they sacrifice to achieve it. Within their own culture, that sacrifice is not considered loss. It is considered the price of becoming something worth remembering.</p>
+      <p>Not all who choose their Ruun remain.</p>
+      <p>Some discover, years later, that the path they chose does not lead where they hoped. Among the Ruun, this is not spoken of lightly. To abandon one's Ruun is to become unbound — no longer anchored by purpose, but not yet shaped by a new one.</p>
+      <p>Some leave quietly. Some try again. And some spend the rest of their lives searching for a second beginning.</p>
+
+      <h5>On Mastery</h5>
+      <p>Among the Ruun, the highest compliment is not "you are talented."</p>
+      <p>It is "you have not stopped."</p>
+      <p>Talent is considered a starting point — unremarkable on its own. What earns respect is the decade of repetition that follows. The ten thousandth attempt. The willingness to keep refining something most people would have considered finished long ago.</p>
+
+      <h5>The Choosing of the Ruun — The Pathbinding Ceremony</h5>
+      <p>Among the Ruun, childhood ends with a ritual known simply as The Choosing. It is the moment a child declares the path that will shape their entire life.</p>
+
+      <p><strong><em>The Night Awakening.</em></strong> The ceremony always begins deep in the night before dawn. Children chosen for the ritual are awakened quietly and gathered by elders or mentors. They are not told the exact moment the ceremony will begin. Instead they are led through the sleeping village by torchlight, moving in silence through streets that should be empty.</p>
+      <p>They are not empty.</p>
+      <p>As they walk, distant drums begin. Ceremonial instruments rise beneath them. The entire tribe is already awake — fires burning throughout the settlement, chanting growing louder as the children approach the ceremonial grounds.</p>
+      <p>This moment is intentionally overwhelming. The Ruun believe the weight of the moment should be felt physically, not merely understood.</p>
+
+      <p><strong><em>The Gathering.</em></strong> The children are brought to a central space — a fire circle, a stone clearing, or the heart of the camp. By the time they arrive, the entire tribe is present.</p>
+      <p>Drums thunder. Horns and bone flutes call across the darkness. Voices chant in rhythm with the music. At the center stand the Chief and the elders.</p>
+      <p>When the children arrive, the music slowly fades until only the steady beat of a single drum remains.</p>
+
+      <p><strong><em>The Chief's Address.</em></strong> The Chief speaks to the gathered tribe and the children before them. The speech recalls the tribe's history and the legendary masters who once walked their own paths. The Chief speaks of paths currently honored within the tribe — warriors, healers, artisans, hunters, scholars. Sometimes they call attention to the paths of the children's parents or mentors, reminding them of the legacy they may choose to follow.</p>
+      <p>But the Chief always ends with the same truth: <em>No one may choose your Ruun but you.</em></p>
+
+      <p><strong><em>The Declaration.</em></strong> One by one, the children step forward. When their name is called, they must declare their path before the entire tribe. The announcement is simple but powerful: <em>"My Ruun is…"</em></p>
+      <p>Some children choose familiar paths. Others declare strange or unexpected pursuits. Whatever the choice, the tribe answers with thunderous drums and chants of approval.</p>
+      <p>The declaration itself binds nothing. The sacrifice that follows is what truly marks the beginning.</p>
+
+      <p><strong><em>The Offering.</em></strong> Every child must give something up. This offering is called the First Cost. Some offerings are symbolic — surrendering a cherished toy, burning childhood drawings, breaking a wooden practice weapon. Others are more physical — a small ritual scar, cut hair, skin marked with ash or ink. Some traditions encourage a thin cut around the forearm that heals into a permanent ring-like mark.</p>
+      <p>The purpose is not pain or spectacle. The Ruun believe a path must begin with loss, because greatness always requires something to be left behind.</p>
+
+      <p><strong><em>The Dawn.</em></strong> After the final offering is made, the tribe begins a slow chant as the first light of morning rises. When the sun breaks the horizon, the ceremony ends.</p>
+      <p>The children are no longer simply members of the tribe. They are now walkers of their Ruun.</p>
+      <p>From that moment forward, mentors, teachers, and elders begin guiding them along the path they chose. The first day of sun after the ceremony is traditionally called The First Step.</p>
+
+      <p><strong><em>Cultural Meaning.</em></strong> The Choosing shapes nearly every aspect of Ruun society. Because every member of the tribe has publicly declared their pursuit, the community naturally organizes itself around those roles. Masters teach apprentices. Warriors train young fighters. Artisans guide future craftspeople.</p>
+      <p>The tribe grows stronger because every person walks their chosen road with purpose.</p>
+      <p>And for the Ruun, purpose is the foundation of greatness.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_CHOSEN_PATH"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_TUNNEL_VISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_CULTURAL_ENDURANCE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_GREATNESS_AT_ANY_COST"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="The Ruun (Chosen Path)" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_CHOSEN_PATH">
+    <description>
+      <p>Every member of this people follows a personal pursuit known simply as their Ruun. When creating your character, choose a life pursuit that defines your training — such as duelist, painter, hunter, chef, scholar, or storyteller. Choose two skills that clearly represent your path. You gain proficiency in those skills. If you already have proficiency in them, you instead gain expertise.</p>
+      <p class="indent"><em>Note: the name of your Chosen Path itself (duelist, painter, etc.) is a roleplay choice you write in — only the two skill proficiencies below are tracked mechanically.</em></p>
+    </description>
+    <sheet>
+      <description>Choose two skills representing your Chosen Path. Gain proficiency in them (or expertise, if already proficient).</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Chosen Path)" number="2" supports="Skill"/>
+    </rules>
+  </element>
+
+  <element name="Tunnel Vision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_TUNNEL_VISION">
+    <description>
+      <p>Your focus sharpens your mastery at the cost of flexibility. When you make an ability check using a skill related to your Ruun, you may treat a roll of 9 or lower on the d20 as a 10.</p>
+    </description>
+    <sheet>
+      <description>On ability checks using a skill related to your Ruun, treat a roll of 9 or lower as a 10.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Cultural Endurance" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_CULTURAL_ENDURANCE">
+    <description>
+      <p>Life among the Ruun demands resilience. You gain proficiency in Survival.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Survival.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+    </rules>
+  </element>
+
+  <element name="Greatness at Any Cost" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_GREATNESS_AT_ANY_COST">
+    <description>
+      <p>Once per long rest, when you fail a roll, you may reroll it. If the reroll also fails, the result is treated as a natural 1.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, reroll a failed roll. A second failure counts as a natural 1.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_RUUN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Ruun)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
