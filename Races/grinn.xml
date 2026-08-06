@@ -118,8 +118,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scrapper's Instinct)"
               supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <select type="Proficiency" name="Tool Proficiency (Scrapper's Instinct)"
-              supports="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT|Gaming Set"/>
+      <select type="Racial Trait" name="Tool Choice (Scrapper's Instinct)" supports="ATERIOR_GRINN_TOOL_CHOICE"/>
     </rules>
   </element>
 
@@ -142,6 +141,51 @@
     </sheet>
     <rules>
       <select type="Language" name="Language (Grinn)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+  <element name="Disguise Kit" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_TOOL_DISGUISE_KIT">
+    <supports>ATERIOR_GRINN_TOOL_CHOICE</supports>
+    <description><p>You gain proficiency with a Disguise Kit.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT"/>
+    </rules>
+  </element>
+
+  <element name="Thieves' Tools" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_TOOL_THIEVES_TOOLS">
+    <supports>ATERIOR_GRINN_TOOL_CHOICE</supports>
+    <description><p>You gain proficiency with Thieves' Tools.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+    </rules>
+  </element>
+
+  <element name="Poisoner's Kit" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_TOOL_POISONERS_KIT">
+    <supports>ATERIOR_GRINN_TOOL_CHOICE</supports>
+    <description><p>You gain proficiency with a Poisoner's Kit.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT"/>
+    </rules>
+  </element>
+
+  <element name="Forgery Kit" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_TOOL_FORGERY_KIT">
+    <supports>ATERIOR_GRINN_TOOL_CHOICE</supports>
+    <description><p>You gain proficiency with a Forgery Kit.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
+    </rules>
+  </element>
+
+  <element name="Gaming Set" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_TOOL_GAMING_SET">
+    <supports>ATERIOR_GRINN_TOOL_CHOICE</supports>
+    <description><p>You gain proficiency with one Gaming Set of your choice. Your set is subtly rigged or marked — at the DM's discretion you may gain advantage on checks made to cheat, bluff, or manipulate games of chance with that set.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Proficiency" name="Gaming Set" supports="Gaming Set"/>
     </rules>
   </element>
 
