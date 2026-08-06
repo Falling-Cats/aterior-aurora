@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <n>ATÉRIOR Races</n>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/boru.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/boru.xml"/>
+    </update>
+  </info>
+
+  <element name="Boru" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_BORU">
+    <description>
+      <h4>BORU</h4>
+      <p><em>"Let's hurry up and survive so we can go back to living."</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Long before the world fractured, the Boru were never a people of grand cities or towering monuments. Their settlements were small and scattered — villages tucked beside rivers, farms nestled in fertile valleys, and quiet roads linking one community to the next.</p>
+      <p>Where other peoples built kingdoms, the Boru built homes.</p>
+      <p>Their culture revolved around practical knowledge: growing food, brewing drink, repairing tools, raising families, and sharing stories at the end of long days. They traded freely with neighboring peoples and traveled often, serving as farmers, cooks, musicians, and guides across many lands.</p>
+      <p>Because of this simple, decentralized way of life, the Boru rarely drew the attention of kings or scholars. Many outsiders saw them as unimportant.</p>
+      <p>The Boru themselves never minded.</p>
+      <p>They did not measure success in expansion or influence, but in continuity. A well-tended home, a shared meal, a road that still led somewhere familiar — these were considered achievements worth maintaining.</p>
+      <p>To the Boru, life was never something to be perfected. Only something to be lived, again and again.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Weaver's Touch shattered the old order and severed the divine from the world, empires collapsed, cities burned, and entire cultures struggled to survive.</p>
+      <p>The Boru endured.</p>
+      <p>Their villages were small enough to rebuild. Their skills were practical enough to remain useful. And their philosophy — that survival was only the first step toward living — gave them a quiet resilience many others lacked.</p>
+      <p>Where others mourned the world that was lost, the Boru simply began again. They planted new gardens in ruined soil, rebuilt homes from fallen stone, and reopened the roads between surviving communities.</p>
+      <p>In the years that followed, many larger powers came to rely on Boru communities — not for strength of arms, but for stability. Where Boru settled, life returned. Slowly, steadily, and without ceremony.</p>
+      <p>They did not restore the world as it was. They made sure there was still a world to return to.</p>
+
+      <h5>Appearance</h5>
+      <p>Boru stand between 3 and 4 feet tall, with compact builds shaped by a lifetime of physical work. Their movements are quick and balanced, carrying the easy confidence of people comfortable with the ground beneath them.</p>
+      <p>Their most recognizable feature is their broad, toughened feet, often left bare even while traveling. The soles are naturally thick and resilient, allowing Boru to move easily across soil, grass, and forest paths without discomfort. Many outsiders consider this strange — to the Boru it is simply practical. They prefer to feel the land they walk.</p>
+      <p>Hair colors range widely, though brown, black, and auburn are most common. Their clothing tends toward durable fabrics and simple designs suited for labor, travel, and daily comfort. Decorative touches take the form of embroidered hems, bright scarves, carved instruments, or well-kept cooking tools rather than jewelry or displays of wealth.</p>
+      <p>Their expressions are often open and easy to read, shifting quickly between focus and warmth. Laughter comes easily, but so does quiet concentration when work demands it. Even in unfamiliar places, Boru tend to move as though they expect to belong there eventually.</p>
+      <p>A Boru rarely eats alone if there is someone nearby.</p>
+
+      <h5>Boru Traits</h5>
+      <p>Your Boru character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Small.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 25 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Mind-Link.</span> You can silently communicate simple ideas, emotions, or immediate intentions with another Boru you can see within 60 feet. This communication is limited to brief impressions — such as danger, direction, or urgency — and cannot convey detailed or complex information. This ability requires line of sight and does not function through solid barriers.<br/>
+        <span class="feature">Close Call.</span> Once per long rest, when an attack hits you, you can force the attacker to reroll the attack roll, potentially turning a deadly blow into a near miss. To outside observers it often looks like pure luck — a belt buckle deflects an arrow, a sword catches on a strap, or the Boru stumbles at just the right moment.<br/>
+        <span class="feature">Simple Talents.</span> You gain proficiency in two of the following: Nature, Survival, Cook's Utensils, Brewer's Supplies, or one Musical Instrument of your choice.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one extra language of your choice.
+      </p>
+
+      <h5>Boru in the World</h5>
+      <p>Boru travelers are a familiar sight across Atérior. They move between settlements with an ease that larger peoples sometimes envy — welcomed in most places, remembered fondly in most others.</p>
+      <p>They do not typically seek adventure in the traditional sense. When a Boru leaves home, it is usually because something they care about requires it. A community in need. A friend in trouble. A road that needs walking before it disappears entirely.</p>
+      <p>They are not naive about danger. Centuries of rebuilding a broken world have given the Boru a clear-eyed understanding of how badly things can go. They simply refuse to let that understanding become the loudest voice in the room.</p>
+      <p>In a party, a Boru often becomes the quiet center — the one who remembers to eat, who keeps morale from collapsing, who notices when someone has gone too long without rest. They do not always lead. But groups with a Boru in them tend to hold together longer than those without.</p>
+
+      <h5>On Hospitality</h5>
+      <p>Among the Boru, turning away a hungry traveler is considered one of the clearest signs of poor character. It is not a formal law. It does not need to be.</p>
+      <p>A Boru rarely eats alone if there is someone nearby. At a crowded inn or a roadside camp, they are usually the first to slide their plate toward whoever looks like they need it most.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BORU_MIND_LINK"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BORU_CLOSE_CALL"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BORU_SIMPLE_TALENTS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_BORU_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Mind-Link" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_MIND_LINK">
+    <description>
+      <p>You can silently communicate simple ideas, emotions, or immediate intentions with another Boru you can see within 60 feet. This communication is limited to brief impressions — such as danger, direction, or urgency — and cannot convey detailed or complex information. This ability requires line of sight and does not function through solid barriers.</p>
+    </description>
+    <sheet>
+      <description>Silently share simple ideas, emotions, or intentions with another Boru you can see within 60 feet. Requires line of sight; no complex information.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Close Call" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_CLOSE_CALL">
+    <description>
+      <p>Once per long rest, when an attack hits you, you can force the attacker to reroll the attack roll, potentially turning a deadly blow into a near miss. To outside observers it often looks like pure luck — a belt buckle deflects an arrow, a sword catches on a strap, or the Boru stumbles at just the right moment.</p>
+    </description>
+    <sheet>
+      <description>1/long rest: when an attack hits you, force the attacker to reroll the attack roll.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Simple Talents" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_SIMPLE_TALENTS">
+    <description>
+      <p>You gain proficiency in two of the following: Nature, Survival, Cook's Utensils, Brewer's Supplies, or one Musical Instrument of your choice.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in two of: Nature, Survival, Cook's Utensils, Brewer's Supplies, or one Musical Instrument.</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Simple Talents (Choice)" supports="ATERIOR_BORU_SIMPLE_TALENTS" number="2"/>
+    </rules>
+  </element>
+
+  <element name="Nature" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_TALENT_NATURE">
+    <supports>ATERIOR_BORU_SIMPLE_TALENTS</supports>
+    <description><p>You gain proficiency in the Nature skill.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
+    </rules>
+  </element>
+
+  <element name="Survival" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_TALENT_SURVIVAL">
+    <supports>ATERIOR_BORU_SIMPLE_TALENTS</supports>
+    <description><p>You gain proficiency in the Survival skill.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+    </rules>
+  </element>
+
+  <element name="Cook's Utensils" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_TALENT_COOKS_UTENSILS">
+    <supports>ATERIOR_BORU_SIMPLE_TALENTS</supports>
+    <description><p>You gain proficiency with Cook's Utensils.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS"/>
+    </rules>
+  </element>
+
+  <element name="Brewer's Supplies" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_TALENT_BREWERS_SUPPLIES">
+    <supports>ATERIOR_BORU_SIMPLE_TALENTS</supports>
+    <description><p>You gain proficiency with Brewer's Supplies.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES"/>
+    </rules>
+  </element>
+
+  <element name="Musical Instrument" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_TALENT_MUSICAL_INSTRUMENT">
+    <supports>ATERIOR_BORU_SIMPLE_TALENTS</supports>
+    <description><p>You gain proficiency with one Musical Instrument of your choice.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Proficiency" name="Musical Instrument (Boru)" supports="Musical Instrument"/>
+    </rules>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_BORU_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one extra language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one extra language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Boru)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
