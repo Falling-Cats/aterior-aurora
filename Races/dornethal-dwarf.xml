@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/dornethal-dwarf.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/dornethal-dwarf.xml"/>
+    </update>
+  </info>
+
+  <element name="Dornethal Dwarf" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_DORNETHAL">
+    <description>
+      <h4>DORNETHAL DWARF</h4>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Dornethal dwell beneath citadel and valley alike — not merely in mines, but in ancient strata older than recorded history. They carve halls around veins of mineral and crystal that hum with age.</p>
+      <p>Where other dwarves shape stone, the Dornethal listen to it.</p>
+      <p>They believe stone carries memory. That the earth does not forget. Their greatest scholars are not historians in the traditional sense — they are readers of geological record, able to interpret the slow language of compression and crystallization as others interpret written text.</p>
+      <p>Silence is attention. Architecture feels grown rather than carved. They preserve memory through inscription, oral recitation, and crystal-record halls where sound itself is stored within resonant stone.</p>
+      <p>Time is not a river to them. It is sediment.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>The Dornethal felt the Severing differently than most.</p>
+      <p>Where others experienced it as a sudden rupture, the Dornethal describe it as a long silence following a sound they had been hearing for centuries without knowing it. Something that had always been present simply stopped.</p>
+      <p>The stone, they say, remembers the moment exactly.</p>
+      <p>Their deep holds survived largely intact — built into strata too old and stable to be easily disrupted. The Dornethal did not flee. They descended further, deeper than they had gone before, reading the layers of the world for evidence of what had changed.</p>
+      <p>What they found, they have not fully shared.</p>
+      <p>In the centuries since, Dornethal scholars and stonereaders have become sought after across Atérior — not for their martial capability or their craftsmanship, but for their patience, their memory, and their unsettling ability to find things that have been buried for a very long time.</p>
+
+      <h5>Appearance</h5>
+      <p>Cool-toned skin — slate gray, ash-blue, muted violet, with faint mineral veining visible beneath the surface in certain light. Hair is pale: white, silver, dust-pink, or faint lavender. Eyes are dark and deeply reflective, catching light like polished obsidian.</p>
+      <p>They move with deliberate stillness, like something that has already outlasted you.</p>
+      <p>Their clothing tends toward dark, layered fabrics that muffle sound. Many carry inscribed stones or crystal fragments — not as weapons or tools, but as records.</p>
+
+      <h5>Dornethal Traits</h5>
+      <p>Your Dornethal character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Age.</span> Dornethal mature slowly even by dwarf standards, rarely considering themselves adults before 60. They commonly live between 350 and 450 years, and some among them claim the deep stone extends life in ways not fully understood.<br/>
+        <span class="feature">Size.</span> Dornethal are Medium.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 25 feet.<br/>
+        <span class="feature">Superior Darkvision.</span> You can see in dim light within 120 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Stone Shaper.</span> You know the Mold Earth cantrip. At 3rd level, you can cast Earth Tremor once per long rest. At 5th level, you can cast Pass Without Trace once per long rest, but only while underground or in stone environments.<br/>
+        <span class="feature">Stone Memory.</span> As an action, you may place your hand on a stone surface or crystal object and focus for 1 minute. You learn one of the following: whether the stone has been magically altered or corrupted; roughly how long ago it was last significantly shaped or disturbed; or the emotional imprint of a powerful event that occurred nearby within the last 24 hours, conveyed as vague sensory impressions. You can use this feature a number of times equal to your proficiency bonus per long rest.<br/>
+        <span class="feature">Deep Lore.</span> You gain proficiency in one of the following skills: History, Arcana, or Nature. If you are already proficient in the chosen skill, you gain expertise instead.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and Dwarvish.
+      </p>
+
+      <h5>Dornethal in the World</h5>
+      <p>Dornethal are rarely encountered far from stone — but when they are, it is usually for a reason that has taken years to decide.</p>
+      <p>They do not adventure impulsively. When a Dornethal leaves the deep holds, they have typically spent considerable time determining that leaving is necessary. That deliberateness can frustrate companions. It can also save lives.</p>
+      <p>Among other peoples they are regarded as quiet, sometimes unsettling, and extraordinarily reliable when they commit to something. They do not make promises lightly. They do not break them at all.</p>
+      <p>Their stonereading abilities make them valuable in ruins, ancient sites, and anywhere the history of the land matters. Many scholars and archaeologists actively seek Dornethal companions for expeditions into old places.</p>
+
+      <h5>What the Stone Remembers</h5>
+      <p>The Dornethal do not speak freely about what their stonereading reveals. When asked, most give the same answer: <em>"The stone does not judge what it holds. It simply holds it."</em></p>
+      <p>What this means in practice varies by individual. Some Dornethal share freely. Others carry what they have learned in silence for decades before deciding what to do with it.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_DWARVISH"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_SUPERIOR_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_STONE_SHAPER"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_STONE_MEMORY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_DEEP_LORE"/>
+    </rules>
+  </element>
+
+  <element name="Superior Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_SUPERIOR_DARKVISION">
+    <description>
+      <p>You can see in dim light within 120 feet as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 120 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="120"/>
+    </rules>
+  </element>
+
+  <element name="Stone Shaper" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_STONE_SHAPER">
+    <description>
+      <p>You know the Mold Earth cantrip. At 3rd level, you can cast Earth Tremor once per long rest. At 5th level, you can cast Pass Without Trace once per long rest, but only while underground or in stone environments.</p>
+    </description>
+    <sheet>
+      <description>Know Mold Earth. Cast Earth Tremor 1/long rest starting at 3rd level. Cast Pass Without Trace 1/long rest starting at 5th level (underground/stone environments only).</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MOLD_EARTH"/>
+      <grant type="Spell" id="ID_PHB_SPELL_EARTH_TREMOR" level="3"/>
+      <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5"/>
+    </rules>
+  </element>
+
+  <element name="Stone Memory" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_STONE_MEMORY">
+    <description>
+      <p>As an action, you may place your hand on a stone surface or crystal object and focus for 1 minute. You learn one of the following: whether the stone has been magically altered or corrupted; roughly how long ago it was last significantly shaped or disturbed; or the emotional imprint of a powerful event that occurred nearby within the last 24 hours, conveyed as vague sensory impressions. You can use this feature a number of times equal to your proficiency bonus per long rest.</p>
+    </description>
+    <sheet>
+      <description>Action, 1 minute focus on stone/crystal: learn magical alteration, rough time since last disturbed, or a recent nearby event's emotional imprint. Uses = proficiency bonus per long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Deep Lore" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_DORNETHAL_DEEP_LORE">
+    <description>
+      <p>You gain proficiency in one of the following skills: History, Arcana, or Nature. If you are already proficient in the chosen skill, you gain expertise instead.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in History, Arcana, or Nature (or expertise, if already proficient).</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Deep Lore)"
+              supports="ID_PROFICIENCY_SKILL_HISTORY||ID_PROFICIENCY_SKILL_ARCANA||ID_PROFICIENCY_SKILL_NATURE"/>
+    </rules>
+  </element>
+
+</elements>
