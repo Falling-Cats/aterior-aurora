@@ -50,6 +50,9 @@
 <file name="Races/ghalmyr-dwarf.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ghalmyr-dwarf.xml" />
 
+<file name="Races/vathgrim-dwarf.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vathgrim-dwarf.xml" />
+
 <file name="Races/korvael.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
 
