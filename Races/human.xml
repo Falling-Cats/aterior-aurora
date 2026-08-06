@@ -124,9 +124,12 @@
     <supports>ATERIOR_HUMAN_DISCIPLINED_TRAINING</supports>
     <description><p>You learn one cantrip from any spell list. The ability score increased by this race is your spellcasting ability for it.</p></description>
     <sheet>
-      <description>One cantrip from any spell list; the ability score increased by this race is your spellcasting ability for it.</description>
+      <description>One cantrip from any spell list; the ability score increased by this race is your spellcasting ability for it. Set the spellcasting ability manually on the sheet to match whichever score you increased.</description>
     </sheet>
-    <rules/>
+    <rules>
+      <select type="Spell" name="Cantrip (Disciplined Training)"
+              supports="Bard&amp;&amp;0||Cleric&amp;&amp;0||Druid&amp;&amp;0||Sorcerer&amp;&amp;0||Warlock&amp;&amp;0||Wizard&amp;&amp;0"/>
+    </rules>
   </element>
 
   <element name="Relentless Practice" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_RELENTLESS_PRACTICE">
