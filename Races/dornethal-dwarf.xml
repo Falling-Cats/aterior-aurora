@@ -118,7 +118,7 @@
     </sheet>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Deep Lore)"
-              supports="ID_PROFICIENCY_SKILL_HISTORY||ID_PROFICIENCY_SKILL_ARCANA||ID_PROFICIENCY_SKILL_NATURE"/>
+              supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE"/>
     </rules>
   </element>
 
