@@ -75,37 +75,37 @@
   </element>
 
   <!-- +1 traits -->
-  <element name="+1 Strength" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_STRENGTH">
+  <element name="+1 Strength" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_STRENGTH" requirements="!ID_ATERIOR_ASI_PLUS2_STRENGTH">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Strength score increases by 1.</p></description>
     <sheet display="false"/>
     <rules><stat name="strength" value="1"/></rules>
   </element>
-  <element name="+1 Dexterity" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_DEXTERITY">
+  <element name="+1 Dexterity" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_DEXTERITY" requirements="!ID_ATERIOR_ASI_PLUS2_DEXTERITY">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Dexterity score increases by 1.</p></description>
     <sheet display="false"/>
     <rules><stat name="dexterity" value="1"/></rules>
   </element>
-  <element name="+1 Constitution" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CONSTITUTION">
+  <element name="+1 Constitution" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CONSTITUTION" requirements="!ID_ATERIOR_ASI_PLUS2_CONSTITUTION">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Constitution score increases by 1.</p></description>
     <sheet display="false"/>
     <rules><stat name="constitution" value="1"/></rules>
   </element>
-  <element name="+1 Intelligence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_INTELLIGENCE">
+  <element name="+1 Intelligence" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_INTELLIGENCE" requirements="!ID_ATERIOR_ASI_PLUS2_INTELLIGENCE">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Intelligence score increases by 1.</p></description>
     <sheet display="false"/>
     <rules><stat name="intelligence" value="1"/></rules>
   </element>
-  <element name="+1 Wisdom" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_WISDOM">
+  <element name="+1 Wisdom" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_WISDOM" requirements="!ID_ATERIOR_ASI_PLUS2_WISDOM">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Wisdom score increases by 1.</p></description>
     <sheet display="false"/>
     <rules><stat name="wisdom" value="1"/></rules>
   </element>
-  <element name="+1 Charisma" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CHARISMA">
+  <element name="+1 Charisma" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_PLUS1_CHARISMA" requirements="!ID_ATERIOR_ASI_PLUS2_CHARISMA">
     <supports>ATERIOR_ASI_PLUS1</supports>
     <description><p>Your Charisma score increases by 1.</p></description>
     <sheet display="false"/>
