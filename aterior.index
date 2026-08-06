@@ -62,6 +62,9 @@
 <file name="Races/vokar.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vokar.xml" />
 
+<file name="Races/soltharim.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/soltharim.xml" />
+
 <file name="Races/korvael.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
 
