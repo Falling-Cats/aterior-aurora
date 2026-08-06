@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/grinn.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/grinn.xml"/>
+    </update>
+  </info>
+
+  <element name="Grinn" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_GRINN">
+    <description>
+      <h4>GRINN</h4>
+      <p><em>A Grinn is someone who lives among people. A goblin is what happens when instinct wins.</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Long before the catastrophe known as the Weaver's Touch, goblins existed as scattered communities throughout the old world.</p>
+      <p>Their minds worked quickly — sometimes too quickly for the more deliberate peoples around them. They excelled in roles where instinct, speed, and adaptability mattered more than patience or planning. Scouts, tunnel workers, caravan outriders, hunters, messengers, and occasionally mercenaries.</p>
+      <p>Most goblins lived within the larger civilizations of the old world rather than forming massive independent kingdoms of their own. Their communities were small and flexible, adapting to the cultures around them.</p>
+      <p>Even then, however, goblins had a dangerous trait.</p>
+      <p>When raised in harsh environments or constant conflict, their survival instincts could overwhelm restraint. In such conditions some goblins abandoned social structure entirely, becoming predatory tribal bands.</p>
+      <p>These were the goblins that filled old legends.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Weaver's Touch shattered the old world, the stability that had helped goblins remain integrated into society collapsed overnight.</p>
+      <p>Cities burned. Kingdoms fractured. Trade routes vanished.</p>
+      <p>For many goblins, instinct became their greatest advantage. Acting quickly and taking risks allowed them to survive in a world where hesitation meant death. But instinct without structure is a dangerous thing — and not all of them found their way back.</p>
+      <p>Over the following centuries two paths emerged.</p>
+      <p>Some goblins adapted alongside the rebuilding civilizations of the world. These individuals adopted the name Grinn, forming new cultural identities and communities among the emerging kingdoms. They chose society — not because it was easy, but because they understood what the alternative looked like.</p>
+      <p>Others fully embraced the predatory survivalism that the chaos encouraged. These became the feral goblin tribes that now roam the wilderness and ruins.</p>
+      <p>Today the distinction is widely recognized.</p>
+      <p>Grinn are people. Goblins are something closer to monsters.</p>
+      <p>Whether that distinction is entirely fair remains a matter of debate.</p>
+
+      <h5>Appearance</h5>
+      <p>Grinn are small humanoids typically standing between 3 and 4 feet tall. Their bodies are lean and wiry, built for speed and agility rather than strength. Long arms and flexible joints allow them to climb, scramble, and slip through tight spaces with ease.</p>
+      <p>Their skin commonly appears in shades of green ranging from pale moss tones to deep forest hues. Rare individuals may have grayish or bluish tints. Grinn ears are long and pointed — similar to those of elves but thicker and more rugged. Their eyes are bright and alert, often reflecting constant awareness of their surroundings.</p>
+      <p>Civilized Grinn often wear practical layered clothing suited for movement and concealment. Physically there is no clear difference between a Grinn and a feral goblin.</p>
+      <p>The distinction is entirely cultural.</p>
+
+      <h5>Temperament</h5>
+      <p>Grinn think fast.</p>
+      <p>Their minds naturally favor rapid decision-making and instinctive reactions rather than careful deliberation. Among friends and allies they are often energetic, mischievous, and clever — possessed of a biting sense of humor and a love of games, wagers, and harmless trickery.</p>
+      <p>In dangerous situations their instincts become especially apparent. Grinn tend to strike at weaknesses, disrupt opponents, and escape before retaliation arrives.</p>
+      <p>A disciplined Grinn can become a brilliant strategist or scout. An undisciplined one may become a bandit — or worse.</p>
+
+      <h5>Grinn Traits</h5>
+      <p>Your Grinn character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Small.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 25 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to dim tunnels and night travel, you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.<br/>
+        <span class="feature">Scurry.</span> You can take the Disengage or Hide action as a bonus action on each of your turns.<br/>
+        <span class="feature">Scrapper's Instinct.</span> You gain proficiency in one of the following skills of your choice: Stealth, Sleight of Hand, Deception, Persuasion, or Survival. You also gain proficiency with one of the following tools of your choice: Disguise Kit, Thieves' Tools, Poisoner's Kit, Forgery Kit, or one Gaming Set. If you choose a Gaming Set, your set is subtly rigged or marked. At the DM's discretion you may gain advantage on checks made to cheat, bluff, or manipulate games of chance with that set.<br/>
+        <span class="feature">Dirty Tactics.</span> Once per long rest, when you damage a creature larger than you, you deal extra damage equal to your proficiency bonus and choose one of the following effects: the creature's speed is reduced by 10 feet until the start of your next turn; the creature has disadvantage on its next attack roll; or you may immediately move 10 feet without provoking opportunity attacks.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Grinn in the World</h5>
+      <p>Grinn are a common sight in cities, ports, and trade roads across Atérior — and an uncommon one in places that have decided to make them unwelcome.</p>
+      <p>Because feral goblin tribes remain a real presence in the wilderness, Grinn frequently face suspicion in civilized lands. Many towns have stories of goblins who once lived peacefully within their walls and later vanished into the wild. Whether those stories are exaggerated or not, the reputation persists.</p>
+      <p>As a result, Grinn often find themselves needing to prove their reliability repeatedly. Some embrace this challenge and carve out respected places within their communities. Others grow resentful of the constant distrust. A few decide that if the world will treat them like goblins anyway — they might as well act the part.</p>
+      <p>In adventuring parties, Grinn tend to be the ones who find the exits first, notice the trap second, and are already moving before anyone else has processed what is happening. They are not always the most trusted companions on first meeting. They often become the most indispensable ones by the end.</p>
+
+      <h5>On Names</h5>
+      <p>Grinn naming customs tend to be simple and practical. Many receive short names based on personality traits, physical features, or memorable events. Nicknames are common and often replace given names entirely over time.</p>
+      <p>Common Grinn names include: Skrit, Nix, Torch, Snag, Rattle, Whisper, Gut.</p>
+      <p>Among Grinn, a name's story matters more than how it sounds. If you ask a Grinn how they got their name, be prepared for an answer that is either very short or very long.</p>
+      <p>There is rarely an in-between.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCURRY"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCRAPPERS_INSTINCT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_DIRTY_TACTICS"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_DARKVISION">
+    <description>
+      <p>Accustomed to dim tunnels and night travel, you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Scurry" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCURRY">
+    <description>
+      <p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+    </description>
+    <sheet>
+      <description>Take Disengage or Hide as a bonus action on each of your turns.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Scrapper's Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCRAPPERS_INSTINCT">
+    <description>
+      <p>You gain proficiency in one of the following skills of your choice: Stealth, Sleight of Hand, Deception, Persuasion, or Survival. You also gain proficiency with one of the following tools of your choice: Disguise Kit, Thieves' Tools, Poisoner's Kit, Forgery Kit, or one Gaming Set. If you choose a Gaming Set, your set is subtly rigged or marked. At the DM's discretion you may gain advantage on checks made to cheat, bluff, or manipulate games of chance with that set.</p>
+      <p class="indent"><em>Note: the tool picker below shows every tool, not just this list, since specific tool IDs aren't confirmed yet — pick from the intended five when it appears.</em></p>
+    </description>
+    <sheet>
+      <description>Proficiency in Stealth, Sleight of Hand, Deception, Persuasion, or Survival, plus proficiency with a Disguise Kit, Thieves' Tools, Poisoner's Kit, Forgery Kit, or a Gaming Set.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Scrapper's Instinct)"
+              supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <select type="Proficiency" name="Tool Proficiency (Scrapper's Instinct)" supports="Tool"/>
+    </rules>
+  </element>
+
+  <element name="Dirty Tactics" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_DIRTY_TACTICS">
+    <description>
+      <p>Once per long rest, when you damage a creature larger than you, you deal extra damage equal to your proficiency bonus and choose one of the following effects: the creature's speed is reduced by 10 feet until the start of your next turn; the creature has disadvantage on its next attack roll; or you may immediately move 10 feet without provoking opportunity attacks.</p>
+    </description>
+    <sheet>
+      <description>1/long rest: deal extra damage equal to proficiency bonus to a larger creature, plus reduce its speed, impose disadvantage on its next attack, or move 10 ft. without provoking.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Grinn)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
