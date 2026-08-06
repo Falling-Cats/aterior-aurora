@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>ATÉRIOR Races</name>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/toren.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/toren.xml"/>
+    </update>
+  </info>
+
+  <element name="Toren" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_TOREN">
+    <description>
+      <h4>TOREN</h4>
+      <p><em>To the Toren, the world is not chaos. It is a device.</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>Long before the world fractured, the Toren were scholars of forgotten mechanisms and curious ruins. Their communities formed near places rich with remnants of past civilizations — collapsed towers, buried vaults, and abandoned machines whose creators had long vanished.</p>
+      <p>Where others feared these places, Toren approached them with patience and careful study.</p>
+      <p>Every trap had a purpose. Every mechanism followed a design. Even broken machines told stories to those who could read them.</p>
+      <p>Toren culture revolved around observation, study, and reconstruction. Their greatest minds were not inventors but interpreters — individuals capable of looking at a shattered device and understanding what it once did. Adventuring Toren became known across the world as explorers of ancient places, able to move through deadly ruins with uncanny awareness.</p>
+      <p>Among the Toren, confusion is not feared. It is respected. A problem that cannot yet be solved is simply one that has not been understood correctly.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>When the Weaver altered the nature of magic and reality, many peoples experienced dramatic transformation.</p>
+      <p>The Toren experienced something quieter.</p>
+      <p>Patterns became clearer. Complex mechanisms revealed their logic faster. Where once it took hours to decipher a trap's design, a Toren mind might now unravel it in moments.</p>
+      <p>To the Toren, the Weaver's influence did not feel like a mutation.</p>
+      <p>It felt like clarification.</p>
+      <p>The world had always been a puzzle. Now they could simply see the pieces more clearly.</p>
+      <p>Today Toren wander widely as explorers, engineers, scholars, and adventurers — drawn toward the mysteries of ancient ruins and strange devices left behind by lost civilizations. Not to conquer them. But to solve them.</p>
+
+      <h5>Appearance</h5>
+      <p>Toren are small humanoids standing between 3 and 4 feet tall. Their features are sharp and expressive, with bright analytical eyes that seem to constantly scan their surroundings. Many Toren appear slightly distracted, as though mentally disassembling the world around them.</p>
+      <p>Their ears are modestly pointed — shorter than those of elves but more pronounced than those of humans. Hair colors are typically earthy: browns, blacks, auburns, and ash blondes, though brighter colors occasionally appear among younger Toren who enjoy experimentation.</p>
+      <p>Practical clothing is common. Toren often wear belts, satchels, or harnesses designed to hold small tools, notebooks, and curious mechanical fragments collected during their travels.</p>
+      <p>It is rare to meet a Toren who is not carrying something interesting they intend to study later.</p>
+
+      <h5>Toren Traits</h5>
+      <p>Your Toren character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Small.<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 30 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Darkvision.</span> Accustomed to exploring ruins and underground chambers, you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.<br/>
+        <span class="feature">Mechanist's Instinct.</span> Your mind instinctively anticipates how dangerous mechanisms behave. When you make a Dexterity saving throw against a trap, mechanical hazard, explosion, or similar constructed effect, you can add your Intelligence modifier to the roll. The DM determines whether an effect qualifies.<br/>
+        <span class="feature">Quick Read.</span> When you first encounter a trap, mechanism, or constructed hazard, you may use your reaction to gain advantage on the first saving throw or check made against it. Once you use this feature, you cannot use it again until you finish a long rest.<br/>
+        <span class="feature">Field Research.</span> During a short or long rest, you can study a trap, device, artifact, or mechanical structure you have encountered. Choose one relevant skill or tool used to interact with such mechanisms. Until the end of your next long rest, the first time you interact with a similar mechanism or trap, you gain advantage on the check. Once you gain advantage from this feature, the benefit ends.<br/>
+        <span class="feature">Tool Familiarity.</span> You gain proficiency with one set of artisan's tools or thieves' tools of your choice.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and Toren. The Toren language is extremely precise, containing many words describing patterns, mechanisms, and structural relationships.
+      </p>
+
+      <h5>Toren in the World</h5>
+      <p>Toren are not the most immediately impressive people at the table. They do not hit the hardest, move the fastest, or speak the most persuasively.</p>
+      <p>What they do is notice.</p>
+      <p>In any room, any ruin, any situation — a Toren is already cataloguing. The weight of the floor. The angle of the door. The way the dust has settled. Most of the time this produces nothing actionable. But occasionally it produces the observation that saves everyone's life.</p>
+      <p>They are patient companions and meticulous ones. They ask questions others consider unnecessary and take notes others consider excessive. They are rarely the first to act — but they are often the reason the action succeeds.</p>
+      <p>Among other peoples they are regarded as eccentric, occasionally brilliant, and sometimes maddening to travel with. Among their own kind, the highest compliment one Toren can give another is simply: <em>"I had not considered that."</em></p>
+
+      <h5>Quick Read vs Field Research</h5>
+      <p>These two features work differently by design.</p>
+      <p>Quick Read is instinct — the snap recognition of a pattern the moment danger appears. It costs a reaction and rewards fast thinking.</p>
+      <p>Field Research is preparation — the careful study of a problem over time. It rewards patience and planning.</p>
+      <p>Together they represent the two ways a Toren engages with the world: What do I see right now? And: What did I learn last time?</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_ATERIOR_LANGUAGE_TOREN"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_MECHANISTS_INSTINCT"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_QUICK_READ"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_FIELD_RESEARCH"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_TOOL_FAMILIARITY"/>
+    </rules>
+  </element>
+
+  <element name="Toren" type="Language" source="ATÉRIOR" id="ID_ATERIOR_LANGUAGE_TOREN">
+    <description>
+      <p>The Toren language is extremely precise, containing many words describing patterns, mechanisms, and structural relationships.</p>
+    </description>
+    <sheet display="false"/>
+    <rules/>
+  </element>
+
+  <element name="Darkvision" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_DARKVISION">
+    <description>
+      <p>Accustomed to exploring ruins and underground chambers, you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You discern only shades of gray in darkness.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</description>
+    </sheet>
+    <rules>
+      <stat name="darkvision" value="60"/>
+    </rules>
+  </element>
+
+  <element name="Mechanist's Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_MECHANISTS_INSTINCT">
+    <description>
+      <p>Your mind instinctively anticipates how dangerous mechanisms behave. When you make a Dexterity saving throw against a trap, mechanical hazard, explosion, or similar constructed effect, you can add your Intelligence modifier to the roll. The DM determines whether an effect qualifies.</p>
+    </description>
+    <sheet>
+      <description>Add your Intelligence modifier to Dexterity saves against traps, mechanical hazards, explosions, or similar constructed effects.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Quick Read" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_QUICK_READ">
+    <description>
+      <p>When you first encounter a trap, mechanism, or constructed hazard, you may use your reaction to gain advantage on the first saving throw or check made against it. Once you use this feature, you cannot use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>Reaction, 1/long rest: gain advantage on the first save or check against a newly encountered trap or mechanism.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Field Research" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_FIELD_RESEARCH">
+    <description>
+      <p>During a short or long rest, you can study a trap, device, artifact, or mechanical structure you have encountered. Choose one relevant skill or tool used to interact with such mechanisms. Until the end of your next long rest, the first time you interact with a similar mechanism or trap, you gain advantage on the check. Once you gain advantage from this feature, the benefit ends.</p>
+    </description>
+    <sheet>
+      <description>During a rest, study an encountered mechanism. Gain advantage the next time you interact with something similar, until your next long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Tool Familiarity" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_TOREN_TOOL_FAMILIARITY">
+    <description>
+      <p>You gain proficiency with one set of artisan's tools or thieves' tools of your choice.</p>
+    </description>
+    <sheet>
+      <description>Proficiency with one set of artisan's tools or thieves' tools of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Toren)" supports="Tool"/>
+    </rules>
+  </element>
+
+</elements>
