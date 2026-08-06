@@ -59,6 +59,9 @@
 <file name="Races/mytherin-elf.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/mytherin-elf.xml" />
 
+<file name="Races/vokar.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vokar.xml" />
+
 <file name="Races/korvael.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
 
