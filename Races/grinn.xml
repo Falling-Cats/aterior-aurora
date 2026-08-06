@@ -111,15 +111,15 @@
   <element name="Scrapper's Instinct" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCRAPPERS_INSTINCT">
     <description>
       <p>You gain proficiency in one of the following skills of your choice: Stealth, Sleight of Hand, Deception, Persuasion, or Survival. You also gain proficiency with one of the following tools of your choice: Disguise Kit, Thieves' Tools, Poisoner's Kit, Forgery Kit, or one Gaming Set. If you choose a Gaming Set, your set is subtly rigged or marked. At the DM's discretion you may gain advantage on checks made to cheat, bluff, or manipulate games of chance with that set.</p>
-      <p class="indent"><em>Note: the tool picker below shows every tool, not just this list, since specific tool IDs aren't confirmed yet — pick from the intended five when it appears.</em></p>
     </description>
     <sheet>
       <description>Proficiency in Stealth, Sleight of Hand, Deception, Persuasion, or Survival, plus proficiency with a Disguise Kit, Thieves' Tools, Poisoner's Kit, Forgery Kit, or a Gaming Set.</description>
     </sheet>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scrapper's Instinct)"
-              supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <select type="Proficiency" name="Tool Proficiency (Scrapper's Instinct)" supports="Tool"/>
+              supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <select type="Proficiency" name="Tool Proficiency (Scrapper's Instinct)"
+              supports="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_DICE_SET|ID_PROFICIENCY_TOOL_PROFICIENCY_PLAYING_CARD_SET"/>
     </rules>
   </element>
 
