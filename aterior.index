@@ -44,6 +44,9 @@
 <file name="Races/ruun.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ruun.xml" />
 
+<file name="Races/toren.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/toren.xml" />
+
 <file name="Races/korvael.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
 
