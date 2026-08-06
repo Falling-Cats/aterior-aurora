@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <n>ATÉRIOR Races</n>
+    <description>ATÉRIOR custom races.</description>
+    <author>Falling-Cats</author>
+    <update version="1.0.0">
+      <file
+        name="Races/kelari.xml"
+        url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/kelari.xml"/>
+    </update>
+  </info>
+
+  <element name="Kelari" type="Race" source="ATÉRIOR" id="ID_ATERIOR_RACE_KELARI">
+    <description>
+      <h4>KELARI</h4>
+      <p><em>Meaning: Those Who Listen Among Us</em></p>
+
+      <h5>Before the Weaver's Touch</h5>
+      <p>The Kelari are among the rarest peoples of Atérior, yet their influence far outweighs their numbers.</p>
+      <p>Where many beastfolk favor freedom, travel, or tight-knit community life, Kelari are drawn instead to structure — courts, councils, and the quiet architecture of influence. They serve as advisors, ambassadors, merchants, scholars, and nobles — roles where a single conversation can alter the course of cities.</p>
+      <p>To a Kelari, power is rarely seized. It is guided.</p>
+      <p>This prominence made them frequent targets of intrigue even before the world fractured. Assassinations, betrayals, and political maneuvering have historically taken a heavy toll on their people. A Kelari who survives long in positions of influence does so not through strength, but through awareness, restraint, and an unmatched ability to read intent before it becomes action.</p>
+      <p>They were never numerous. But they were present — in courts, in councils, in the rooms where decisions were made quietly and without ceremony.</p>
+      <p>They are seldom the loudest voice in the room. But they are often the one that matters most.</p>
+
+      <h5>After the Weaver's Touch</h5>
+      <p>Many scholars believe the Kelari were nearly wiped out during the Weaver's Touch.</p>
+      <p>Some theories suggest that over ninety percent of their population was lost in the chaos of the Severing — not on battlefields, but in the collapse of the very institutions they had built their lives within. Courts dissolved. Councils scattered. The networks of influence that had protected them vanished overnight.</p>
+      <p>Without structure, the Kelari had nowhere to stand.</p>
+      <p>In the centuries since, their numbers have slowly recovered. But they remain incredibly rare — roughly half a percent of the world's population, scattered throughout courts, trade cities, and diplomatic centers.</p>
+      <p>They did not rebuild by force or by speed. They rebuilt the way they always had — by listening, by positioning, and by making themselves indispensable to the people around them.</p>
+      <p>Today most people living in a major settlement will eventually encounter a Kelari — whether as a merchant, negotiator, advisor, or quiet power behind a more visible throne.</p>
+      <p>Quietly, they help shape the course of history. As they always have.</p>
+
+      <h5>Appearance</h5>
+      <p>Kelari are humanoid in shape but covered in soft fur across their bodies. Fur colors vary widely — white, gray, brown, black, and mottled patterns. They possess long, expressive rabbit ears that rise from the top of the head, often extending well above their height when fully upright. These ears are highly mobile, serving both as emotional expression and finely tuned sensory organs capable of detecting subtle shifts in tone and rhythm.</p>
+      <p>Their eyes are large and alert, adapted to notice motion, posture, and the smallest changes in expression. Kelari often carry themselves with natural grace and composure — movements measured, posture deliberate, expressions carefully chosen. Clothing tends toward layered fabrics and subtle ornamentation, small details that signal status, allegiance, or intent to those who know how to read them.</p>
+      <p>Even in stillness, a Kelari appears engaged. Listening. Evaluating.</p>
+
+      <h5>Kelari Traits</h5>
+      <p>Your Kelari character has the following racial traits.</p>
+      <p>
+        <span class="feature">Creature Type.</span> Humanoid.<br/>
+        <span class="feature">Size.</span> Small or Medium (chosen when you create your character).<br/>
+        <span class="feature">Speed.</span> Your base walking speed is 35 feet.<br/>
+        <span class="feature">Ability Score Increase.</span> Increase one ability score by 2 and another by 1, or increase three different ability scores by 1.<br/>
+        <span class="feature">Shared Composure.</span> Your calm steadies those around you, even as tensions rise. You gain proficiency in Persuasion, Deception, or Performance. When you or a creature within 30 feet of you fails a Charisma check, you may use your reaction to allow that creature to reroll the die, taking the new result. Once you use this feature, you cannot use it again until you finish a short or long rest.<br/>
+        <span class="feature">Attuned Hearing.</span> You listen not only to words, but to what lies beneath them. You gain proficiency in Insight or Perception. After speaking with a creature for at least 1 minute, you become familiar with its vocal patterns — when making an Insight check to determine that creature's emotional state or detect deception, you make the roll with advantage. You may also spend 1 minute observing a conversation you are not part of to gain this benefit against the creatures involved. Additionally, while you are engaged in conversation, you and allied creatures within 10 feet of you have advantage on saving throws against being charmed or frightened.<br/>
+        <span class="feature">Court of One.</span> Once per long rest, when you engage a creature in conversation for at least 1 minute, choose one of the following effects. Guided Outcome: You have advantage on all Charisma checks made against that creature for 10 minutes. Emotional Leverage: You learn the creature's current emotional state and one of the following at the DM's choice — a short-term desire, a fear, or something it is trying to hide. Subtle Sway: The next time the creature makes an ability check or saving throw within 1 minute, you may impose disadvantage on the roll.<br/>
+        <span class="feature">Languages.</span> You can speak, read, and write Common and one additional language of your choice.
+      </p>
+
+      <h5>Kelari in the World</h5>
+      <p>Kelari do not seek power the way most people understand it.</p>
+      <p>They do not want the throne. They want the ear of the person sitting on it. They do not want to command armies — they want to be in the room when the decision is made. This is not ambition disguised as humility. It is a genuine philosophy, shaped by centuries of surviving in positions where visibility was dangerous and influence was the only reliable protection.</p>
+      <p>A Kelari in an adventuring party rarely leads from the front. They are more likely to be the one who already knows the guard captain's name, has identified which council member can be reasoned with, and has quietly noted two exits from every room they have entered since morning.</p>
+      <p>They are not manipulative by nature — though they are certainly capable of it. Most Kelari simply pay more attention than anyone else in the room, and act accordingly.</p>
+
+      <h5>On Ears</h5>
+      <p>Among the Kelari, ears are not decorative.</p>
+      <p>They are read the way others read faces — constantly, instinctively, and with considerable accuracy. A Kelari whose ears are pressed flat is not calm. A Kelari whose ears are angled slightly forward is paying very close attention to something.</p>
+      <p>Most non-Kelari never learn to read these signals.</p>
+      <p>Most Kelari are aware of this. And most find it quietly useful.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="innate speed" value="35" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Size" supports="ATERIOR_KELARI_SIZE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_SHARED_COMPOSURE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_ATTUNED_HEARING"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_COURT_OF_ONE"/>
+      <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_EXTRA_LANGUAGE"/>
+    </rules>
+  </element>
+
+  <element name="Small Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_SIZE_SMALL">
+    <supports>ATERIOR_KELARI_SIZE</supports>
+    <description><p>You are Small.</p></description>
+    <sheet><description>Small size.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Medium Frame" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_SIZE_MEDIUM">
+    <supports>ATERIOR_KELARI_SIZE</supports>
+    <description><p>You are Medium.</p></description>
+    <sheet><description>Medium size.</description></sheet>
+    <rules/>
+  </element>
+
+  <element name="Shared Composure" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_SHARED_COMPOSURE">
+    <description>
+      <p>Your calm steadies those around you, even as tensions rise. You gain proficiency in Persuasion, Deception, or Performance. When you or a creature within 30 feet of you fails a Charisma check, you may use your reaction to allow that creature to reroll the die, taking the new result. Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Persuasion, Deception, or Performance. 1/short or long rest: use your reaction to let yourself or a creature within 30 ft. reroll a failed Charisma check.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Shared Composure)"
+              supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+    </rules>
+  </element>
+
+  <element name="Attuned Hearing" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_ATTUNED_HEARING">
+    <description>
+      <p>You listen not only to words, but to what lies beneath them. You gain proficiency in Insight or Perception. After speaking with a creature for at least 1 minute, you become familiar with its vocal patterns — when making an Insight check to determine that creature's emotional state or detect deception, you make the roll with advantage. You may also spend 1 minute observing a conversation you are not part of to gain this benefit against the creatures involved. Additionally, while you are engaged in conversation, you and allied creatures within 10 feet of you have advantage on saving throws against being charmed or frightened.</p>
+    </description>
+    <sheet>
+      <description>Proficiency in Insight or Perception. After 1 minute spent listening to a creature, advantage on Insight checks to read its emotional state or detect deception. While in conversation, you and allies within 10 ft. have advantage on saves against being charmed or frightened.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Attuned Hearing)"
+              supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION"/>
+    </rules>
+  </element>
+
+  <element name="Court of One" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_COURT_OF_ONE">
+    <description>
+      <p>Once per long rest, when you engage a creature in conversation for at least 1 minute, choose one of the following effects.</p>
+      <p><em>Guided Outcome.</em> You have advantage on all Charisma checks made against that creature for 10 minutes.</p>
+      <p><em>Emotional Leverage.</em> You learn the creature's current emotional state and one of the following at the DM's choice — a short-term desire, a fear, or something it is trying to hide.</p>
+      <p><em>Subtle Sway.</em> The next time the creature makes an ability check or saving throw within 1 minute, you may impose disadvantage on the roll.</p>
+    </description>
+    <sheet>
+      <description>1/long rest, after 1 minute of conversation with a creature, choose one: advantage on Charisma checks against it for 10 min; learn its emotional state plus a desire, fear, or secret; or impose disadvantage on its next ability check or save within 1 minute.</description>
+    </sheet>
+    <rules/>
+  </element>
+
+  <element name="Extra Language" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_RACIAL_TRAIT_KELARI_EXTRA_LANGUAGE">
+    <description>
+      <p>You can speak, read, and write Common and one additional language of your choice.</p>
+    </description>
+    <sheet>
+      <description>You can speak, read, and write one additional language of your choice.</description>
+    </sheet>
+    <rules>
+      <select type="Language" name="Language (Kelari)" supports="Standard||Exotic"/>
+    </rules>
+  </element>
+
+</elements>
