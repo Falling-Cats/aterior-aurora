@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scavenger</name>
+		<description>Scavenger background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-scavenger.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-scavenger.xml" />
+		</update>
+	</info>
+	<element name="Scavenger" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_SCAVENGER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Survival and Investigation</li>
+				<li><strong>Tool Proficiency:</strong> Tinker's Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Backpack, Shovel, Crowbar, Sack, Torches (5), Rations (5 days), 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You grew up running through forests and fields and peeking into ruins and dungeons, collecting little things that were useful. Almost anything can be useful if you're clever enough.</p>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Intelligence, Alert Feat, Survival and Investigation Skills, Tinker's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_ALERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+</elements>
