@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fae-Marked</name>
+		<description>Fae-Marked feat — ATÉRIOR custom Origin feat, a lighter Fae-flavored counterpart to Fey-Touched.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="feat-fae-marked.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-fae-marked.xml" />
+		</update>
+	</info>
+	<element name="Fae-Marked" type="Feat" source="ATÉRIOR" id="ID_ATERIOR_FEAT_FAE_MARKED">
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Time spent close to the Fae has left a small, lingering mark on you. You gain the following benefits.</p>
+			<p class="indent"><b><i>Borrowed Trick.</i></b> You learn one cantrip of your choice from the Enchantment or Illusion school of magic on the Wizard spell list. Charisma is your spellcasting ability for this cantrip.</p>
+			<p class="indent"><b><i>Fae Luck.</i></b> Once per Long Rest, when you fail a saving throw against being Charmed, you can reroll it and must use the new result.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Once per Long Rest, when you fail a saving throw against being Charmed, you can reroll it and must use the new result.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Fae-Marked)" supports="0,Wizard,(Enchantment||Illusion)" />
+		</rules>
+	</element>
+</elements>
