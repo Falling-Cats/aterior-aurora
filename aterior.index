@@ -89,6 +89,15 @@
 <file name="Races/seramai.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml" />
 
+<file name="Feats/feat-craftsmanship.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
+
+<file name="Backgrounds/background-masterwork.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-masterwork.xml" />
+
+<file name="Backgrounds/background-salvage-engineer.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-salvage-engineer.xml" />
+
 <file name="Backgrounds/background-dreamer.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-dreamer.xml" />
 
