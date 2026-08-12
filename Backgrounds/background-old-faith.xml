@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Old Faith</name>
+		<description>Old Faith background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-old-faith.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-old-faith.xml" />
+		</update>
+	</info>
+	<element name="Old Faith" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_OLD_FAITH">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Druid)</li>
+				<li><strong>Skill Proficiencies:</strong> Nature and Religion</li>
+				<li><strong>Tool Proficiency:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Traveler's Clothes, Bedroll, Trinket (relic or scale), Rations (5 days), 15 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You were raised in the older tradition that predates the Twelve Temples — the vague, half-forgotten reverence for dragons that still lingers, especially in the North. It shaped how you see the world's oldest and most dangerous creatures — as something closer to gods than monsters.</p>
+		</description>
+		<setters>
+			<set name="short">Strength, Intelligence, Wisdom, Magic Initiate (Druid) Feat, Nature and Religion Skills, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_INT_WIS" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+</elements>
