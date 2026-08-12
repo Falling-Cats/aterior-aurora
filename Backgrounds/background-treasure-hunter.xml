@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Treasure Hunter</name>
+		<description>Treasure Hunter background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-treasure-hunter.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-treasure-hunter.xml" />
+		</update>
+	</info>
+	<element name="Treasure Hunter" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_TREASURE_HUNTER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Lucky</li>
+				<li><strong>Skill Proficiencies:</strong> Investigation and History</li>
+				<li><strong>Tool Proficiency:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Shovel, Crowbar, Rope (50 ft), Torches (5), Traveler's Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Raised chasing rumors of lost vaults, sunken ruins, and half-true maps, you learned to separate real leads from tavern tales, and how to get in and out of a dangerous place with something to show for it.</p>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Charisma, Lucky Feat, Investigation and History Skills, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_INT_CHA" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_LUCKY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+</elements>
