@@ -4,7 +4,7 @@
 		<name>Bridge Duelist</name>
 		<description>Bridge Duelist background — Riverlink, ATÉRIOR.</description>
 		<author>Falling-Cats</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="background-bridge-duelist.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bridge-duelist.xml" />
 		</update>
 	</info>
@@ -14,13 +14,13 @@
 				<li><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</li>
 				<li><strong>Feat:</strong> Savage Attacker</li>
 				<li><strong>Skill Proficiencies:</strong> Acrobatics and Persuasion</li>
-				<li><strong>Tool Proficiency:</strong> Playing Card Set</li>
+				<li><strong>Tool Proficiency:</strong> <i>Choose one kind of Gaming Set</i></li>
 				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Rapier, Traveler's Clothes, Whetstone, Pouch, 20 GP; or (B) 50 GP</li>
 			</ul>
 			<p>Riverlink's famous bridge-dueling culture raised you — its etiquette, its rituals, its unspoken rules for when steel is the answer and when it isn't. You learned to settle a dispute with style as much as skill.</p>
 		</description>
 		<setters>
-			<set name="short">Strength, Dexterity, Charisma, Savage Attacker Feat, Acrobatics and Persuasion Skills, Playing Card Set</set>
+			<set name="short">Strength, Dexterity, Charisma, Savage Attacker Feat, Acrobatics and Persuasion Skills, a Gaming Set</set>
 		</setters>
 		<rules>
 			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_CHA" />
@@ -28,7 +28,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PLAYING_CARD_SET" />
+			<select type="Proficiency" name="Tool Proficiency (Bridge Duelist)" supports="Tool, Gaming Set" />
 		</rules>
 	</element>
 </elements>
