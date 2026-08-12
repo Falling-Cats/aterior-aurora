@@ -6,7 +6,7 @@
         <description>ATÉRIOR campaign content.</description>
         <author>Falling-Cats</author>
 
-        <update version="1.1.0">
+        <update version="1.2.0">
             <file name="aterior.index" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/aterior.index" />
         </update>
 
@@ -23,7 +23,16 @@
         <file name="Feats/feat-craftsmanship.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
 
-        <!-- Backgrounds: Kingdom-tied -->
+        <file name="Feats/feat-historian.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-historian.xml" />
+
+        <file name="Feats/feat-survivor.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-survivor.xml" />
+
+        <file name="Feats/feat-fae-marked.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-fae-marked.xml" />
+
+        <!-- Backgrounds: Kingdom-tied (9) -->
         <file name="Backgrounds/background-dreamer.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-dreamer.xml" />
 
@@ -36,13 +45,22 @@
         <file name="Backgrounds/background-ascendant.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-ascendant.xml" />
 
+        <file name="Backgrounds/background-recordkeeper.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-recordkeeper.xml" />
+
         <file name="Backgrounds/background-abyss-touched.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-abyss-touched.xml" />
 
         <file name="Backgrounds/background-weaver-educated.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-weaver-educated.xml" />
 
-        <!-- Backgrounds: Broad / anywhere -->
+        <file name="Backgrounds/background-fae-mannered.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-fae-mannered.xml" />
+
+        <file name="Backgrounds/background-rustborn.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-rustborn.xml" />
+
+        <!-- Backgrounds: Broad / anywhere (20) -->
         <file name="Backgrounds/background-streetborn.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-streetborn.xml" />
 
@@ -57,6 +75,9 @@
 
         <file name="Backgrounds/background-court-raised.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-court-raised.xml" />
+
+        <file name="Backgrounds/background-fae-child.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-fae-child.xml" />
 
         <file name="Backgrounds/background-wildborn.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-wildborn.xml" />
@@ -84,6 +105,9 @@
 
         <file name="Backgrounds/background-tainted.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-tainted.xml" />
+
+        <file name="Backgrounds/background-bloodkept.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bloodkept.xml" />
 
         <file name="Backgrounds/background-exiled.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-exiled.xml" />
