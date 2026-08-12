@@ -19,9 +19,6 @@
         <file name="Traits/flexible-ability-scores.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml" />
 
-        <file name="Traits/test-asi.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/test-asi.xml" />
-
         <!-- Custom Feats -->
         <file name="Feats/feat-craftsmanship.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
