@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fae-Mannered</name>
+		<description>Fae-Mannered background — Zephyrwood, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-fae-mannered.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-fae-mannered.xml" />
+		</update>
+	</info>
+	<element name="Fae-Mannered" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_FAE_MANNERED">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Fae-Marked</li>
+				<li><strong>Skill Proficiencies:</strong> Persuasion and Deception</li>
+				<li><strong>Tool Proficiency:</strong> <i>Choose one kind of Gaming Set</i></li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Fine Clothes, Perfume, Gaming Set, Pouch, 20 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You were raised among Zephyrwood's Fey — not the isolationist human courts, but the actual Fae who share the kingdom's shadows and edges. You picked up their contradictions: the rigid formality of courtly manners alongside the sly, rule-bending charm of the more mischievous ones.</p>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Wisdom, Charisma, Fae-Marked Feat, Persuasion and Deception Skills, a Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_WIS_CHA" />
+			<grant type="Feat" id="ID_ATERIOR_FEAT_FAE_MARKED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Tool Proficiency (Fae-Mannered)" supports="Tool, Gaming Set" />
+		</rules>
+	</element>
+</elements>
