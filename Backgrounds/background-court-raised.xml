@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Court-Raised</name>
+		<description>Court-Raised background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-court-raised.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-court-raised.xml" />
+		</update>
+	</info>
+	<element name="Court-Raised" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_COURT_RAISED">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Musician</li>
+				<li><strong>Skill Proficiencies:</strong> Persuasion and History</li>
+				<li><strong>Tool Proficiency:</strong> <i>Choose one kind of Gaming Set</i></li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Fine Clothes, Signet Ring, Perfume, Pouch, 15 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You grew up in service to a noble family — whether as a servant, an attendant, or a child of the household itself. Either way, you learned the etiquette, the politics, and the quiet expectations of formal life.</p>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Charisma, Musician Feat, Persuasion and History Skills, a Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_INT_CHA" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MUSICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Proficiency" name="Tool Proficiency (Court-Raised)" supports="Tool, Gaming Set" />
+		</rules>
+	</element>
+</elements>
