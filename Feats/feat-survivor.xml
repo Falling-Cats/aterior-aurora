@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Survivor</name>
+		<description>Survivor feat — ATÉRIOR custom Origin feat.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="feat-survivor.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-survivor.xml" />
+		</update>
+	</info>
+	<element name="Survivor" type="Feat" source="ATÉRIOR" id="ID_ATERIOR_FEAT_SURVIVOR">
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You've come through more than most people could survive, and it shows. You gain the following benefits.</p>
+			<p class="indent"><b><i>Hardened.</i></b> You have Advantage on Death Saving Throws.</p>
+			<p class="indent"><b><i>Weathered.</i></b> You gain proficiency in the Survival skill. If you already have this proficiency, you instead gain Expertise in it, doubling your Proficiency Bonus for any ability check you make with it.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Death Saving Throws.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_SURVIVAL" />
+		</rules>
+	</element>
+</elements>
