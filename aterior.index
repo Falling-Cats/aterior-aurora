@@ -89,6 +89,19 @@
 <file name="Races/seramai.xml"
       url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml" />
 
+
+<file name="Backgrounds/background-dreamer.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-dreamer.xml" />
+
+<file name="Backgrounds/background-bridge-duelist.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bridge-duelist.xml" />
+
+<file name="Backgrounds/background-ascendant.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-ascendant.xml" />
+
+<file name="Backgrounds/background-streetborn.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-streetborn.xml" />
+
     </files>
 
 </index>
