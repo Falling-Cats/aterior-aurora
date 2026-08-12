@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Masterwork</name>
+		<description>Masterwork background — Gondar, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-masterwork.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-masterwork.xml" />
+		</update>
+	</info>
+	<element name="Masterwork" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_MASTERWORK">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Intelligence</li>
+				<li><strong>Feat:</strong> Craftsmanship</li>
+				<li><strong>Skill Proficiencies:</strong> History and Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Smith's Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Smith's Tools, Traveler's Clothes, Pouch, Hammer, 15 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You were raised in Gondar's craft culture, apprenticed to a master and expected to create something worthy of carrying your name.</p>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Intelligence, Craftsmanship Feat, History and Persuasion Skills, Smith's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_INT" />
+			<grant type="Feat" id="ID_ATERIOR_FEAT_CRAFTSMANSHIP" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+</elements>
