@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Craftsmanship</name>
+		<description>Craftsmanship feat — ATÉRIOR custom Origin feat, applied/tinkering-flavored magic.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="feat-craftsmanship.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
+		</update>
+	</info>
+	<element name="Craftsmanship" type="Feat" source="ATÉRIOR" id="ID_ATERIOR_FEAT_CRAFTSMANSHIP">
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You've picked up the applied, tinkering-flavored magic practiced by those who enchant tools and gear rather than sling raw arcane power. You gain the following benefits.</p>
+			<p class="indent"><b><i>Two Cantrips.</i></b> You learn two cantrips of your choice from the Craftsman's spell list. Intelligence is your spellcasting ability for this feat's spells.</p>
+			<p class="indent"><b><i>Level 1 Spell.</i></b> Choose a level 1 spell from the same list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Cantrip (Craftsmanship)" supports="0,Artificer" number="2" />
+			<select type="Spell" name="Level 1 Spell (Craftsmanship)" supports="1,Artificer" />
+		</rules>
+	</element>
+</elements>
