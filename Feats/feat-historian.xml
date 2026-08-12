@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Historian</name>
+		<description>Historian feat — ATÉRIOR custom Origin feat.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="feat-historian.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-historian.xml" />
+		</update>
+	</info>
+	<element name="Historian" type="Feat" source="ATÉRIOR" id="ID_ATERIOR_FEAT_HISTORIAN">
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You've spent years steeped in records, archives, and the study of what came before. You gain the following benefits.</p>
+			<p class="indent"><b><i>Lore Keeper.</i></b> You gain proficiency in the History skill. If you already have this proficiency, you instead gain Expertise in it, doubling your Proficiency Bonus for any ability check you make with it.</p>
+			<p class="indent"><b><i>Quick Recall.</i></b> Once per Long Rest, when you fail an Intelligence (History) check, you can reroll it and must use the new result.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Once per Long Rest, when you fail an Intelligence (History) check, you can reroll it and must use the new result.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_HISTORY" />
+		</rules>
+	</element>
+</elements>
