@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Streetborn</name>
+		<description>Streetborn background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-streetborn.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-streetborn.xml" />
+		</update>
+	</info>
+	<element name="Streetborn" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_STREETBORN">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Tough</li>
+				<li><strong>Skill Proficiencies:</strong> Stealth and Sleight of Hand</li>
+				<li><strong>Tool Proficiency:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Thieves' Tools, Dagger, Pouches (2), Traveler's Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Raised in alleys, undercity tunnels, markets, or gangs, you learned to survive among people who had very little and trusted even less.</p>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Charisma, Tough Feat, Stealth and Sleight of Hand Skills, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_CHA" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_TOUGH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+</elements>
