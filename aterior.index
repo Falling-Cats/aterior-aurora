@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <index>
 
     <info>
@@ -7,7 +6,7 @@
         <description>ATÉRIOR campaign content.</description>
         <author>Falling-Cats</author>
 
-        <update version="1.0.0">
+        <update version="1.1.0">
             <file name="aterior.index" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/aterior.index" />
         </update>
 
@@ -20,96 +19,85 @@
         <file name="Traits/flexible-ability-scores.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml" />
 
-<file name="Items/bracer-of-the-first-shadow.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/bracer-of-the-first-shadow.xml" />
+        <file name="Traits/test-asi.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/test-asi.xml" />
 
-<file name="Items/eowyn-gear.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/eowyn-gear.xml" />
+        <!-- Custom Feats -->
+        <file name="Feats/feat-craftsmanship.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
 
-<file name="Items/alex-gear.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/alex-gear.xml" />
+        <!-- Backgrounds: Kingdom-tied -->
+        <file name="Backgrounds/background-dreamer.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-dreamer.xml" />
 
-<file name="Races/brakka.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/brakka.xml" />
+        <file name="Backgrounds/background-bridge-duelist.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bridge-duelist.xml" />
 
-<file name="Races/vaelorin-elf.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vaelorin-elf.xml" />
+        <file name="Backgrounds/background-masterwork.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-masterwork.xml" />
 
-<file name="Races/selvarin-elf.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/selvarin-elf.xml" />
+        <file name="Backgrounds/background-ascendant.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-ascendant.xml" />
 
-<file name="Races/sareth.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/sareth.xml" />
+        <file name="Backgrounds/background-abyss-touched.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-abyss-touched.xml" />
 
-<file name="Races/ruun.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ruun.xml" />
+        <file name="Backgrounds/background-weaver-educated.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-weaver-educated.xml" />
 
-<file name="Races/toren.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/toren.xml" />
+        <!-- Backgrounds: Broad / anywhere -->
+        <file name="Backgrounds/background-streetborn.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-streetborn.xml" />
 
-<file name="Races/ghalmyr-dwarf.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/ghalmyr-dwarf.xml" />
+        <file name="Backgrounds/background-pilgrim.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-pilgrim.xml" />
 
-<file name="Races/vathgrim-dwarf.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vathgrim-dwarf.xml" />
+        <file name="Backgrounds/background-scavenger.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-scavenger.xml" />
 
-<file name="Races/dornethal-dwarf.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/dornethal-dwarf.xml" />
+        <file name="Backgrounds/background-arena-born.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-arena-born.xml" />
 
-<file name="Races/mytherin-elf.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/mytherin-elf.xml" />
+        <file name="Backgrounds/background-court-raised.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-court-raised.xml" />
 
-<file name="Races/vokar.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vokar.xml" />
+        <file name="Backgrounds/background-wildborn.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-wildborn.xml" />
 
-<file name="Races/soltharim.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/soltharim.xml" />
+        <file name="Backgrounds/background-halls-raised.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-halls-raised.xml" />
 
-<file name="Races/korvael.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/korvael.xml" />
+        <file name="Backgrounds/background-salvage-engineer.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-salvage-engineer.xml" />
 
-<file name="Races/thalen.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/thalen.xml" />
+        <file name="Backgrounds/background-caravaneer.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-caravaneer.xml" />
 
-<file name="Races/human.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/human.xml" />
+        <file name="Backgrounds/background-monster-hunter.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-monster-hunter.xml" />
 
-<file name="Races/boru.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/boru.xml" />
+        <file name="Backgrounds/background-frostbound.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-frostbound.xml" />
 
-<file name="Races/vael.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/vael.xml" />
+        <file name="Backgrounds/background-bandit-raised.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bandit-raised.xml" />
 
-<file name="Races/kelari.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/kelari.xml" />
+        <file name="Backgrounds/background-treasure-hunter.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-treasure-hunter.xml" />
 
-<file name="Races/grinn.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/grinn.xml" />
+        <file name="Backgrounds/background-tainted.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-tainted.xml" />
 
-<file name="Races/seramai.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/seramai.xml" />
+        <file name="Backgrounds/background-exiled.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-exiled.xml" />
 
-<file name="Feats/feat-craftsmanship.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
+        <file name="Backgrounds/background-temple-raised.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-temple-raised.xml" />
 
-<file name="Backgrounds/background-masterwork.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-masterwork.xml" />
+        <file name="Backgrounds/background-old-faith.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-old-faith.xml" />
 
-<file name="Backgrounds/background-salvage-engineer.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-salvage-engineer.xml" />
-
-<file name="Backgrounds/background-dreamer.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-dreamer.xml" />
-
-<file name="Backgrounds/background-bridge-duelist.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bridge-duelist.xml" />
-
-<file name="Backgrounds/background-ascendant.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-ascendant.xml" />
-
-<file name="Backgrounds/background-streetborn.xml"
-      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-streetborn.xml" />
-
+        <file name="Backgrounds/background-refugee.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-refugee.xml" />
     </files>
-
 </index>
