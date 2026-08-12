@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bandit-Raised</name>
+		<description>Bandit-Raised background — broad/anywhere, ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="background-bandit-raised.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-bandit-raised.xml" />
+		</update>
+	</info>
+	<element name="Bandit-Raised" type="Background" source="ATÉRIOR" id="ID_ATERIOR_BACKGROUND_BANDIT_RAISED">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Tavern Brawler</li>
+				<li><strong>Skill Proficiencies:</strong> Intimidation and Stealth</li>
+				<li><strong>Tool Proficiency:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Daggers (2), Traveler's Clothes, Pouch, Rope (50 ft), 15 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You grew up in or around a bandit camp — not necessarily as a criminal yourself, but shaped by that world's loyalty codes, distrust of authority, and survival-first mindset.</p>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Charisma, Tavern Brawler Feat, Intimidation and Stealth Skills, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_CON_CHA" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_TAVERN_BRAWLER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+</elements>
