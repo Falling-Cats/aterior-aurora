@@ -4,7 +4,7 @@
     <n>ATÉRIOR Races</n>
     <description>ATÉRIOR custom races.</description>
     <author>Falling-Cats</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file
         name="Races/human.xml"
         url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/human.xml"/>
@@ -71,7 +71,7 @@
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>
       <select type="Language" name="Language (Human)" supports="Standard||Exotic"/>
-      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Ability Score Ruleset" supports="ATERIOR_ASI_RULESET"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_SKILLED_LABOR"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_DISCIPLINED_TRAINING"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_HUMAN_RELENTLESS_PRACTICE"/>
