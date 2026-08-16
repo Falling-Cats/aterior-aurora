@@ -4,7 +4,7 @@
     <name>ATÉRIOR Shared ASI System</name>
     <description>Reusable +2/+1 or +1/+1/+1 ability score system for all ATÉRIOR races.</description>
     <author>Falling-Cats</author>
-    <update version="1.0.0">
+    <update version="1.1.0">
       <file
         name="Traits/flexible-ability-scores.xml"
         url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Traits/flexible-ability-scores.xml"/>
@@ -12,7 +12,30 @@
   </info>
 
   <!-- everything below this stays exactly the same -->
-  <!-- The two allocation methods a player picks between -->
+
+  <!-- Top-level ruleset choice: 2024 (background grants ASI, race grants nothing)
+       or 2014 (race grants ASI via the classic Focused/Balanced Growth choice) -->
+  <element name="2024 Rules" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_RULESET_2024">
+    <supports>ATERIOR_ASI_RULESET</supports>
+    <description>
+      <p>You're playing with 2024 rules, where your Background grants your ability score increase. This race grants no additional ability score increase.</p>
+    </description>
+    <sheet display="false"/>
+    <rules/>
+  </element>
+
+  <element name="2014 Rules" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_RULESET_2014">
+    <supports>ATERIOR_ASI_RULESET</supports>
+    <description>
+      <p>You're playing with 2014 rules, where your race grants your ability score increase. Choose how to apply it below.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+    </rules>
+  </element>
+
+  <!-- The two allocation methods a player picks between (only reached via "2014 Rules" above) -->
   <element name="Focused Growth" type="Racial Trait" source="ATÉRIOR" id="ID_ATERIOR_ASI_VARIANT_FOCUSED">
     <supports>ATERIOR_ASI_METHOD</supports>
     <description>
