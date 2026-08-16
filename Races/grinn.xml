@@ -4,7 +4,7 @@
     <name>ATÉRIOR Races</name>
     <description>ATÉRIOR custom races.</description>
     <author>Falling-Cats</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file
         name="Races/grinn.xml"
         url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/grinn.xml"/>
@@ -77,7 +77,7 @@
     <rules>
       <stat name="innate speed" value="25" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Ability Score Ruleset" supports="ATERIOR_ASI_RULESET"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_DARKVISION"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCURRY"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_GRINN_SCRAPPERS_INSTINCT"/>
