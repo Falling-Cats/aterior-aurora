@@ -4,7 +4,7 @@
     <name>ATÉRIOR Races</name>
     <description>ATÉRIOR custom races.</description>
     <author>Falling-Cats</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file
         name="Races/soltharim.xml"
         url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Races/soltharim.xml"/>
@@ -68,7 +68,7 @@
     <rules>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-      <select type="Racial Trait" name="Ability Score Method" supports="ATERIOR_ASI_METHOD"/>
+      <select type="Racial Trait" name="Ability Score Ruleset" supports="ATERIOR_ASI_RULESET"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_DARKVISION"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_POWERFUL_BUILD"/>
       <grant type="Racial Trait" id="ID_ATERIOR_RACIAL_TRAIT_SOLTHARIM_FELINE_CLAWS"/>
