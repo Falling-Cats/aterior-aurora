@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<n>Close-Quarters Archery</n>
+		<description>Close-Quarters Archery feat — ATÉRIOR custom General feat.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="feat-close-quarters-archery.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-close-quarters-archery.xml" />
+		</update>
+	</info>
+	<element name="Close-Quarters Archery" type="Feat" source="ATÉRIOR" id="ID_ATERIOR_FEAT_CLOSE_QUARTERS_ARCHERY">
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
+			<p>You've learned to fight in the collapsed halls and buried ruins that riddle Atérior, where the difference between a killing shot and a dead adventurer is measured in feet, not yards. You gain the following benefits.</p>
+			<p class="indent"><b><i>Firing in Melee.</i></b> Being within 5 feet of a hostile creature doesn't impose Disadvantage on your ranged attack rolls.</p>
+			<p class="indent"><b><i>Bypass Cover.</i></b> Your ranged attacks ignore Half Cover and Three-Quarters Cover against targets within 30 feet of you.</p>
+			<p class="indent"><b><i>Trained Aim.</i></b> You gain a +1 bonus to ranged attack rolls.</p>
+		</description>
+		<sheet>
+			<description>No Disadvantage on ranged attacks within 5 ft. of a hostile creature. Ignore Half/Three-Quarters Cover within 30 ft. +1 to ranged attack rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="1" />
+		</rules>
+	</element>
+</elements>
