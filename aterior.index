@@ -69,15 +69,18 @@
         <file name="Items/alex-gear.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/alex-gear.xml" />
 
-        <!-- Custom Feats (4) -->
-        <file name="Feats/feat-craftsmanship.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
-        <file name="Feats/feat-historian.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-historian.xml" />
-        <file name="Feats/feat-survivor.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-survivor.xml" />
-        <file name="Feats/feat-fae-marked.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-fae-marked.xml" />
+<!-- Custom Feats (5) -->
+<file name="Feats/feat-craftsmanship.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-craftsmanship.xml" />
+<file name="Feats/feat-historian.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-historian.xml" />
+<file name="Feats/feat-survivor.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-survivor.xml" />
+<file name="Feats/feat-fae-marked.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-fae-marked.xml" />
+<file name="Feats/feat-close-quarters-archery.xml"
+      url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Feats/feat-close-quarters-archery.xml" />
+
 
         <!-- Backgrounds: Kingdom-tied (9) -->
         <file name="Backgrounds/background-dreamer.xml"
