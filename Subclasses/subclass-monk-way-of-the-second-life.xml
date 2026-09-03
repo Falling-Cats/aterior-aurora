@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Second Life</name>
+		<description>Way of the Second Life monk subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-monk-way-of-the-second-life.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-monk-way-of-the-second-life.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Second Life" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_MONK_SECOND_LIFE">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">A trained warrior who believes violence should always be the last answer, not the first — and who has built two complete sets of technique around that belief.</p>
+			<p>These Monks are trained warriors first — real skill with a blade, sword or spear, hard-won the same way any fighter's is. What sets them apart is the conviction, carried alongside it, that violence is never the first answer, and rarely even the second. Protect. Heal. De-escalate. Only when there's truly nothing else left do they draw a blade — and when they do, there's no hesitation left in it either.</p>
+			<p class="indent">In Stillness, before any blood is drawn, every ability heals, protects, or repositions an ally instead of striking. The moment that stops working, they enter Resolved, and every one of those same techniques becomes something else entirely: efficient, deliberate, and final.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESTRAINT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_GENTLE_HAND_GUARDING_STEP_GUIDING_HAND" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_FIRST_CUT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESOLVED_RIDERS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_A_LIFE_BEFORE_THIS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_PERFECT_RESTRAINT" />
+		</description>
+		<sheet display="false">
+			<description>A trained warrior who believes violence should always be the last answer, not the first, with two complete sets of technique built around that belief.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESTRAINT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_GENTLE_HAND_GUARDING_STEP_GUIDING_HAND" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_FIRST_CUT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESOLVED_RIDERS" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_A_LIFE_BEFORE_THIS" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_PERFECT_RESTRAINT" level="17" />
+		</rules>
+	</element>
+
+	<element name="Stillness &amp; Restraint" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESTRAINT">
+		<description>
+			<p><em>3rd-level Way of the Second Life feature</em></p>
+			<p>While you've dealt no damage since combat began, you're in Stillness. The moment you deal damage, you leave it and enter Resolved.</p>
+			<p class="indent">At the end of each turn in Stillness, gain 1 Restraint (maximum equal to your Monk level). Once Resolved, Restraint counts down by 1 at the end of each of your turns instead — nothing else reduces it. At 0, you leave Resolved; your abilities revert to normal Monk function for the rest of the encounter, or reset fresh into Stillness at the start of your next one.</p>
+		</description>
+		<sheet>
+			<description>While you've dealt no damage since combat began, you're in Stillness; dealing damage moves you to Resolved. You gain 1 Restraint (max your Monk level) at the end of each turn in Stillness. In Resolved, Restraint counts down by 1 each of your turns instead; at 0 you revert to normal Monk function or reset into Stillness at the start of your next encounter.</description>
+		</sheet>
+	</element>
+
+	<element name="Gentle Hand, Guarding Step, Guiding Hand" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_GENTLE_HAND_GUARDING_STEP_GUIDING_HAND">
+		<description>
+			<p><em>3rd-level Way of the Second Life feature (Stillness)</em></p>
+			<p>In place of Flurry of Blows, Patient Defense, or Step of the Wind, spend 1 Focus Point as a Bonus Action:</p>
+			<p class="indent"><strong>Gentle Hand</strong> (in place of Flurry of Blows). Restore your Martial Arts die in hit points to a creature within 5 feet.</p>
+			<p class="indent"><strong>Guarding Step</strong> (in place of Patient Defense). One creature within 30 feet — the next attack against it has disadvantage.</p>
+			<p class="indent"><strong>Guiding Hand</strong> (in place of Step of the Wind). Move a willing creature within 30 feet up to half their Speed, no Opportunity Attacks.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Focus Point">
+			<description>While in Stillness, spend 1 Focus Point in place of Flurry of Blows, Patient Defense, or Step of the Wind: Gentle Hand (restore your Martial Arts die in HP to a creature within 5 ft.), Guarding Step (the next attack against a creature within 30 ft. has disadvantage), or Guiding Hand (move a willing creature within 30 ft. up to half their Speed, no Opportunity Attacks).</description>
+		</sheet>
+	</element>
+
+	<element name="First Cut" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_FIRST_CUT">
+		<description>
+			<p><em>3rd-level Way of the Second Life feature (Resolved)</em></p>
+			<p>When you use Flurry of Blows, you can replace either Unarmed Strike with an attack using a Light weapon you're holding. (Patient Defense and Step of the Wind function normally once Resolved.)</p>
+		</description>
+		<sheet>
+			<description>While Resolved, when you use Flurry of Blows, you can replace either Unarmed Strike with an attack using a Light weapon you're holding.</description>
+		</sheet>
+	</element>
+
+	<element name="Stillness &amp; Resolved Riders" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_STILLNESS_AND_RESOLVED_RIDERS">
+		<description>
+			<p><em>6th-level Way of the Second Life feature</em></p>
+			<p><strong>Stillness riders.</strong> Gentle Hand also grants temporary hit points equal to your Monk level. Guarding Step also grants the protected ally a +1 bonus to attack rolls. Guiding Hand also grants the moved ally a +1 bonus to AC. Each lasts until the start of your next turn.</p>
+			<p class="indent"><strong>Resolved riders.</strong> A hit from First Cut imposes a −1 penalty to the target's attack rolls. A creature that hits you or an ally within 5 feet of you while you're using Patient Defense takes a −1 penalty to AC. Step of the Wind reduces one nearby hostile creature's Speed by 10 feet. Each lasts until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Stillness: Gentle Hand also grants temp HP equal to your Monk level; Guarding Step also grants +1 to attack rolls; Guiding Hand also grants +1 AC. Resolved: First Cut imposes −1 to the target's attack rolls; hitting you or a nearby ally during Patient Defense gives the attacker −1 AC; Step of the Wind reduces a nearby hostile's Speed by 10 ft. All last until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="A Life Before This" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_A_LIFE_BEFORE_THIS">
+		<description>
+			<p><em>11th-level Way of the Second Life feature</em></p>
+			<p>Choose one: Nature, Animal Handling, History, Religion, Medicine, Insight, or Persuasion. Add your Martial Arts die to ability checks with it, proficient or not. Fixed once chosen.</p>
+		</description>
+		<sheet>
+			<description>Choose one skill (fixed once chosen): Nature, Animal Handling, History, Religion, Medicine, Insight, or Persuasion. Add your Martial Arts die to ability checks with it, proficient or not.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="A Life Before This" supports="A Life Before This" number="1" />
+		</rules>
+	</element>
+	<element name="Nature (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_NATURE">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Nature checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Nature checks.</description></sheet>
+	</element>
+	<element name="Animal Handling (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_ANIMAL_HANDLING">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Animal Handling checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Animal Handling checks.</description></sheet>
+	</element>
+	<element name="History (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_HISTORY">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to History checks.</p></description>
+		<sheet><description>Add your Martial Arts die to History checks.</description></sheet>
+	</element>
+	<element name="Religion (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_RELIGION">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Religion checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Religion checks.</description></sheet>
+	</element>
+	<element name="Medicine (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_MEDICINE">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Medicine checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Medicine checks.</description></sheet>
+	</element>
+	<element name="Insight (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_INSIGHT">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Insight checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Insight checks.</description></sheet>
+	</element>
+	<element name="Persuasion (A Life Before This)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SECOND_LIFE_SKILL_PERSUASION">
+		<supports>A Life Before This</supports>
+		<description><p>Add your Martial Arts die to Persuasion checks.</p></description>
+		<sheet><description>Add your Martial Arts die to Persuasion checks.</description></sheet>
+	</element>
+
+	<element name="Perfect Restraint" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_SECOND_LIFE_PERFECT_RESTRAINT">
+		<description>
+			<p><em>17th-level Way of the Second Life feature</em></p>
+			<p>While you have Restraint remaining, choose the Stillness or Resolved version of Flurry of Blows, Patient Defense, or Step of the Wind fresh each time you use one — still limited to your normal Bonus Action and Focus Point cost. Using a Stillness ability this way doesn't stop Restraint from counting down.</p>
+		</description>
+		<sheet>
+			<description>While you have Restraint remaining, choose the Stillness or Resolved version of Flurry of Blows, Patient Defense, or Step of the Wind fresh each time you use one, within your normal Bonus Action and Focus Point cost. Using a Stillness ability this way doesn't stop Restraint from counting down.</description>
+		</sheet>
+	</element>
+</elements>
