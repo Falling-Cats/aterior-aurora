@@ -1,0 +1,32 @@
+<!-- spell-stone-into-mire.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Stone into Mire</name>
+		<description>Stone into Mire — original ATÉRIOR spell.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-stone-into-mire.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-stone-into-mire.xml" />
+		</update>
+	</info>
+	<element name="Stone into Mire" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_SPELL_STONE_INTO_MIRE">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose an area of nonmagical stone or packed earth you can see within range, up to 40 feet on a side. For the duration, that area transforms into thick, clinging mire, sinking anything on its surface and turning it into Difficult Terrain. A creature standing in the area when it transforms makes a Dexterity saving throw, gaining the Restrained condition on a failed save until it escapes with a successful Strength (Athletics) check against your spell save DC, taken as an action.</p>
+			<p class="indent">You can take a Magic Action on a later turn to revert the area back to solid stone or earth instantly, potentially trapping anything still Restrained within it (DM's discretion based on the situation) or ending the spell early.</p>
+		</description>
+		<setters>
+			<set name="keywords">difficult terrain, dexterity, save, restrained, strength, athletics, ability check</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a mixture of clay and water</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+		</setters>
+	</element>
+</elements>
