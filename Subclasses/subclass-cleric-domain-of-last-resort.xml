@@ -4,7 +4,7 @@
 		<name>Domain of Last Resort</name>
 		<description>Domain of Last Resort cleric subclass — ATÉRIOR.</description>
 		<author>Falling-Cats</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="subclass-cleric-domain-of-last-resort.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-cleric-domain-of-last-resort.xml" />
 		</update>
 	</info>
@@ -51,16 +51,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_VAMPIRIC_TOUCH" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_BESTOW_CURSE" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_BLIGHT" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DEATH_WARD" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_CONTAGION" level="11" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_ANTILIFE_SHELL" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FALSE_LIFE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANTILIFE_SHELL" level="11" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 
