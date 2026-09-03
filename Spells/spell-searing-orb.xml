@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Searing Orb</name>
+		<description>Searing Orb (D&amp;D Beyond Drops, June 2026) — added locally pending official Aurora pack support.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-searing-orb.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-searing-orb.xml" />
+		</update>
+	</info>
+
+	<element name="Searing Orb" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_TEMP_SPELL_SEARING_ORB">
+		<supports>Cleric, Paladin, Damaging Spell, Ranged, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You create and hurl a pulsing orb of energy at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d4 Radiant damage. Hit or miss, the orb then explodes in a flash of light. The target and each creature within 10 feet of it make a Constitution saving throw. On a failed save, a creature has the Blinded condition until the end of its next turn.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d4 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant, damage, constitution, save, blinded, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">metallic flakes and a pinch of phosphorus</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+</elements>
