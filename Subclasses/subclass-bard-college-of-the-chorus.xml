@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of the Chorus</name>
+		<description>College of the Chorus bard subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-bard-college-of-the-chorus.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-bard-college-of-the-chorus.xml" />
+		</update>
+	</info>
+
+	<element name="College of the Chorus" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_BARD_COLLEGE_OF_THE_CHORUS">
+		<supports>Bard College</supports>
+		<description>
+			<p class="flavor">A performer who has built their entire art around a single act of devotion — elevating one chosen person, absorbing what hurts them, and letting that shared pain become the clearest proof the bond is real.</p>
+			<p>Somewhere within the college kingdom, in lecture halls that have since become something stranger than lecture halls, a philosophy took root: that the Weaver does not see its own creation, does not listen, does not know its followers exist — and that devotion made loud enough, strange enough, undeniable enough, might change that.</p>
+			<p class="indent">A College of the Chorus Bard has taken that same hunger and pointed it somewhere it can actually be answered. Not at something cosmic and indifferent, but at a single person. They pour themselves into that person, make that person's pain their own, and let the shared suffering stand as proof the devotion is real.</p>
+			<p class="indent">Some learned this from teachers touched by the college kingdom's stranger philosophies. Others arrived at the same belief entirely alone. Either way, the performance is the same: total, uncomfortable, impossible to look away from.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_ENTWINED" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_MARTIAL_TRAINING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_COUNTERPOINT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_THE_VESSEL" />
+		</description>
+		<sheet display="false">
+			<description>A performer who has built their entire art around a single act of devotion — elevating one chosen person and absorbing what hurts them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_ENTWINED" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_MARTIAL_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_COUNTERPOINT" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_THE_VESSEL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Entwined" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_ENTWINED">
+		<description>
+			<p><em>3rd-level College of the Chorus feature</em></p>
+			<p>When you use Bardic Inspiration to give a creature other than yourself an Inspiration die, you and that creature become Entwined until the die is expended, however that happens. You can only be Entwined with one creature at a time; Entwining a new creature ends any previous bond.</p>
+			<p class="indent">While a creature is Entwined with you, when it takes damage, you can use your Reaction to take half of that damage, rounded down, up to a maximum equal to your Bardic Inspiration die plus your Charisma modifier. You take this damage as Psychic damage, and the Entwined creature takes the remaining damage normally. If you do, you gain an Echo equal to the damage you took this way. You can only hold one Echo at a time; a new one replaces the old.</p>
+			<p class="indent">Immediately after you hit a creature with an attack, you can expend your Echo to deal that much extra damage of the same type as the attack. If you don't expend your Echo before the end of your next turn, it fades and is lost.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you use Bardic Inspiration on another creature, you become Entwined with it until the die is expended. While Entwined, when it takes damage, you can use your Reaction to take half (rounded down, max 1d{{bardic inspiration:dice}}+{{charisma:modifier}}) as Psychic damage instead, gaining an Echo equal to the damage taken. Immediately after you hit with an attack, you can expend your Echo to deal that much extra damage of the same type. Unused Echo fades by the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Martial Training" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_MARTIAL_TRAINING">
+		<description>
+			<p><em>3rd-level College of the Chorus feature</em></p>
+			<p>You gain proficiency with martial weapons and one Weapon Mastery of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<select type="Class Feature" name="Weapon Mastery (Chorus)" supports="Weapon Mastery" number="1" />
+		</rules>
+	</element>
+
+	<element name="Counterpoint" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_COUNTERPOINT">
+		<description>
+			<p><em>6th-level College of the Chorus feature</em></p>
+			<p>You can now be Entwined with up to two creatures at a time.</p>
+			<p class="indent">When either creature Entwined with you takes damage, you can use your Reaction to shift half of that damage (as above) as Psychic damage, either to yourself or to your other Entwined creature. The original creature takes the remaining damage normally. You gain an Echo only if you take the shifted damage yourself.</p>
+			<p class="indent">Whenever you use this Reaction, you can also make one weapon or unarmed attack against the creature that dealt the damage, if it's within your reach, as part of the same Reaction.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> This isn't automatic generosity. You only gain an Echo if you take the shifted damage yourself — routing it to your other Entwined creature instead is a real trade-off, not a free dump. Use it to protect a teammate who needs to stay standing, or to feed a teammate who wants the damage.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can be Entwined with up to two creatures. When either takes damage, shift half of it as Psychic damage to yourself or your other Entwined creature (gain an Echo only if you take it yourself). You can also make one weapon or unarmed attack against the damage source as part of the same Reaction.</description>
+		</sheet>
+	</element>
+
+	<element name="The Vessel" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_CHORUS_THE_VESSEL">
+		<description>
+			<p><em>14th-level College of the Chorus feature</em></p>
+			<p>When a creature Entwined with you is reduced to 0 hit points and starts making death saving throws, you enter this state, unless you choose not to. It lasts until that creature is stabilized, restored to 1 or more hit points, or dies.</p>
+			<p class="indent">While in this state, you gain an additional bonus action on each of your turns, usable only to make one weapon attack. You can also target yourself with your Bardic Inspiration; the first time you do, it doesn't expend a use. You can cast spells as normal.</p>
+			<p class="indent">If you're reduced to 0 hit points while in this state, you and the Entwined creature each immediately gain one failed death saving throw. If the Entwined creature dies while you're in this state, the state ends immediately and you gain 1 level of Exhaustion.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When a creature Entwined with you drops to 0 HP and starts death saves, you can enter this state until they're stabilized, restored, or die. While active: extra bonus action for one weapon attack only, and the first self-targeted Bardic Inspiration each activation doesn't expend a use. If you drop to 0 HP while active, you and the Entwined creature each gain a failed death save. If they die while you're in this state, it ends and you gain 1 level of Exhaustion.</description>
+		</sheet>
+	</element>
+</elements>
