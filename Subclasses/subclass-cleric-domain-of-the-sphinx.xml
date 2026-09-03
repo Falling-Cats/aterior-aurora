@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Domain of the Sphinx</name>
+		<description>Domain of the Sphinx cleric subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-cleric-domain-of-the-sphinx.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-cleric-domain-of-the-sphinx.xml" />
+		</update>
+	</info>
+
+	<element name="Domain of the Sphinx" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_CLERIC_DOMAIN_OF_THE_SPHINX">
+		<supports>Divine Domain</supports>
+		<description>
+			<p class="flavor">A Cleric whose god can no longer sustain a direct connection, and instead reaches them through the permanent, self-sustaining Sphinx that embodies their fused domain.</p>
+			<p>The Severing didn't just silence the gods. It made them poor. Making a new Cleric is one of the most expensive things a god can still afford to do at all — and even a god who can still afford the investment can no longer promise a clear voice. Domain of the Sphinx exists because some gods, unable to sustain even that much of a line, found another way to reach the mortal they'd chosen: a Legendary Sphinx, permanent and self-sustaining in a way the god itself no longer is.</p>
+			<p class="indent">What reaches a Domain of the Sphinx Cleric was never words. It's pattern, glimpse, and foresight, filtered through something that hasn't heard its own god in five hundred years either.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_DOMAIN_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_PERCEPTIVE_WATCHER" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_CHANNEL_DIVINITY_SHARPENED_SIGHT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_WHISPERED_FORESIGHT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_SPHINXS_JUDGMENT" />
+		</description>
+		<sheet display="false">
+			<description>A Cleric whose god reaches them only through the permanent, self-sustaining Sphinx that embodies their fused domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_PERCEPTIVE_WATCHER" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_CHANNEL_DIVINITY_SHARPENED_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_WHISPERED_FORESIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_SPHINXS_JUDGMENT" level="17" />
+		</rules>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-level Domain of the Sphinx feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified below, you thereafter always have the listed spells prepared. They don't count against the number of spells you can prepare.</p>
+			<h5 class="caption">Domain of the Sphinx Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Detect Magic, Comprehend Languages</em></td></tr>
+				<tr><td>5th</td><td><em>Detect Thoughts, Augury</em></td></tr>
+				<tr><td>7th</td><td><em>Clairvoyance, Tongues</em></td></tr>
+				<tr><td>9th</td><td><em>Arcane Eye, Divination</em></td></tr>
+				<tr><td>11th</td><td><em>Legend Lore, Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_AUGURY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CLAIRVOYANCE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_TONGUES" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DIVINATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LEGEND_LORE" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="11" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Perceptive Watcher" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_PERCEPTIVE_WATCHER">
+		<description>
+			<p><em>3rd-level Domain of the Sphinx feature</em></p>
+			<p>You gain proficiency in Insight and Perception, and expertise in one of the two.</p>
+			<p class="indent">You can use Wisdom instead of Charisma for Persuasion, Deception, and Intimidation checks when the interaction relies on your ability to read, unsettle, or understand another creature.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Insight and Perception, plus expertise in one of the two. You can use Wisdom instead of Charisma for Persuasion, Deception, and Intimidation checks when the interaction relies on your ability to read, unsettle, or understand another creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Class Feature" name="Perceptive Watcher Expertise" supports="Perceptive Watcher Expertise" number="1" />
+		</rules>
+	</element>
+	<element name="Insight Expertise" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_EXPERTISE_INSIGHT">
+		<supports>Perceptive Watcher Expertise</supports>
+		<description>
+			<p>Your proficiency bonus is doubled for any Insight check you make.</p>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for Insight checks.</description>
+		</sheet>
+		<rules>
+			<stat name="insight:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Perception Expertise" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_EXPERTISE_PERCEPTION">
+		<supports>Perceptive Watcher Expertise</supports>
+		<description>
+			<p>Your proficiency bonus is doubled for any Perception check you make.</p>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for Perception checks.</description>
+		</sheet>
+		<rules>
+			<stat name="perception:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Sharpened Sight" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_CHANNEL_DIVINITY_SHARPENED_SIGHT">
+		<description>
+			<p><em>3rd-level Domain of the Sphinx feature</em></p>
+			<p>When you use your Channel Divinity, you can choose one of the following:</p>
+			<p class="indent"><strong>Grant Insight.</strong> You or a creature within 30 feet gains advantage on an Intelligence (Arcana, History, Investigation, Nature, Religion), Wisdom (Insight or Perception), or Charisma (Deception) check.</p>
+			<p class="indent"><strong>Guard Perception.</strong> You or a creature within 30 feet gains advantage on a saving throw against an illusion, being Charmed, or an effect that would obscure or alter their perception.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>You or a creature within 30 feet gains advantage on one Intelligence, Wisdom (Insight/Perception), or Charisma (Deception) check (Grant Insight), or advantage on a saving throw against an illusion, being Charmed, or perception-altering effects (Guard Perception).</description>
+		</sheet>
+	</element>
+
+	<element name="Whispered Foresight" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_WHISPERED_FORESIGHT">
+		<description>
+			<p><em>6th-level Domain of the Sphinx feature</em></p>
+			<p>A number of times per Long Rest equal to your Wisdom modifier (minimum 1), you can use your Reaction, before a d20 roll's outcome is known, to grant advantage to yourself or an ally within 60 feet, or impose disadvantage on an enemy within 60 feet.</p>
+		</description>
+		<sheet action="Reaction" usage="{{sphinx:foresight:uses}}/Long Rest">
+			<description>Before a d20 roll's outcome is known, grant advantage to yourself or an ally within 60 feet, or impose disadvantage on an enemy within 60 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="sphinx:foresight:uses" value="1" bonus="base" />
+			<stat name="sphinx:foresight:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Sphinx's Judgment" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_SPHINX_SPHINXS_JUDGMENT">
+		<description>
+			<p><em>17th-level Domain of the Sphinx feature</em></p>
+			<p>Your Temple is the one belonging to the god you follow — not a choice made now, but the one made when you first devoted yourself. Once per Long Rest, as an action, you call on your Sphinx directly. Every enemy within 30 feet of you must succeed on a saving throw (typically Constitution, unless noted) or suffer your Temple's effect; every ally in range gains their listed benefit automatically, no save required.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Call on your Sphinx. Every enemy within 30 feet must save or suffer your Temple's effect; every ally in range gains its benefit automatically.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Temple" supports="Sphinx Temple" number="1" />
+		</rules>
+	</element>
+
+	<element name="Temple of Flame" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_FLAME">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Fire damage. You can heal one enemy's worth of that damage, split among allies you choose in range.</p></description>
+		<sheet><description>Enemies: 8d6 Fire on a failed save. Allies: healed for half the damage dealt to one enemy.</description></sheet>
+	</element>
+	<element name="Temple of the Hunt" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_HUNT">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Piercing damage and are marked. Allies' next attack against a marked target has advantage and scores a critical hit on a roll of 19–20.</p></description>
+		<sheet><description>Enemies: 8d6 Piercing on a failed save, and marked. Allies: next attack against a marked target has advantage and crits on 19–20.</description></sheet>
+	</element>
+	<element name="Temple of Heroes" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_HEROES">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Radiant damage. Each ally can use a Bonus Action to make one weapon attack.</p></description>
+		<sheet><description>Enemies: 8d6 Radiant on a failed save. Allies: each can use a Bonus Action to make one weapon attack.</description></sheet>
+	</element>
+	<element name="Temple of Gold" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_GOLD">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Force damage and have disadvantage on attack rolls until the start of your next turn. Allies gain advantage on their next attack.</p></description>
+		<sheet><description>Enemies: 8d6 Force on a failed save, plus disadvantage on attacks. Allies: advantage on their next attack.</description></sheet>
+	</element>
+	<element name="Temple of Mercy" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_MERCY">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail fall asleep. Allies regain 8d6 hit points and the Frightened condition ends on them.</p></description>
+		<sheet><description>Enemies: fall asleep on a failed save. Allies: restore 8d6 HP and end Frightened.</description></sheet>
+	</element>
+	<element name="Temple of Stone" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_STONE">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Bludgeoning damage and fall Prone. One ally you choose gains resistance to Bludgeoning, Piercing, and Slashing damage until the start of your next turn.</p></description>
+		<sheet><description>Enemies: 8d6 Bludgeoning on a failed save, and Prone. Allies: one gains resistance to bludgeoning, piercing, and slashing damage.</description></sheet>
+	</element>
+	<element name="Temple of the Sky" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_SKY">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Lightning or Cold damage (your choice). Allies gain +2 AC and their weapon attacks deal an extra 1d6 Lightning or Cold damage until the start of your next turn.</p></description>
+		<sheet><description>Enemies: 8d6 Lightning or Cold on a failed save. Allies: +2 AC, weapon attacks deal +1d6 Lightning or Cold.</description></sheet>
+	</element>
+	<element name="Temple of the Veil" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_VEIL">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Necrotic damage and are Restrained until the start of your next turn. Allies regain 2d6 hit points at the start of their turns for the next 3 rounds.</p></description>
+		<sheet><description>Enemies: 8d6 Necrotic on a failed save, and Restrained. Allies: regain 2d6 HP at the start of their turns for 3 rounds.</description></sheet>
+	</element>
+	<element name="Temple of Echoes" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_ECHOES">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Psychic damage and have disadvantage on their next saving throw. Allies gain advantage on their next check or attack roll.</p></description>
+		<sheet><description>Enemies: 8d6 Psychic on a failed save, plus disadvantage on their next save. Allies: advantage on their next check or attack.</description></sheet>
+	</element>
+	<element name="Temple of Dawn" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_DAWN">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Radiant damage, and any illusion or invisibility effect on them ends. Allies' next attack deals an extra 1d6 Radiant damage.</p></description>
+		<sheet><description>Enemies: 8d6 Radiant on a failed save, and illusions/invisibility end. Allies: next attack deals +1d6 Radiant.</description></sheet>
+	</element>
+	<element name="Temple of Dusk" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_DUSK">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail take 8d6 Necrotic damage. You can heal one enemy's worth of that Necrotic damage, split among allies you choose in range.</p></description>
+		<sheet><description>Enemies: 8d6 Necrotic on a failed save. Allies: healed for the necrotic damage dealt to one enemy.</description></sheet>
+	</element>
+	<element name="Temple of Shadow" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_SPHINX_TEMPLE_SHADOW">
+		<supports>Sphinx Temple</supports>
+		<description><p>Enemies who fail are Blinded for 1 round, and the area becomes magical darkness. Any ally can teleport-swap places with any other ally within the radius, once.</p></description>
+		<sheet><description>Enemies: Blinded 1 round on a failed save, area becomes darkness. Allies: can teleport-swap with any ally in the radius, once.</description></sheet>
+	</element>
+</elements>
