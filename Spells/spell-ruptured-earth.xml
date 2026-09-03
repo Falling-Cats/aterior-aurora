@@ -1,0 +1,32 @@
+<!-- spell-ruptured-earth.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ruptured Earth</name>
+		<description>Ruptured Earth — original ATÉRIOR spell.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-ruptured-earth.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-ruptured-earth.xml" />
+		</update>
+	</info>
+	<element name="Ruptured Earth" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_SPELL_RUPTURED_EARTH">
+		<supports>Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a point on the ground you can see within range. The earth there splits and heaves upward in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw, taking 4d8 Bludgeoning damage and falling Prone on a failed save, or taking half as much damage without falling Prone on a successful one.</p>
+			<p class="indent">The broken, jagged ground in the area becomes Difficult Terrain until cleared away, which takes roughly 10 minutes of labor per 10-foot section.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 3.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, dexterity, save, bludgeoning, damage, prone, difficult terrain, upcasting, higher-level spell slot</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chunk of broken stone</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+</elements>
