@@ -94,6 +94,11 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-monk-way-of-the-ten-thousandth-strike.xml" />
         <file name="Subclasses/subclass-monk-way-of-the-second-life.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-monk-way-of-the-second-life.xml" />
+        <file name="Subclasses/subclass-paladin-oath-of-the-last-flame.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-paladin-oath-of-the-last-flame.xml" />
+        <file name="Subclasses/subclass-paladin-oath-of-ambition.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-paladin-oath-of-ambition.xml" />
+
 
 <!-- Custom Feats (5) -->
 <file name="Feats/feat-craftsmanship.xml"
