@@ -110,7 +110,8 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-blood-of-the-beyond.xml" />
   <file name="Subclasses/subclass-sorcerer-orphaned-grace.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-orphaned-grace.xml" />
-
+        <file name="Subclasses/subclass-tinkerer-keeper-of-what-was.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-tinkerer-keeper-of-what-was.xml" />
         <file name="Subclasses/subclass-warlock-pact-of-the-concept.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-concept.xml" />
         <file name="Spells/spell-booming-blade.xml"
