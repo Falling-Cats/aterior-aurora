@@ -4,7 +4,7 @@
 		<name>Domain of the Sphinx</name>
 		<description>Domain of the Sphinx cleric subclass — ATÉRIOR.</description>
 		<author>Falling-Cats</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="subclass-cleric-domain-of-the-sphinx.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-cleric-domain-of-the-sphinx.xml" />
 		</update>
 	</info>
@@ -51,16 +51,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_AUGURY" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_CLAIRVOYANCE" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_TONGUES" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DIVINATION" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_LEGEND_LORE" level="11" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TONGUES" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEGEND_LORE" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="11" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 
