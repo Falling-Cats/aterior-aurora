@@ -115,6 +115,9 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-concept.xml" />
 
 
+        <file name="Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml" />
+
 
 
 
@@ -122,7 +125,10 @@
         <!-- Spells (1) -->
         <file name="Spells/spell-searing-orb.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-searing-orb.xml" />
-
+        <file name="Spells/spell-gift-of-alacrity.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-gift-of-alacrity.xml" />
+        <file name="Spells/spell-temporal-shunt.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-temporal-shunt.xml" />
       
 
 
