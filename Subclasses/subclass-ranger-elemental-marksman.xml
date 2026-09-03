@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elemental Marksman</name>
+		<description>Elemental Marksman ranger subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-ranger-elemental-marksman.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-elemental-marksman.xml" />
+		</update>
+	</info>
+
+	<element name="Elemental Marksman" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_RANGER_ELEMENTAL_MARKSMAN">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">A hunter born with a rare sensitivity to the faint elemental traces present almost everywhere — heat, frost, storm, thunder — spending years learning to aim what they were simply born able to touch.</p>
+			<p>Every element leaves some trace nearly everywhere in Atérior. An Elemental Marksman is someone born already sensitive enough to touch what's faintly there. Some reach for any element the moment calls for; others answer to only one, and nothing else ever responds no matter how hard they reach. Both are the same gift, just shaped differently by the person carrying it.</p>
+			<p class="indent"><strong>Marksman DC.</strong> Several of your techniques require a saving throw or check. The DC for these equals 8 + your Proficiency Bonus + your Wisdom modifier.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_INFUSION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_SIGHT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_7_TECHNIQUES" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_RESONANCE_DISCORD" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_15_TECHNIQUES" />
+		</description>
+		<sheet display="false">
+			<description>A hunter born with a rare sensitivity to the faint elemental traces present almost everywhere, spending years learning to aim what they were simply born able to touch.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_INFUSION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_7_TECHNIQUES" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_RESONANCE_DISCORD" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_15_TECHNIQUES" level="15" />
+			<stat name="marksman:dc" value="8" bonus="base" />
+			<stat name="marksman:dc" value="proficiency" bonus="proficiency" />
+			<stat name="marksman:dc" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Elemental Infusion" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_INFUSION">
+		<description>
+			<p><em>3rd-level Elemental Marksman feature</em></p>
+			<p>You have 5 infusion dice (d6). When you make a weapon attack, expend 1 die to infuse it with Fire, Cold, Thunder, or Lightning, dealing extra damage of that type equal to the roll plus your Wisdom modifier on a hit. Regain all dice on a Long Rest.</p>
+		</description>
+		<sheet usage="{{marksman:pool}}/Long Rest">
+			<description>You have {{marksman:pool}} infusion dice. When you make a weapon attack, expend 1 die to infuse it with Fire, Cold, Thunder, or Lightning, dealing extra damage of that type equal to the roll plus your Wisdom modifier on a hit. Die size: d6 (3rd level), d8 (7th level), d12 (15th level).</description>
+		</sheet>
+		<rules>
+			<stat name="marksman:pool" value="5" bonus="base" />
+			<stat name="marksman:pool" value="1" bonus="base" level="7" />
+			<stat name="marksman:pool" value="1" bonus="base" level="11" />
+			<stat name="marksman:pool" value="2" bonus="base" level="15" />
+		</rules>
+	</element>
+
+	<element name="Elemental Sight" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_SIGHT">
+		<description>
+			<p><em>3rd-level Elemental Marksman feature</em></p>
+			<p>Gain proficiency in Arcana or Nature. You automatically perceive a creature's resistances or immunities to acid, cold, fire, lightning, and thunder — advantage on checks to determine them otherwise.</p>
+		</description>
+		<sheet>
+			<description>You automatically perceive a creature's resistances or immunities to acid, cold, fire, lightning, and thunder, and have advantage on checks to determine them otherwise.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Elemental Sight Skill" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_NATURE" number="1" />
+		</rules>
+	</element>
+
+	<element name="Level 7 Techniques" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_7_TECHNIQUES">
+		<description>
+			<p><em>7th-level Elemental Marksman feature</em></p>
+			<p>Your infusion die becomes a d8; your pool increases to 6. When you expend a die on a weapon attack, apply it as Elemental Infusion or trigger one known technique instead — never both from the same die. Learn 4 of the ten Level 7 Techniques below.</p>
+			<h5 class="caption">Level 7 Techniques</h5>
+			<table>
+				<thead>
+					<tr><td class="left">Technique</td><td>Element</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td class="left">Explosive Shot</td><td>Fire</td><td class="left">On a hit, deals the infusion die's damage (fire) to every other creature within 10 ft. Half damage on a successful Dexterity save vs. Marksman DC.</td></tr>
+				<tr><td class="left">Hot Metal</td><td>Fire</td><td class="left">On a hit, target makes a Constitution save vs. Marksman DC or drops one held item.</td></tr>
+				<tr><td class="left">Frostbite</td><td>Cold</td><td class="left">On a hit, target's Speed is halved until the start of your next turn.</td></tr>
+				<tr><td class="left">Icebound Ground</td><td>Cold</td><td class="left">On a hit, a 10-ft. radius around the target becomes Difficult Terrain until the start of your next turn.</td></tr>
+				<tr><td class="left">Stormforce</td><td>Lightning</td><td class="left">On a hit, target makes a Strength save vs. Marksman DC or is pushed 10 ft. directly away from you.</td></tr>
+				<tr><td class="left">Soothing Gust</td><td>Lightning</td><td class="left">Instead of attacking, expend 1 die as a Bonus Action to regain hit points equal to the roll plus your Wisdom modifier.</td></tr>
+				<tr><td class="left">Concussive Blow</td><td>Thunder</td><td class="left">On a hit, target makes a Strength save vs. Marksman DC or falls Prone.</td></tr>
+				<tr><td class="left">Shattering Wave</td><td>Thunder</td><td class="left">On a hit, deals the infusion die's damage (thunder) to every other creature within 10 ft. Half damage on a successful Constitution save vs. Marksman DC.</td></tr>
+				<tr><td class="left">Elemental Parry</td><td>Universal</td><td class="left">Reaction when you take damage: expend 1 die to reduce it by the roll plus your Wisdom modifier.</td></tr>
+				<tr><td class="left">Elemental Rally</td><td>Universal</td><td class="left">After hitting with an infused attack, expend 1 additional die for temporary hit points equal to the roll.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Level 7 Techniques" supports="Marksman Level 7 Techniques" number="4" />
+		</rules>
+	</element>
+	<element name="Explosive Shot" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_EXPLOSIVE_SHOT">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Fire.</em> On a hit, deals the infusion die's damage (fire) to every other creature within 10 ft. Half damage on a successful Dexterity save vs. Marksman DC.</p></description>
+		<sheet><description>Fire. On a hit, deals the infusion die's fire damage to every other creature within 10 ft. (Dexterity save vs. Marksman DC for half).</description></sheet>
+	</element>
+	<element name="Hot Metal" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_HOT_METAL">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Fire.</em> On a hit, target makes a Constitution save vs. Marksman DC or drops one held item.</p></description>
+		<sheet><description>Fire. On a hit, target makes a Constitution save vs. Marksman DC or drops one held item.</description></sheet>
+	</element>
+	<element name="Frostbite" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_FROSTBITE">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Cold.</em> On a hit, target's Speed is halved until the start of your next turn.</p></description>
+		<sheet><description>Cold. On a hit, target's Speed is halved until the start of your next turn.</description></sheet>
+	</element>
+	<element name="Icebound Ground" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_ICEBOUND_GROUND">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Cold.</em> On a hit, a 10-ft. radius around the target becomes Difficult Terrain until the start of your next turn.</p></description>
+		<sheet><description>Cold. On a hit, a 10-ft. radius around the target becomes Difficult Terrain until the start of your next turn.</description></sheet>
+	</element>
+	<element name="Stormforce" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_STORMFORCE">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Lightning.</em> On a hit, target makes a Strength save vs. Marksman DC or is pushed 10 ft. directly away from you.</p></description>
+		<sheet><description>Lightning. On a hit, target makes a Strength save vs. Marksman DC or is pushed 10 ft. directly away from you.</description></sheet>
+	</element>
+	<element name="Soothing Gust" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_SOOTHING_GUST">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Lightning.</em> Instead of attacking, expend 1 die as a Bonus Action to regain hit points equal to the roll plus your Wisdom modifier.</p></description>
+		<sheet action="Bonus Action"><description>Lightning. Instead of attacking, expend 1 die to regain hit points equal to the roll plus your Wisdom modifier.</description></sheet>
+	</element>
+	<element name="Concussive Blow" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_CONCUSSIVE_BLOW">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Thunder.</em> On a hit, target makes a Strength save vs. Marksman DC or falls Prone.</p></description>
+		<sheet><description>Thunder. On a hit, target makes a Strength save vs. Marksman DC or falls Prone.</description></sheet>
+	</element>
+	<element name="Shattering Wave" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_SHATTERING_WAVE">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Thunder.</em> On a hit, deals the infusion die's damage (thunder) to every other creature within 10 ft. Half damage on a successful Constitution save vs. Marksman DC.</p></description>
+		<sheet><description>Thunder. On a hit, deals the infusion die's thunder damage to every other creature within 10 ft. (Constitution save vs. Marksman DC for half).</description></sheet>
+	</element>
+	<element name="Elemental Parry" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_ELEMENTAL_PARRY">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Universal.</em> Reaction when you take damage: expend 1 die to reduce it by the roll plus your Wisdom modifier.</p></description>
+		<sheet action="Reaction"><description>Universal. When you take damage, expend 1 die to reduce it by the roll plus your Wisdom modifier.</description></sheet>
+	</element>
+	<element name="Elemental Rally" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L7_ELEMENTAL_RALLY">
+		<supports>Marksman Level 7 Techniques</supports>
+		<description><p><em>Universal.</em> After hitting with an infused attack, expend 1 additional die for temporary hit points equal to the roll.</p></description>
+		<sheet><description>Universal. After hitting with an infused attack, expend 1 additional die for temporary hit points equal to the roll.</description></sheet>
+	</element>
+
+	<element name="Elemental Resonance &amp; Elemental Discord" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_RESONANCE_DISCORD">
+		<description>
+			<p><em>11th-level Elemental Marksman feature</em></p>
+			<p>Your pool increases to 7. You gain resistance to acid, cold, fire,
