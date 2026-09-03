@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of What Remains</name>
+		<description>Circle of What Remains druid subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-druid-circle-of-what-remains.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-druid-circle-of-what-remains.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of What Remains" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_DRUID_CIRCLE_OF_WHAT_REMAINS">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">A Druid who treats death as raw material rather than an ending — calling the lingering shape of something fallen back into temporary form the same way any Druid channels Wild Shape, just reaching outward toward what's already gone instead of only what's still living.</p>
+			<p>Nothing that already tried to kill you owes you a second chance to just rot in the dirt. It already gave what it had. This isn't necromancy: nothing is raised, nothing is bound, no soul is compelled.</p>
+			<p class="indent">Whether a given Druid extends that practice to fallen people as well as fallen beasts is a choice the Circle leaves entirely up to them.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_BONE_TOKENS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_CIRCLE_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_WHAT_ENDURES" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_TWINNED_REMAINS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_UNBROKEN_CYCLE" />
+		</description>
+		<sheet display="false">
+			<description>A Druid who calls the lingering shape of something fallen back into temporary form, treating death as raw material rather than an ending.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_BONE_TOKENS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_CIRCLE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_WHAT_ENDURES" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_TWINNED_REMAINS" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_UNBROKEN_CYCLE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Bone Tokens" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_BONE_TOKENS">
+		<description>
+			<p><em>3rd-level Circle of What Remains feature</em></p>
+			<p>Whenever a creature is defeated during an encounter you're part of, you gain 1 Bone Token — once per encounter, no matter who landed the final blow. There's no limit to how many you can hold.</p>
+			<p class="indent">As a Bonus Action, spend a use of Wild Shape plus Bone Tokens to summon a bone-form in an unoccupied space within 10 feet of you. Each adds your Proficiency Bonus to its own checks and saves, and its attack bonus is your spell attack modifier.</p>
+			<p class="indent">Each bone-form lasts until destroyed, dismissed, or you finish a Long Rest. On your turn, use a Bonus Action to command it to Attack, Dash, Disengage, or Help, or to use a listed trait — otherwise it Dodges.</p>
+			<div element="ID_ATERIOR_INFORMATION_REMAINS_BEAST_STATBLOCK" />
+			<div element="ID_ATERIOR_INFORMATION_REMAINS_WARDEN_STATBLOCK" />
+			<div element="ID_ATERIOR_INFORMATION_REMAINS_BRUTE_STATBLOCK" />
+		</description>
+		<sheet action="Bonus Action" usage="Wild Shape + Bone Tokens">
+			<description>Gain 1 Bone Token once per encounter when a creature is defeated. Spend a use of Wild Shape plus Bone Tokens (1 for Beast, 2 for Warden, 3 for Brute) to summon a bone-form within 10 feet, lasting until destroyed, dismissed, or a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Beast (Bone-Form)" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_REMAINS_BEAST_STATBLOCK">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Construct, Unaligned — Cost: 1 Bone Token</em></p>
+			<ul class="unstyled mb">
+				<li><strong>AC</strong> 13 + your Wisdom modifier</li>
+				<li><strong>HP</strong> 4 + (3 × your Druid level)</li>
+				<li><strong>Speed</strong> 40 ft., Burrow 20 ft.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite & Claw.</strong> Melee Attack Roll:</em> your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d4 + your Wisdom modifier Necrotic (or Piercing/Slashing) damage.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Warden (Bone-Form)" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_REMAINS_WARDEN_STATBLOCK">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Construct, Unaligned — Cost: 2 Bone Tokens</em></p>
+			<ul class="unstyled mb">
+				<li><strong>AC</strong> 15 + your Wisdom modifier</li>
+				<li><strong>HP</strong> 10 + (5 × your Druid level)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Blade.</strong> Melee Attack Roll:</em> your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + your Wisdom modifier damage.</li>
+				<li><em><strong>Dart.</strong> Ranged Attack Roll:</em> your spell attack modifier, range 60/240 ft. <em>Hit:</em> 1d6 + your Wisdom modifier Piercing damage.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Brute (Bone-Form)" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_REMAINS_BRUTE_STATBLOCK">
+		<description>
+			<p style="margin-bottom:5px"><em>Large Construct, Unaligned — Cost: 3 Bone Tokens</em></p>
+			<ul class="unstyled mb">
+				<li><strong>AC</strong> 14 + your Wisdom modifier</li>
+				<li><strong>HP</strong> 16 + (7 × your Druid level)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<h4 style="margin-top:5px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Rampage.</em></strong> On reducing a creature to 0 hit points, the Brute can immediately make one more attack for free.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Attack Roll:</em> your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + your Wisdom modifier Piercing damage.</li>
+				<li><em><strong>Heavy Strike.</strong> Melee Attack Roll:</em> your spell attack modifier, reach 5 ft. <em>Hit:</em> 2d6 + your Wisdom modifier Bludgeoning damage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Circle Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_CIRCLE_SPELLS">
+		<description>
+			<p><em>3rd-level Circle of What Remains feature</em></p>
+			<p>Your connection to this Circle ensures you always have certain spells ready. When you reach a Druid level specified below, you thereafter always have the listed spells prepared. They don't count against the number of spells you can prepare.</p>
+			<h5 class="caption">Circle of What Remains Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Ray of Sickness, Fog Cloud</em></td></tr>
+				<tr><td>5th</td><td><em>Melf's Acid Arrow, Web</em></td></tr>
+				<tr><td>7th</td><td><em>Bestow Curse, Speak with Dead</em></td></tr>
+				<tr><td>9th</td><td><em>Blight, Freedom of Movement</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FOG_CLOUD" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WEB" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_DEAD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="What Endures" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_WHAT_ENDURES">
+		<description>
+			<p><em>6th-level Circle of What Remains feature</em></p>
+			<p>Beast's Speed increases to 45 ft. (Burrow 25 ft.). Warden can cast Guidance at will, free. Brute gains Roar: as an action, creatures within 10 feet make a Wisdom save or are Frightened of it until the end of its next turn.</p>
+			<p class="indent">You gain resistance to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>Beast's Speed increases to 45 ft. (Burrow 25 ft.). Warden can cast Guidance at will for free. Brute gains Roar (action: creatures within 10 feet make a Wisdom save or are Frightened until the end of its next turn). You gain resistance to necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Twinned Remains" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_TWINNED_REMAINS">
+		<description>
+			<p><em>10th-level Circle of What Remains feature</em></p>
+			<p>You can now have two bone-forms active at once — two Beasts, two Wardens, or one of each. A Brute must still be summoned alone. One Bonus Action can command up to two of your active bone-forms together.</p>
+			<p class="indent">When one of your bone-forms is reduced to 0 hit points, you regain 1 Bone Token. You can regain a Bone Token this way only once per encounter.</p>
+		</description>
+		<sheet>
+			<description>You can have two bone-forms active at once (two Beasts, two Wardens, or one of each — a Brute must still be alone). One Bonus Action commands up to two active bone-forms together. When a bone-form is reduced to 0 HP, regain 1 Bone Token, once per encounter.</description>
+		</sheet>
+	</element>
+
+	<element name="Unbroken Cycle" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_REMAINS_UNBROKEN_CYCLE">
+		<description>
+			<p><em>14th-level Circle of What Remains feature</em></p>
+			<p>The Brute restriction lifts — any two bone-forms can be active together, including two Brutes.</p>
+			<p class="indent">Each time you summon one, choose an enhancement lasting as long as it remains up: Winged Remains (flying speed = walking speed), Honed Remains (+1d6 damage once per turn), or Warded Remains (+2 AC). No two active bone-forms can share the same enhancement.</p>
+			<p class="indent">Hostile creatures that start their turn within 5 feet of you, or enter that space for the first time on a turn, take 1d6 necrotic damage (Constitution save negates, DC = your spell save DC).</p>
+		</description>
+		<sheet>
+			<description>Any two bone-forms can be active together, including two Brutes. Each summon can be given one enhancement (Winged Remains: flying speed; Honed Remains: +1d6 damage once/turn; Warded Remains: +2 AC) — no two active bone-forms share the same one. Hostile creatures starting their turn within 5 feet of you, or entering that space, take 1d6 necrotic damage (Constitution save negates).</description>
+		</sheet>
+	</element>
+</elements>
