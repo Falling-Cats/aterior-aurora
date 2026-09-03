@@ -102,7 +102,8 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-elemental-marksman.xml" />
         <file name="Subclasses/subclass-ranger-old-world-ranger.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-old-world-ranger.xml" />
-
+        <file name="Subclasses/subclass-rogue-combat-medic.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-rogue-combat-medic.xml" />
 
 
 <!-- Custom Feats (5) -->
