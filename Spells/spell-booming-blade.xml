@@ -1,0 +1,30 @@
+<!-- spell-booming-blade.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Booming Blade</name>
+		<description>Booming Blade (Sword Coast Adventurer's Guide / Xanathar's Guide) — added locally, not part of the core 2024 pack.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-booming-blade.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-booming-blade.xml" />
+		</update>
+	</info>
+	<element name="Booming Blade" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_TEMP_SPELL_BOOMING_BLADE">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Damaging Spell, Melee, Spell Attack</supports>
+		<description>
+			<p>You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the attack's normal effects, then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 Thunder damage, and the spell ends.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> At 5th level, the melee attack deals an extra 1d8 Thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">thunder, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">Action</set>
+			<set name="range">Self (5 feet)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon worth 1+ SP with which you are proficient</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+</elements>
