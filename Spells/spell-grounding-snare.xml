@@ -1,0 +1,33 @@
+<!-- spell-grounding-snare.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grounding Snare</name>
+		<description>Grounding Snare — original ATÉRIOR spell.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-grounding-snare.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-grounding-snare.xml" />
+		</update>
+	</info>
+	<element name="Grounding Snare" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_SPELL_GROUNDING_SNARE">
+		<supports>Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Roots of stone and packed earth erupt upward around one creature you can see within range, standing on the ground. The target makes a Strength saving throw. On a failed save, its flying speed becomes 0 and it has the Restrained condition for the duration; the roots also anchor it in place, preventing teleportation that would move it more than 5 feet from where it started. On a successful save, the target's flying speed is halved until the end of its next turn instead.</p>
+			<p class="indent">A Restrained target, or a creature within reach of it, can take an action to make a Strength (Athletics) check against your spell save DC. On a success, the roots crumble and the spell ends.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, save, restrained, flying, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of gravel</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+</elements>
