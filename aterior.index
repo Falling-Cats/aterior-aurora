@@ -126,7 +126,17 @@
         <file name="Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml" />
 
+        <file name="Spells/spell-grounding-snare.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-grounding-snare.xml" />
+        <file name="Spells/spell-stonebound-hand.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-stonebound-hand.xml" />
+        <file name="Spells/spell-ruptured-earth.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-ruptured-earth.xml" />
+        <file name="Spells/spell-stone-into-mire.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-stone-into-mire.xml" />
 
+        <file name="Subclasses/subclass-wizard-battlefield-architect.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-battlefield-architect.xml" />
 
 
 
