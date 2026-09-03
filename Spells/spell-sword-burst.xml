@@ -1,0 +1,28 @@
+<!-- spell-sword-burst.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sword Burst</name>
+		<description>Sword Burst (Sword Coast Adventurer's Guide / Xanathar's Guide) — added locally, not part of the core 2024 pack.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-sword-burst.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-sword-burst.xml" />
+		</update>
+	</info>
+	<element name="Sword Burst" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_TEMP_SPELL_SWORD_BURST">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You create a burst of tandem chaos in a 5-foot Emanation. Each creature in that area, other than you, must succeed on a Dexterity saving throw or take 1d6 Force damage and have disadvantage on the first attack roll it makes before the end of its next turn.</p>
+			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">emanation, dexterity, save, force, damage, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">Action</set>
+			<set name="range">Self (5-foot Emanation)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+</elements>
