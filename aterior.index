@@ -120,13 +120,12 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-green-flame-blade.xml" />
         <file name="Spells/spell-sword-burst.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-sword-burst.xml" />
-
         <file name="Subclasses/subclass-wizard-combat-ritualist.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-combat-ritualist.xml" />
-
         <file name="Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-feral-sphinx.xml" />
-
+        <file name="Subclasses/subclass-tinkerer-the-experimentalist.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-tinkerer-the-experimentalist.xml" />
         <file name="Spells/spell-grounding-snare.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-grounding-snare.xml" />
         <file name="Spells/spell-stonebound-hand.xml"
