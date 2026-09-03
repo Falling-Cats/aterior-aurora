@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Combat Ritualist</name>
+		<description>Combat Ritualist wizard subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-wizard-combat-ritualist.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-combat-ritualist.xml" />
+		</update>
+	</info>
+
+	<element name="Combat Ritualist" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_WIZARD_COMBAT_RITUALIST">
+		<supports>Wizard Subclass</supports>
+		<description>
+			<p class="flavor">A mage who learned, the hard way, that distance isn't always available — awkward blade-work fused into the shape of a ritual until a spell cast at the end of a real fight started hitting harder than one cast standing still ever had.</p>
+			<p>It began, as most practical things do, out of necessity — a mage traveling with warriors, learning in the middle of real danger that distance isn't always available. It was never elegant at first. It worked, and that was reason enough to keep doing it.</p>
+			<p class="indent">Common enough now to barely raise an eyebrow, leaning mage-first out of Velastra, fighter-first out of Gondar, or balanced down the middle, same as most working adventurers who picked it up from necessity rather than either kingdom's teaching.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_COMBAT_RITUAL" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_ACTIVATING_THE_RITUAL" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_TRAINING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_SPELLSTRIKE_RHYTHM" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_EXTRA_ATTACK" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_RITUAL_WARD" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_THE_RITUAL_TABLE" />
+		</description>
+		<sheet display="false">
+			<description>A mage who learned that distance isn't always available — awkward blade-work fused into the shape of a ritual.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_COMBAT_RITUAL" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_ACTIVATING_THE_RITUAL" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_SPELLSTRIKE_RHYTHM" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_EXTRA_ATTACK" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_RITUAL_WARD" level="14" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_THE_RITUAL_TABLE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Combat Ritual" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_COMBAT_RITUAL">
+		<description>
+			<p><em>3rd-level Combat Ritualist feature</em></p>
+			<p>Whenever you hit a creature with a melee weapon attack, you gain 1 Ritual Stroke. There's no limit to how many you can hold, and you keep them until you spend them or combat ends.</p>
+			<p class="indent">At the end of each of your turns, if you didn't hit a creature with a melee weapon attack that turn, you lose 1 Ritual Stroke. If you're Incapacitated, you lose 1 additional Stroke at the end of each of your turns while it lasts. If you're reduced to 0 hit points, you lose 1 Stroke. Strokes aren't otherwise lost to being Prone, Frightened, Restrained, or similar conditions.</p>
+		</description>
+		<sheet>
+			<description>You gain 1 Ritual Stroke whenever you hit with a melee weapon attack, with no limit to how many you can hold. You lose 1 Stroke at the end of a turn where you didn't hit with a melee weapon attack, an additional 1 if Incapacitated, and 1 if reduced to 0 hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Activating the Ritual" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_ACTIVATING_THE_RITUAL">
+		<description>
+			<p><em>3rd-level Combat Ritualist feature</em></p>
+			<p>When you cast a spell of 1st level or higher, you can spend any number of Ritual Strokes you currently hold to activate your ritual. After the spell resolves, apply the effect on the Ritual Table matching the number of Strokes spent. You don't have to spend everything you have, and activating is always optional — casting without it simply leaves your Strokes as they are.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st level or higher, you can spend any number of Ritual Strokes you hold to apply the matching effect from the Ritual Table after the spell resolves.</description>
+		</sheet>
+	</element>
+
+	<element name="Combat Ritualist Training" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_TRAINING">
+		<description>
+			<p><em>3rd-level Combat Ritualist feature</em></p>
+			<p>You gain proficiency with light armor and with martial melee weapons that lack the Heavy or Two-Handed properties. A weapon you're proficient with this way can serve as your spellcasting focus.</p>
+			<p class="indent">You learn three cantrips and one 1st-level spell from the Combat Ritualist spell list below, using Intelligence as your spellcasting ability for them. You can swap one for another from the list whenever you gain a Wizard level.</p>
+			<h5 class="caption">Combat Ritualist Spell List</h5>
+			<table>
+				<thead>
+					<tr><td class="left">Type</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td class="left">Cantrips</td><td class="left">Booming Blade, Green-Flame Blade, True Strike, Blade Ward, Shocking Grasp, Sword Burst</td></tr>
+				<tr><td class="left">1st Level</td><td class="left">Shield, Zephyr Strike, Expeditious Retreat, Heroism, Divine Favor, Longstrider</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT" />
+			<select type="Spell" name="Combat Ritualist Cantrips" supports="ID_ATERIOR_TEMP_SPELL_BOOMING_BLADE|ID_ATERIOR_TEMP_SPELL_GREEN_FLAME_BLADE|ID_WOTC_PHB24_SPELL_TRUE_STRIKE|ID_WOTC_PHB24_SPELL_BLADE_WARD|ID_WOTC_PHB24_SPELL_SHOCKING_GRASP|ID_ATERIOR_TEMP_SPELL_SWORD_BURST" number="3" />
+			<select type="Spell" name="Combat Ritualist 1st-Level Spell" supports="ID_WOTC_PHB24_SPELL_SHIELD|ID_WOTC_PHB24_SPELL_ZEPHYR_STRIKE|ID_WOTC_PHB24_SPELL_EXPEDITIOUS_RETREAT|ID_WOTC_PHB24_SPELL_HEROISM|ID_WOTC_PHB24_SPELL_DIVINE_FAVOR|ID_WOTC_PHB24_SPELL_LONGSTRIDER" number="1" />
+		</rules>
+	</element>
+
+	<element name="Spellstrike Rhythm" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_SPELLSTRIKE_RHYTHM">
+		<description>
+			<p><em>6th-level Combat Ritualist feature</em></p>
+			<p>After you hit a creature with a weapon attack on your turn, if you cast a spell with a casting time of a Bonus Action before the end of that turn, you gain temporary hit points equal to your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>After you hit a creature with a weapon attack on your turn, if you cast a spell with a Bonus Action casting time before the end of that turn, you gain temporary hit points equal to your Intelligence modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Extra Attack" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_EXTRA_ATTACK">
+		<description>
+			<p><em>10th-level Combat Ritualist feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action. When you do, you can replace one of those attacks with a cantrip you learned from Combat Ritualist Training that has a casting time of an action.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action. You can replace one of those attacks with a cantrip you learned from Combat Ritualist Training that has a casting time of an action.</description>
+		</sheet>
+	</element>
+
+	<element name="Ritual Ward" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_RITUAL_WARD">
+		<description>
+			<p><em>14th-level Combat Ritualist feature</em></p>
+			<p>While you hold at least 1 Ritual Stroke, you gain a bonus to Armor Class based on how many you currently have.</p>
+			<table>
+				<thead>
+					<tr><td>Ritual Strokes</td><td>AC Bonus</td></tr>
+				</thead>
+				<tr><td>1–3</td><td>+1</td></tr>
+				<tr><td>4–6</td><td>+2</td></tr>
+				<tr><td>7–9</td><td>+3</td></tr>
+				<tr><td>10+</td><td>+4</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>While you hold at least 1 Ritual Stroke, gain a bonus to AC: +1 at 1–3 Strokes, +2 at 4–6, +3 at 7–9, +4 at 10 or more.</description>
+		</sheet>
+	</element>
+
+	<element name="The Ritual Table" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_RITUALIST_THE_RITUAL_TABLE">
+		<description>
+			<p><em>14th-level Combat Ritualist feature</em></p>
+			<p>When you activate your ritual, apply the effect matching the number of Strokes spent.</p>
+			<div element="ID_ATERIOR_INFORMATION_RITUALIST_RITUAL_TABLE" />
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Ritual Table Reference" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_RITUALIST_RITUAL_TABLE">
+		<description>
+			<table>
+				<thead>
+					<tr><td>N</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td class="left"><strong>Forceful Casting.</strong> +1d8 Force damage added to the spell.</td></tr>
+				<tr><td>2</td><td class="left"><strong>Precise Casting.</strong> +2 to the spell's attack roll, or −2 to a target's save against it.</td></tr>
+				<tr><td>3</td><td class="left"><strong>Perfect Opening.</strong> Advantage on the spell's attack roll, or targets have disadvantage on its save.</td></tr>
+				<tr><td>4</td><td class="left"><strong>Expanding Ritual.</strong> If the spell targets only one creature, it can target a second within range.</td></tr>
+				<tr><td>5</td><td class="left"><strong>Piercing Ritual.</strong> The spell ignores resistance to its damage type.</td></tr>
+				<tr><td>6</td><td class="left"><strong>Ritual Step.</strong> Teleport to an unoccupied space within 30 ft., then make a weapon attack as a Bonus Action.</td></tr>
+				<tr><td>7</td><td class="left"><strong>Overcharged Spell.</strong> Increase each of the spell's damage dice by one step (d6→d8, d8→d10, etc.), max d12.</td></tr>
+				<tr><td>8</td><td class="left"><strong>Echoing Ritual.</strong> Immediately cast a second spell from your spellbook (Action or Bonus Action casting time), at least one level lower than the triggering spell (max 5th), no slot expended, no further Ritual Table benefit.</td></tr>
+				<tr><td>9</td><td class="left"><strong>Reclaimed Power.</strong> The triggering spell doesn't expend its slot (max 5th-level slot).</td></tr>
+				<tr><td>10</td><td class="left"><strong>Cosmic Geometry.</strong> The spell deals maximum damage instead of rolling. Every hostile creature within 30 ft. makes an Intelligence save vs. your spell save DC or is Stunned until the end of your next turn.</td></tr>
+				<tr><td>11</td><td class="left"><strong>Arcane Branching.</strong> Choose up to three creatures affected by the spell (or one, if it doesn't target creatures). Its effects also apply to two additional valid targets within 30 ft. of the original.</td></tr>
+				<tr><td>12</td><td class="left"><strong>Ritual Mirror.</strong> The spell is cast a second time immediately after resolving, same or new valid targets, no slot expended, no further Ritual Table benefit.</td></tr>
+				<tr><td>13</td><td class="left"><strong>Grand Inversion.</strong> Damage dealt by the spell also heals you or one ally within 60 ft. for half the total dealt (rounded up).</td></tr>
+				<tr><td>14</td><td class="left"><strong>Absolute Severance.</strong> The spell ignores resistance and immunity to its damage types. Any creature it damages can't cast spells or use magical abilities until the end of your next turn.</td></tr>
+				<tr><td>15</td><td class="left"><strong>Apotheosis of the Dance.</strong> Choose up to 10 hostile creatures within 60 ft. The spell's effects apply separately to each as though it were the original target — no shared area of effect, each affected only once. Damage is treated as a critical hit; a successful save still applies the spell's normal success effect. The triggering spell doesn't expend a slot.</td></tr>
+			</table>
+			<p><strong><i>Playing It.</i></strong> Reaching 15 Strokes in a single fight realistically takes somewhere around 10–13 full rounds of landing melee hits without a turn off — this isn't a button you press early. If you're still standing and still connecting that deep into a fight, Apotheosis is the payoff for having survived that long fully committed to melee as a Wizard.</p>
+		</description>
+	</element>
+</elements>
