@@ -143,5 +143,9 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-old-faith.xml" />
         <file name="Backgrounds/background-refugee.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Backgrounds/background-refugee.xml" />
+
+        <!-- Subclasses (1) -->
+        <file name="Subclasses/subclass-barbarian-path-of-the-living-crystal.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-living-crystal.xml" />
     </files>
 </index>
