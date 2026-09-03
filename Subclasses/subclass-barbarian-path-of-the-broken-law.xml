@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Broken Law</name>
+		<description>Path of the Broken Law barbarian subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-barbarian-path-of-the-broken-law.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-broken-law.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Broken Law" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_BARBARIAN_PATH_OF_THE_BROKEN_LAW">
+		<supports>Primal Path</supports>
+		<description>
+			<p class="flavor">A Barbarian whose body never adapted to the current rules of magic, and rejects them outright.</p>
+			<p>Magic, in its true and uninterrupted state, was never meant to work the way it does now. What exists today is a different ruleset entirely, written in the aftermath of the Weaver's Touch by an event no living person chose. A Path of the Broken Law Barbarian's body simply never received that update — not changed, but unchanged, in a world that changed around them.</p>
+			<p class="indent">There is no wound behind this, no exposure, no event. It is simply how they were born. Calm, this rejection is faint enough to pass as bad luck. Raging, with the body running hot and every instinct turned up, it becomes an active, spreading interference that magic itself cannot easily push through.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_REJECTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISTURBANCE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISRUPTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_NULLIFICATION" />
+		</description>
+		<sheet display="false">
+			<description>A Barbarian whose body never adapted to the current rules of magic, and rejects them outright.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_REJECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISTURBANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISRUPTION" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_NULLIFICATION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Arcane Rejection" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_REJECTION">
+		<description>
+			<p><em>3rd-level Path of the Broken Law feature</em></p>
+			<p>While you are raging, you have advantage on saving throws against spells.</p>
+			<p class="indent">Hostile creatures within 5 feet of you have disadvantage on Constitution saving throws they make to maintain Concentration on a spell.</p>
+			<p class="indent">Whenever you hit a creature that is concentrating on a spell with a melee weapon attack, it takes an extra 1d4 Force damage.</p>
+		</description>
+		<sheet>
+			<description>While raging: advantage on saving throws against spells. Hostile creatures within 5 feet have disadvantage on Concentration saves. Melee weapon attacks against a concentrating creature deal an extra 1d4 Force damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Disturbance" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISTURBANCE">
+		<description>
+			<p><em>6th-level Path of the Broken Law feature</em></p>
+			<p>The radius of your Arcane Rejection aura increases to 10 feet, and its extra damage increases to 1d6 Force.</p>
+			<p class="indent">When you deal this extra damage, the target can't willingly move farther away from you until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Your Arcane Rejection aura increases to 10 feet, and its extra damage increases to 1d6 Force. When you deal this damage, the target can't willingly move farther away from you until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Disruption" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_DISRUPTION">
+		<description>
+			<p><em>10th-level Path of the Broken Law feature</em></p>
+			<p>The DC of Constitution saving throws made to maintain Concentration within your aura increases by 5.</p>
+			<p class="indent">Whenever you hit a creature concentrating on a spell with a melee weapon attack, that creature has disadvantage on the next Concentration saving throw it makes before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Concentration saves made within your aura take a +5 DC increase. Melee weapon attacks against a concentrating creature give it disadvantage on its next Concentration save before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Nullification" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_BROKEN_LAW_ARCANE_NULLIFICATION">
+		<description>
+			<p><em>14th-level Path of the Broken Law feature</em></p>
+			<p>The radius of your Arcane Rejection aura increases to 15 feet.</p>
+			<p class="indent">While raging, when a creature you can see within your aura casts a spell, you can use your reaction to force it to make a Constitution saving throw (DC = 8 + your Proficiency Bonus + your Constitution modifier). On a failure, the spell simply fails and has no effect, and you can immediately make one weapon attack against the caster as part of the same reaction. Once per Rage.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Rage">
+			<description>Your aura increases to 15 feet. While raging, when a creature within your aura casts a spell, use your reaction to force a DC {{broken law:dc}} Constitution save — on a failure, the spell fails and you can make one weapon attack against the caster as part of the same reaction. Once per Rage.</description>
+		</sheet>
+		<rules>
+			<stat name="broken law:dc" value="8" />
+			<stat name="broken law:dc" value="proficiency" />
+			<stat name="broken law:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+</elements>
