@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood of the Beyond</name>
+		<description>Blood of the Beyond sorcerer subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-sorcerer-blood-of-the-beyond.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-blood-of-the-beyond.xml" />
+		</update>
+	</info>
+
+	<element name="Blood of the Beyond" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_SORCERER_BLOOD_OF_THE_BEYOND">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">A Sorcerer descended, by blood or by stranger means, from one of the Stranded — creatures caught outside their own plane when the Weaver's Touch sealed the world shut, and never able to leave again.</p>
+			<p>Every Stranded creature left the collapse of the old world differently, and the descendants carry that difference forward. What every Blood of the Beyond Sorcerer shares, whatever their family's specific story, is a body that quietly disagrees with the world in small, involuntary ways.</p>
+			<p class="indent">Choose your Connection: a bloodline gone feral in the wild, one that never lost its cunning, or one shaped by whatever chaos took root somewhere isolated and forgotten. However your family tells the story, something not of this world is still, quietly, in your blood.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_CONNECTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_ALIEN_BLOOD" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_REALITY_SLIP" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_GREATER_METAMAGIC" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_THE_OLD_BLOOD" />
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer descended, by blood or by stranger means, from one of the Stranded — creatures caught outside their own plane when the world sealed shut.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_CONNECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_ALIEN_BLOOD" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_REALITY_SLIP" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_GREATER_METAMAGIC" level="14" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_THE_OLD_BLOOD" level="18" />
+		</rules>
+	</element>
+
+	<element name="Connection" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_CONNECTION">
+		<description>
+			<p><em>3rd-level Blood of the Beyond feature</em></p>
+			<p>Choose your Connection: Vhorax, Star Spawn, or Gibbering Mouther. It grants a unique Metamagic option, a Connection spell list, and access to the Shared Spells below.</p>
+			<h5 class="caption">Shared Spells (All Connections)</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Dissonant Whispers, Phantasmal Force</em></td></tr>
+				<tr><td>5th</td><td><em>Fear</em></td></tr>
+				<tr><td>7th</td><td><em>Phantasmal Killer</em></td></tr>
+				<tr><td>9th</td><td><em>Synaptic Static</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISSONANT_WHISPERS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SYNAPTIC_STATIC" level="9" spellcasting="Sorcerer" prepared="true" />
+			<select type="Class Feature" name="Connection" supports="Blood of the Beyond Connection" number="1" />
+		</rules>
+	</element>
+
+	<element name="Vhorax" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_CONNECTION_VHORAX">
+		<supports>Blood of the Beyond Connection</supports>
+		<description>
+			<p>Your bloodline traces back to a Vhorax — something that never lost a shred of its intelligence, its influence quietly reaching further than most people realize.</p>
+			<h5 class="caption">Vhorax Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Sleep, Hold Person</em></td></tr>
+				<tr><td>5th</td><td><em>Bestow Curse</em></td></tr>
+				<tr><td>7th</td><td><em>Charm Monster</em></td></tr>
+				<tr><td>9th</td><td><em>Contagion</em></td></tr>
+			</table>
+			<p><strong>Metamagic (1 Sorcery Point).</strong> A creature hit by the spell has its Speed halved until your next turn.</p>
+		</description>
+		<sheet>
+			<description>Vhorax Connection. Grants the Vhorax spell list (Sleep, Hold Person, Bestow Curse, Charm Monster, Contagion) and the Metamagic option: for 1 Sorcery Point, a creature hit by the spell has its Speed halved until your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_MONSTER" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Star Spawn" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_CONNECTION_STAR_SPAWN">
+		<supports>Blood of the Beyond Connection</supports>
+		<description>
+			<p>Your bloodline traces back to something that took root in the isolated, forgotten corners of the world, and whatever chaos that brought with it.</p>
+			<h5 class="caption">Star Spawn Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Ray of Sickness, Crown of Madness</em></td></tr>
+				<tr><td>5th</td><td><em>Vampiric Touch</em></td></tr>
+				<tr><td>7th</td><td><em>Evard's Black Tentacles</em></td></tr>
+				<tr><td>9th</td><td><em>Insect Plague</em></td></tr>
+			</table>
+			<p><strong>Metamagic (1 Sorcery Point).</strong> A spell that deals damage grants you temporary hit points equal to your Sorcerer level.</p>
+		</description>
+		<sheet>
+			<description>Star Spawn Connection. Grants the Star Spawn spell list (Ray of Sickness, Crown of Madness, Vampiric Touch, Evard's Black Tentacles, Insect Plague) and the Metamagic option: for 1 Sorcery Point, a spell that deals damage grants you temporary hit points equal to your Sorcerer level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Gibbering Mouther" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_CONNECTION_GIBBERING_MOUTHER">
+		<supports>Blood of the Beyond Connection</supports>
+		<description>
+			<p>Your bloodline traces back to something that went feral over five centuries alone in the wild — less the calculating menace of old stories, more an animal that happens to still remember fragments of what it used to be.</p>
+			<h5 class="caption">Gibbering Mouther Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Tasha's Hideous Laughter, Blindness/Deafness</em></td></tr>
+				<tr><td>5th</td><td><em>Hunger of Hadar</em></td></tr>
+				<tr><td>7th</td><td><em>Confusion</em></td></tr>
+				<tr><td>9th</td><td><em>Cloudkill</em></td></tr>
+			</table>
+			<p><strong>Metamagic (1 Sorcery Point).</strong> A creature hit by the spell has disadvantage on its next attack roll.</p>
+		</description>
+		<sheet>
+			<description>Gibbering Mouther Connection. Grants the Gibbering Mouther spell list (Tasha's Hideous Laughter, Blindness/Deafness, Hunger of Hadar, Confusion, Cloudkill) and the Metamagic option: for 1 Sorcery Point, a creature hit by the spell has disadvantage on its next attack roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNGER_OF_HADAR" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONFUSION" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLOUDKILL" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Alien Blood" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_ALIEN_BLOOD">
+		<description>
+			<p><em>3rd-level Blood of the Beyond feature</em></p>
+			<p>Advantage on saving throws against being Charmed, regardless of your Connection.</p>
+		</description>
+		<sheet>
+			<description>Advantage on saving throws against being Charmed, regardless of your Connection.</description>
+		</sheet>
+	</element>
+
+	<element name="Reality Slip" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_REALITY_SLIP">
+		<description>
+			<p><em>6th-level Blood of the Beyond feature</em></p>
+			<p>A number of times per Long Rest equal to your Proficiency Bonus, when a creature attacks you, you can use your Reaction to impose disadvantage on the roll. If it still hits, you teleport up to 15 feet to an unoccupied space you can see.</p>
+		</description>
+		<sheet action="Reaction" usage="{{beyond:reality slip:uses}}/Long Rest">
+			<description>When a creature attacks you, impose disadvantage on the roll. If it still hits, you teleport up to 15 feet to an unoccupied space you can see.</description>
+		</sheet>
+		<rules>
+			<stat name="beyond:reality slip:uses" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Greater Metamagic" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_GREATER_METAMAGIC">
+		<description>
+			<p><em>14th-level Blood of the Beyond feature</em></p>
+			<p>Gain the Greater version of your Connection's Metamagic (2 Sorcery Points):</p>
+			<p class="indent"><strong>Vhorax.</strong> Target can't cast spells until the end of your next turn.</p>
+			<p class="indent"><strong>Star Spawn.</strong> A damaging spell teleports the target to a space you choose within 60 feet.</p>
+			<p class="indent"><strong>Gibbering Mouther.</strong> Target is overcome by gibbering madness until the end of your next turn (attacks the nearest creature, then moves half Speed randomly).</p>
+			<p class="indent">Choose the option matching your Connection.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Greater Metamagic (choose to match your Connection)" supports="Blood of the Beyond Greater Metamagic" number="1" />
+		</rules>
+	</element>
+	<element name="Greater Metamagic (Vhorax)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_GREATER_VHORAX">
+		<supports>Blood of the Beyond Greater Metamagic</supports>
+		<description><p>2 Sorcery Points: the target hit by the spell can't cast spells until the end of your next turn.</p></description>
+		<sheet><description>2 Sorcery Points: the target hit by the spell can't cast spells until the end of your next turn.</description></sheet>
+	</element>
+	<element name="Greater Metamagic (Star Spawn)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_GREATER_STAR_SPAWN">
+		<supports>Blood of the Beyond Greater Metamagic</supports>
+		<description><p>2 Sorcery Points: a damaging spell teleports the target to a space you choose within 60 feet.</p></description>
+		<sheet><description>2 Sorcery Points: a damaging spell teleports the target to a space you choose within 60 feet.</description></sheet>
+	</element>
+	<element name="Greater Metamagic (Gibbering Mouther)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_GREATER_GIBBERING">
+		<supports>Blood of the Beyond Greater Metamagic</supports>
+		<description><p>2 Sorcery Points: the target hit by the spell is overcome by gibbering madness until the end of your next turn (attacks the nearest creature, then moves half Speed randomly).</p></description>
+		<sheet><description>2 Sorcery Points: the target hit by the spell is overcome by gibbering madness until the end of your next turn (attacks the nearest creature, then moves half Speed randomly).</description></sheet>
+	</element>
+
+	<element name="The Old Blood" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_BEYOND_THE_OLD_BLOOD">
+		<description>
+			<p><em>18th-level Blood of the Beyond feature</em></p>
+			<p><strong>Vhorax — Unblinking Tyranny.</strong> Once per Long Rest, as a Bonus Action, awaken your bloodline's other eyes for 1 minute. Whenever you cast a spell during that time, your eyes fire a bonus ranged spell attack (60 ft., no action required): 2d6 Necrotic on a hit, plus your choice of Speed halved or unable to cast spells until your next turn, no Sorcery Point cost. A second activation before your next Long Rest costs 10 Sorcery Points.</p>
+			<p class="indent"><strong>Star Spawn — Return to Worms.</strong> Once per Long Rest, when you'd die or fail your third death save, dissolve into a worm swarm (hit points equal to your Sorcerer level) instead. Reduced to 0 before reforming, you die permanently; otherwise reform after 2 rounds at half your hit point maximum. Can also be triggered voluntarily. Second activation: 10 Sorcery Points.</p>
+			<p class="indent"><strong>Gibbering Mouther — The Endless Gibbering.</strong> Once per Long Rest, activate for 1 minute: a 30-ft. aura of maddening whispers. At the start of each turn, a creature you choose within it fails a Wisdom save (your spell save DC) or is overcome by gibbering madness (attacks the nearest creature, then moves half Speed randomly); success grants immunity until its next turn. Second activation: 10 Sorcery Points.</p>
+			<p class="indent">Choose the option matching your Connection.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="The Old Blood (choose to match your Connection)" supports="Blood of the Beyond Old Blood" number="1" />
+		</rules>
+	</element>
+	<element name="The Old Blood (Vhorax — Unblinking Tyranny)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_OLDBLOOD_VHORAX">
+		<supports>Blood of the Beyond Old Blood</supports>
+		<description><p>Once per Long Rest, as a Bonus Action, awaken your bloodline's other eyes for 1 minute. Whenever you cast a spell during that time, your eyes fire a bonus ranged spell attack (60 ft., no action required): 2d6 Necrotic on a hit, plus your choice of Speed halved or unable to cast spells until your next turn, no Sorcery Point cost. A second activation before your next Long Rest costs 10 Sorcery Points.</p></description>
+		<sheet action="Bonus Action" usage="1/Long Rest, or 10 Sorcery Points"><description>Awaken your bloodline's other eyes for 1 minute: whenever you cast a spell, your eyes fire a free bonus ranged spell attack (60 ft.), dealing 2d6 Necrotic and halving Speed or preventing spellcasting until your next turn.</description></sheet>
+	</element>
+	<element name="The Old Blood (Star Spawn — Return to Worms)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_OLDBLOOD_STAR_SPAWN">
+		<supports>Blood of the Beyond Old Blood</supports>
+		<description><p>Once per Long Rest, when you'd die or fail your third death save, dissolve into a worm swarm (hit points equal to your Sorcerer level) instead. Reduced to 0 before reforming, you die permanently; otherwise reform after 2 rounds at half your hit point maximum. Can also be triggered voluntarily. Second activation: 10 Sorcery Points.</p></description>
+		<sheet usage="1/Long Rest, or 10 Sorcery Points"><description>When you'd die or fail your third death save, dissolve into a worm swarm (HP equal to your Sorcerer level) instead of dying, reforming after 2 rounds at half your hit point maximum.</description></sheet>
+	</element>
+	<element name="The Old Blood (Gibbering Mouther — The Endless Gibbering)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_BEYOND_OLDBLOOD_GIBBERING">
+		<supports>Blood of the Beyond Old Blood</supports>
+		<description><p>Once per Long Rest, activate for 1 minute: a 30-ft. aura of maddening whispers. At the start of each turn, a creature you choose within it fails a Wisdom save (your spell save DC) or is overcome by gibbering madness (attacks the nearest creature, then moves half Speed randomly); success grants immunity until its next turn. Second activation: 10 Sorcery Points.</p></description>
+		<sheet usage="1/Long Rest, or 10 Sorcery Points"><description>Activate for 1 minute: a 30-ft. aura of maddening whispers. A creature you choose within it fails a Wisdom save or is overcome by gibbering madness each turn (attacks the nearest creature, then moves half Speed randomly).</description></sheet>
+	</element>
+</elements>
