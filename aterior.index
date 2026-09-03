@@ -6,7 +6,7 @@
         <description>ATÉRIOR campaign content.</description>
         <author>Falling-Cats</author>
 
-        <update version="1.3.0">
+        <update version="1.4.0">
             <file name="aterior.index" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/aterior.index" />
         </update>
 
@@ -68,6 +68,13 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/eowyn-gear.xml" />
         <file name="Items/alex-gear.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Items/alex-gear.xml" />
+
+        <!-- Subclasses (1) -->
+        <file name="Subclasses/subclass-barbarian-path-of-the-living-crystal.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-living-crystal.xml" />
+
+
+
 
 <!-- Custom Feats (5) -->
 <file name="Feats/feat-craftsmanship.xml"
