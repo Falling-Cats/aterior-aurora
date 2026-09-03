@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of the Tale</name>
+		<description>College of the Tale bard subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-bard-college-of-the-tale.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-bard-college-of-the-tale.xml" />
+		</update>
+	</info>
+
+	<element name="College of the Tale" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_BARD_COLLEGE_OF_THE_TALE">
+		<supports>Bard College</supports>
+		<description>
+			<p class="flavor">A storyteller who has appointed themselves the chronicler of whoever's standing next to them — not out of training, but out of a conviction that in a world that lost most of its shared stories, someone has to be making the new ones.</p>
+			<p>Five hundred years ago, the world lost more than its gods. It lost its stories — the shared myths, the common heroes, the tales everyone grew up knowing. What remains is fractured across a hundred contradictory versions. A College of the Tale Bard has decided, consciously or not, that this is worth fixing — one adventure, one party, one telling at a time.</p>
+			<p class="indent">Where a College of the Chorus Bard pours themselves into one person until the two are barely distinguishable, a Tale Bard's devotion runs the opposite direction — outward, toward everyone in the story, spent freely and replenished by the telling rather than the suffering.</p>
+			<p class="indent">Loud, proud, usually younger than they act old, and beloved almost everywhere they go.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_PROTAGONIST" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_KEEPING_PACE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_RISING_ACTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_STORY_ISNT_OVER" />
+		</description>
+		<sheet display="false">
+			<description>A storyteller who has appointed themselves the chronicler of whoever's standing next to them, in a world that lost most of its shared stories.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_PROTAGONIST" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_KEEPING_PACE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_RISING_ACTION" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_STORY_ISNT_OVER" level="14" />
+		</rules>
+	</element>
+
+	<element name="The Protagonist" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_PROTAGONIST">
+		<description>
+			<p><em>3rd-level College of the Tale feature</em></p>
+			<p>When you roll Initiative, choose one creature you can see to be your Protagonist for the encounter. You can change your Protagonist as a Bonus Action.</p>
+			<p class="indent">When your Protagonist holds one of your Bardic Inspiration dice, they can spend it to create one of the following Story Beats instead of using it normally:</p>
+			<p class="indent"><strong>The Killing Blow.</strong> The next time the Protagonist hits with an attack before the end of their turn, they add the Bardic Inspiration die to the attack's damage.</p>
+			<p class="indent"><strong>A Narrow Escape.</strong> The next time the Protagonist takes damage before the start of your next turn, they reduce that damage by the number rolled on the Bardic Inspiration die.</p>
+			<p class="indent"><strong>A Hero's Hand.</strong> When an ally within 30 feet of the Protagonist fails a d20 Test, the Protagonist can expend their Bardic Inspiration die to add the number rolled to the test, potentially turning the failure into a success.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Choose one creature you can see as your Protagonist for the encounter when you roll Initiative (changeable as a Bonus Action). When they hold your Bardic Inspiration die, they can spend it as a Story Beat: The Killing Blow (add die to next hit's damage), A Narrow Escape (reduce next damage taken by the roll), or A Hero's Hand (add the roll to an ally's failed d20 Test within 30 feet).</description>
+		</sheet>
+	</element>
+
+	<element name="Keeping Pace" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_KEEPING_PACE">
+		<description>
+			<p><em>3rd-level College of the Tale feature</em></p>
+			<p>Your Speed increases by 10 feet, and moving out of a hostile creature's reach doesn't provoke Opportunity Attacks for you.</p>
+		</description>
+		<sheet>
+			<description>Your Speed increases by 10 feet, and moving out of a hostile creature's reach doesn't provoke Opportunity Attacks for you.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Rising Action" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_RISING_ACTION">
+		<description>
+			<p><em>6th-level College of the Tale feature</em></p>
+			<p>Whenever your Protagonist's Story Beat finishes a fight — a Killing Blow that drops a creature, or a Narrow Escape that keeps them standing — you regain one use of Bardic Inspiration.</p>
+			<p class="indent">You can regain Bardic Inspiration this way only once per turn.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> "Once per turn" isn't "once per encounter" — the same Protagonist can trigger this multiple times across a single fight, as long as no more than one triggers it on any given turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever your Protagonist's Story Beat finishes a fight — a Killing Blow that drops a creature, or a Narrow Escape that keeps them standing — you regain one use of Bardic Inspiration. Only once per turn.</description>
+		</sheet>
+	</element>
+
+	<element name="The Story Isn't Over" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARD_TALE_THE_STORY_ISNT_OVER">
+		<description>
+			<p><em>14th-level College of the Tale feature</em></p>
+			<p>You gain a number of additional uses of Bardic Inspiration equal to your Charisma modifier (minimum of 1). These uses can be expended only through this feature. You regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">When you or a creature you can see within 60 feet of you fails a d20 Test, you can use your Reaction and expend one of these uses to force the creature to reroll the d20. The new roll replaces the original roll.</p>
+		</description>
+		<sheet action="Reaction" usage="{{story isnt over:uses}}/Long Rest">
+			<description>You gain extra uses of Bardic Inspiration equal to your Charisma modifier (minimum 1), usable only for this: when you or a creature within 60 feet fails a d20 Test, force a reroll that replaces the original.</description>
+		</sheet>
+		<rules>
+			<stat name="story isnt over:uses" value="1" bonus="base" />
+			<stat name="story isnt over:uses" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+</elements>
