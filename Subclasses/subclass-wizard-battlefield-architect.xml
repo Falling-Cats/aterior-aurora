@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Battlefield Architect</name>
+		<description>Battlefield Architect wizard subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-wizard-battlefield-architect.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-battlefield-architect.xml" />
+		</update>
+	</info>
+
+	<element name="Battlefield Architect" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_WIZARD_BATTLEFIELD_ARCHITECT">
+		<supports>Wizard Subclass</supports>
+		<description>
+			<p class="flavor">A mage inspired by Lorathil's legend rather than taught by the man himself — walls and structures raised mid-fight to control where danger can and can't reach, in whatever material a given Architect's own instinct favors.</p>
+			<p>Every child on the continent grows up knowing the names of the Six Elders. Among them, Lorathil is remembered for exactly one image: battlefields reshaped mid-fight, walls rising to separate his allies from danger and funnel the enemy exactly where his side needed them.</p>
+			<p class="indent">No formal lineage, no single school, just generations of mages who heard the stories and built their own version from nothing but imagination and necessity.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_CONSTRUCTS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_RECONSTRUCT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTS_MANIPULATION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_SPELLBOUND_REPOSITION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ENVIRONMENTALIST" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_MASTER_BUILDER" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_REACTIVE_SHIFT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_EXPAND" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_MASTERY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONFINE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONSTRUCT_STRIKE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_GRAND_ARCHITECT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_DETONATION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_LIVING_BLUEPRINT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE" />
+			<div element="ID_ATERIOR_INFORMATION_ARCHITECT_ACTION_ECONOMY" />
+		</description>
+		<sheet display="false">
+			<description>A mage inspired by Lorathil's legend — walls and structures raised mid-fight to control where danger can and can't reach.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_CONSTRUCTS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_RECONSTRUCT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTS_MANIPULATION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_SPELLBOUND_REPOSITION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ENVIRONMENTALIST" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_MASTER_BUILDER" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_REACTIVE_SHIFT" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_EXPAND" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONFINE" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONSTRUCT_STRIKE" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_GRAND_ARCHITECT" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_DETONATION" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_LIVING_BLUEPRINT" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Architectural Constructs" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_CONSTRUCTS">
+		<description>
+			<p><em>3rd-level Battlefield Architect feature</em></p>
+			<p>When you roll Initiative, or as an action outside combat, you can manifest up to three Architectural Constructs in unoccupied spaces on solid ground you can see within 60 feet. Each occupies one 5-foot square, up to 15 feet tall, made from any material or appearance you choose. Each has AC 15 and hit points equal to 5 + 5 × your Wizard level. Each is immune to Poison and Psychic damage, and immune to damage and effects from your own spells (not allies' or enemies'). A Construct counts as an object for movement, cover, and environmental interaction, and remains until destroyed, consumed by one of your features, dismissed, or you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Manifest up to three Architectural Constructs (AC 15, HP 5 + 5 × your Wizard level) in unoccupied spaces within 60 feet when you roll Initiative or as an action outside combat. They count as objects, are immune to Poison/Psychic and your own spells' effects, and remain until destroyed, consumed, dismissed, or a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Reconstruct" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_RECONSTRUCT">
+		<description>
+			<p><em>3rd-level Battlefield Architect feature</em></p>
+			<p>When a Construct is destroyed or consumed, you can use an Action to manifest a replacement in an unoccupied space on solid ground within 60 feet, up to your maximum.</p>
+		</description>
+		<sheet action="Action">
+			<description>When a Construct is destroyed or consumed, manifest a replacement in an unoccupied space within 60 feet, up to your maximum.</description>
+		</sheet>
+	</element>
+
+	<element name="Architect's Manipulation" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTS_MANIPULATION">
+		<description>
+			<p><em>3rd-level Battlefield Architect feature</em></p>
+			<p class="indent"><strong>Reposition</strong> (Bonus Action). Teleport one Construct you control to an unoccupied space on solid ground within 30 feet of its current location.</p>
+			<p class="indent"><strong>Shift</strong> (Bonus Action). Slide one Construct up to 5 feet. If it enters a Large or smaller creature's space, that creature makes a Strength save against your spell save DC or is pushed 5 feet; on a success, the Construct can't enter and the movement ends.</p>
+			<p class="indent"><strong>Raise</strong> (Bonus Action). Raise or lower one Construct by up to 10 feet, letting it serve as elevated terrain or a shorter obstruction. Can't move it into an occupied space.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Reposition (teleport a Construct up to 30 ft.), Shift (slide it up to 5 ft., pushing a Large or smaller creature it enters on a failed Strength save), or Raise (change its height by up to 10 ft.).</description>
+		</sheet>
+	</element>
+
+	<element name="Spellbound Reposition" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_SPELLBOUND_REPOSITION">
+		<description>
+			<p><em>3rd-level Battlefield Architect feature</em></p>
+			<p>Once per turn, when a creature is hit by or fails a save against one of your spells, you can move one Construct you control to an unoccupied space on solid ground within 5 feet of that creature — no action required, can't enter an occupied space.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, when a creature is hit by or fails a save against one of your spells, move one Construct you control to an unoccupied space within 5 feet of that creature — no action required.</description>
+		</sheet>
+	</element>
+
+	<element name="Environmentalist" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ENVIRONMENTALIST">
+		<description>
+			<p><em>3rd-level Battlefield Architect feature</em></p>
+			<p>You add spells to your spellbook as you gain Wizard levels; they don't count against the number you can prepare.</p>
+			<h5 class="caption">Environmentalist Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td class="left"><em>Elementalism, Grease</em></td></tr>
+				<tr><td>5th</td><td class="left"><em>Grounding Snare, Stonebound Hand</em></td></tr>
+				<tr><td>7th</td><td class="left"><em>Ruptured Earth, Sleet Storm</em></td></tr>
+				<tr><td>9th</td><td class="left"><em>Stone Shape, Wall of Fire</em></td></tr>
+				<tr><td>11th</td><td class="left"><em>Wall of Stone</em></td></tr>
+				<tr><td>13th</td><td class="left"><em>Move Earth, Stone into Mire</em></td></tr>
+				<tr><td>15th</td><td class="left"><em>Wall of Force</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ELEMENTALISM" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREASE" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_GROUNDING_SNARE" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_STONEBOUND_HAND" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_RUPTURED_EARTH" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEET_STORM" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONE_SHAPE" level="9" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FIRE" level="9" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_STONE" level="11" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MOVE_EARTH" level="13" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_STONE_INTO_MIRE" level="13" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FORCE" level="15" spellcasting="Wizard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Master Builder" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_MASTER_BUILDER">
+		<description>
+			<p><em>7th-level Battlefield Architect feature</em></p>
+			<p>Your maximum number of Architectural Constructs increases from three to five.</p>
+		</description>
+		<sheet>
+			<description>Your maximum number of Architectural Constructs increases from three to five.</description>
+		</sheet>
+	</element>
+
+	<element name="Reactive Shift" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_REACTIVE_SHIFT">
+		<description>
+			<p><em>7th-level Battlefield Architect feature</em></p>
+			<p>When a creature you can see moves away from one of your Constructs, you can use your Reaction to move that Construct up to 5 feet to an unoccupied space on solid ground. This can't enter a creature's space unless you're using Shift to push that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see moves away from one of your Constructs, move that Construct up to 5 feet to an unoccupied space on solid ground.</description>
+		</sheet>
+	</element>
+
+	<element name="Expand" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_EXPAND">
+		<description>
+			<p><em>7th-level Battlefield Architect feature</em></p>
+			<p>As an Action, expend a spell slot to grow one Construct by up to two additional 5-foot sections in one direction (up to 15 feet of total length). The expansion lasts until the Construct is repositioned, destroyed, consumed, or dismissed.</p>
+		</description>
+		<sheet action="Action" usage="Spell Slot">
+			<description>Expend a spell slot to grow one Construct by up to two additional 5-foot sections in one direction (up to 15 feet total). Lasts until the Construct is repositioned, destroyed, consumed, or dismissed.</description>
+		</sheet>
+	</element>
+
+	<element name="Architectural Mastery" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_MASTERY">
+		<description>
+			<p><em>11th-level Battlefield Architect feature</em></p>
+			<p>Your maximum number of Architectural Constructs increases from five to seven.</p>
+		</description>
+		<sheet>
+			<description>Your maximum number of Architectural Constructs increases from five to seven.</description>
+		</sheet>
+	</element>
+
+	<element name="Confine" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONFINE">
+		<description>
+			<p><em>11th-level Battlefield Architect feature</em></p>
+			<p>As an Action, sacrifice two Architectural Constructs to create a 15-foot-diameter dome centered on a hostile creature within 30 feet. It makes a Dexterity save against your spell save DC or becomes enclosed within the dome, which has the AC and hit points of your Constructs. A creature inside has total cover from outside, though a willing creature can freely move through its walls. The two Constructs used are unavailable until replaced via Reconstruct.</p>
+		</description>
+		<sheet action="Action">
+			<description>Sacrifice two Constructs to create a 15-ft.-diameter dome centered on a hostile creature within 30 feet. On a failed Dexterity save, it's enclosed within the dome (which has the AC and HP of your Constructs) with total cover from outside. A willing creature can move freely through the walls.</description>
+		</sheet>
+	</element>
+
+	<element name="Construct Strike" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONSTRUCT_STRIKE">
+		<description>
+			<p><em>11th-level Battlefield Architect feature</em></p>
+			<p>As a Bonus Action, command a Construct to strike a creature within 10 feet of it: ranged attack using your spell attack modifier, 1d8 plus your Intelligence modifier damage (Bludgeoning, Piercing, or Slashing, your choice) on a hit.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Command a Construct to strike a creature within 10 feet of it: ranged attack using your spell attack modifier, 1d8 plus your Intelligence modifier damage (Bludgeoning, Piercing, or Slashing, your choice) on a hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Grand Architect" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_GRAND_ARCHITECT">
+		<description>
+			<p><em>15th-level Battlefield Architect feature</em></p>
+			<p>Your maximum number of Architectural Constructs increases from seven to ten.</p>
+		</description>
+		<sheet>
+			<description>Your maximum number of Architectural Constructs increases from seven to ten.</description>
+		</sheet>
+	</element>
+
+	<element name="Detonation" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_DETONATION">
+		<description>
+			<p><em>15th-level Battlefield Architect feature</em></p>
+			<p>As a Bonus Action, expend a spell slot and sacrifice one Construct to make it explode. Each creature within 5 feet makes a Dexterity save against your spell save DC, taking 1d6 per level of the slot expended on a failure, half as much on a success. Choose the damage type: Acid, Cold, Fire, Lightning, Thunder, or Force. The Construct is destroyed.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Spell Slot">
+			<description>Expend a spell slot and sacrifice one Construct to make it explode: each creature within 5 feet makes a Dexterity save against your spell save DC, taking 1d6 per level of the slot expended (half on success), of a damage type you choose (Acid, Cold, Fire, Lightning, Thunder, or Force).</description>
+		</sheet>
+	</element>
+
+	<element name="Living Blueprint" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_LIVING_BLUEPRINT">
+		<description>
+			<p><em>15th-level Battlefield Architect feature</em></p>
+			<p>As a Bonus Action, reposition a persistent area or structure created by a spell from your Environmentalist list to another valid location within that spell's normal range, provided it's physically capable of being moved. Duration, Concentration, and other effects remain unchanged.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Reposition a persistent area or structure created by a spell from your Environmentalist list to another valid location within that spell's normal range. Duration, Concentration, and other effects remain unchanged.</description>
+		</sheet>
+	</element>
+
+	<element name="Architectural Surge" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE">
+		<description>
+			<p><em>15th-level Battlefield Architect feature</em></p>
+			<p>As a Bonus Action, choose one Construct you control. Until the start of your next turn, it can occupy up to four contiguous 5-foot spaces instead of one. When the effect ends, it returns to its normal form, remaining in the smallest configuration necessary if a creature would otherwise occupy a space it's vacating.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Choose one Construct you control. Until the start of your next turn, it can occupy up to four contiguous 5-foot spaces instead of one.</description>
+		</sheet>
+	</element>
+
+	<element name="Action Economy Reference" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_ARCHITECT_ACTION_ECONOMY">
+		<description>
+			<table>
+				<thead>
+					<tr><td class="left">Action</td><td class="left">Bonus Action</td><td class="left">Reaction</td><td class="left">No Action</td></tr>
+				</thead>
+				<tr><td class="left">Reconstruct, Expand, Confine, action-cost spells</td><td class="left">Reposition, Shift, Raise/Lower, Construct Strike, Detonation, Living Blueprint, Architectural Surge</td><td class="left">Reactive Shift</td><td class="left">Spellbound Reposition</td></tr>
+			</table>
+		</description>
+	</element>
+</elements>
