@@ -145,4 +145,94 @@
 	<element name="Elemental Resonance &amp; Elemental Discord" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_ELEMENTAL_RESONANCE_DISCORD">
 		<description>
 			<p><em>11th-level Elemental Marksman feature</em></p>
-			<p>Your pool increases to 7. You gain resistance to acid, cold, fire,
+			<p>Your pool increases to 7. You gain resistance to acid, cold, fire, lightning, and thunder. Expend 1 die on a hit to strip a target's resistance to your infused type (treated as none) or reduce immunity to resistance, until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Your pool increases to 7. You gain resistance to acid, cold, fire, lightning, and thunder. Expend 1 die on a hit to strip a target's resistance to your infused type (treated as none) or reduce immunity to resistance, until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Level 15 Techniques" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_MARKSMAN_LEVEL_15_TECHNIQUES">
+		<description>
+			<p><em>15th-level Elemental Marksman feature</em></p>
+			<p>Your infusion die becomes a d12; your pool increases to 9. Learn 4 more from the list below, following the same one-die-one-effect rule as your Level 7 Techniques.</p>
+			<h5 class="caption">Level 15 Techniques</h5>
+			<table>
+				<thead>
+					<tr><td class="left">Technique</td><td>Element</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td class="left">Ember Trail</td><td>Fire</td><td class="left">On a hit, a line of fire from you to the target becomes Difficult Terrain until the start of your next turn.</td></tr>
+				<tr><td class="left">Blinding Flash</td><td>Fire</td><td class="left">On a hit, target makes a Constitution save vs. Marksman DC or is Blinded until the end of its next turn.</td></tr>
+				<tr><td class="left">Tidal Surge</td><td>Cold</td><td class="left">Instead of attacking, expend 1 die as an action for a 15-ft. cone: infusion die damage (cold), Strength save vs. Marksman DC or pushed 10 ft. and knocked Prone.</td></tr>
+				<tr><td class="left">Frozen Ground</td><td>Cold</td><td class="left">On a hit, a 20-ft.-radius zone centered on the target becomes Difficult Terrain until the start of your next turn.</td></tr>
+				<tr><td class="left">Storm's Eye</td><td>Lightning</td><td class="left">On a hit, a 20-ft.-radius storm zone forms until the end of your next turn. Creatures starting their turn there, or entering for the first time on a turn, take infusion die damage (lightning) and have disadvantage on Concentration saves. No Concentration required from you.</td></tr>
+				<tr><td class="left">Storm Step</td><td>Lightning</td><td class="left">Instead of attacking, expend 1 die as a Bonus Action to instantly move 15 ft. in a line; creatures in your path take infusion die damage (lightning).</td></tr>
+				<tr><td class="left">Quakebind</td><td>Thunder</td><td class="left">On a hit, target makes a Strength save vs. Marksman DC or is Restrained (repeat save each turn, or Athletics check as an action). Each failure deals infusion die damage (bludgeoning).</td></tr>
+				<tr><td class="left">Grounding Strike</td><td>Thunder</td><td class="left">On a hit, a flying target makes a Strength save vs. Marksman DC or falls Prone (normal fall damage). A grounded target instead has Speed halved until your next turn.</td></tr>
+				<tr><td class="left">Elemental Disruption</td><td>Universal</td><td class="left">On a hit, target has disadvantage on its next attack roll; the next attack against it before then has advantage.</td></tr>
+				<tr><td class="left">Worldstep</td><td>Universal</td><td class="left">Instead of attacking, expend 1 die as a Bonus Action to teleport 30 ft. to an unoccupied space you can see.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Level 15 Techniques" supports="Marksman Level 15 Techniques" number="4" />
+		</rules>
+	</element>
+	<element name="Ember Trail" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_EMBER_TRAIL">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Fire.</em> On a hit, a line of fire from you to the target becomes Difficult Terrain until the start of your next turn.</p></description>
+		<sheet><description>Fire. On a hit, a line of fire from you to the target becomes Difficult Terrain until the start of your next turn.</description></sheet>
+	</element>
+	<element name="Blinding Flash" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_BLINDING_FLASH">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Fire.</em> On a hit, target makes a Constitution save vs. Marksman DC or is Blinded until the end of its next turn.</p></description>
+		<sheet><description>Fire. On a hit, target makes a Constitution save vs. Marksman DC or is Blinded until the end of its next turn.</description></sheet>
+	</element>
+	<element name="Tidal Surge" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_TIDAL_SURGE">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Cold.</em> Instead of attacking, expend 1 die as an action for a 15-ft. cone: infusion die damage (cold), Strength save vs. Marksman DC or pushed 10 ft. and knocked Prone.</p></description>
+		<sheet action="Action"><description>Cold. Instead of attacking, expend 1 die for a 15-ft. cone: infusion die cold damage, Strength save vs. Marksman DC or pushed 10 ft. and Prone.</description></sheet>
+	</element>
+	<element name="Frozen Ground" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_FROZEN_GROUND">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Cold.</em> On a hit, a 20-ft.-radius zone centered on the target becomes Difficult Terrain until the start of your next turn.</p></description>
+		<sheet><description>Cold. On a hit, a 20-ft.-radius zone centered on the target becomes Difficult Terrain until the start of your next turn.</description></sheet>
+	</element>
+	<element name="Storm's Eye" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_STORMS_EYE">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Lightning.</em> On a hit, a 20-ft.-radius storm zone forms until the end of your next turn. Creatures starting their turn there, or entering for the first time on a turn, take infusion die damage (lightning) and have disadvantage on Concentration saves. No Concentration required from you.</p></description>
+		<sheet><description>Lightning. On a hit, a 20-ft.-radius storm zone forms until the end of your next turn, dealing infusion die lightning damage and disadvantage on Concentration saves to creatures starting their turn there or entering. No Concentration required from you.</description></sheet>
+	</element>
+	<element name="Storm Step" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_STORM_STEP">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Lightning.</em> Instead of attacking, expend 1 die as a Bonus Action to instantly move 15 ft. in a line; creatures in your path take infusion die damage (lightning).</p></description>
+		<sheet action="Bonus Action"><description>Lightning. Instead of attacking, expend 1 die to instantly move 15 ft. in a line; creatures in your path take infusion die lightning damage.</description></sheet>
+	</element>
+	<element name="Quakebind" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_QUAKEBIND">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Thunder.</em> On a hit, target makes a Strength save vs. Marksman DC or is Restrained (repeat save each turn, or Athletics check as an action). Each failure deals infusion die damage (bludgeoning).</p></description>
+		<sheet><description>Thunder. On a hit, target makes a Strength save vs. Marksman DC or is Restrained, repeating the save each turn (or an Athletics check as an action); each failure deals infusion die bludgeoning damage.</description></sheet>
+	</element>
+	<element name="Grounding Strike" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_GROUNDING_STRIKE">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Thunder.</em> On a hit, a flying target makes a Strength save vs. Marksman DC or falls Prone (normal fall damage). A grounded target instead has Speed halved until your next turn.</p></description>
+		<sheet><description>Thunder. On a hit, a flying target makes a Strength save vs. Marksman DC or falls Prone (normal fall damage); a grounded target instead has Speed halved until your next turn.</description></sheet>
+	</element>
+	<element name="Elemental Disruption" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_ELEMENTAL_DISRUPTION">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Universal.</em> On a hit, target has disadvantage on its next attack roll; the next attack against it before then has advantage.</p></description>
+		<sheet><description>Universal. On a hit, target has disadvantage on its next attack roll; the next attack against it before then has advantage.</description></sheet>
+	</element>
+	<element name="Worldstep" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_MARKSMAN_L15_WORLDSTEP">
+		<supports>Marksman Level 15 Techniques</supports>
+		<description><p><em>Universal.</em> Instead of attacking, expend 1 die as a Bonus Action to teleport 30 ft. to an unoccupied space you can see.</p></description>
+		<sheet action="Bonus Action"><description>Universal. Instead of attacking, expend 1 die to teleport 30 ft. to an unoccupied space you can see.</description></sheet>
+	</element>
+</elements>
