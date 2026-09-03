@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pit Fighter</name>
+		<description>Pit Fighter rogue subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-rogue-pit-fighter.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-rogue-pit-fighter.xml" />
+		</update>
+	</info>
+
+	<element name="Pit Fighter" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_ROGUE_PIT_FIGHTER">
+		<supports>Rogue Subclass</supports>
+		<description>
+			<p class="flavor">A fighter forged in legal arenas and illegal back-alley rings alike, forced there or chosen there in equal measure — who learned that a crowd's full attention is its own kind of cover.</p>
+			<p>Nobody trains for the pits. You end up in them. What every one of them shares, regardless of the door they walked through, is years spent learning to fight while an audience watched — and somewhere in those years, most of them realized something a quiet thief never learns: every eye locked on the fighter in the center of the ring is an eye that isn't watching anything else.</p>
+			<p class="indent">Unusually skilled with a shield for a Rogue, a habit built from years of surviving an audience as much as an opponent.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_SHIELD_TRAINING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_PROVOKE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_TRADING_BLOWS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWDS_ROAR" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_THE_CIRCLE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWD_PLEASER" />
+		</description>
+		<sheet display="false">
+			<description>A fighter forged in legal arenas and illegal back-alley rings alike, who learned that a crowd's full attention is its own kind of cover.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_SHIELD_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_PROVOKE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_TRADING_BLOWS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWDS_ROAR" level="9" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_THE_CIRCLE" level="13" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWD_PLEASER" level="17" />
+		</rules>
+	</element>
+
+	<element name="Shield Training" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_SHIELD_TRAINING">
+		<description>
+			<p><em>3rd-level Pit Fighter feature</em></p>
+			<p>You gain proficiency with Shields, if you don't already have it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+		</rules>
+	</element>
+
+	<element name="Provoke" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_PROVOKE">
+		<description>
+			<p><em>3rd-level Pit Fighter feature</em></p>
+			<p>As a Bonus Action, choose a creature within 30 feet. It makes a Wisdom saving throw (DC = 8 + your Proficiency Bonus + your Dexterity modifier) or is compelled to make its next attack against you, if able.</p>
+			<p class="indent">The first time you use this each encounter, gain temporary hit points equal to your Rogue level.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Choose a creature within 30 feet. It makes a DC {{pit fighter:provoke:dc}} Wisdom save or is compelled to make its next attack against you, if able. The first time you use this each encounter, gain temporary hit points equal to your Rogue level.</description>
+		</sheet>
+		<rules>
+			<stat name="pit fighter:provoke:dc" value="8" bonus="base" />
+			<stat name="pit fighter:provoke:dc" value="proficiency" bonus="proficiency" />
+			<stat name="pit fighter:provoke:dc" value="dexterity:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Trading Blows" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_TRADING_BLOWS">
+		<description>
+			<p><em>3rd-level Pit Fighter feature</em></p>
+			<p>You can deal Sneak Attack damage to a creature that's attacked you since the start of your last turn — no advantage needed, no ally required nearby.</p>
+		</description>
+		<sheet>
+			<description>You can deal Sneak Attack damage to a creature that's attacked you since the start of your last turn — no advantage needed, no ally required nearby.</description>
+		</sheet>
+	</element>
+
+	<element name="Crowd's Roar" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWDS_ROAR">
+		<description>
+			<p><em>9th-level Pit Fighter feature</em></p>
+			<p>Gain 1 Momentum whenever you deal Sneak Attack damage (maximum equal to your Rogue level; lost when incapacitated or the encounter ends). As a Bonus Action, spend 1 to gain +1 attack or +1 AC until the encounter ends — either can stack with itself, but only 1 Momentum can be spent this way per turn.</p>
+			<p class="indent">Provoke's temporary hit points increase to twice your Rogue level.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Gain 1 Momentum whenever you deal Sneak Attack damage (max your Rogue level; lost when incapacitated or the encounter ends). Spend 1 as a Bonus Action for +1 attack or +1 AC until the encounter ends (stacks with itself; only 1 Momentum spendable per turn this way). Provoke's temporary hit points increase to twice your Rogue level.</description>
+		</sheet>
+	</element>
+
+	<element name="The Circle" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_THE_CIRCLE">
+		<description>
+			<p><em>13th-level Pit Fighter feature</em></p>
+			<p>As a Bonus Action, mark a fixed 15-foot-radius circle centered on yourself. Choose any creatures within 30 feet; each makes a Wisdom save against your Provoke DC or becomes compelled to move toward and attack you on its turn, with disadvantage on checks to leave the circle. This lasts until you drop to 0 hit points, leave the circle yourself, or the fight ends.</p>
+			<p class="indent">While you remain inside your own circle, you gain a bonus to Performance and Intimidation checks equal to your Proficiency Bonus, and Provoke's temporary hit points increase to three times your Rogue level.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> Normally, spending Momentum for Crowd's Roar's bonuses costs a Bonus Action. Inside your own circle, it doesn't — any time you're hit or missed by an attack there, you can spend Momentum for free, no action of any kind required.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Mark a fixed 15-ft.-radius circle centered on yourself. Chosen creatures within 30 feet make a Wisdom save against your Provoke DC or are compelled to move toward and attack you on their turn, with disadvantage on checks to leave the circle. Lasts until you drop to 0 HP, leave the circle, or the fight ends. While inside it, gain a bonus to Performance and Intimidation checks equal to your Proficiency Bonus, Provoke's temp HP triples, and spending Momentum for Crowd's Roar costs no action.</description>
+		</sheet>
+	</element>
+
+	<element name="Crowd Pleaser" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_PIT_CROWD_PLEASER">
+		<description>
+			<p><em>17th-level Pit Fighter feature</em></p>
+			<p>While inside your circle, spend 2 Momentum as part of the Attack action to make one additional weapon attack against a different creature within it. Once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>While inside your circle, spend 2 Momentum as part of the Attack action to make one additional weapon attack against a different creature within it.</description>
+		</sheet>
+	</element>
+</elements>
