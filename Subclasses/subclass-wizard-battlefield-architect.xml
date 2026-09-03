@@ -35,22 +35,20 @@
 		<sheet display="false">
 			<description>A mage inspired by Lorathil's legend — walls and structures raised mid-fight to control where danger can and can't reach.</description>
 		</sheet>
-		<rules>
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_CONSTRUCTS" level="3" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_RECONSTRUCT" level="3" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTS_MANIPULATION" level="3" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_SPELLBOUND_REPOSITION" level="3" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ENVIRONMENTALIST" level="3" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_MASTER_BUILDER" level="7" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_REACTIVE_SHIFT" level="7" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_EXPAND" level="7" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_MASTERY" level="11" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONFINE" level="11" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_CONSTRUCT_STRIKE" level="11" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_GRAND_ARCHITECT" level="15" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_DETONATION" level="15" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_LIVING_BLUEPRINT" level="15" />
-			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE" level="15" />
+			<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ELEMENTALISM" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREASE" level="3" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_GROUNDING_SNARE" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_STONEBOUND_HAND" level="5" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_RUPTURED_EARTH" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEET_STORM" level="7" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STONE_SHAPE" level="9" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FIRE" level="9" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_STONE" level="11" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_SPELL_STONE_INTO_MIRE" level="11" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MOVE_EARTH" level="13" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_ICE" level="13" spellcasting="Wizard" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FORCE" level="15" spellcasting="Wizard" prepared="true" />
 		</rules>
 	</element>
 
