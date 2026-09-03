@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Domain of Last Resort</name>
+		<description>Domain of Last Resort cleric subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-cleric-domain-of-last-resort.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-cleric-domain-of-last-resort.xml" />
+		</update>
+	</info>
+
+	<element name="Domain of Last Resort" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_CLERIC_DOMAIN_OF_LAST_RESORT">
+		<supports>Divine Domain</supports>
+		<description>
+			<p class="flavor">A Cleric whose god is too poor in Authority to help on an ordinary day — but who scrapes together everything it has the moment the Cleric's life, or someone they love, is truly on the line.</p>
+			<p>Every Cleric in this world lives with a connection that mostly comes through as static, a god too poor in Authority to spend freely on anyone. A Cleric of Last Resort's god is poorer still — too poor to help on an ordinary day, for an ordinary request. But when the stakes stop being ordinary, something changes. Their god wants to help. It has simply never been able to afford to, until now.</p>
+			<p class="indent">Devoted, driven, and willing to bleed for what they protect, long before their god ever had anything to offer them for it.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_DOMAIN_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_CHANNEL_DIVINITY_BLOOD_PRICE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_FORTIFIED_BY_PAIN" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_PAINFUL_COMMUNION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_LAST_RESORT" />
+		</description>
+		<sheet display="false">
+			<description>A Cleric whose god is too poor to help on an ordinary day, but who spends everything it has the moment the Cleric's life is truly on the line.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_CHANNEL_DIVINITY_BLOOD_PRICE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_FORTIFIED_BY_PAIN" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_PAINFUL_COMMUNION" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_LAST_RESORT" level="17" />
+		</rules>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-level Domain of Last Resort feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified below, you thereafter always have the listed spells prepared. They don't count against the number of spells you can prepare.</p>
+			<h5 class="caption">Domain of Last Resort Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>False Life, Ray of Sickness</em></td></tr>
+				<tr><td>5th</td><td><em>Ray of Enfeeblement, Blindness/Deafness</em></td></tr>
+				<tr><td>7th</td><td><em>Vampiric Touch, Bestow Curse</em></td></tr>
+				<tr><td>9th</td><td><em>Blight, Death Ward</em></td></tr>
+				<tr><td>11th</td><td><em>Contagion, Antilife Shell</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_VAMPIRIC_TOUCH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BESTOW_CURSE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLIGHT" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DEATH_WARD" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONTAGION" level="11" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ANTILIFE_SHELL" level="11" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Blood Price" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_CHANNEL_DIVINITY_BLOOD_PRICE">
+		<description>
+			<p><em>3rd-level Domain of Last Resort feature</em></p>
+			<p>When you or an ally within range makes an attack roll, ability check, or saving throw, you can use your Channel Divinity to add a bonus die based on your own current hit points:</p>
+			<p class="indent"><strong>Bloodied</strong> (at or below half your hit point maximum): +1d4.</p>
+			<p class="indent"><strong>Near Death</strong> (at or below a quarter of your hit point maximum): +1d6.</p>
+		</description>
+		<sheet action="Reaction" usage="Channel Divinity">
+			<description>When you or an ally within range makes an attack roll, ability check, or saving throw, add a bonus die based on your own current HP: +1d4 if you're Bloodied (half HP or less), +1d6 if you're Near Death (a quarter HP or less).</description>
+		</sheet>
+	</element>
+
+	<element name="Fortified by Pain" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_FORTIFIED_BY_PAIN">
+		<description>
+			<p><em>6th-level Domain of Last Resort feature</em></p>
+			<p>While you are Bloodied (at or below half your hit point maximum), you gain a bonus to Armor Class equal to your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description>While you are Bloodied (half HP or less), you gain a bonus to AC equal to your Proficiency Bonus.</description>
+		</sheet>
+	</element>
+
+	<element name="Painful Communion" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_PAINFUL_COMMUNION">
+		<description>
+			<p><em>6th-level Domain of Last Resort feature</em></p>
+			<p>When casting a damaging or healing spell, you can spend a number of your own hit points equal to your Cleric level to add that same number to the spell's damage or healing.</p>
+			<p class="indent">Usable a number of times per Long Rest equal to your Wisdom modifier (minimum 1). Stacks freely with Blood Price.</p>
+		</description>
+		<sheet usage="{{last resort:communion:uses}}/Long Rest">
+			<description>When casting a damaging or healing spell, spend hit points equal to your Cleric level to add that same number to the spell's damage or healing. Stacks with Blood Price.</description>
+		</sheet>
+		<rules>
+			<stat name="last resort:communion:uses" value="1" bonus="base" />
+			<stat name="last resort:communion:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Last Resort" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_CLERIC_LAST_RESORT_LAST_RESORT">
+		<description>
+			<p><em>17th-level Domain of Last Resort feature</em></p>
+			<p>Once per Long Rest, when you would be reduced to 0 hit points, you're instead reduced to 1 and gain temporary hit points equal to three times your Cleric level.</p>
+			<p class="indent">For as long as that temporary HP lasts, or until your next Long Rest, whenever you cast a spell, you can make one weapon attack as a Bonus Action — your god, having finally been able to answer, isn't holding anything back.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you would be reduced to 0 hit points, you're instead reduced to 1 and gain {{last resort:temp hp}} temporary hit points. While that temp HP lasts, whenever you cast a spell, you can make one weapon attack as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="last resort:temp hp" value="level:2024 cleric" />
+			<stat name="last resort:temp hp" value="level:2024 cleric" />
+			<stat name="last resort:temp hp" value="level:2024 cleric" />
+		</rules>
+	</element>
+</elements>
