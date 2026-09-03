@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Living Crystal</name>
+		<description>Path of the Living Crystal barbarian subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-barbarian-path-of-the-living-crystal.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-living-crystal.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Living Crystal" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_BARBARIAN_PATH_OF_THE_LIVING_CRYSTAL">
+		<supports>Primal Path</supports>
+		<description>
+			<p class="flavor">A Barbarian who has embraced the corruption spreading through their body rather than fighting to remove it, channeling it into a natural weapon and armor.</p>
+			<p>Not every corruption the world left behind spreads unchecked. Most do. A red crystal embedded in living flesh is, more often than not, the beginning of an ending — a slow conversion that few survive with anything recognizable of themselves intact. This is the rarer story: what happens when the conversion meets something it cannot simply overwrite.</p>
+			<p class="indent">Some hold the line — meeting the infection with equal and opposing will each time, containing more than they surrender. Others have stopped fighting it in any conventional sense, spending what it offers freely and sharpening the invasion into a weapon rather than resisting it.</p>
+			<p class="indent">This subclass most commonly manifests as red crystal, but the same struggle can take other forms — fused bone, unnatural growths, or something stranger, depending on what marked you. Wherever these features say "crystal," feel free to reflavor its appearance to fit your character's specific corruption.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_MANIFESTATION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_REAVER" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_SHATTERING_HIDE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_PERFECT_MANIFESTATION" />
+		</description>
+		<sheet display="false">
+			<description>A Barbarian who has embraced the red crystal infection rather than fighting it, channeling it into a natural weapon and armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_MANIFESTATION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_REAVER" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_SHATTERING_HIDE" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_PERFECT_MANIFESTATION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Crystal Manifestation" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_MANIFESTATION">
+		<description>
+			<p><em>3rd-level Path of the Living Crystal feature</em></p>
+			<p>When you enter Rage, choose how your corruption manifests for the duration: Offensive or Defensive.</p>
+			<p class="indent"><strong>Offensive.</strong> Your claws deal 1d8 necrotic damage instead of 1d6.</p>
+			<p class="indent"><strong>Defensive.</strong> Hardened crystal plates grant a further bonus to your Armor Class.</p>
+			<p>While raging, jagged crystal claws erupt from your hands regardless of manifestation. You can use them as a natural weapon: unarmed strikes with these claws deal 1d6 necrotic damage instead of the normal bludgeoning damage (1d8 if Offensive), and you can use your Strength modifier for the attack and damage rolls.</p>
+		</description>
+		<sheet action="Bonus Action" usage="When you enter Rage">
+			<description>Choose Offensive (claws deal 1d8 necrotic) or Defensive (bonus to AC) for the duration of the Rage. While raging, your claws are a natural weapon dealing 1d6 necrotic damage (Strength mod to hit/damage), or 1d8 if Offensive.</description>
+		</sheet>
+	</element>
+
+	<element name="Crystal Reaver" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_CRYSTAL_REAVER">
+		<description>
+			<p><em>6th-level Path of the Living Crystal feature</em></p>
+			<p>Your control over the crystal grows. Your melee weapon attacks made while raging can be coated in crystal, dealing necrotic damage instead of the weapon's normal damage type.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> This is the one moment a Living Crystal Barbarian stops being melee-only. Whenever you use Reckless Attack, you can fling shards off your weapon to hit a creature 15 feet away instead of one in reach, using that same attack.</p>
+		</description>
+		<sheet>
+			<description>While raging, your melee weapon attacks can deal necrotic damage instead of the weapon's normal type. Whenever you use Reckless Attack, you can fling shards to hit a creature within 15 feet instead of one in reach, using the same attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Shattering Hide" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_SHATTERING_HIDE">
+		<description>
+			<p><em>10th-level Path of the Living Crystal feature</em></p>
+			<p>Your Defensive manifestation becomes retaliatory. While raging in Defensive manifestation, whenever you're hit by an attack, your plating shatters outward: each creature within 5 feet of you takes 1d4 necrotic damage.</p>
+			<p class="indent">Additionally, while raging, you have resistance to slashing damage.</p>
+		</description>
+		<sheet>
+			<description>While raging in Defensive manifestation, whenever you're hit by an attack, each creature within 5 feet of you takes 1d4 necrotic damage. Additionally, while raging, you have resistance to slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Manifestation" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_BARBARIAN_LIVING_CRYSTAL_PERFECT_MANIFESTATION">
+		<description>
+			<p><em>14th-level Path of the Living Crystal feature</em></p>
+			<p>Your mastery over the crystal infection is complete. When you enter Rage, you gain the benefits of both Offensive and Defensive manifestation simultaneously.</p>
+			<p class="indent">Once per Long Rest while raging, you can force the crystal covering your body to detonate. Each creature you choose within 15 feet must succeed on a Dexterity saving throw (DC = 8 + your Proficiency Bonus + your Constitution modifier) or take 8d6 necrotic damage, half as much on a success.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you enter Rage, gain the benefits of both Offensive and Defensive manifestation simultaneously. Once per Long Rest while raging, force your crystal to detonate: each creature you choose within 15 feet makes a DC {{living crystal:dc}} Dexterity save, taking 8d6 necrotic damage (half on success).</description>
+		</sheet>
+		<rules>
+			<stat name="living crystal:dc" value="8" />
+			<stat name="living crystal:dc" value="proficiency" />
+			<stat name="living crystal:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+</elements>
