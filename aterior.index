@@ -90,7 +90,8 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-guardian.xml" />
         <file name="Subclasses/subclass-fighter-ambient-magic.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-ambient-magic.xml" />
-
+        <file name="Subclasses/subclass-monk-way-of-the-ten-thousandth-strike.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-monk-way-of-the-ten-thousandth-strike.xml" />
 
 
 <!-- Custom Feats (5) -->
