@@ -106,12 +106,24 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-rogue-combat-medic.xml" />
         <file name="Subclasses/subclass-rogue-pit-fighter.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-rogue-pit-fighter.xml" />
+        <file name="Subclasses/subclass-sorcerer-blood-of-the-beyond.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-blood-of-the-beyond.xml" />
+  <file name="Subclasses/subclass-sorcerer-orphaned-grace.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-orphaned-grace.xml" />
+
+        <file name="Subclasses/subclass-warlock-pact-of-the-concept.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-concept.xml" />
+
+
+
+
+
+
         <!-- Spells (1) -->
         <file name="Spells/spell-searing-orb.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-searing-orb.xml" />
 
-        <file name="Subclasses/subclass-sorcerer-orphaned-grace.xml"
-              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-orphaned-grace.xml" />
+      
 
 
 
