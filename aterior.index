@@ -88,7 +88,8 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-druid-circle-of-the-broken-world.xml" />
         <file name="Subclasses/subclass-fighter-guardian.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-guardian.xml" />
-
+        <file name="Subclasses/subclass-fighter-ambient-magic.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-ambient-magic.xml" />
 
 
 
