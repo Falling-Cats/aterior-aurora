@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gift of Alacrity</name>
+		<description>Gift of Alacrity (Explorer's Guide to Wildemount) — added locally, not part of the core 2024 pack.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-gift-of-alacrity.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-gift-of-alacrity.xml" />
+		</update>
+	</info>
+
+	<element name="Gift of Alacrity" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_TEMP_SPELL_GIFT_OF_ALACRITY">
+		<supports>Wizard, Warlock</supports>
+		<description>
+			<p>You touch a willing creature. For the duration, the target can add 1d8 to its Initiative rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords">initiative, buff</set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="duration">8 hours</set>
+		</setters>
+	</element>
+</elements>
