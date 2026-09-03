@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Orphaned Grace</name>
+		<description>Orphaned Grace sorcerer subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-sorcerer-orphaned-grace.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-sorcerer-orphaned-grace.xml" />
+		</update>
+	</info>
+
+	<element name="Orphaned Grace" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_SORCERER_ORPHANED_GRACE">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">A Sorcerer descended from mortals who once lived in close, sustained proximity to the divine — servants, attendants, laborers whose bloodline absorbed a trace of that old current over years of exposure.</p>
+			<p>Magic in this world behaves something like radiation. It concentrates wherever it lingers long enough, and steady exposure over years is more than enough to leave a mark that outlasts the person who carried it. This bloodline says nothing about who a person is — devout or faithless, generous or cruel, heroic or genuinely rotten.</p>
+			<p class="indent">Carries a dim, painful echo of how magic worked before spell slots ever existed: cast past your limit, and pay for it in blood rather than being told no.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_TEMPLE_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_DIVINE_RESIDUE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_ABSORBED_RADIANCE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_MEMORY_OF_MAGIC" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_THE_FIRST_GRACE" />
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer descended from mortals who once lived in close, sustained proximity to the divine, carrying a dim echo of magic as it worked before spell slots existed.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_TEMPLE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_DIVINE_RESIDUE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_ABSORBED_RADIANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_MEMORY_OF_MAGIC" level="14" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_THE_FIRST_GRACE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Temple Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_TEMPLE_SPELLS">
+		<description>
+			<p><em>3rd-level Orphaned Grace feature</em></p>
+			<p>You always have the following spells prepared, and they don't count against the number of spells you can prepare with your Spellcasting feature.</p>
+			<h5 class="caption">Temple Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Cure Wounds, Searing Orb, Aid, Prayer of Healing</em></td></tr>
+				<tr><td>5th</td><td><em>Fireball, Call Lightning, Glyph of Warding</em></td></tr>
+				<tr><td>7th</td><td><em>Arcane Eye, Control Water</em></td></tr>
+				<tr><td>9th</td><td><em>Scrying, Cone of Cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_ATERIOR_TEMP_SPELL_SEARING_ORB" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AID" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PRAYER_OF_HEALING" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIREBALL" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALL_LIGHTNING" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GLYPH_OF_WARDING" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTROL_WATER" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONE_OF_COLD" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Divine Residue" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_DIVINE_RESIDUE">
+		<description>
+			<p><em>3rd-level Orphaned Grace feature</em></p>
+			<p><strong><i>Sight Beyond the Veil.</i></strong> You always have Detect Magic prepared and can cast it without expending a spell slot.</p>
+			<p class="indent"><strong><i>The Old Rite.</i></strong> Twice per Long Rest, cast a prepared spell of 5th level or lower without expending a slot. You take necrotic damage equal to one quarter of your hit point maximum, rounded down. Casting a spell this way still counts as casting a spell for any rule or feature that limits you to one spell per turn.</p>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>You always have Detect Magic prepared and can cast it without expending a spell slot. Twice per Long Rest, cast a prepared spell of 5th level or lower without expending a slot, taking necrotic damage equal to one quarter of your hit point maximum, rounded down.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Absorbed Radiance" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_ABSORBED_RADIANCE">
+		<description>
+			<p><em>6th-level Orphaned Grace feature</em></p>
+			<p>When a spell cast by another creature deals damage to you, gain Sorcery Points equal to half that spell's level, rounded up (none from a cantrip). Once per spell, regardless of how many times it hits you, up to your normal maximum.</p>
+		</description>
+		<sheet>
+			<description>When a spell cast by another creature deals damage to you, gain Sorcery Points equal to half that spell's level, rounded up (none from a cantrip), once per spell, up to your normal maximum.</description>
+		</sheet>
+	</element>
+
+	<element name="Memory of Magic" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_MEMORY_OF_MAGIC">
+		<description>
+			<p><em>14th-level Orphaned Grace feature</em></p>
+			<p>When a creature within 60 feet makes a saving throw against a spell or a spell attack roll, use your Reaction after the roll but before the outcome to spend 2 Sorcery Points and add or subtract 1d4.</p>
+		</description>
+		<sheet action="Reaction" usage="2 Sorcery Points">
+			<description>When a creature within 60 feet makes a saving throw against a spell or a spell attack roll, spend 2 Sorcery Points after the roll but before the outcome to add or subtract 1d4.</description>
+		</sheet>
+	</element>
+
+	<element name="The First Grace" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_SORCERER_GRACE_THE_FIRST_GRACE">
+		<description>
+			<p><em>18th-level Orphaned Grace feature</em></p>
+			<p>Once per Long Rest, for 1 minute, you cast spells the way your bloodline's ancestors did. Whenever you cast a prepared spell of 5th level or lower during that time, you don't expend a spell slot to cast it — you take necrotic damage equal to one quarter of your hit point maximum, rounded down, the same as the Old Rite. You can end this effect early at any time, no action required.</p>
+			<p class="indent">You can use this feature again before finishing a Long Rest by spending 10 Sorcery Points.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> The necrotic cost doesn't shrink with repeated use — every spell you cast this way costs the same amount, in full, every time, for the whole minute. And a spell cast this way still counts as your one spell per turn under the normal rule, so you can't chain a slot-free leveled spell into a bonus-action spell for two leveled casts in one turn. Sorcery Points for Metamagic still apply as usual on top of all this.</p>
+		</description>
+		<sheet usage="1/Long Rest, or 10 Sorcery Points">
+			<description>For 1 minute, whenever you cast a prepared spell of 5th level or lower, you don't expend a spell slot — you take necrotic damage equal to one quarter of your hit point maximum, rounded down. Ends early at will.</description>
+		</sheet>
+	</element>
+</elements>
