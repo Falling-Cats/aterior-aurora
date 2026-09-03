@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Last Flame</name>
+		<description>Oath of the Last Flame paladin subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-paladin-oath-of-the-last-flame.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-paladin-oath-of-the-last-flame.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Last Flame" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_PALADIN_OATH_OF_THE_LAST_FLAME">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">A paladin who has taken Aria Emberheart's five-century sacrifice and scaled it down to something a mortal life can actually carry.</p>
+			<p>Five hundred years ago, a paladin barely into adulthood watched the sky go silent and did not run. She built a sanctuary, then a city, then a five-century climb toward a connection to the divine that refused to stay severed. She is not the Oath's founder in any formal sense. She's simply what it looks like carried all the way to its end.</p>
+			<p class="indent">This Oath doesn't ask anyone to build a tower. What it asks is smaller, and far more repeatable: pick something worth rebuilding, however modest, and give it everything. You are the last flame in a dying world. If you're fortunate, your flame will spread.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_OATH_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_CHANNEL_DIVINITY_KINDLE_THE_LAST_FLAME" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_AURA_OF_THE_LAST_FLAME" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_REACH_THROUGH_THE_FLAME" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_STAND_IN_MY_PLACE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_THE_LAST_FLAME" />
+		</description>
+		<sheet display="false">
+			<description>A paladin who has taken Aria Emberheart's five-century sacrifice and scaled it down to something a mortal life can actually carry.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_CHANNEL_DIVINITY_KINDLE_THE_LAST_FLAME" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_AURA_OF_THE_LAST_FLAME" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_REACH_THROUGH_THE_FLAME" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_STAND_IN_MY_PLACE" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_THE_LAST_FLAME" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_OATH_SPELLS">
+		<description>
+			<p><em>3rd-level Oath of the Last Flame feature</em></p>
+			<h5 class="caption">Oath of the Last Flame Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Heroism, Searing Smite</em></td></tr>
+				<tr><td>5th</td><td><em>Warding Bond, Shining Smite</em></td></tr>
+				<tr><td>9th</td><td><em>Beacon of Hope, Spirit Shroud</em></td></tr>
+				<tr><td>13th</td><td><em>Death Ward, Fire Shield</em></td></tr>
+				<tr><td>17th</td><td><em>Greater Restoration, Flame Strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEROISM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEARING_SMITE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WARDING_BOND" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHINING_SMITE" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLAME_STRIKE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Kindle the Last Flame" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_CHANNEL_DIVINITY_KINDLE_THE_LAST_FLAME">
+		<description>
+			<p><em>3rd-level Oath of the Last Flame feature</em></p>
+			<p>As a Bonus Action, expend a use of Channel Divinity to wreathe a held weapon in the Last Flame for 1 minute (or until used again). It sheds Bright Light 10 ft., Dim Light 10 ft. further.</p>
+			<p class="indent">While wreathed, hits deal an extra 1d4 Radiant damage and reduce the target's Speed by 10 ft. until the start of your next turn. If it willingly moves away from you before then, it takes another 1d4 Radiant.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channel Divinity">
+			<description>Wreathe a held weapon in the Last Flame for 1 minute (or until used again), shedding Bright Light 10 ft. and Dim Light 10 ft. further. Hits deal an extra 1d4 Radiant damage and reduce the target's Speed by 10 ft. If it willingly moves away before your next turn, it takes another 1d4 Radiant.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura of the Last Flame" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_AURA_OF_THE_LAST_FLAME">
+		<description>
+			<p><em>7th-level Oath of the Last Flame feature</em></p>
+			<p>Within your Aura of Protection, an ally who starts their turn below their hit point maximum regains hit points equal to your Charisma modifier — or gains temporary hit points equal to it, if already at maximum.</p>
+		</description>
+		<sheet>
+			<description>Within your Aura of Protection, an ally who starts their turn below their hit point maximum regains hit points equal to your Charisma modifier, or gains that much in temporary hit points if already at maximum.</description>
+		</sheet>
+	</element>
+
+	<element name="Reach Through the Flame" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_REACH_THROUGH_THE_FLAME">
+		<description>
+			<p><em>7th-level Oath of the Last Flame feature</em></p>
+			<p>When you take the Attack action, or use a feature or spell with a range of Touch, you can expend a use of Channel Divinity to treat any point within your Aura of Protection as within your own reach.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>When you take the Attack action, or use a feature or spell with a range of Touch, you can expend a use of Channel Divinity to treat any point within your Aura of Protection as within your own reach.</description>
+		</sheet>
+	</element>
+
+	<element name="Stand in My Place" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_STAND_IN_MY_PLACE">
+		<description>
+			<p><em>15th-level Oath of the Last Flame feature</em></p>
+			<p>When an ally within your Aura of Protection is reduced to 0 hit points but not killed outright, use your Reaction: they drop to 1 hit point instead, you instantly swap positions, and they regain hit points equal to three times your Paladin level. Once per Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>When an ally within your Aura of Protection is reduced to 0 hit points but not killed outright, they drop to 1 hit point instead, you instantly swap positions, and they regain hit points equal to three times your Paladin level.</description>
+		</sheet>
+	</element>
+
+	<element name="The Last Flame" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_PALADIN_FLAME_THE_LAST_FLAME">
+		<description>
+			<p><em>20th-level Oath of the Last Flame feature</em></p>
+			<p>As a Bonus Action, become an immovable conduit of divine fire for 1 minute: your Speed becomes 0, you can't take Reactions, Reach Through the Flame no longer costs Channel Divinity, and at the start of each hostile creature's turn within your Aura, it takes 2d6 Radiant damage.</p>
+			<p class="indent">Ends early if you're incapacitated, or you can end it yourself for free. Once per Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Become an immovable conduit of divine fire for 1 minute: your Speed becomes 0, you can't take Reactions, Reach Through the Flame no longer costs Channel Divinity, and each hostile creature within your Aura takes 2d6 Radiant damage at the start of its turn. Ends early if incapacitated or ended voluntarily.</description>
+		</sheet>
+	</element>
+</elements>
