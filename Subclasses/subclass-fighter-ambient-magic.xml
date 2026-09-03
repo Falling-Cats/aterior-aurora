@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ambient Magic Fighter</name>
+		<description>Ambient Magic Fighter subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-fighter-ambient-magic.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-ambient-magic.xml" />
+		</update>
+	</info>
+
+	<element name="Ambient Magic Fighter" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FIGHTER_AMBIENT_MAGIC">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">A Fighter whose body absorbed real magical potential from a life spent somewhere the Weave never fully healed — and never learned how to control it.</p>
+			<p>In the wild places of Atérior — deep ruins, the thin ground near a crater's edge, anywhere the Weave never fully closed back up after the Weaver's Touch — magic still clings the way dew clings to stone. This Fighter never studied any of it. It simply soaked in anyway, and it had nowhere trained or controlled to go once it was already inside them.</p>
+			<p class="indent">It surfaces involuntarily, most often at the moments the body is already pushed hardest: a critical hit, a desperate Second Wind, the extra effort of an Action Surge. Training helps you survive what it does. It never lets you choose when it happens.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_WILD_SURGE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_SECOND_WIND_SURGE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ACTION_SURGE_OVERLOAD" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_STEADIER_HANDS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ONE_MORE_TRY" />
+		</description>
+		<sheet display="false">
+			<description>A Fighter whose body absorbed real magical potential from a life spent somewhere the Weave never fully healed, and never learned how to control it.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_WILD_SURGE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_SECOND_WIND_SURGE" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ACTION_SURGE_OVERLOAD" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_STEADIER_HANDS" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ONE_MORE_TRY" level="18" />
+		</rules>
+	</element>
+
+	<element name="Wild Magic Table" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_AMBIENT_WILD_MAGIC_TABLE">
+		<description>
+			<h5 class="caption">The Wild Magic Table (d12)</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10">d12</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td class="left"><strong>Cataclysm.</strong> Fire erupts from beneath you. Every creature within 10 ft. (Dexterity or Constitution save) takes fire damage; you take half regardless.</td></tr>
+				<tr><td>2</td><td class="left"><strong>Battle Instinct.</strong> You immediately make one additional weapon attack.</td></tr>
+				<tr><td>3</td><td class="left"><strong>See Beyond.</strong> For 1 minute, you see invisible creatures and objects. Advantage on your next attack roll, check, or save.</td></tr>
+				<tr><td>4</td><td class="left"><strong>Shockwave.</strong> Thunderous force radiates from you. Creatures within 10 ft. (save) take thunder damage and are pushed back; you're unaffected.</td></tr>
+				<tr><td>5</td><td class="left"><strong>Skin of Stone.</strong> Your skin hardens. Gain 1d8 + your Constitution modifier temporary hit points.</td></tr>
+				<tr><td>6</td><td class="left"><strong>Veil of Smoke.</strong> A 10-ft.-radius sphere of shadowy smoke erupts from you, heavily obscuring the area until the start of your next turn. Affects you too.</td></tr>
+				<tr><td>7</td><td class="left"><strong>Arcing Current.</strong> Lightning leaps from you to a creature, then arcs to a second within 10 ft. of the first. Both take lightning damage.</td></tr>
+				<tr><td>8</td><td class="left"><strong>Distorted Form.</strong> For 1 minute, attacks against you have disadvantage. No concentration required.</td></tr>
+				<tr><td>9</td><td class="left"><strong>Uncontrolled Growth.</strong> You grow to Large size for a short time.</td></tr>
+				<tr><td>10</td><td class="left"><strong>Wrong Blink.</strong> You and the nearest ally within 30 ft. instantly swap places. No ally in range, nothing happens. You don't choose.</td></tr>
+				<tr><td>11</td><td class="left"><strong>Silence Falls.</strong> A wave of silence erupts from you. You and creatures within 10 ft. (Constitution save) take thunder damage and can't hear or make sound until your next turn; half damage and no other effect on a success.</td></tr>
+				<tr><td>12</td><td class="left"><strong>Overload.</strong> You're Incapacitated until the start of your next turn. Hostile creatures within 10 ft. take damage. At the start of your next turn, roll again instead of taking your turn. If you roll Overload again, your Incapacitated condition simply ends instead — you take your turn normally.</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Wild Surge" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_WILD_SURGE">
+		<description>
+			<p><em>3rd-level Ambient Magic Fighter feature</em></p>
+			<p>Whenever you score a critical hit, roll a d12 on the Wild Magic Table and apply the result. You add your Surge Die (1d4) to every damage-dealing entry on the table.</p>
+			<p class="indent">You have your Proficiency Bonus added to saving throws against spells.</p>
+			<div element="ID_ATERIOR_INFORMATION_AMBIENT_WILD_MAGIC_TABLE" />
+		</description>
+		<sheet>
+			<description>Whenever you score a critical hit, roll a d12 on the Wild Magic Table and apply the result, adding your Surge Die (1d4) to damage-dealing entries. You add your Proficiency Bonus to saving throws against spells.</description>
+		</sheet>
+	</element>
+
+	<element name="Second Wind Surge" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_SECOND_WIND_SURGE">
+		<description>
+			<p><em>7th-level Ambient Magic Fighter feature</em></p>
+			<p>Whenever you use Second Wind in combat, roll a d8 on the Wild Magic Table (results 1–8 only) and apply the result, in addition to Second Wind's normal healing. Using Second Wind outside combat doesn't trigger this.</p>
+			<p class="indent">Your Surge Die increases to 1d6.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use Second Wind in combat, roll a d8 on the Wild Magic Table (results 1–8 only) and apply the result, in addition to Second Wind's normal healing. Your Surge Die increases to 1d6.</description>
+		</sheet>
+	</element>
+
+	<element name="Action Surge Overload" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ACTION_SURGE_OVERLOAD">
+		<description>
+			<p><em>10th-level Ambient Magic Fighter feature</em></p>
+			<p>Whenever you use Action Surge, roll a d4 on the Wild Magic Table (results 1–4 only) and apply the result.</p>
+			<p class="indent">Your Surge Die increases to 1d8.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use Action Surge, roll a d4 on the Wild Magic Table (results 1–4 only) and apply the result. Your Surge Die increases to 1d8.</description>
+		</sheet>
+	</element>
+
+	<element name="Steadier Hands" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_STEADIER_HANDS">
+		<description>
+			<p><em>15th-level Ambient Magic Fighter feature</em></p>
+			<p>You have resistance to damage dealt by your own Wild Magic Table effects.</p>
+			<p class="indent">Once per Long Rest, as a Reaction when you see a creature casting a spell, you can attempt to disrupt it.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> This is the one moment you get real say over what your own magic is doing — everywhere else on this page, it's out of your hands. It's not a true Counterspell; think of it as just enough instinct finally under your control to keep you from being caught flat-footed by an enemy spell.</p>
+			<p class="indent">Your Surge Die increases to 1d10.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>You have resistance to damage dealt by your own Wild Magic Table effects. Once per Long Rest, as a Reaction when you see a creature casting a spell, you can attempt to disrupt it. Your Surge Die increases to 1d10.</description>
+		</sheet>
+	</element>
+
+	<element name="One More Try" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_AMBIENT_ONE_MORE_TRY">
+		<description>
+			<p><em>18th-level Ambient Magic Fighter feature</em></p>
+			<p>Once between rests, when you roll on the Wild Magic Table, you can choose not to apply the result. The next time you roll on the table after doing so, roll twice and apply both results.</p>
+			<p class="indent">Your Surge Die increases to 1d12.</p>
+		</description>
+		<sheet usage="1/Rest">
+			<description>Once between rests, when you roll on the Wild Magic Table, you can choose not to apply the result. The next roll after doing so rolls twice and applies both results. Your Surge Die increases to 1d12.</description>
+		</sheet>
+	</element>
+</elements>
