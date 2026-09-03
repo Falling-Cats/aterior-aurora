@@ -4,7 +4,7 @@
 		<name>Combat Ritualist</name>
 		<description>Combat Ritualist wizard subclass — ATÉRIOR.</description>
 		<author>Falling-Cats</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="subclass-wizard-combat-ritualist.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-combat-ritualist.xml" />
 		</update>
 	</info>
