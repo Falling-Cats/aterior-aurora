@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Ten Thousandth Strike</name>
+		<description>Way of the Ten Thousandth Strike monk subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-monk-way-of-the-ten-thousandth-strike.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-monk-way-of-the-ten-thousandth-strike.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Ten Thousandth Strike" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_MONK_TEN_THOUSANDTH_STRIKE">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">A Monk who has deliberately conditioned their body past pain itself, one strike at a time, until almost nothing about a fight can slow them down.</p>
+			<p>Among the Ruun, one belief sits at the center of everything: greatness, at any cost. This is what happens when the path chosen is violence itself, followed all the way to its most literal, most physical conclusion — a body deliberately broken down and rebuilt, over and over, until it stops flinching from anything. It doesn't require being Ruun to arrive here; a street fighter who decided alone to condition their body past what pain should allow reaches the same place by a completely different road.</p>
+			<p class="indent">Some train alone. Some train under a master who believes the same thing. Every one of them made the same decision first: that greatness costs something, and the cost was never a reason to stop.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BRUTAL_FLURRY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_ANSWERED_BLOW" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_VIOLENT_MOMENTUM" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_HARDENED_BODY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_REFUSE_TO_FALL" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_RELENTLESS_PURSUIT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BODY_REMEMBERS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_TEN_THOUSANDTH_STRIKE" />
+		</description>
+		<sheet display="false">
+			<description>A Monk who has deliberately conditioned their body past pain itself, one strike at a time, until almost nothing about a fight can slow them down.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BRUTAL_FLURRY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_ANSWERED_BLOW" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_VIOLENT_MOMENTUM" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_HARDENED_BODY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_REFUSE_TO_FALL" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_RELENTLESS_PURSUIT" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BODY_REMEMBERS" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_TEN_THOUSANDTH_STRIKE" level="17" />
+		</rules>
+	</element>
+
+	<element name="Brutal Flurry" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BRUTAL_FLURRY">
+		<description>
+			<p><em>3rd-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you use Flurry of Blows, one of its Unarmed Strikes deals an extra 1d4 damage of the same type on a hit.</p>
+		</description>
+		<sheet>
+			<description>When you use Flurry of Blows, one of its Unarmed Strikes deals an extra 1d4 damage of the same type on a hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Answered Blow" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_ANSWERED_BLOW">
+		<description>
+			<p><em>3rd-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you use Patient Defense, if a creature hits you before the start of your next turn, you have advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you use Patient Defense, if a creature hits you before the start of your next turn, you have advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Violent Momentum" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_VIOLENT_MOMENTUM">
+		<description>
+			<p><em>3rd-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you use Step of the Wind, the next time you hit with an Unarmed Strike this turn, you can add your Martial Arts die to the damage and push the target 5 feet. Once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you use Step of the Wind, the next time you hit with an Unarmed Strike this turn, you can add your Martial Arts die to the damage and push the target 5 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Hardened Body" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_HARDENED_BODY">
+		<description>
+			<p><em>3rd-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you take damage from an attack within your reach, you can use your Reaction to reduce it by your Martial Arts die plus your Constitution modifier. Uses equal to your Constitution modifier (minimum 1) per Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{hardened body:uses}}/Long Rest">
+			<description>When you take damage from an attack within your reach, reduce it by your Martial Arts die plus your Constitution modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="hardened body:uses" value="1" bonus="base" />
+			<stat name="hardened body:uses" value="constitution:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Refuse to Fall" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_REFUSE_TO_FALL">
+		<description>
+			<p><em>6th-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you're reduced to 0 hit points, you can use your Reaction and spend 3 Focus Points to stay standing instead of falling unconscious — drop to 1 hit point instead, and gain temporary hit points equal to your Monk level plus your Constitution modifier. Once per Short or Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short or Long Rest">
+			<description>When you're reduced to 0 hit points, spend 3 Focus Points to drop to 1 hit point instead of falling unconscious, and gain temporary hit points equal to your Monk level plus your Constitution modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Relentless Pursuit" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_RELENTLESS_PURSUIT">
+		<description>
+			<p><em>6th-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>When you're forcibly pushed, knocked prone, or otherwise moved against your will, you can immediately move up to half your Speed toward whoever caused it, without provoking Opportunity Attacks. Once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you're forcibly pushed, knocked prone, or otherwise moved against your will, you can immediately move up to half your Speed toward whoever caused it, without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Body Remembers" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_BODY_REMEMBERS">
+		<description>
+			<p><em>11th-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>You reduce all damage taken by your Martial Arts die, no action required, unlimited uses. Whenever you reduce a creature to 0 hit points, regain 1 Focus Point (maximum equal to your Wisdom modifier per turn).</p>
+		</description>
+		<sheet>
+			<description>You reduce all damage taken by your Martial Arts die, no action required, unlimited uses. Whenever you reduce a creature to 0 hit points, regain 1 Focus Point (maximum equal to your Wisdom modifier per turn).</description>
+		</sheet>
+	</element>
+
+	<element name="Ten Thousandth Strike" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_MONK_STRIKE_TEN_THOUSANDTH_STRIKE">
+		<description>
+			<p><em>17th-level Way of the Ten Thousandth Strike feature</em></p>
+			<p>Once per Long Rest, when you attack while at half your hit point maximum or fewer, you can enter this state as part of the attack. It lasts 1 minute. Choose two of the following when you enter it:</p>
+			<p class="indent"><strong>Unrelenting.</strong> Unarmed strikes deal an extra 1d10 damage.</p>
+			<p class="indent"><strong>Undeterred.</strong> Resistance to bludgeoning, piercing, and slashing damage.</p>
+			<p class="indent"><strong>Unbroken.</strong> One additional unarmed strike whenever you take the Attack action.</p>
+			<p class="indent"><strong>Unshaken.</strong> Immune to Frightened and Charmed; your movement doesn't provoke Opportunity Attacks.</p>
+			<p class="indent"><strong>Unchained.</strong> Use Refuse to Fall for free, ignoring its cost and rest limit — but doing so ends this state.</p>
+			<p class="indent">The state ends early if you're incapacitated.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you attack while at half your hit point maximum or fewer, enter this state (lasts 1 minute) and choose two: Unrelenting (+1d10 unarmed strike damage), Undeterred (resistance to bludgeoning/piercing/slashing), Unbroken (one additional unarmed strike on the Attack action), Unshaken (immune to Frightened/Charmed, movement doesn't provoke Opportunity Attacks), or Unchained (use Refuse to Fall for free, ending this state). Ends early if incapacitated.</description>
+		</sheet>
+	</element>
+</elements>
