@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Keeper of What Was</name>
+		<description>Keeper of What Was tinkerer subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-tinkerer-keeper-of-what-was.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-tinkerer-keeper-of-what-was.xml" />
+		</update>
+	</info>
+
+	<element name="Keeper of What Was" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_TINKERER_KEEPER_OF_WHAT_WAS">
+		<supports>Artificer Subclass</supports>
+		<description>
+			<p class="flavor">A tinkerer devoted to preservation and restoration — mending what's worn, rewinding what's spent, refusing to let a broken or fading thing simply stay that way.</p>
+			<p>Every one of the Six Elders left something behind that people still reach for centuries later, and for tinkerers drawn to preservation and repair, that something is Nix Gearspark — remembered less for any single invention than for a restless, tireless refusal to let anything stay broken.</p>
+			<p class="indent">Trained the ordinary way more often than not, though a rare few piece it together alone, all sharing the same restless discomfort with decay that first defined Nix Gearspark's own legend.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TOOL_PROFICIENCY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TIME_TINKERER_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_MEND_THE_WEAR" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWIND_THE_PAGE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TEMPORAL_DISTORTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_RESTORE_THE_MOMENT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWRITE_THE_PAGE" />
+		</description>
+		<sheet display="false">
+			<description>A tinkerer devoted to preservation and restoration — mending what's worn, rewinding what's spent, refusing to let a broken or fading thing simply stay that way.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TIME_TINKERER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_MEND_THE_WEAR" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWIND_THE_PAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TEMPORAL_DISTORTION" level="5" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_RESTORE_THE_MOMENT" level="9" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWRITE_THE_PAGE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TOOL_PROFICIENCY">
+		<description>
+			<p><em>3rd-level Keeper of What Was feature</em></p>
+			<p>You gain proficiency with Jeweler's Tools or Tinker's Tools, your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Keeper Tool Proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" number="1" />
+		</rules>
+	</element>
+
+	<element name="Time Tinkerer Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TIME_TINKERER_SPELLS">
+		<description>
+			<p><em>3rd-level Keeper of What Was feature</em></p>
+			<p>You always have the following spells prepared once you reach the Tinkerer level shown; they don't count against the number of spells you can prepare.</p>
+			<h5 class="caption">Time Tinkerer Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tinkerer Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td class="left"><em>Gift of Alacrity, Sanctuary</em></td></tr>
+				<tr><td>5th</td><td class="left"><em>Hold Person, Lesser Restoration</em></td></tr>
+				<tr><td>9th</td><td class="left"><em>Haste, Slow</em></td></tr>
+				<tr><td>13th</td><td class="left"><em>Freedom of Movement, Dimension Door</em></td></tr>
+				<tr><td>17th</td><td class="left"><em>Greater Restoration, Hold Monster</em></td></tr>
+			</table>
+			<p>You have a number of charges equal to your Intelligence modifier (minimum of 1), which you regain when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_ATERIOR_TEMP_SPELL_GIFT_OF_ALACRITY" level="3" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SANCTUARY" level="3" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LESSER_RESTORATION" level="5" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HASTE" level="9" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" level="9" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIMENSION_DOOR" level="13" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="17" spellcasting="Tinkerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" level="17" spellcasting="Tinkerer" prepared="true" />
+			<stat name="keeper:charges" value="1" bonus="base" />
+			<stat name="keeper:charges" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Mend the Wear" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_MEND_THE_WEAR">
+		<description>
+			<p><em>3rd-level Keeper of What Was feature (1 charge)</em></p>
+			<p>As an action, touch a magic item with one or more expended charges or limited uses, currently below its maximum, and restore some of them. This can't restore an item's charges or uses faster than that item's own rules normally allow it to recharge.</p>
+		</description>
+		<sheet action="Action" usage="1 charge, {{keeper:charges}}/Long Rest">
+			<description>Touch a magic item with one or more expended charges or limited uses, currently below its maximum, and restore some of them. Can't exceed that item's own normal recharge rate.</description>
+		</sheet>
+	</element>
+
+	<element name="Rewind the Page" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWIND_THE_PAGE">
+		<description>
+			<p><em>3rd-level Keeper of What Was feature (2 charges)</em></p>
+			<p>As an action, touch a magic item with no remaining charges or uses and restore it to a fully unused state. If its uses were expended since your last Long Rest, you can do this at any time. If they were expended before your last Long Rest, this can only be done during downtime.</p>
+		</description>
+		<sheet action="Action" usage="2 charges, {{keeper:charges}}/Long Rest">
+			<description>Touch a magic item with no remaining charges or uses and restore it to a fully unused state. Usable anytime for uses expended since your last Long Rest; otherwise only during downtime.</description>
+		</sheet>
+	</element>
+
+	<element name="Temporal Distortion" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_TEMPORAL_DISTORTION">
+		<description>
+			<p><em>5th-level Keeper of What Was feature</em></p>
+			<p>Once per turn, when you cast a spell from your Time Tinkerer Spells list that targets a creature other than yourself and the spell affects that creature — it's hit, it fails a required save, or the spell requires neither — you can increase or decrease that creature's Speed by 5 feet times your Intelligence modifier (minimum 5 feet) until the start of your next turn. No saving throw.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, when a Time Tinkerer spell you cast affects a creature other than yourself, you can increase or decrease that creature's Speed by 5 feet times your Intelligence modifier (minimum 5 feet) until the start of your next turn. No saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Restore the Moment" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_RESTORE_THE_MOMENT">
+		<description>
+			<p><em>9th-level Keeper of What Was feature</em></p>
+			<p>Once per Long Rest, touch a creature and choose one:</p>
+			<p class="indent"><strong>Restore the Gift.</strong> It regains one expended use of a class feature that normally recharges on a Short or Long Rest. This can't restore a spell slot.</p>
+			<p class="indent"><strong>Restore the Flesh.</strong> It regains hit points equal to one quarter of its hit point maximum, and can end one of the following conditions affecting it: Blinded, Deafened, Paralyzed, or Poisoned.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Touch a creature and choose: Restore the Gift (regain one expended use of a class feature that recharges on a Short or Long Rest, not a spell slot), or Restore the Flesh (regain hit points equal to one quarter of its hit point maximum, and end one of Blinded, Deafened, Paralyzed, or Poisoned).</description>
+		</sheet>
+	</element>
+
+	<element name="Rewrite the Page" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_KEEPER_REWRITE_THE_PAGE">
+		<description>
+			<p><em>15th-level Keeper of What Was feature</em></p>
+			<p>Rewind the Page no longer requires downtime to use, regardless of how long ago the item's uses were expended.</p>
+			<p class="indent">You also gain a number of uses of the following equal to your Intelligence modifier, regained on a Long Rest: when you, or a creature you can see within 60 feet, fails a saving throw, misses with an attack roll, or fails an ability check, you can expend one use as a Reaction to force a reroll of that d20. The new result replaces the old one.</p>
+		</description>
+		<sheet action="Reaction" usage="{{keeper:rewrite:uses}}/Long Rest">
+			<description>Rewind the Page no longer requires downtime. You also gain uses equal to your Intelligence modifier, regained on a Long Rest: when you or a creature within 60 feet fails a save, misses an attack, or fails an ability check, force a reroll that replaces the original.</description>
+		</sheet>
+		<rules>
+			<stat name="keeper:rewrite:uses" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+</elements>
