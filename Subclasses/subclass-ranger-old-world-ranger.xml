@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Old World Ranger</name>
+		<description>Old World Ranger subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-ranger-old-world-ranger.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-old-world-ranger.xml" />
+		</update>
+	</info>
+
+	<element name="Old World Ranger" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_RANGER_OLD_WORLD_RANGER">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">A survivalist who learned everything they know keeping only themselves alive in the ruins the Weaver's Touch left scattered across the continent — and who now, adventuring alongside others for maybe the first time, points that same solitary instinct outward.</p>
+			<p>The old world never fully went away. Structures sank unevenly across the whole continent during the Weaver's Touch, and five centuries later, the wreckage is still everywhere. For an Old World Ranger, it's home ground: the terrain they know better than any city street, full of traps they've learned to read and dangers they've learned to see coming before anyone else in the room does.</p>
+			<p class="indent">The skill that comes out the other side was built to keep exactly one person alive. Now it means the whole party walks through safely behind them, whether that was ever the plan or just what happened once there were people worth doing it for.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAINING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_ALWAYS_WATCHING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAILBLAZER" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_INSTINCTIVE_ESCAPE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_LEAD_THE_WAY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_GUIDING_FROM_BEHIND" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_EVASIVE_INSTINCTS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_RELENTLESS_PURSUIT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_MASTER_OF_THE_OLD_WORLD" />
+		</description>
+		<sheet display="false">
+			<description>A survivalist who learned everything they know keeping only themselves alive in the ruins the Weaver's Touch left scattered across the continent.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_ALWAYS_WATCHING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAILBLAZER" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_INSTINCTIVE_ESCAPE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_LEAD_THE_WAY" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_GUIDING_FROM_BEHIND" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_EVASIVE_INSTINCTS" level="11" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_RELENTLESS_PURSUIT" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_MASTER_OF_THE_OLD_WORLD" level="15" />
+		</rules>
+	</element>
+
+	<element name="Old World Training" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAINING">
+		<description>
+			<p><em>3rd-level Old World Ranger feature</em></p>
+			<p>Proficiency in two of the following: Investigation, Perception, Stealth, Survival. You also gain proficiency with Thieves' Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Old World Training Skills" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Always Watching" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_ALWAYS_WATCHING">
+		<description>
+			<p><em>3rd-level Old World Ranger feature</em></p>
+			<p>You can't be surprised while conscious. You have advantage on checks to detect traps, hazards, poisons, spoiled food, unsafe water, unstable structures, or other environmental dangers, and on Survival checks to find food, water, shelter, or a safe place to rest.</p>
+		</description>
+		<sheet>
+			<description>You can't be surprised while conscious. Advantage on checks to detect traps, hazards, poisons, spoiled food, unsafe water, unstable structures, or other environmental dangers, and on Survival checks to find food, water, shelter, or a safe place to rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Trailblazer" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_TRAILBLAZER">
+		<description>
+			<p><em>3rd-level Old World Ranger feature</em></p>
+			<p>Difficult terrain costs you nothing extra to move through. When you move through natural or ruin-related difficult terrain, you clear a path as you go — until the start of your next turn, it isn't difficult terrain for your allies either.</p>
+		</description>
+		<sheet>
+			<description>Difficult terrain costs you nothing extra to move through. When you move through natural or ruin-related difficult terrain, it isn't difficult terrain for your allies either, until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Instinctive Escape" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_INSTINCTIVE_ESCAPE">
+		<description>
+			<p><em>3rd-level Old World Ranger feature</em></p>
+			<p>When you trigger a trap, or a hostile creature enters a space within 5 feet of you, use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you trigger a trap, or a hostile creature enters a space within 5 feet of you, move up to half your Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Lead the Way" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_LEAD_THE_WAY">
+		<description>
+			<p><em>7th-level Old World Ranger feature</em></p>
+			<p>Advantage on your first attack roll against a creature that hasn't yet taken a turn in the current combat. Once per creature, per combat.</p>
+		</description>
+		<sheet usage="1/creature/combat">
+			<description>Advantage on your first attack roll against a creature that hasn't yet taken a turn in the current combat. Once per creature, per combat.</description>
+		</sheet>
+	</element>
+
+	<element name="Guiding from Behind" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_GUIDING_FROM_BEHIND">
+		<description>
+			<p><em>7th-level Old World Ranger feature</em></p>
+			<p>When a creature you see hits a target with an attack, use your Reaction to cast Hunter's Mark on it free, or move your existing mark to it without losing Concentration. Uses equal to your Wisdom modifier (minimum 1) per Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{old world:guiding:uses}}/Long Rest">
+			<description>When a creature you see hits a target with an attack, cast Hunter's Mark on it for free, or move your existing mark to it without losing Concentration.</description>
+		</sheet>
+		<rules>
+			<stat name="old world:guiding:uses" value="1" bonus="base" />
+			<stat name="old world:guiding:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Evasive Instincts" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_EVASIVE_INSTINCTS">
+		<description>
+			<p><em>11th-level Old World Ranger feature</em></p>
+			<p>Mundane traps, hazards, or environmental effects that deal half damage on a successful save deal half damage regardless of the save's outcome.</p>
+		</description>
+		<sheet>
+			<description>Mundane traps, hazards, or environmental effects that deal half damage on a successful save deal half damage regardless of the save's outcome.</description>
+		</sheet>
+	</element>
+
+	<element name="Relentless Pursuit" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_RELENTLESS_PURSUIT">
+		<description>
+			<p><em>15th-level Old World Ranger feature</em></p>
+			<p>While Concentrating on Hunter's Mark, move it to a new creature you can see up to twice per turn, free, no action required — in addition to Guiding from Behind's Reaction.</p>
+		</description>
+		<sheet usage="2/Turn">
+			<description>While Concentrating on Hunter's Mark, move it to a new creature you can see up to twice per turn, free, no action required.</description>
+		</sheet>
+	</element>
+
+	<element name="Master of the Old World" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_RANGER_OLDWORLD_MASTER_OF_THE_OLD_WORLD">
+		<description>
+			<p><em>15th-level Old World Ranger feature</em></p>
+			<p>In dungeons, ruins, or abandoned settlements, +2 to Investigation, Perception, Nature, Survival, History, and Stealth checks.</p>
+		</description>
+		<sheet>
+			<description>In dungeons, ruins, or abandoned settlements, +2 to Investigation, Perception, Nature, Survival, History, and Stealth checks.</description>
+		</sheet>
+	</element>
+</elements>
