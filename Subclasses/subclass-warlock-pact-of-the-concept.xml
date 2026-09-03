@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pact of the Concept</name>
+		<description>Pact of the Concept warlock subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-warlock-pact-of-the-concept.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-warlock-pact-of-the-concept.xml" />
+		</update>
+	</info>
+
+	<element name="Pact of the Concept" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_WARLOCK_PACT_OF_THE_CONCEPT">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Not a bargain, not a patron who wants anything from you — a passive, half-second brush of attention from one of the seven fundamental principles reality runs on, caught only because your own nature already resonated with what it is.</p>
+			<p>Reality itself runs on seven fundamental principles — Creation, Ending, Memory, Transformation, Desire, Chaos, Sacrifice — vast enough and old enough that mortal minds only ever manage rough, cultural approximations of what they actually are. They don't converse. They don't bargain. But every so often, briefly, one of them looks somewhere, and if a person's own life already resonates with whatever that Concept fundamentally is, that brief, passing attention is enough to leave something behind.</p>
+			<p class="indent">Choose which Concept noticed you: the Weaver, the Endling, the Scribe, the Mask, the Hunger, the Stranger, or the Thorn.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_UNDERSTANDING" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPT_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CHOSEN_CONCEPT" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_RESONANCE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_STOLEN_OUTCOME" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_REWRITE" />
+		</description>
+		<sheet display="false">
+			<description>Not a bargain, not a patron who wants anything from you — a passive brush of attention from one of the seven fundamental principles reality runs on.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_UNDERSTANDING" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CHOSEN_CONCEPT" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_RESONANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_STOLEN_OUTCOME" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_REWRITE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Conceptual Understanding" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_UNDERSTANDING">
+		<description>
+			<p><em>3rd-level Pact of the Concept feature</em></p>
+			<p>As a Bonus Action, choose one creature you can see, or one ability check being attempted by a creature you can see. Learn the creature's current hit points or AC, or the number that must be rolled to succeed on the check. Uses equal to your Proficiency Bonus per Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{concept:understanding:uses}}/Long Rest">
+			<description>Choose one creature you can see, or one ability check being attempted by a creature you can see. Learn the creature's current hit points or AC, or the number that must be rolled to succeed on the check.</description>
+		</sheet>
+		<rules>
+			<stat name="concept:understanding:uses" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Concept Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPT_SPELLS">
+		<description>
+			<p><em>3rd-level Pact of the Concept feature</em></p>
+			<h5 class="caption">Concept Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td class="left">Spell</td><td class="left">Concept</td></tr>
+				</thead>
+				<tr><td>1st</td><td class="left">Disguise Self</td><td class="left">Mask</td></tr>
+				<tr><td>1st</td><td class="left">Comprehend Languages</td><td class="left">Scribe</td></tr>
+				<tr><td>2nd</td><td class="left">Alter Self</td><td class="left">Mask</td></tr>
+				<tr><td>2nd</td><td class="left">Zone of Truth</td><td class="left">Scribe</td></tr>
+				<tr><td>3rd</td><td class="left">Slow</td><td class="left">Endling</td></tr>
+				<tr><td>3rd</td><td class="left">Bestow Curse</td><td class="left">Thorn</td></tr>
+				<tr><td>4th</td><td class="left">Polymorph</td><td class="left">Hunger</td></tr>
+				<tr><td>4th</td><td class="left">Confusion</td><td class="left">Stranger</td></tr>
+				<tr><td>5th</td><td class="left">Creation</td><td class="left">Weaver</td></tr>
+				<tr><td>5th</td><td class="left">Modify Memory</td><td class="left">Scribe</td></tr>
+			</table>
+			<p>All ten spells are always prepared, regardless of your Chosen Concept.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALTER_SELF" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ZONE_OF_TRUTH" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLOW" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONFUSION" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CREATION" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MODIFY_MEMORY" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Chosen Concept" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CHOSEN_CONCEPT">
+		<description>
+			<p><em>3rd-level Pact of the Concept feature</em></p>
+			<p>Choose which Concept noticed you. Each grants a distinct benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Chosen Concept" supports="Pact of the Concept Chosen" number="1" />
+		</rules>
+	</element>
+	<element name="Weaver (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_WEAVER">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Once per Long Rest, transform a held nonmagical object into a different one of roughly equal value, permanently.</p></description>
+		<sheet usage="1/Long Rest"><description>Transform a held nonmagical object into a different one of roughly equal value, permanently.</description></sheet>
+	</element>
+	<element name="Endling (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_ENDLING">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Once per Long Rest, treat a failed Death Saving Throw as a 10.</p></description>
+		<sheet usage="1/Long Rest"><description>Treat a failed Death Saving Throw as a 10.</description></sheet>
+	</element>
+	<element name="Scribe (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_SCRIBE">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Proficiency in two of History, Investigation, Insight, Religion.</p></description>
+		<sheet><description>Proficiency in two of History, Investigation, Insight, Religion.</description></sheet>
+		<rules>
+			<select type="Proficiency" name="Scribe Skills" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_RELIGION" number="2" />
+		</rules>
+	</element>
+	<element name="Mask (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_MASK">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Proficiency in Deception or Performance; you can mimic a voice you've heard.</p></description>
+		<sheet><description>Proficiency in Deception or Performance; you can mimic a voice you've heard.</description></sheet>
+		<rules>
+			<select type="Proficiency" name="Mask Skill" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" number="1" />
+		</rules>
+	</element>
+	<element name="Hunger (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_HUNGER">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Once per Long Rest, add your Proficiency Bonus to a failed ability check.</p></description>
+		<sheet usage="1/Long Rest"><description>Add your Proficiency Bonus to a failed ability check.</description></sheet>
+	</element>
+	<element name="Stranger (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_STRANGER">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Once per Long Rest, leave a check to a d20 flip — 11 or higher succeeds, 10 or under fails, regardless of DC or modifiers.</p></description>
+		<sheet usage="1/Long Rest"><description>Leave a check to a d20 flip — 11 or higher succeeds, 10 or under fails, regardless of DC or modifiers.</description></sheet>
+	</element>
+	<element name="Thorn (Chosen Concept)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_CHOSEN_THORN">
+		<supports>Pact of the Concept Chosen</supports>
+		<description><p>Once per Long Rest, reroll a failed Constitution or Wisdom saving throw; you must use the new roll.</p></description>
+		<sheet usage="1/Long Rest"><description>Reroll a failed Constitution or Wisdom saving throw; you must use the new roll.</description></sheet>
+	</element>
+
+	<element name="Conceptual Resonance" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_RESONANCE">
+		<description>
+			<p><em>6th-level Pact of the Concept feature</em></p>
+			<p>A creature you've used Conceptual Understanding on is Understood until the end of your next turn. Once per turn, an Eldritch Blast hit on an Understood creature deals an extra 1d8 damage of your Concept's type, plus a rider matching your Chosen Concept.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>A creature you've used Conceptual Understanding on is Understood until the end of your next turn. Once per turn, an Eldritch Blast hit on an Understood creature deals an extra 1d8 damage of your Concept's type, plus a rider matching your Chosen Concept.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Conceptual Resonance Rider (choose to match your Concept)" supports="Pact of the Concept Resonance Rider" number="1" />
+		</rules>
+	</element>
+	<element name="Resonance Rider (Weaver)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_WEAVER">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Force damage; the target drops one held item.</p></description>
+		<sheet><description>Force damage; the target drops one held item.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Endling)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_ENDLING">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Necrotic damage; the target has disadvantage on attack rolls against Undead until the end of your next turn.</p></description>
+		<sheet><description>Necrotic damage; the target has disadvantage on attack rolls against Undead until the end of your next turn.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Scribe)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_SCRIBE">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Psychic damage; the target has disadvantage on Concentration saves until the end of your next turn.</p></description>
+		<sheet><description>Psychic damage; the target has disadvantage on Concentration saves until the end of your next turn.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Mask)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_MASK">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Psychic damage; you can assume the target's appearance for 1 minute.</p></description>
+		<sheet><description>Psychic damage; you can assume the target's appearance for 1 minute.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Hunger)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_HUNGER">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Force damage; the target can't take Reactions until the end of your next turn.</p></description>
+		<sheet><description>Force damage; the target can't take Reactions until the end of your next turn.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Stranger)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_STRANGER">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Psychic damage; you can swap places with the target.</p></description>
+		<sheet><description>Psychic damage; you can swap places with the target.</description></sheet>
+	</element>
+	<element name="Resonance Rider (Thorn)" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_RESONANCE_THORN">
+		<supports>Pact of the Concept Resonance Rider</supports>
+		<description><p>Necrotic damage, doubling to 2d8 if the target is already below its hit point maximum.</p></description>
+		<sheet><description>Necrotic damage, doubling to 2d8 if the target is already below its hit point maximum.</description></sheet>
+	</element>
+
+	<element name="Stolen Outcome" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_STOLEN_OUTCOME">
+		<description>
+			<p><em>10th-level Pact of the Concept feature</em></p>
+			<p>Whenever you roll one or more damage dice as part of an attack or spell, you can remove one of those dice and roll it separately, recording the result as your Reserve. You can also generate a Reserve by reducing an ability check's result by your Charisma modifier before it resolves, using the amount removed as your Reserve instead. Either way, you can generate a Reserve this way a number of times per Long Rest equal to your Charisma modifier (minimum 1). If you gain a new Reserve while already holding one, it replaces the old.</p>
+			<p class="indent">As a free action on your turn, or as a Reaction when you or a creature you can see makes an attack roll, ability check, saving throw, or damage roll, you can expend your Reserve to add its value to that roll before the outcome is known. Once spent, it's gone. If the die you removed came from a hit against a creature you've Understood, roll it twice and keep the higher as your Reserve.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> Spending your Reserve is free — it doesn't count against your Long Rest limit. Only generating a new one does. You can bank one, hold it as long as you want, and cash it in on someone else's roll entirely.</p>
+		</description>
+		<sheet usage="{{concept:reserve:uses}}/Long Rest to generate">
+			<description>Remove one damage die from an attack or spell (or reduce an ability check by your Charisma modifier before it resolves) and bank the result as your Reserve. You can generate a Reserve this many times per Long Rest, replacing any Reserve you already hold. Spending it — adding its value to any roll before the outcome is known, free or as a Reaction — costs nothing extra.</description>
+		</sheet>
+		<rules>
+			<stat name="concept:reserve:uses" value="charisma:modifier" bonus="base" />
+			<stat name="concept:reserve:uses" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Conceptual Rewrite" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WARLOCK_CONCEPT_CONCEPTUAL_REWRITE">
+		<description>
+			<p><em>14th-level Pact of the Concept feature</em></p>
+			<p>Once per Long Rest, as an action, invoke your Chosen Concept to produce an extraordinary effect within its domain. The effect must fit your Concept's nature and can't directly replicate a spell of 9th level or higher.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Conceptual Rewrite (choose to match your Concept)" supports="Pact of the Concept Rewrite" number="1" />
+		</rules>
+	</element>
+	<element name="Weaver — Create or Unmake" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_WEAVER">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>Create, destroy, repair, or fundamentally alter a nonmagical object or structure (10-ft. cube maximum, or 1,000 GP value maximum). Permanent.</p></description>
+		<sheet usage="1/Long Rest"><description>Create, destroy, repair, or fundamentally alter a nonmagical object or structure (10-ft. cube max, or 1,000 GP value max). Permanent.</description></sheet>
+	</element>
+	<element name="Endling — Life or Death" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_ENDLING">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>One creature within 60 feet: if dead within the last minute, choose for it to stay dead or return at 1 hit point. If dying but not dead, choose to stabilize or die.</p></description>
+		<sheet usage="1/Long Rest"><description>One creature within 60 feet: if dead within the last minute, choose for it to stay dead or return at 1 HP. If dying but not dead, choose to stabilize or die.</description></sheet>
+	</element>
+	<element name="Scribe — Know or Record" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_SCRIBE">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>Ask reality one specific, answerable question and receive a truthful answer — or learn one spell of 5th level or lower from any list until your next Long Rest, castable with your Pact Magic slots.</p></description>
+		<sheet usage="1/Long Rest"><description>Ask reality one specific, answerable question and receive a truthful answer — or learn one spell of 5th level or lower from any list until your next Long Rest, castable with your Pact Magic slots.</description></sheet>
+	</element>
+	<element name="Mask — Impose an Identity" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_MASK">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>One creature within 60 feet appears, for 1 hour, as a specific creature, type, or person of your choice — appearance and voice only, no change to stats or abilities.</p></description>
+		<sheet usage="1/Long Rest"><description>One creature within 60 feet appears, for 1 hour, as a specific creature, type, or person of your choice — appearance and voice only, no change to stats or abilities.</description></sheet>
+	</element>
+	<element name="Hunger — Break the Limit" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_HUNGER">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>You or a creature within 60 feet exceeds one physical or magical limit (movement, duration, an expended feature). The creature takes 1 level of Exhaustion and 4d10 Force damage.</p></description>
+		<sheet usage="1/Long Rest"><description>You or a creature within 60 feet exceeds one physical or magical limit (movement, duration, an expended feature). The creature takes 1 level of Exhaustion and 4d10 Force damage.</description></sheet>
+	</element>
+	<element name="Stranger — Rewrite the Result" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_STRANGER">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>Before its outcome is determined, declare any d20 roll made by you or a creature within 60 feet to be any result from 1–20 instead.</p></description>
+		<sheet usage="1/Long Rest"><description>Before its outcome is determined, declare any d20 roll made by you or a creature within 60 feet to be any result from 1–20 instead.</description></sheet>
+	</element>
+	<element name="Thorn — Shared Consequence" type="Class Feature" source="ATÉRIOR" id="ID_ATERIOR_CLASSFEATURE_CONCEPT_REWRITE_THORN">
+		<supports>Pact of the Concept Rewrite</supports>
+		<description><p>Two creatures within 60 feet: until the end of your next turn, damage or a condition suffered by one can be inflicted on the other instead. Damage divided evenly if applicable.</p></description>
+		<sheet usage="1/Long Rest"><description>Two creatures within 60 feet: until the end of your next turn, damage or a condition suffered by one can be inflicted on the other instead. Damage divided evenly if applicable.</description></sheet>
+	</element>
+</elements>
