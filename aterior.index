@@ -100,6 +100,10 @@
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-paladin-oath-of-ambition.xml" />
         <file name="Subclasses/subclass-ranger-elemental-marksman.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-elemental-marksman.xml" />
+        <file name="Subclasses/subclass-ranger-old-world-ranger.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-ranger-old-world-ranger.xml" />
+
+
 
 <!-- Custom Feats (5) -->
 <file name="Feats/feat-craftsmanship.xml"
