@@ -72,7 +72,8 @@
         <!-- Subclasses (1) -->
         <file name="Subclasses/subclass-barbarian-path-of-the-living-crystal.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-living-crystal.xml" />
-
+        <file name="Subclasses/subclass-barbarian-path-of-the-broken-law.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-barbarian-path-of-the-broken-law.xml" />
 
 
 
