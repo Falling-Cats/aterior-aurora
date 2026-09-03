@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Guardian</name>
+		<description>Guardian fighter subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-fighter-guardian.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-fighter-guardian.xml" />
+		</update>
+	</info>
+
+	<element name="Guardian" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FIGHTER_GUARDIAN">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">A protector whose skill with weapon, shield, and armor has been pointed entirely at keeping one person safe — a bond that can shift with whoever needs it most, or settle for good on the one person worth the rest of a life.</p>
+			<p>Nowhere in Atérior does this require a title. No order commissions a Guardian, no license certifies one, no crown pays a standing wage for the work. It's simply what happens when someone with real martial skill points all of it in one direction: keeping someone else alive, ahead of themselves.</p>
+			<p class="indent">No title required. Just the instinct to notice who can't defend themselves, and the training to do something about it.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_THE_CLAIM" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_UNSHAKABLE_GUARDIAN" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_PRESENCE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_RESOLVE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_DRIVE_THEM_BACK" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_INTERPOSING_STEP" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_FIGHTING_TOGETHER" />
+		</description>
+		<sheet display="false">
+			<description>A protector whose skill with weapon, shield, and armor has been pointed entirely at keeping one person safe.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_THE_CLAIM" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_UNSHAKABLE_GUARDIAN" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_PRESENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_RESOLVE" level="7" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_DRIVE_THEM_BACK" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_INTERPOSING_STEP" level="15" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_FIGHTING_TOGETHER" level="18" />
+		</rules>
+	</element>
+
+	<element name="The Claim" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_THE_CLAIM">
+		<description>
+			<p><em>3rd-level Guardian feature</em></p>
+			<p>When you choose this subclass, and again whenever you finish a Long Rest, you can designate one willing creature you can see as your Ward.</p>
+			<p class="indent">You gain proficiency with Shields and learn the Protector Fighting Style, even if you already know a different one.</p>
+		</description>
+		<sheet display="false">
+			<description>When you finish a Long Rest, you can designate one willing creature you can see as your Ward. You gain proficiency with Shields and the Protector Fighting Style, even if you already know a different one.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			<select type="Class Feature" name="Fighting Style (Guardian — choose Protector)" supports="Fighting Style, Fighter" level="3" />
+		</rules>
+	</element>
+
+	<element name="Unshakable Guardian" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_UNSHAKABLE_GUARDIAN">
+		<description>
+			<p><em>3rd-level Guardian feature</em></p>
+			<p>While you have a Ward, you have advantage on saving throws to avoid or end the Frightened condition, and your reach is doubled when you make an Opportunity Attack.</p>
+		</description>
+		<sheet>
+			<description>While you have a Ward, you have advantage on saving throws to avoid or end the Frightened condition, and your reach is doubled when you make an Opportunity Attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Guardian's Presence" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_PRESENCE">
+		<description>
+			<p><em>3rd-level Guardian feature</em></p>
+			<p>While within 10 feet of your Ward, they gain a +2 bonus to saving throws against Frightened, and you gain a +1 bonus to attack rolls.</p>
+		</description>
+		<sheet>
+			<description>While within 10 feet of your Ward, your Ward gains a +2 bonus to saving throws against Frightened, and you gain a +1 bonus to attack rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Guardian's Resolve" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_GUARDIANS_RESOLVE">
+		<description>
+			<p><em>7th-level Guardian feature</em></p>
+			<p>When you use Second Wind while within 10 feet of your Ward, you also gain temporary hit points equal to your Fighter level plus your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>When you use Second Wind within 10 feet of your Ward, you also gain temporary hit points equal to your Fighter level plus your Constitution modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Drive Them Back" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_DRIVE_THEM_BACK">
+		<description>
+			<p><em>10th-level Guardian feature</em></p>
+			<p>When you use Action Surge while your Ward is within 10 feet of you, each hostile creature of your choice within 10 feet of your Ward is pushed 10 feet away and must succeed on a Strength saving throw (DC = 8 + your Proficiency Bonus + your Strength or Dexterity modifier) or be knocked Prone.</p>
+		</description>
+		<sheet>
+			<description>When you use Action Surge while your Ward is within 10 feet of you, each hostile creature you choose within 10 feet of your Ward is pushed 10 feet away and must succeed on a DC {{guardian:drive them back:dc}} Strength save or be knocked Prone.</description>
+		</sheet>
+		<rules>
+			<stat name="guardian:drive them back:dc" value="8" bonus="base" />
+			<stat name="guardian:drive them back:dc" value="proficiency" bonus="proficiency" />
+			<stat name="guardian:drive them back:dc" value="strength:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Interposing Step" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_INTERPOSING_STEP">
+		<description>
+			<p><em>15th-level Guardian feature</em></p>
+			<p>When a creature hits your Ward with an attack, you can use your Reaction to move up to half your Speed toward them without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature hits your Ward with an attack, you can move up to half your Speed toward them without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Fighting Together" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_FIGHTER_GUARDIAN_FIGHTING_TOGETHER">
+		<description>
+			<p><em>18th-level Guardian feature</em></p>
+			<p>While you are within 10 feet of your Ward: when they hit a creature with a weapon attack, you can use your Reaction to make one weapon attack against that same creature. When you hit a creature with a weapon attack, your Ward can use their Reaction to do the same.</p>
+			<p class="indent"><strong><i>Playing It.</i></strong> This isn't an unlimited chain — you and your Ward each still get only one Reaction per round under the normal rules, so this is never more than one bonus swing apiece in a turn. But on the right exchange, that's two attacks landing because neither of you let the other fight alone.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>While within 10 feet of your Ward: when they hit with a weapon attack, you can make one weapon attack against that creature. When you hit with a weapon attack, your Ward can do the same.</description>
+		</sheet>
+	</element>
+</elements>
