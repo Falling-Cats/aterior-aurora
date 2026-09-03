@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Experimentalist</name>
+		<description>The Experimentalist tinkerer subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-tinkerer-the-experimentalist.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-tinkerer-the-experimentalist.xml" />
+		</update>
+	</info>
+
+	<element name="The Experimentalist" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_TINKERER_THE_EXPERIMENTALIST">
+		<supports>Artificer Subclass</supports>
+		<description>
+			<p class="flavor">A tinkerer who treats magic as one phenomenon among several worth studying — polarizing spells like charged particles, running the same experiment enough times to trust the pattern, and slowly, unknowingly, rediscovering fragments of what the old world already understood perfectly.</p>
+			<p>Before the Weaver's Touch, magic and technology weren't separate disciplines at all — they were fused so completely that the old world barely experienced difficulty as a category. An Experimentalist is whoever that curiosity actually takes hold in: scientists first who picked up magic out of necessity, mages first who started reaching for science, or people simply fascinated by what happens when the two are pushed together.</p>
+			<p class="indent">Some come to it through science first, some through magic first, some purely for the sake of seeing what happens when the two are pushed together.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_TOOL_PROFICIENCY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_POLARITY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_EXPERIMENTS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_RESIDUAL_CHARGE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_CONTROLLED_REACTION" />
+		</description>
+		<sheet display="false">
+			<description>A tinkerer who treats magic as one phenomenon among several worth studying — polarizing spells like charged particles.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_POLARITY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_EXPERIMENTS" level="5" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_RESIDUAL_CHARGE" level="9" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_CONTROLLED_REACTION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_TOOL_PROFICIENCY">
+		<description>
+			<p><em>3rd-level The Experimentalist feature</em></p>
+			<p>You gain proficiency with Alchemist's Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Experimentalist Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_SPELLS">
+		<description>
+			<p><em>3rd-level The Experimentalist feature</em></p>
+			<p>You always have the following spells prepared once you reach the Tinkerer level shown; they don't count against the number of spells you can prepare.</p>
+			<h5 class="caption">Experimentalist Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Tinkerer Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td class="left"><em>Magic Missile, Cure Wounds</em></td></tr>
+				<tr><td>5th</td><td class="left"><em>Shatter, Scorching Ray</em></td></tr>
+				<tr><td>9th</td><td class="left"><em>Fireball, Mass Healing Word</em></td></tr>
+				<tr><td>13th</td><td class="left"><em>Vitriolic Sphere, Blight</em></td></tr>
+				<tr><td>17th</td><td class="left"><em>Cone of Cold, Mass Cure Wounds</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGIC_MISSILE" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHATTER" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCORCHING_RAY" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIREBALL" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_HEALING_WORD" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VITRIOLIC_SPHERE" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONE_OF_COLD" level="17" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MASS_CURE_WOUNDS" level="17" spellcasting="Artificer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Polarity" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_POLARITY">
+		<description>
+			<p><em>3rd-level The Experimentalist feature</em></p>
+			<p>You have a number of charges equal to your Intelligence modifier (minimum of 1), regained on a Long Rest. When you cast a spell from your Experimentalist Spells list, you can spend 1 charge to apply one of the following:</p>
+			<p class="indent"><strong>Amplify</strong> (Positive + Positive). If the spell deals damage to or affects a creature, you force that creature 10 feet in a direction of your choice.</p>
+			<p class="indent"><strong>Invert</strong> (Negative + Negative). The spell's damage becomes healing, or its healing becomes damage, of the same type. This bypasses the spell's normal attack roll or saving throw entirely. Halve the number of the spell's damage or healing dice (round down, minimum one die) and roll that many. You choose which targets within the spell's normal area or target list are affected, up to its normal limit.</p>
+			<p class="indent"><strong>Erase</strong> (Positive + Negative). The spell deals an additional 1d4 damage or restores an additional 1d4 hit points, and the target treats itself as having no resistance or immunity to the spell's damage type for this casting.</p>
+		</description>
+		<sheet usage="{{experimentalist:polarity:charges}}/Long Rest">
+			<description>Spend 1 charge when casting an Experimentalist spell to apply Amplify (force the target 10 ft.), Invert (damage becomes healing or vice versa, halved dice, no save/attack roll), or Erase (extra 1d4 damage/healing, ignore resistance/immunity).</description>
+		</sheet>
+		<rules>
+			<stat name="experimentalist:polarity:charges" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Experiments" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_EXPERIMENTS">
+		<description>
+			<p><em>5th-level The Experimentalist feature</em></p>
+			<p>During a Long Rest, you can conduct one experiment below, provided you have your Alchemist's Tools.</p>
+			<p class="indent"><strong>Breakthrough.</strong> Gain advantage on your next attack roll, ability check, or saving throw related to whatever you studied.</p>
+			<p class="indent"><strong>Arcane Conductivity.</strong> Make a weapon or single-use item conductive: spend 1 charge to apply a Polarity to it, lying dormant until the item is next used, then triggering once before returning to normal.</p>
+			<p class="indent"><strong>Catalyst.</strong> The next Experimentalist spell you cast before your next Long Rest deals an additional 1d6 damage or restores an additional 1d6 hit points.</p>
+			<p class="indent"><strong>Stabilizer.</strong> Choose a damage type. Gain resistance to it until your next Long Rest.</p>
+			<p class="indent"><strong>Solvent.</strong> Produce one dose of a mundane, nonmagical acidic solvent. No limit on how many you can stockpile over time.</p>
+			<p class="indent"><strong>Reversal.</strong> Permanently invert the effect of a Common-rarity, one-use magic item you possess (not a spell scroll) into its opposite — a Potion of Healing becomes a poison, a Potion of Invisibility instead makes its drinker glow, and so on. Work out an unclear opposite with your DM.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>During a Long Rest, with your Alchemist's Tools, conduct one experiment: Breakthrough (advantage on a related roll), Arcane Conductivity (charge a weapon/item with a dormant Polarity), Catalyst (next spell deals/heals +1d6), Stabilizer (resistance to a chosen damage type until next Long Rest), Solvent (produce a dose of acidic solvent), or Reversal (permanently invert a Common one-use magic item's effect).</description>
+		</sheet>
+	</element>
+
+	<element name="Residual Charge" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_RESIDUAL_CHARGE">
+		<description>
+			<p><em>9th-level The Experimentalist feature</em></p>
+			<p>When a spell you've affected with Polarity deals damage or restores hit points, the polarization lingers on the creatures it affected. At the start of your next turn, the same effect repeats at half the original amount (rounded down) on those same creatures — it doesn't spread to any new target.</p>
+		</description>
+		<sheet>
+			<description>When a spell you've affected with Polarity deals damage or restores hit points, the effect repeats at half the original amount (rounded down) on the same creatures at the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Controlled Reaction" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_TINKERER_EXPERIMENTALIST_CONTROLLED_REACTION">
+		<description>
+			<p><em>15th-level The Experimentalist feature</em></p>
+			<p>When you take damage, you can use your Reaction to unleash the stored energy through one of your polarized spells:</p>
+			<p class="indent"><strong>Energy Reversal.</strong> Your next Polarity-affected spell deals additional Force damage, to one target it affects, equal to half the damage you took (rounded down).</p>
+			<p class="indent"><strong>Repelling Charge.</strong> Every creature affected by that spell can't willingly move within 5 feet of another creature for 1 minute.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage, unleash the stored energy through your next Polarity-affected spell: Energy Reversal (extra Force damage to one target equal to half the damage you took) or Repelling Charge (affected creatures can't willingly move within 5 feet of another creature for 1 minute).</description>
+		</sheet>
+	</element>
+</elements>
