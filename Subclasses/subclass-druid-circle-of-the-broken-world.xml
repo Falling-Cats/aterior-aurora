@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the Broken World</name>
+		<description>Circle of the Broken World druid subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-druid-circle-of-the-broken-world.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-druid-circle-of-the-broken-world.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Broken World" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_DRUID_CIRCLE_OF_THE_BROKEN_WORLD">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">A Druid whose bond runs to nature as it actually exists now — touched by Weaver residue, thinned against the Feywild, home to things unsupervised magic left behind.</p>
+			<p>Every Druid's power comes from the same bond — a genuine closeness to nature, the land, the wild world outside a settlement's walls. What's changed, five centuries after the Weaver's Touch, is what that world actually is. A Circle of the Broken World Druid isn't a stranger discipline bolted onto ordinary Druidic practice. It's the same bond, honestly applied to what's actually still out there.</p>
+			<p class="indent">Some turn that fluency into a weapon against whatever keeps breaking the world further; others use it to defend what's left, scars included. Both are the same Circle.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_GROWING_CORRUPTION" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_ENVIRONMENT_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_PERSONAL_SPELLS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_CORRUPTION_REACHES" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_GROUND_HOLDS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_WORLD_ANSWERS" />
+		</description>
+		<sheet display="false">
+			<description>A Druid whose bond runs to nature as it actually exists now — touched by Weaver residue, thinned against the Feywild, home to things unsupervised magic left behind.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_GROWING_CORRUPTION" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_ENVIRONMENT_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_PERSONAL_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_CORRUPTION_REACHES" level="6" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_GROUND_HOLDS" level="10" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_WORLD_ANSWERS" level="14" />
+		</rules>
+	</element>
+
+	<element name="Growing Corruption" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_GROWING_CORRUPTION">
+		<description>
+			<p><em>3rd-level Circle of the Broken World feature</em></p>
+			<p>Whenever you cast a Concentration spell from your Environment Spells list, its area of effect grows by 5 feet at the end of each of your turns after the turn you cast it — radius or side length, whichever applies — to a maximum of twice its original size. Once maxed, it holds there for the rest of the spell's duration.</p>
+			<p class="indent">You always have your Environment and Personal Spells prepared once you reach the level shown; they don't count against the number of spells you can prepare.</p>
+		</description>
+		<sheet>
+			<description>Concentration spells from your Environment Spells list grow their area by 5 feet at the end of each of your turns after casting, up to twice their original size.</description>
+		</sheet>
+	</element>
+
+	<element name="Environment Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_ENVIRONMENT_SPELLS">
+		<description>
+			<p><em>3rd-level Circle of the Broken World feature</em></p>
+			<h5 class="caption">Environment Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Entangle</em></td></tr>
+				<tr><td>5th</td><td><em>Spike Growth</em></td></tr>
+				<tr><td>7th</td><td><em>Hunger of Hadar</em></td></tr>
+				<tr><td>9th</td><td><em>Evard's Black Tentacles</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ENTANGLE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPIKE_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNGER_OF_HADAR" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_EVARDS_BLACK_TENTACLES" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Personal Spells" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_PERSONAL_SPELLS">
+		<description>
+			<p><em>3rd-level Circle of the Broken World feature</em></p>
+			<h5 class="caption">Personal Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Ray of Sickness, Inflict Wounds</em></td></tr>
+				<tr><td>5th</td><td><em>Ray of Enfeeblement, Melf's Acid Arrow</em></td></tr>
+				<tr><td>7th</td><td><em>Vampiric Touch, Bestow Curse</em></td></tr>
+				<tr><td>9th</td><td><em>Phantasmal Killer, Blight</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="The Corruption Reaches" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_CORRUPTION_REACHES">
+		<description>
+			<p><em>6th-level Circle of the Broken World feature</em></p>
+			<p>You're unaffected by your own Environment Spells' area and effects entirely — their difficult terrain, damage, darkness, and other harmful effects simply don't count you as a target.</p>
+			<p class="indent">When you cast a Personal Spell with a range of Touch, you can target a creature anywhere within the area of your own active Environment Spell, regardless of the distance between you — the magic travels through the corruption to deliver your touch. If the Personal Spell normally requires Concentration, casting it this way doesn't end your Concentration on the Environment Spell; you're considered to be concentrating on both at once, tied to the same thread. If that Concentration is ever broken, both spells end together.</p>
+		</description>
+		<sheet>
+			<description>You're unaffected by your own Environment Spells' harmful effects. You can deliver a Touch-range Personal Spell to a creature anywhere within your active Environment Spell's area, regardless of distance, without breaking Concentration on either — but if either loses Concentration, both end together.</description>
+		</sheet>
+	</element>
+
+	<element name="The Ground Holds" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_GROUND_HOLDS">
+		<description>
+			<p><em>10th-level Circle of the Broken World feature</em></p>
+			<p>When a creature tries to leave the area of your Environment Spell, you can use your Reaction to force a Strength saving throw against your spell save DC. On a failure, it's pulled back to the center and its Speed becomes 0 for the rest of the turn. On a success, it leaves normally.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature tries to leave the area of your Environment Spell, force a Strength save against your spell save DC. On a failure, it's pulled back to the center and its Speed becomes 0 for the rest of the turn.</description>
+		</sheet>
+	</element>
+
+	<element name="The World Answers" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_DRUID_BROKEN_THE_WORLD_ANSWERS">
+		<description>
+			<p><em>14th-level Circle of the Broken World feature</em></p>
+			<p>Once per Long Rest, when you cast an Environment Spell, you can manifest a guardian within its area — not a creature you command, but the corrupted ground itself, taking notice. It acts right after your turn, always attacking a hostile creature of your choice within the area. It can't leave the area, be targeted from outside it, or affect anything outside it — if it ever leaves, it simply disappears.</p>
+			<div element="ID_ATERIOR_INFORMATION_BROKEN_GUARDIAN_STATBLOCK" />
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you cast an Environment Spell, manifest a guardian within its area that acts right after your turn, always attacking a hostile creature you choose within the area. It can't leave, be targeted from outside, or affect anything outside the area.</description>
+		</sheet>
+	</element>
+
+	<element name="Guardian of the Broken Ground" type="Information" source="ATÉRIOR" id="ID_ATERIOR_INFORMATION_BROKEN_GUARDIAN_STATBLOCK">
+		<description>
+			<p style="margin-bottom:5px"><em>Large Construct, Unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>AC</strong> 15</li>
+				<li><strong>HP</strong> 5 × your Druid level</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> The guardian makes two Tentacle attacks.</li>
+				<li><em><strong>Tentacle.</strong> Melee Attack Roll:</em> your spell attack modifier, reach 10 ft. <em>Hit:</em> 1d8 + your Wisdom modifier Bludgeoning damage.</li>
+				<li><em><strong>Binding Strike.</strong></em> If both Tentacle attacks hit the same creature on the same turn, that creature has the Restrained condition until the end of the guardian's next turn.</li>
+			</ul>
+			<h4 style="margin-top:5px">Broken Apart</h4>
+			<p>When the guardian is reduced to 0 hit points, it collapses and disappears. You must succeed on a Constitution saving throw (DC 10, with disadvantage) to maintain Concentration on the triggering spell.</p>
+		</description>
+	</element>
+</elements>
