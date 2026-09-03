@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Combat Medic</name>
+		<description>Combat Medic rogue subclass — ATÉRIOR.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="subclass-rogue-combat-medic.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-rogue-combat-medic.xml" />
+		</update>
+	</info>
+
+	<element name="Combat Medic" type="Archetype" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_ROGUE_COMBAT_MEDIC">
+		<supports>Rogue Subclass</supports>
+		<description>
+			<p class="flavor">A field healer trained to keep people alive without a scrap of magic — steady hands, a healer's kit, and a mace instead of a blade, chosen as much for staying clean enough to work as for the fight itself.</p>
+			<p>Real clerics are rare enough in Atérior that most people will never meet one, and even fewer will meet one exactly when they need healing most. A Combat Medic exists to close that gap — not through magic, but through training, steady hands, and a healer's kit used with real skill.</p>
+			<p class="indent">Equally at home easing a dying stranger's last moment as fighting off whatever's still trying to kill the patient they haven't lost yet.</p>
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NIMBLE_INSTRUMENTS" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_FIELD_MEDICINE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BATTLEFIELD_SURGERY" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_TRIAGE" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BEDSIDE_MANNER" />
+			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NO_ONE_LEFT_BEHIND" />
+		</description>
+		<sheet display="false">
+			<description>A field healer trained to keep people alive without a scrap of magic — steady hands, a healer's kit, and a mace instead of a blade.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NIMBLE_INSTRUMENTS" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_FIELD_MEDICINE" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BATTLEFIELD_SURGERY" level="3" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_TRIAGE" level="9" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BEDSIDE_MANNER" level="13" />
+			<grant type="Archetype Feature" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NO_ONE_LEFT_BEHIND" level="17" />
+		</rules>
+	</element>
+
+	<element name="Nimble Instruments" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NIMBLE_INSTRUMENTS">
+		<description>
+			<p><em>3rd-level Combat Medic feature</em></p>
+			<p>You can treat maces as finesse weapons for your Sneak Attack, using Dexterity instead of Strength for their attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>You can treat maces as finesse weapons for your Sneak Attack, using Dexterity instead of Strength for their attack and damage rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Field Medicine" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_FIELD_MEDICINE">
+		<description>
+			<p><em>3rd-level Combat Medic feature</em></p>
+			<p>As a Bonus Action, expend 1 charge of a healer's kit to restore 2d4+1 hit points to a creature within 5 feet of you.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Healer's Kit">
+			<description>Expend 1 charge of a healer's kit to restore 2d4+1 hit points to a creature within 5 feet of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Battlefield Surgery" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BATTLEFIELD_SURGERY">
+		<description>
+			<p><em>3rd-level Combat Medic feature</em></p>
+			<p>Once per turn, instead of a Sneak Attack against an enemy, you can use your Sneak Attack dice to heal a creature within 5 feet of you instead — same conditions that would let you Sneak Attack, roll the dice, restore that many hit points.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Instead of a Sneak Attack against an enemy, you can use your Sneak Attack dice to heal a creature within 5 feet of you — same conditions that would let you Sneak Attack, roll the dice, restore that many hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Triage" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_TRIAGE">
+		<description>
+			<p><em>9th-level Combat Medic feature</em></p>
+			<p>When an ally within 30 feet drops to a quarter of their hit point maximum or 0, use your Reaction to move up to half your Speed toward them without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an ally within 30 feet drops to a quarter of their hit point maximum or 0, move up to half your Speed toward them without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Bedside Manner" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_BEDSIDE_MANNER">
+		<description>
+			<p><em>13th-level Combat Medic feature</em></p>
+			<p>Field Medicine, Battlefield Surgery, and any healing potion you administer to another creature restore an extra 1d6 hit points. Creatures have disadvantage on saves against poisons you administer, including through Cunning Strike.</p>
+		</description>
+		<sheet>
+			<description>Field Medicine, Battlefield Surgery, and any healing potion you administer to another creature restore an extra 1d6 hit points. Creatures have disadvantage on saves against poisons you administer, including through Cunning Strike.</description>
+		</sheet>
+	</element>
+
+	<element name="No One Left Behind" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_ROGUE_MEDIC_NO_ONE_LEFT_BEHIND">
+		<description>
+			<p><em>17th-level Combat Medic feature</em></p>
+			<p>Once per turn, you can both make a Sneak Attack against an enemy and use Battlefield Surgery on an ally — no longer limited to choosing one or the other.</p>
+			<p class="indent">When Triage carries you fully adjacent to an ally, you can immediately begin Battlefield Surgery on them as part of that same Reaction, no extra action required. You can use this enhanced version of Triage a number of times per Long Rest equal to your Dexterity modifier (minimum 1); beyond that, Triage still functions normally.</p>
+		</description>
+		<sheet usage="{{no one left behind:uses}}/Long Rest">
+			<description>Once per turn, you can both make a Sneak Attack against an enemy and use Battlefield Surgery on an ally in the same turn. When Triage carries you fully adjacent to an ally, you can immediately begin Battlefield Surgery on them as part of that same Reaction, no extra action required — usable this way {{no one left behind:uses}} times per Long Rest, after which Triage still functions normally.</description>
+		</sheet>
+		<rules>
+			<stat name="no one left behind:uses" value="1" bonus="base" />
+			<stat name="no one left behind:uses" value="dexterity:modifier" bonus="base" />
+		</rules>
+	</element>
+</elements>
