@@ -1,0 +1,33 @@
+<!-- spell-stonebound-hand.xml -->
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Stonebound Hand</name>
+		<description>Stonebound Hand — original ATÉRIOR spell.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="spell-stonebound-hand.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-stonebound-hand.xml" />
+		</update>
+	</info>
+	<element name="Stonebound Hand" type="Spell" source="ATÉRIOR" id="ID_ATERIOR_SPELL_STONEBOUND_HAND">
+		<supports>Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<description>
+			<p>You call a massive hand of stone and packed clay up from the ground in an unoccupied space you can see within range. Choose one creature within 10 feet of the hand. That creature makes a Strength saving throw, taking 3d6 Bludgeoning damage and gaining the Grappled condition (escape DC equal to your spell save DC) on a failed save, or taking half as much damage and avoiding the grapple on a successful one.</p>
+			<p class="indent">Until the spell ends, you can take a Bonus Action to crush a creature grappled by the hand, dealing 2d6 Bludgeoning damage, or to move the hand (and anything it's grappling) up to 20 feet.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> Both damage rolls increase by 1d6 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, save, bludgeoning, damage, grappled, bonus action, upcasting, higher-level spell slot</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a clay figurine of a hand</set>
+			<set name="isConcentration">true</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+		</setters>
+	</element>
+</elements>
