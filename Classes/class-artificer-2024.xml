@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artificer (2024)</name>
+		<description>Artificer class updated for 2024 rules, from Eberron: Forge of the Artificer — ATÉRIOR local build.</description>
+		<author>Falling-Cats</author>
+		<update version="0.0.1">
+			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Classes/class-artificer-2024.xml" />
+		</update>
+	</info>
+
+	<element name="Artificer" type="Class" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_ARTIFICER_2024">
+		<description>
+			<p>Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.</p>
+			<h5 class="caption">Core Artificer Traits</h5>
+			<table>
+				<tr><td>Primary Ability</td><td>Intelligence</td></tr>
+				<tr><td>Hit Point Die</td><td>d8 per Artificer level</td></tr>
+				<tr><td>Saving Throw Proficiencies</td><td>Constitution and Intelligence</td></tr>
+				<tr><td>Skill Proficiencies</td><td>Choose 2: Arcana, History, Investigation, Medicine, Nature, Perception, or Sleight of Hand</td></tr>
+				<tr><td>Weapon Proficiencies</td><td>Simple weapons</td></tr>
+				<tr><td>Tool Proficiencies</td><td>Thieves' Tools, Tinker's Tools, and one type of Artisan's Tools of your choice</td></tr>
+				<tr><td>Armor Training</td><td>Light and Medium armor and Shields</td></tr>
+			</table>
+			<h5 class="caption">Artificer Features</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td>1</td><td class="left">Spellcasting, Tinker's Magic</td></tr>
+				<tr><td>2</td><td class="left">Replicate Magic Item</td></tr>
+				<tr><td>3</td><td class="left">Artificer Subclass</td></tr>
+				<tr><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5</td><td class="left">Subclass Feature</td></tr>
+				<tr><td>6</td><td class="left">Magic Item Tinker</td></tr>
+				<tr><td>7</td><td class="left">Flash of Genius</td></tr>
+				<tr><td>8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9</td><td class="left">Subclass Feature</td></tr>
+				<tr><td>10</td><td class="left">Magic Item Adept</td></tr>
+				<tr><td>11</td><td class="left">Spell-Storing Item</td></tr>
+				<tr><td>12</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13</td><td class="left">—</td></tr>
+				<tr><td>14</td><td class="left">Advanced Artifice</td></tr>
+				<tr><td>15</td><td class="left">Subclass Feature</td></tr>
+				<tr><td>16</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17</td><td class="left">—</td></tr>
+				<tr><td>18</td><td class="left">Magic Item Master</td></tr>
+				<tr><td>19</td><td class="left">Epic Boon</td></tr>
+				<tr><td>20</td><td class="left">Soul of Artifice</td></tr>
+			</table>
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELLCASTING" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_TINKERS_MAGIC" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SUBCLASS" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ASI" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ADVANCED_ARTIFICE" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_EPIC_BOON" />
+			<div element="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE" />
+		</description>
+		<setters>
+			<set name="short">Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<select type="Proficiency" name="Artisan Tool, Artificer" supports="Artisan tools" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+			<select type="Proficiency" name="Skill Proficiency, Artificer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="2" requirements="!ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024" />
+
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_TINKERS_MAGIC" level="1" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM" level="2" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ASI" level="4" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER" level="6" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS" level="7" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT" level="10" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" level="11" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ADVANCED_ARTIFICE" level="14" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER" level="18" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE" level="20" />
+		</rules>
+		<multiclass id="ID_ATERIOR_TEMP_MULTICLASS_ARTIFICER_2024">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, Medium armor, Shields, Tinker's Tools, one skill from the Artificer's skill list.</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+				<select type="Proficiency" name="Skill Proficiency, Artificer (Multiclass)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="1" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Spellcasting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELLCASTING">
+		<description>
+			<p>You have learned how to channel magical energy through objects. Tools Required: you produce your Artificer spells through tools. You can use Thieves' Tools, Tinker's Tools, or another kind of Artisan's Tools with which you have proficiency as a Spellcasting Focus.</p>
+			<p class="indent"><b>Cantrips.</b> You know two Artificer cantrips of your choice. Whenever you finish a Long Rest, you can replace one of your cantrips with another. At Artificer levels 10 and 14, you learn another cantrip of your choice.</p>
+			<p class="indent"><b>Spell Slots.</b> You regain all expended spell slots when you finish a Long Rest.</p>
+			<p class="indent"><b>Prepared Spells of Level 1+.</b> Choose two level 1 Artificer spells to start. The number on your list increases as you gain Artificer levels. Whenever you finish a Long Rest, you can change your list of prepared spells.</p>
+			<p class="indent"><b>Spellcasting Ability.</b> Intelligence is your spellcasting ability for your Artificer spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You produce your Artificer spells through Thieves' Tools, Tinker's Tools, or another kind of Artisan's Tools with which you have proficiency, used as a Spellcasting Focus.</description>
+		</sheet>
+		<spellcasting name="Artificer" ability="Intelligence" prepare="true">
+			<list known="true">Artificer</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+
+			<stat name="artificer:spellcasting:slots:1" value="2" level="1" />
+			<stat name="artificer:spellcasting:slots:1" value="1" level="3" />
+			<stat name="artificer:spellcasting:slots:1" value="1" level="5" />
+			<stat name="artificer:spellcasting:slots:2" value="2" level="5" />
+			<stat name="artificer:spellcasting:slots:2" value="1" level="7" />
+			<stat name="artificer:spellcasting:slots:3" value="2" level="9" />
+			<stat name="artificer:spellcasting:slots:3" value="1" level="11" />
+			<stat name="artificer:spellcasting:slots:4" value="1" level="13" />
+			<stat name="artificer:spellcasting:slots:4" value="1" level="15" />
+			<stat name="artificer:spellcasting:slots:4" value="1" level="17" />
+			<stat name="artificer:spellcasting:slots:5" value="1" level="17" />
+			<stat name="artificer:spellcasting:slots:5" value="1" level="19" />
+
+			<stat name="artificer:spellcasting:prepare" value="2" level="1" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="2" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="3" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="4" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="5" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="7" />
+			<stat name="artificer:spellcasting:prepare" value="2" level="9" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="11" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="13" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="15" />
+			<stat name="artificer:spellcasting:prepare" value="2" level="17" />
+			<stat name="artificer:spellcasting:prepare" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="2" spellcasting="Artificer" />
+			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" level="10" />
+			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" level="14" />
+		</rules>
+	</element>
+
+	<element name="Tinker's Magic" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_TINKERS_MAGIC">
+		<description>
+			<p>You know the Mending cantrip.</p>
+			<p class="indent">As a Magic action while holding Tinker's Tools, you can create one mundane item (from the standard adventuring gear list) in an unoccupied space within 5 feet of yourself. The item lasts until you finish a Long Rest, at which point it vanishes.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="{{tinkers magic:uses}}/Long Rest">
+			<description>You know Mending. As a Magic action with Tinker's Tools in hand, create one mundane item within 5 feet of yourself, lasting until your next Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MENDING" spellcasting="Artificer" prepared="true" />
+			<stat name="tinkers magic:uses" value="1" bonus="base" />
+			<stat name="tinkers magic:uses" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM">
+		<description>
+			<p>You have learned arcane plans that you use to make magic items. When you gain this feature, choose four plans to learn. Whenever you gain an Artificer level, you can replace one plan you know with a new one. You learn additional plans as you level, per the table below.</p>
+			<p class="indent">When you finish a Long Rest, you can create one or two different magic items (per the Magic Items column) if you have Tinker's Tools in hand, based on plans you know. A created item's magic isn't permanent — it vanishes 1d4 days after you die, or immediately if you replace the plan it's based on.</p>
+			<p class="indent"><em>Note: this local build tracks Plans Known and Magic Items as counters for reference. The full magic item plan tables (Bag of Holding, Wand of the War Mage, and the rest across all four tiers) aren't individually itemized here — treat this as a placeholder to track the resource while using your character sheet's notes for which specific items you've chosen, until a fuller implementation is built.</em></p>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Plans Known</td><td>Magic Items (per Long Rest)</td></tr>
+				</thead>
+				<tr><td>2</td><td>4</td><td>2</td></tr>
+				<tr><td>6</td><td>5</td><td>3</td></tr>
+				<tr><td>10</td><td>6</td><td>4</td></tr>
+				<tr><td>14</td><td>7</td><td>5</td></tr>
+				<tr><td>18</td><td>8</td><td>6</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You have {{replicate magic item:plans known}} magic item plans known, and can create up to {{replicate magic item:items}} of them as magic items each Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="replicate magic item:plans known" value="4" level="2" />
+			<stat name="replicate magic item:plans known" value="1" level="6" />
+			<stat name="replicate magic item:plans known" value="1" level="10" />
+			<stat name="replicate magic item:plans known" value="1" level="14" />
+			<stat name="replicate magic item:plans known" value="1" level="18" />
+
+			<stat name="replicate magic item:items" value="2" level="2" />
+			<stat name="replicate magic item:items" value="1" level="6" />
+			<stat name="replicate magic item:items" value="1" level="10" />
+			<stat name="replicate magic item:items" value="1" level="14" />
+			<stat name="replicate magic item:items" value="1" level="18" />
+		</rules>
+	</element>
+
+	<element name="Artificer Subclass" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SUBCLASS">
+		<description>
+			<p>At 3rd level, you gain an Artificer subclass of your choice, granting you features at 3rd, 5th, 9th, and 15th level (and higher, depending on the subclass).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Artificer Subclass" supports="Artificer Subclass" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1 each. You can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat for which you qualify.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or two ability scores by 1 each, or choose a feat for which you qualify.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Artificer,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Artificer,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Artificer,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Artificer,16" level="16" />
+		</rules>
+	</element>
+
+	<element name="Magic Item Tinker" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER">
+		<description>
+			<p>Your Replicate Magic Item feature gains the following options.</p>
+			<p class="indent"><b>Charge Magic Item.</b> As a Bonus Action, touch a magic item within 5 feet that you created and that uses charges. Expend a level 1+ spell slot and recharge the item by a number of charges equal to the slot's level.</p>
+			<p class="indent"><b>Drain Magic Item.</b> As a Bonus Action, touch a magic item within 5 feet that you created and cause it to vanish, converting its energy into a spell slot (level 1 if Common, level 2 if Uncommon or Rare). Once per Long Rest. The slot vanishes when you finish a Long Rest.</p>
+			<p class="indent"><b>Transmute Magic Item.</b> As a Magic action, touch a magic item within 5 feet that you created and transform it into a different item based on a plan you know. Once per Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest each">
+			<description>Your Replicate Magic Item feature gains: Charge Magic Item (Bonus Action, spend a spell slot to recharge an item), Drain Magic Item (Bonus Action, convert an item into a spell slot, once per Long Rest), and Transmute Magic Item (Magic action, transform an item into a different one you know a plan for, once per Long Rest).</description>
+		</sheet>
+	</element>
+
+	<element name="Flash of Genius" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS">
+		<description>
+			<p>When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).</p>
+			<p class="indent">You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
+			<description>When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, add your Intelligence modifier to the roll.</description>
+		</sheet>
+		<rules>
+			<stat name="flash of genius:usage" value="1" bonus="base" />
+			<stat name="flash of genius:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Magic Item Adept" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT">
+		<description>
+			<p>You can now attune to up to four magic items at once.</p>
+		</description>
+		<sheet>
+			<description>You can now attune to up to four magic items at once.</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="4" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Spell-Storing Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
+		<description>
+			<p>Whenever you finish a Long Rest, you can touch one Simple or Martial weapon or one item you can use as a Spellcasting Focus, and store a spell in it, choosing a level 1, 2, or 3 Artificer spell with a casting time of an action and no consumed Material component (you needn't have it prepared).</p>
+			<p class="indent">While holding the object, a creature can take a Magic action to produce the spell's effect from it, using your spellcasting ability modifier. The spell stays in the object until used a number of times equal to twice your Intelligence modifier (minimum twice), or until you use this feature again.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a Long Rest, store a level 1–3 Artificer spell in a weapon or Spellcasting Focus. A creature holding it can take a Magic action to produce the spell's effect, using your spellcasting modifier, up to {{spell storing item:charges}} times.</description>
+		</sheet>
+		<rules>
+			<stat name="spell storing item:modifier" value="intelligence:modifier" />
+			<stat name="spell storing item:modifier" value="intelligence:modifier" />
+			<stat name="spell storing item:charges" value="2" bonus="base" />
+			<stat name="spell storing item:charges" value="spell storing item:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Advanced Artifice" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_ADVANCED_ARTIFICE">
+		<description>
+			<p><b>Magic Item Savant.</b> You can now attune to up to five magic items at once.</p>
+			<p class="indent"><b>Refreshed Genius.</b> When you finish a Short Rest, you regain one expended use of your Flash of Genius feature.</p>
+		</description>
+		<sheet>
+			<description>You can now attune to up to five magic items at once. When you finish a Short Rest, you regain one expended use of Flash of Genius.</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="5" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Magic Item Master" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER">
+		<description>
+			<p>You can now attune to up to six magic items at once.</p>
+		</description>
+		<sheet>
+			<description>You can now attune to up to six magic items at once.</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="6" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Epic Boon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_EPIC_BOON">
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Energy Resistance is recommended.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain an Epic Boon feat or another feat of your choice for which you qualify.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Epic Boon" supports="Improvement Option,Artificer,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Soul of Artifice" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_ATERIOR_TEMP_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE">
+		<description>
+			<p><b>Cheat Death.</b> If you're reduced to 0 hit points but not killed outright, you can disintegrate any number of Uncommon or Rare magic items created by your Replicate Magic Item feature. If you do, your hit points instead change to a number equal to 20 times the number of magic items disintegrated.</p>
+			<p class="indent"><b>Magical Guidance.</b> When you finish a Short Rest, you regain all expended uses of your Flash of Genius if you have Attunement to at least one magic item.</p>
+		</description>
+		<sheet>
+			<description>Cheat Death: if reduced to 0 hit points but not killed outright, disintegrate Uncommon or Rare items you created to instead change your hit points to 20 times the number disintegrated. Magical Guidance: regain all Flash of Genius uses on a Short Rest if attuned to at least one magic item.</description>
+		</sheet>
+	</element>
+</elements>
