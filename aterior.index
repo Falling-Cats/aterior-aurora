@@ -148,7 +148,9 @@
         <file name="Spells/spell-temporal-shunt.xml"
               url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Spells/spell-temporal-shunt.xml" />
       
-
+        <!-- Classes (1) -->
+        <file name="Classes/class-artificer-2024.xml"
+              url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Classes/class-artificer-2024.xml" />
 
 
 <!-- Custom Feats (5) -->
