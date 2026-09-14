@@ -32,7 +32,9 @@
 			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE" />
 			<div element="ID_ATERIOR_INFORMATION_ARCHITECT_ACTION_ECONOMY" />
 		</description>
-		<sheet display="false">
+		<sheet>
+	<description>You add spells to your spellbook as you gain Wizard levels; they don't count against the number you can prepare. See the Environmentalist Spells table for which spells and when.</description>
+</sheet>
 			<description>A mage inspired by Lorathil's legend — walls and structures raised mid-fight to control where danger can and can't reach.</description>
 		</sheet>
 		<rules>
