@@ -4,7 +4,7 @@
 		<name>Battlefield Architect</name>
 		<description>Battlefield Architect wizard subclass — ATÉRIOR.</description>
 		<author>Falling-Cats</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="subclass-wizard-battlefield-architect.xml" url="https://raw.githubusercontent.com/Falling-Cats/aterior-aurora/main/Subclasses/subclass-wizard-battlefield-architect.xml" />
 		</update>
 	</info>
@@ -32,9 +32,7 @@
 			<div element="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_ARCHITECTURAL_SURGE" />
 			<div element="ID_ATERIOR_INFORMATION_ARCHITECT_ACTION_ECONOMY" />
 		</description>
-		<sheet>
-	<description>You add spells to your spellbook as you gain Wizard levels; they don't count against the number you can prepare. See the Environmentalist Spells table for which spells and when.</description>
-</sheet>
+		<sheet display="false">
 			<description>A mage inspired by Lorathil's legend — walls and structures raised mid-fight to control where danger can and can't reach.</description>
 		</sheet>
 		<rules>
@@ -129,7 +127,9 @@
 				<tr><td>15th</td><td class="left"><em>Wall of Force</em></td></tr>
 			</table>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>You add spells to your spellbook as you gain Wizard levels; they don't count against the number you can prepare. See the Environmentalist Spells table for which spells and when.</description>
+		</sheet>
 	</element>
 
 	<element name="Master Builder" type="Archetype Feature" source="ATÉRIOR" id="ID_ATERIOR_ARCHETYPE_FEATURE_WIZARD_ARCHITECT_MASTER_BUILDER">
